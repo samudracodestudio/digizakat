@@ -19,9 +19,26 @@ import {
   HeartHandshake,
   CheckCircle2,
   SlidersHorizontal,
-  Info
+  Info,
+  Globe,
+  Phone,
+  Mail,
+  FileText,
+  X,
+  UserCheck
 } from 'lucide-react';
 import { LAZItem, OPZPost, EncyclopediaEntry, SAMPLE_POSTS, SAMPLE_ENCYCLOPEDIA } from '../data/types';
+
+
+function InstagramIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
 
 export default function HomePage() {
   // Navigation tabs for mobile view
@@ -37,7 +54,7 @@ export default function HomePage() {
   const [selectedSkala, setSelectedSkala] = useState<string>('Semua');
   const [selectedProvinsi, setSelectedProvinsi] = useState<string>('Semua');
 
-  // Selected LAZ for modal/details
+  // Selected LAZ for dedicated in-app Profile Modal
   const [activeLazDetail, setActiveLazDetail] = useState<LAZItem | null>(null);
 
   // Fetch verified 218 LAZ data
@@ -173,7 +190,7 @@ export default function HomePage() {
               Ensiklopedi & Radar Penyaluran Zakat Indonesia
             </h1>
             <p className="mt-1.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Memantau rilis aksi penyaluran 218 LAZ berizin resmi Kemenag RI, khazanah fiqh asnaf, dan akses langsung ke portal crowdfunding lembaga terpercaya.
+              Memantau rilis aksi penyaluran 218 LAZ berizin resmi Kemenag RI, khazanah fiqh asnaf, dan akses langsung ke portal crowdfunding lembaga terpercaya anggota Forum Zakat (FOZ).
             </p>
           </div>
         </div>
@@ -266,7 +283,7 @@ export default function HomePage() {
                     {/* Header Card: Nama OPZ & Asnaf */}
                     <div className="flex items-center justify-between gap-2 mb-2.5">
                       <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-full bg-[#f2f0fa] flex items-center justify-center text-[#433880] font-bold text-xs">
+                        <div className="w-7 h-7 rounded-full bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs">
                           {post.opz_name.substring(0, 2)}
                         </div>
                         <div>
@@ -307,16 +324,28 @@ export default function HomePage() {
                       />
                     </div>
 
-                    {/* Action Bar: Direct Donation & Source */}
+                    {/* Action Bar: Direct Donation & Source & Instagram */}
                     <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
-                      <a 
-                        href={post.source_url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-xs text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1"
-                      >
-                        Baca rilis asli <ExternalLink className="w-3 h-3" />
-                      </a>
+                      <div className="flex items-center gap-3">
+                        <a 
+                          href={post.source_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xs text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1"
+                        >
+                          Baca rilis asli <ExternalLink className="w-3 h-3" />
+                        </a>
+                        {post.instagram_url && (
+                          <a
+                            href={post.instagram_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-rose-600 hover:text-rose-700 flex items-center gap-1 bg-rose-50 px-2 py-0.5 rounded-md"
+                          >
+                            <InstagramIcon className="w-3.5 h-3.5" /> Instagram
+                          </a>
+                        )}
+                      </div>
 
                       {/* TOMBOL DONASI KE LEMBAGA TERPERCAYA */}
                       <a
@@ -383,7 +412,10 @@ export default function HomePage() {
                     <div key={laz.no} className="py-2.5 first:pt-0 group">
                       <div className="flex items-start justify-between gap-1">
                         <div>
-                          <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug">
+                          <h4 
+                            onClick={() => setActiveLazDetail(laz)}
+                            className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer"
+                          >
                             {laz.name}
                           </h4>
                           <div className="mt-1 flex items-center gap-1.5 text-[10px] text-slate-500">
@@ -395,15 +427,29 @@ export default function HomePage() {
                         </div>
                       </div>
 
-                      <div className="mt-2 flex items-center justify-between gap-2">
-                        <a 
-                          href={laz.simzat_detail_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[10px] text-slate-400 hover:text-slate-600 flex items-center gap-0.5"
-                        >
-                          <Info className="w-3 h-3" /> SK Kemenag
-                        </a>
+                      {/* Tombol Aksi: Profile Detail, Instagram, Donasi */}
+                      <div className="mt-2 flex items-center justify-between gap-1.5">
+                        <div className="flex items-center gap-1">
+                          <button
+                            onClick={() => setActiveLazDetail(laz)}
+                            className="text-[11px] font-medium text-slate-600 hover:text-[#5a4ea4] bg-slate-100 hover:bg-slate-200 px-2 py-0.5 rounded transition flex items-center gap-1"
+                          >
+                            <Info className="w-3 h-3 text-[#5a4ea4]" /> Profil
+                          </button>
+                          
+                          {laz.instagram_url && (
+                            <a
+                              href={laz.instagram_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[11px] text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 p-1 rounded transition"
+                              title="Instagram Resmi"
+                            >
+                              <InstagramIcon className="w-3 h-3" />
+                            </a>
+                          )}
+                        </div>
+
                         <a
                           href={laz.donation_url}
                           target="_blank"
@@ -419,7 +465,7 @@ export default function HomePage() {
               </div>
 
               <div className="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-400 text-center">
-                Sumber resmi: SIMZAT Kemenag RI
+                Sumber resmi: SIMZAT Kemenag RI & FOZ
               </div>
             </div>
           </aside>
@@ -467,7 +513,7 @@ export default function HomePage() {
                     <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow">
                       {post.opz_name}
                     </div>
-                    <div className="absolute top-3 right-3 bg-purple-700 text-white px-2 py-0.5 rounded-full text-[10px] font-medium shadow">
+                    <div className="absolute top-3 right-3 bg-[#433880] text-white px-2 py-0.5 rounded-full text-[10px] font-medium shadow">
                       {post.category}
                     </div>
                   </div>
@@ -489,8 +535,18 @@ export default function HomePage() {
                       {post.summary}
                     </p>
 
-                    {/* Big Mobile Action Button */}
+                    {/* Mobile Card Action Bar */}
                     <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2">
+                      {post.instagram_url && (
+                        <a
+                          href={post.instagram_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2.5 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center border border-rose-200"
+                        >
+                          <InstagramIcon className="w-4 h-4" />
+                        </a>
+                      )}
                       <a
                         href={post.donation_url}
                         target="_blank"
@@ -510,7 +566,7 @@ export default function HomePage() {
           {/* TAB 2: DIREKTORI 218 LAZ RESMI */}
           {activeTab === 'laz' && (
             <div className="space-y-4">
-              <div className="bg-[#f7f6fc] border border-[#d6d0ee] rounded-xl p-3.5 flex items-center justify-between">
+              <div className="bg-[#f2f0fa] border border-[#d6d0ee] rounded-xl p-3.5 flex items-center justify-between">
                 <div>
                   <h3 className="text-xs font-bold text-[#2a2354]">218 LAZ Berizin Kemenag RI</h3>
                   <p className="text-[11px] text-[#433880]">Lembaga resmi terdaftar & anggota FOZ</p>
@@ -553,7 +609,10 @@ export default function HomePage() {
                         <span className="text-[10px] font-semibold text-[#433880] bg-[#f7f6fc] px-2 py-0.5 rounded">
                           {laz.skala} • {laz.provinsi}
                         </span>
-                        <h4 className="mt-1 text-xs font-bold text-slate-900">
+                        <h4 
+                          onClick={() => setActiveLazDetail(laz)}
+                          className="mt-1 text-xs font-bold text-slate-900 cursor-pointer hover:text-[#5a4ea4]"
+                        >
                           {laz.name}
                         </h4>
                       </div>
@@ -561,19 +620,30 @@ export default function HomePage() {
                     </div>
 
                     <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
-                      <a
-                        href={laz.simzat_detail_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs text-slate-500 underline flex items-center gap-1"
-                      >
-                        Detail Izin Kemenag
-                      </a>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          onClick={() => setActiveLazDetail(laz)}
+                          className="text-xs text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg font-medium flex items-center gap-1"
+                        >
+                          <Info className="w-3.5 h-3.5 text-[#5a4ea4]" /> Profil
+                        </button>
+                        {laz.instagram_url && (
+                          <a
+                            href={laz.instagram_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="p-1.5 bg-rose-50 text-rose-600 rounded-lg border border-rose-100"
+                          >
+                            <InstagramIcon className="w-3.5 h-3.5" />
+                          </a>
+                        )}
+                      </div>
+
                       <a
                         href={laz.donation_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-3 py-1.5 bg-[#31c0c6] text-white font-semibold text-xs rounded-lg shadow-sm flex items-center gap-1"
+                        className="px-3.5 py-1.5 bg-[#31c0c6] active:bg-[#208b8f] text-white font-semibold text-xs rounded-lg shadow-sm flex items-center gap-1"
                       >
                         Donasi ↗
                       </a>
@@ -626,9 +696,158 @@ export default function HomePage() {
       </main>
 
       {/* ============================================================== */}
-      {/* 3. MOBILE BOTTOM NAVIGATION BAR (FIXED)                         */}
+      {/* 3. MODAL PROFILE LEMBAGA RESMI (INTERNAL DIALOG)               */}
       {/* ============================================================== */}
-      <nav className="md:hidden fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 z-50 px-4 py-2 flex items-center justify-around shadow-lg">
+      {activeLazDetail && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
+          <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
+            
+            {/* Header Modal */}
+            <div className="p-4 sm:p-5 bg-gradient-to-r from-[#433880] to-[#5a4ea4] text-white flex items-start justify-between">
+              <div>
+                <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-white/20 text-teal-200 mb-1">
+                  <ShieldCheck className="w-3 h-3" /> Lembaga Amil Zakat Berizin Kemenag RI
+                </div>
+                <h3 className="text-base sm:text-lg font-bold leading-snug">
+                  {activeLazDetail.name}
+                </h3>
+                <p className="text-xs text-slate-200 mt-0.5">
+                  Tingkat: <span className="font-semibold text-white">{activeLazDetail.skala}</span> • Wilayah: <span className="font-semibold text-white">{activeLazDetail.provinsi}</span>
+                </p>
+              </div>
+              <button 
+                onClick={() => setActiveLazDetail(null)}
+                className="p-1 rounded-full hover:bg-white/20 text-white/80 hover:text-white transition"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Body Content Modal */}
+            <div className="p-4 sm:p-5 space-y-4 overflow-y-auto flex-1 text-xs sm:text-sm">
+              
+              {/* Info Legalitas & SK */}
+              <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-slate-500">Nomor Registrasi SIMZAT:</span>
+                  <span className="font-mono font-bold text-slate-800">#{activeLazDetail.no}</span>
+                </div>
+                {activeLazDetail.sk_number && (
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-500">Nomor SK Izin LAZ:</span>
+                    <span className="font-bold text-purple-900">{activeLazDetail.sk_number}</span>
+                  </div>
+                )}
+                {activeLazDetail.berlaku_sampai && (
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-500">Masa Berlaku Izin:</span>
+                    <span className="font-medium text-slate-700">s.d. {activeLazDetail.berlaku_sampai}</span>
+                  </div>
+                )}
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-slate-500">Keanggotaan Forum Zakat (FOZ):</span>
+                  <span className="inline-flex items-center gap-1 font-bold text-emerald-700">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Terdaftar Aktif
+                  </span>
+                </div>
+              </div>
+
+              {/* Detail Kantor & Kontak */}
+              <div className="space-y-2.5">
+                <div className="flex items-start gap-2 text-slate-600">
+                  <MapPin className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-slate-900 block">Kantor Pusat:</span>
+                    <span>{activeLazDetail.alamat || `${activeLazDetail.provinsi}, Indonesia`}</span>
+                  </div>
+                </div>
+
+                {activeLazDetail.pimpinan && (
+                  <div className="flex items-start gap-2 text-slate-600">
+                    <UserCheck className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-slate-900 block">Pimpinan Lembaga:</span>
+                      <span>{activeLazDetail.pimpinan}</span>
+                    </div>
+                  </div>
+                )}
+
+                {activeLazDetail.phone && (
+                  <div className="flex items-center gap-2 text-slate-600">
+                    <Phone className="w-4 h-4 text-[#5a4ea4] shrink-0" />
+                    <span className="font-semibold text-slate-900">Kontak:</span>
+                    <span>{activeLazDetail.phone}</span>
+                  </div>
+                )}
+
+                {activeLazDetail.email && (
+                  <div className="flex items-center gap-2 text-slate-600">
+                    <Mail className="w-4 h-4 text-[#5a4ea4] shrink-0" />
+                    <span className="font-semibold text-slate-900">Email:</span>
+                    <span>{activeLazDetail.email}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Tautan Resmi (Website & Instagram) */}
+              <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-2">
+                {activeLazDetail.instagram_url ? (
+                  <a
+                    href={activeLazDetail.instagram_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-2 px-3 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded-xl font-semibold flex items-center justify-center gap-1.5 transition border border-rose-200"
+                  >
+                    <InstagramIcon className="w-4 h-4" /> Instagram Resmi
+                  </a>
+                ) : (
+                  <div className="text-[11px] text-slate-400 italic py-1">Akun media sosial terdaftar di direktori FOZ</div>
+                )}
+
+                {activeLazDetail.website_url && (
+                  <a
+                    href={activeLazDetail.website_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-semibold flex items-center justify-center gap-1.5 transition border border-slate-200"
+                  >
+                    <Globe className="w-4 h-4" /> Web Utama
+                  </a>
+                )}
+              </div>
+
+            </div>
+
+            {/* Footer Modal CTA */}
+            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center gap-2">
+              <a
+                href={activeLazDetail.simzat_detail_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-slate-500 hover:text-slate-800 underline px-2 py-1 flex items-center gap-1"
+              >
+                Cek Dokumen SK SIMZAT <ExternalLink className="w-3 h-3" />
+              </a>
+
+              <a
+                href={activeLazDetail.donation_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-bold shadow flex items-center justify-center gap-1.5 transition"
+              >
+                <HeartHandshake className="w-4 h-4" />
+                Salurkan Donasi di Portal Resmi ↗
+              </a>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+      {/* ============================================================== */}
+      {/* 4. MOBILE BOTTOM NAVIGATION BAR (FIXED)                         */}
+      {/* ============================================================== */}
+      <nav className="md:hidden fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 z-40 px-4 py-2 flex items-center justify-around shadow-lg">
         <button
           onClick={() => setActiveTab('radar')}
           className={`flex flex-col items-center gap-1 ${
@@ -661,7 +880,7 @@ export default function HomePage() {
       </nav>
 
       {/* ============================================================== */}
-      {/* 4. FOOTER (DESKTOP)                                            */}
+      {/* 5. FOOTER (DESKTOP)                                            */}
       {/* ============================================================== */}
       <footer className="hidden md:block bg-white border-t border-slate-200 mt-12 py-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">

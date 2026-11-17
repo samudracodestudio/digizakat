@@ -1,10 +1,19 @@
 export interface LAZItem {
   no: number;
   name: string;
+  slug: string;
   skala: 'Nasional' | 'Provinsi' | 'Kabupaten/Kota';
   provinsi: string;
   simzat_detail_url: string;
   donation_url: string;
+  instagram_url?: string;
+  website_url?: string;
+  sk_number?: string;
+  berlaku_sampai?: string;
+  alamat?: string;
+  email?: string;
+  phone?: string;
+  pimpinan?: string;
   foz_member: boolean;
 }
 
@@ -20,6 +29,7 @@ export interface OPZPost {
   published_at: string;
   source_url: string;
   donation_url: string;
+  instagram_url?: string;
   image_url: string;
 }
 
@@ -45,7 +55,8 @@ export const SAMPLE_POSTS: OPZPost[] = [
     location: 'DI Yogyakarta',
     published_at: '2 jam yang lalu',
     source_url: 'https://lazismu.org',
-    donation_url: 'https://lazismu.org/donasi',
+    donation_url: 'https://lazismu.org/',
+    instagram_url: 'https://www.instagram.com/lazismupusat/',
     image_url: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -59,7 +70,8 @@ export const SAMPLE_POSTS: OPZPost[] = [
     location: 'Jawa Tengah',
     published_at: '5 jam yang lalu',
     source_url: 'https://dtpeduli.org',
-    donation_url: 'https://dtpeduli.org/donasi',
+    donation_url: 'https://dtpeduli.org',
+    instagram_url: 'https://www.instagram.com/dtpeduli/',
     image_url: 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -72,8 +84,9 @@ export const SAMPLE_POSTS: OPZPost[] = [
     category: 'Pendidikan',
     location: 'DKI Jakarta',
     published_at: 'Kemarin',
-    source_url: 'https://alazharmandiri.id',
-    donation_url: 'https://alazharmandiri.id/donasi',
+    source_url: 'https://alazharpeduli.or.id',
+    donation_url: 'https://donasi.alazharpeduli.or.id/',
+    instagram_url: 'https://www.instagram.com/lazalazhar/',
     image_url: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80'
   },
   {
@@ -87,7 +100,8 @@ export const SAMPLE_POSTS: OPZPost[] = [
     location: 'Jawa Timur',
     published_at: '1 hari yang lalu',
     source_url: 'https://ydsf.org',
-    donation_url: 'https://sedekah.ydsf.org',
+    donation_url: 'https://ydsf.org',
+    instagram_url: 'https://www.instagram.com/ydsfku/',
     image_url: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80'
   }
 ];
