@@ -6,6 +6,7 @@ export interface LAZItem {
   provinsi: string;
   simzat_detail_url: string;
   donation_url: string;
+  logo_url?: string;
   instagram_url?: string;
   website_url?: string;
   sk_number?: string;
@@ -29,6 +30,7 @@ export interface OPZPost {
   published_at: string;
   source_url: string;
   donation_url: string;
+  logo_url?: string;
   instagram_url?: string;
   image_url: string;
 }

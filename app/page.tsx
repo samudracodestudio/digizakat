@@ -411,18 +411,29 @@ export default function HomePage() {
                   filteredLaz.map((laz) => (
                     <div key={laz.no} className="py-2.5 first:pt-0 group">
                       <div className="flex items-start justify-between gap-1">
-                        <div>
-                          <h4 
-                            onClick={() => setActiveLazDetail(laz)}
-                            className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer"
-                          >
-                            {laz.name}
-                          </h4>
-                          <div className="mt-1 flex items-center gap-1.5 text-[10px] text-slate-500">
-                            <span className="px-1.5 py-0.2 bg-slate-100 rounded text-slate-700 font-medium">
-                              {laz.skala}
-                            </span>
-                            <span>{laz.provinsi}</span>
+                        <div className="flex items-start gap-2.5">
+                          {laz.logo_url ? (
+                            <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5">
+                              <img src={laz.logo_url} alt={laz.name} className="w-full h-full object-contain" />
+                            </div>
+                          ) : (
+                            <div className="w-8 h-8 rounded-lg bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-[10px] shrink-0 border border-[#d6d0ee]">
+                              {laz.name.substring(0, 2)}
+                            </div>
+                          )}
+                          <div>
+                            <h4 
+                              onClick={() => setActiveLazDetail(laz)}
+                              className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer"
+                            >
+                              {laz.name}
+                            </h4>
+                            <div className="mt-1 flex items-center gap-1.5 text-[10px] text-slate-500">
+                              <span className="px-1.5 py-0.2 bg-slate-100 rounded text-slate-700 font-medium">
+                                {laz.skala}
+                              </span>
+                              <span>{laz.provinsi}</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -605,16 +616,27 @@ export default function HomePage() {
                 {filteredLaz.map((laz) => (
                   <div key={laz.no} className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
                     <div className="flex items-start justify-between gap-2">
-                      <div>
-                        <span className="text-[10px] font-semibold text-[#433880] bg-[#f7f6fc] px-2 py-0.5 rounded">
-                          {laz.skala} • {laz.provinsi}
-                        </span>
-                        <h4 
-                          onClick={() => setActiveLazDetail(laz)}
-                          className="mt-1 text-xs font-bold text-slate-900 cursor-pointer hover:text-[#5a4ea4]"
-                        >
-                          {laz.name}
-                        </h4>
+                      <div className="flex items-start gap-2.5">
+                        {laz.logo_url ? (
+                          <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5 mt-0.5">
+                            <img src={laz.logo_url} alt={laz.name} className="w-full h-full object-contain" />
+                          </div>
+                        ) : (
+                          <div className="w-9 h-9 rounded-xl bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs shrink-0 border border-[#d6d0ee] mt-0.5">
+                            {laz.name.substring(0, 2)}
+                          </div>
+                        )}
+                        <div>
+                          <span className="text-[10px] font-semibold text-[#433880] bg-[#f7f6fc] px-2 py-0.5 rounded">
+                            {laz.skala} • {laz.provinsi}
+                          </span>
+                          <h4 
+                            onClick={() => setActiveLazDetail(laz)}
+                            className="mt-1 text-xs font-bold text-slate-900 cursor-pointer hover:text-[#5a4ea4]"
+                          >
+                            {laz.name}
+                          </h4>
+                        </div>
                       </div>
                       <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
                     </div>
@@ -704,16 +726,23 @@ export default function HomePage() {
             
             {/* Header Modal */}
             <div className="p-4 sm:p-5 bg-gradient-to-r from-[#433880] to-[#5a4ea4] text-white flex items-start justify-between">
-              <div>
-                <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-white/20 text-teal-200 mb-1">
-                  <ShieldCheck className="w-3 h-3" /> Lembaga Amil Zakat Berizin Kemenag RI
+              <div className="flex items-center gap-3">
+                {activeLazDetail.logo_url && (
+                  <div className="w-12 h-12 rounded-xl bg-white p-1 border border-white/30 shrink-0 shadow-sm flex items-center justify-center">
+                    <img src={activeLazDetail.logo_url} alt={activeLazDetail.name} className="w-full h-full object-contain" />
+                  </div>
+                )}
+                <div>
+                  <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-white/20 text-teal-200 mb-1">
+                    <ShieldCheck className="w-3 h-3" /> Lembaga Amil Zakat Berizin Kemenag RI
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold leading-snug">
+                    {activeLazDetail.name}
+                  </h3>
+                  <p className="text-xs text-slate-200 mt-0.5">
+                    Tingkat: <span className="font-semibold text-white">{activeLazDetail.skala}</span> • Wilayah: <span className="font-semibold text-white">{activeLazDetail.provinsi}</span>
+                  </p>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold leading-snug">
-                  {activeLazDetail.name}
-                </h3>
-                <p className="text-xs text-slate-200 mt-0.5">
-                  Tingkat: <span className="font-semibold text-white">{activeLazDetail.skala}</span> • Wilayah: <span className="font-semibold text-white">{activeLazDetail.provinsi}</span>
-                </p>
               </div>
               <button 
                 onClick={() => setActiveLazDetail(null)}
