@@ -42,7 +42,7 @@ export default function HomePage() {
 
   // Fetch verified 218 LAZ data
   useEffect(() => {
-    fetch('/digizakat/data/laz_verified.json')
+    fetch('/data/laz_verified.json')
       .then((res) => res.json())
       .then((data: LAZItem[]) => {
         setLazList(data);
@@ -95,7 +95,7 @@ export default function HomePage() {
           <div className="flex items-center gap-3">
             <div className="relative h-9 w-28 sm:w-36">
               <Image 
-                src="/digizakat/digizakat_logo.png" 
+                src="/digizakat_logo.png" 
                 alt="Digizakat Logo" 
                 fill 
                 className="object-contain object-left"
@@ -668,7 +668,7 @@ export default function HomePage() {
           <div className="flex items-center gap-3">
             <div className="relative h-7 w-28">
               <Image 
-                src="/digizakat/digizakat_logo.png" 
+                src="/digizakat_logo.png" 
                 alt="Digizakat Logo" 
                 fill 
                 className="object-contain object-left"
