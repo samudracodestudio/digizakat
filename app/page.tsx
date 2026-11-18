@@ -121,7 +121,7 @@ export default function HomePage() {
       {/* 1. TOP BAR & EDITORIAL TICKER (ALA TEMPO.CO)                    */}
       {/* ============================================================== */}
       <div className="bg-[#1e1b4b] text-slate-200 text-xs border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] py-2 flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
             <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase shrink-0">
               RADAR TERKINI
@@ -151,7 +151,7 @@ export default function HomePage() {
       {/* 2. MAIN HEADER & LOGO (EDITORIAL JOURNALISM STYLE)             */}
       {/* ============================================================== */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] h-20 flex items-center justify-between gap-6">
           
           {/* Logo & Slogan */}
           <div className="flex items-center gap-4">
@@ -203,7 +203,7 @@ export default function HomePage() {
 
         {/* Editorial Rubric Categories Bar */}
         <div className="border-t border-slate-100 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-6 overflow-x-auto no-scrollbar py-2 text-xs font-medium text-slate-600">
+          <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] flex items-center gap-6 overflow-x-auto no-scrollbar py-2 text-xs font-medium text-slate-600">
             <button 
               onClick={() => setSelectedCategory('Semua')}
               className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
@@ -285,9 +285,9 @@ export default function HomePage() {
       {/* ============================================================== */}
       {/* 3. MAIN EDITORIAL CONTENT (TEMPO.CO 2-COLUMN STRUCTURE)        */}
       {/* ============================================================== */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="flex-1 w-full mx-auto px-4 sm:px-6 md:px-[10%] py-6">
         
-        {/* DESKTOP VIEW (>= md) - PERSIS TEMPO 75% : 25% */}
+        {/* DESKTOP VIEW (>= md) - PERSIS TEMPO 75% : 25% DENGAN 10% MARGIN KANAN-KIRI */}
         <div className="hidden md:grid grid-cols-12 gap-8 items-start">
           
           {/* ----------------------------------------------------------- */}
@@ -1036,7 +1036,7 @@ export default function HomePage() {
       {/* 7. FOOTER (EDITORIAL CLEAN)                                    */}
       {/* ============================================================== */}
       <footer className="hidden md:block bg-slate-900 text-slate-300 border-t border-slate-800 mt-16 py-10 text-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%]">
           <div className="grid grid-cols-12 gap-8 pb-8 border-b border-slate-800">
             <div className="col-span-5 space-y-3">
               <div className="relative h-8 w-32 filter brightness-0 invert">
