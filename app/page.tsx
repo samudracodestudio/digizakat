@@ -272,7 +272,7 @@ export default function HomePage() {
               <section className="border-b border-slate-200 pb-8">
                 <div className="group cursor-pointer">
                   {/* Foto Utama Besar Dominan */}
-                  <div className="relative h-[420px] w-full rounded-none overflow-hidden bg-slate-100">
+                  <div className="relative h-[420px] w-full rounded-2xl overflow-hidden bg-slate-100 shadow-sm">
                     <Image 
                       src={headlinePost.image_url} 
                       alt={headlinePost.title} 
@@ -280,7 +280,7 @@ export default function HomePage() {
                       className="object-cover group-hover:scale-101 transition duration-500" 
                       priority
                     />
-                    <div className="absolute bottom-2 left-3 text-[11px] font-bold text-white/90 drop-shadow-md tracking-wider uppercase">
+                    <div className="absolute bottom-3 left-4 text-[11px] font-bold text-white/95 drop-shadow-md tracking-wider uppercase bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-lg">
                       DIGIZAKAT / {headlinePost.opz_name}
                     </div>
                   </div>
@@ -297,9 +297,9 @@ export default function HomePage() {
                 </div>
 
                 {/* 3 SUB-KOLOM MINI DI BAWAH HEADLINE */}
-                <div className="mt-6 pt-6 border-t border-slate-200 grid grid-cols-3 divide-x divide-slate-200">
+                <div className="mt-6 pt-6 border-t border-slate-200 grid grid-cols-3 gap-3">
                   {secondaryPosts.slice(0, 3).map((subPost) => (
-                    <div key={subPost.id} className="px-3 first:pl-0 last:pr-0 group cursor-pointer">
+                    <div key={subPost.id} className="p-3.5 bg-slate-50 hover:bg-[#f7f6fc] rounded-xl border border-slate-100 hover:border-[#d6d0ee] transition group cursor-pointer">
                       <div className="space-y-1">
                         <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
                           {subPost.title}
@@ -406,7 +406,7 @@ export default function HomePage() {
                       </div>
 
                       {/* Thumbnail Gambar */}
-                      <div className="col-span-3 relative h-24 rounded-none overflow-hidden bg-slate-100">
+                      <div className="col-span-3 relative h-24 rounded-xl overflow-hidden bg-slate-100 shadow-xs">
                         <Image 
                           src={post.image_url} 
                           alt={post.title} 
@@ -484,7 +484,7 @@ export default function HomePage() {
                   <div key={post.id} className="py-3 first:pt-0 group cursor-pointer">
                     <div className="flex items-start gap-2.5">
                       {/* Thumbnail Kotak Persegi Kecil */}
-                      <div className="relative w-14 h-14 rounded-xs overflow-hidden bg-slate-100 shrink-0">
+                      <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-slate-100 shrink-0 shadow-xs">
                         <Image 
                           src={post.image_url} 
                           alt={post.title} 
@@ -509,12 +509,12 @@ export default function HomePage() {
             </div>
 
             {/* DIREKTORI 218 LAZ RESMI (KOMPAK & STICKY) */}
-            <div id="direktori-laz" className="bg-white border-t-2 border-slate-900 pt-4 sticky top-24">
-              <div className="flex items-center justify-between mb-3">
-                <h3 className="text-xs font-black text-slate-950 uppercase tracking-tight flex items-center gap-1">
+            <div id="direktori-laz" className="bg-slate-50/80 rounded-2xl border border-slate-200 p-4 sticky top-24 shadow-xs">
+              <div className="flex items-center justify-between mb-3 border-b border-slate-200 pb-2.5">
+                <h3 className="text-xs font-black text-slate-950 uppercase tracking-tight flex items-center gap-1.5">
                   <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" /> DIREKTORI 218 LAZ
                 </h3>
-                <span className="text-[10px] font-bold bg-[#f2f0fa] text-[#433880] px-2 py-0.5 rounded">
+                <span className="text-[10px] font-bold bg-[#f2f0fa] text-[#433880] px-2.5 py-0.5 rounded-full border border-[#d6d0ee]">
                   {filteredLaz.length}
                 </span>
               </div>
@@ -523,7 +523,7 @@ export default function HomePage() {
               <select
                 value={selectedSkala}
                 onChange={(e) => setSelectedSkala(e.target.value)}
-                className="w-full text-[11px] bg-slate-50 border border-slate-200 rounded p-1.5 font-medium mb-2.5 focus:outline-none focus:border-[#5a4ea4]"
+                className="w-full text-[11px] bg-white border border-slate-200 rounded-xl p-2 font-medium mb-2.5 focus:outline-none focus:border-[#5a4ea4] shadow-xs"
               >
                 <option value="Semua">Semua Skala</option>
                 <option value="Nasional">Nasional (62)</option>
@@ -532,15 +532,15 @@ export default function HomePage() {
               </select>
 
               {/* Daftar LAZ */}
-              <div className="divide-y divide-slate-100 max-h-[460px] overflow-y-auto pr-1">
+              <div className="divide-y divide-slate-100 max-h-[460px] overflow-y-auto pr-1 space-y-1">
                 {loadingLaz ? (
                   <div className="py-6 text-center text-xs text-slate-400">Memuat data...</div>
                 ) : filteredLaz.length === 0 ? (
                   <div className="py-6 text-center text-xs text-slate-400">Tidak ditemukan.</div>
                 ) : (
                   filteredLaz.map((laz) => (
-                    <div key={laz.no} className="py-2.5 first:pt-1 group">
-                      <div className="flex items-start justify-between gap-1">
+                    <div key={laz.no} className="py-2.5 px-2 rounded-xl hover:bg-white transition group">
+                      <div className="flex items-start justify-between gap-2">
                         <div className="min-w-0">
                           <h4 
                             onClick={() => setActiveLazDetail(laz)}
@@ -556,7 +556,7 @@ export default function HomePage() {
                           href={laz.donation_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[10px] font-bold text-[#1d8286] bg-[#eaf9fa] px-2 py-0.5 rounded shrink-0 border border-[#cbfbf1]"
+                          className="text-[10px] font-bold text-[#1d8286] bg-[#eaf9fa] hover:bg-[#d5f5f7] px-2.5 py-1 rounded-lg shrink-0 border border-[#cbfbf1] transition shadow-xs"
                         >
                           Donasi ↗
                         </a>
@@ -566,7 +566,7 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-400 text-center">
+              <div className="mt-3 pt-2 border-t border-slate-200 text-[10px] text-slate-400 text-center">
                 SIMZAT Kemenag & FOZ
               </div>
             </div>
