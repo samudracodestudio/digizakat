@@ -252,34 +252,6 @@ export default function HomePage() {
             </a>
           </div>
         </div>
-
-        {/* Mobile View Tab Chips */}
-        <div className="md:hidden flex px-4 py-2 bg-slate-100 border-t border-slate-200 gap-2 overflow-x-auto no-scrollbar">
-          <button 
-            onClick={() => setActiveTab('berita')}
-            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
-              activeTab === 'berita' ? 'bg-[#5a4ea4] text-white' : 'bg-white text-slate-600 border border-slate-200'
-            }`}
-          >
-            Radar Berita
-          </button>
-          <button 
-            onClick={() => setActiveTab('laz')}
-            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
-              activeTab === 'laz' ? 'bg-[#5a4ea4] text-white' : 'bg-white text-slate-600 border border-slate-200'
-            }`}
-          >
-            Direktori 218 LAZ
-          </button>
-          <button 
-            onClick={() => setActiveTab('ensiklopedia')}
-            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
-              activeTab === 'ensiklopedia' ? 'bg-[#5a4ea4] text-white' : 'bg-white text-slate-600 border border-slate-200'
-            }`}
-          >
-            Ensiklopedi
-          </button>
-        </div>
       </header>
 
       {/* ============================================================== */}
