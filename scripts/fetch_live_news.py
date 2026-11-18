@@ -12,6 +12,16 @@ HEADERS = {
 
 FEEDS = [
     {
+        'opz_name': 'FORUM ZAKAT (FOZ)',
+        'opz_scale': 'Nasional',
+        'url': 'https://forumzakat.org/feed/',
+        'donation_url': 'https://forumzakat.org/',
+        'instagram_url': 'https://www.instagram.com/forumzakat/',
+        'fallback_image': 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Ekonomi Mustahik',
+        'default_asnaf': 'Amil & Mustahik'
+    },
+    {
         'opz_name': 'LAZIS MUHAMMADIYAH',
         'opz_scale': 'Nasional',
         'url': 'https://lazismu.org/feed',
@@ -40,6 +50,16 @@ FEEDS = [
         'fallback_image': 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80',
         'default_category': 'Kesehatan',
         'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'BAITUL MAAL HIDAYATULLAH',
+        'opz_scale': 'Nasional',
+        'url': 'https://bmh.or.id/feed/',
+        'donation_url': 'https://bmh.or.id/',
+        'instagram_url': 'https://www.instagram.com/bmh.pusat/',
+        'fallback_image': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fisabilillah'
     }
 ]
 
@@ -60,7 +80,7 @@ def detect_category(title, summary):
         return 'Kesehatan', 'Fakir & Miskin'
     elif any(k in combined for k in ['umkm', 'gerobak', 'modal', 'usaha', 'ekonomi', 'tani', 'panen', 'ternak', 'pohon']):
         return 'Ekonomi Mustahik', 'Fakir & Miskin'
-    elif any(k in combined for k in ['dakwah', 'masjid', 'quran', 'islam', 'kajian', 'dai', 'ramadhan', 'shalat']):
+    elif any(k in combined for k in ['dakwah', 'masjid', 'quran', 'islam', 'kajian', 'dai', 'ramadhan', 'shalat', 'pesantren']):
         return 'Dakwah', 'Fisabilillah'
     return 'Ekonomi Mustahik', 'Fakir & Miskin'
 

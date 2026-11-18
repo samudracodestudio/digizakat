@@ -1,6 +1,81 @@
 [
   {
     "id": "live-post-1",
+    "opz_name": "FORUM ZAKAT (FOZ)",
+    "opz_scale": "Nasional",
+    "title": "Upaya Cetak SDM Berdaya, Sinergi Foundation Hadirkan 6 Pelatihan di Paradaya Movement 3.0",
+    "summary": "Forum Zakat – Pendaftaran Paradaya Movement 3.0 resmi dibuka. Sinergi Foundation yang kembali terpilih sebagai salah satu mitra pelaksana program ini menghadirk...",
+    "asnaf": "Fakir & Miskin",
+    "category": "Ekonomi Mustahik",
+    "location": "Indonesia",
+    "published_at": "16 Nov 2026",
+    "source_url": "https://forumzakat.org/upaya-cetak-sdm-berdaya-sinergi-foundation-hadirkan-6-pelatihan-di-paradaya-movement-3-0/",
+    "donation_url": "https://forumzakat.org/",
+    "instagram_url": "https://www.instagram.com/forumzakat/",
+    "image_url": "https://forumzakat.org/wp-content/uploads/2026/11/paradaya-Sinergi-Foundation-Barista.jpg"
+  },
+  {
+    "id": "live-post-2",
+    "opz_name": "FORUM ZAKAT (FOZ)",
+    "opz_scale": "Nasional",
+    "title": "Ketika ‘Coret Bansos’ Menjadi Alat untuk Hukum Keluarga Miskin",
+    "summary": "Oleh: Muhammad Anwar, Peneliti Institute for Demographic and Affluence Studies (IDEAS) Jika negara sibuk menyeleksi siapa yang pantas menerima bansos, terutama ...",
+    "asnaf": "Fakir & Miskin",
+    "category": "Ekonomi Mustahik",
+    "location": "Indonesia",
+    "published_at": "16 Nov 2026",
+    "source_url": "https://forumzakat.org/ketika-coret-bansos-menjadi-alat-untuk-hukum-keluarga-miskin/",
+    "donation_url": "https://forumzakat.org/",
+    "instagram_url": "https://www.instagram.com/forumzakat/",
+    "image_url": "https://forumzakat.org/wp-content/uploads/2026/11/ketika-bansos-dihentikan.jpg"
+  },
+  {
+    "id": "live-post-3",
+    "opz_name": "FORUM ZAKAT (FOZ)",
+    "opz_scale": "Nasional",
+    "title": "Humanitarian Academy 2026, Dari Pembelajaran Daring Menuju Simulasi Respons Bencana",
+    "summary": "Forum Zakat, Yogyakarta – Forum Zakat (FOZ) menyiapkan penguatan kapasitas amil dan relawan lembaga zakat dalam menghadapi situasi kebencanaan melalui program H...",
+    "asnaf": "Ibnu Sabil & Fakir Miskin",
+    "category": "Kebencanaan",
+    "location": "Indonesia",
+    "published_at": "12 Nov 2026",
+    "source_url": "https://forumzakat.org/humanitarian-academy-2026-dari-pembelajaran-daring-menuju-simulasi-respons-bencana/",
+    "donation_url": "https://forumzakat.org/",
+    "instagram_url": "https://www.instagram.com/forumzakat/",
+    "image_url": "https://forumzakat.org/wp-content/uploads/2026/11/Humanitarian-Academy-2026.jpg"
+  },
+  {
+    "id": "live-post-4",
+    "opz_name": "FORUM ZAKAT (FOZ)",
+    "opz_scale": "Nasional",
+    "title": "FOZ Sumut Desak Polisi Usut Tuntas Pengeroyokan Relawan Zakat di CFD Medan",
+    "summary": "Forum Zakat, Medan – Forum Zakat (FOZ) Sumatera Utara mendesak kepolisian mengusut tuntas pengeroyokan terhadap seorang relawan zakat saat menjalankan penggalan...",
+    "asnaf": "Fakir & Miskin",
+    "category": "Ekonomi Mustahik",
+    "location": "Indonesia",
+    "published_at": "12 Nov 2026",
+    "source_url": "https://forumzakat.org/foz-sumut-desak-polisi-usut-tuntas-pengeroyokan-relawan-zakat-di-cfd-medan/",
+    "donation_url": "https://forumzakat.org/",
+    "instagram_url": "https://www.instagram.com/forumzakat/",
+    "image_url": "https://forumzakat.org/wp-content/uploads/2026/11/konferensi-pers-pengeroyokan-relawan-zakat.jpg"
+  },
+  {
+    "id": "live-post-5",
+    "opz_name": "LAZIS MUHAMMADIYAH",
+    "opz_scale": "Nasional",
+    "title": "Tradisikan Pengalaman Belajar Langsung, Lazismu Sambut Field Trip SMP Nabawi Islamic School",
+    "summary": "JAKARTA -- Sebanyak 33 siswa-siswi SMP dari Nabawi Islamic School Jakarta mulai berdatangan di halaman Gedung Pusat Dakwah Muhammadiyah, Menteng, Jakarta, pada ...",
+    "asnaf": "Fisabilillah",
+    "category": "Pendidikan",
+    "location": "Indonesia",
+    "published_at": "18 Nov 2026",
+    "source_url": "https://lazismu.org/2026/11/18/tradisikan-pengalaman-belajar-langsung-lazismu-sambut-field-trip-smp-nabawi-islamic-school/",
+    "donation_url": "https://lazismu.org/",
+    "instagram_url": "https://www.instagram.com/lazismupusat/",
+    "image_url": "https://lazismuorg.sgp1.digitaloceanspaces.com/wp-content/uploads/2026/11/18154932/Nabawi-Scool.jpg"
+  },
+  {
+    "id": "live-post-6",
     "opz_name": "LAZIS MUHAMMADIYAH",
     "opz_scale": "Nasional",
     "title": "Lazismu Tanam Pohon dan Sediakan Toilet Portabel di Arena Tanwir Muhammadiyah",
@@ -15,7 +90,7 @@
     "image_url": "https://lazismuorg.sgp1.digitaloceanspaces.com/wp-content/uploads/2026/11/17170146/Tanam-Pohon-Tanwir-.jpeg"
   },
   {
-    "id": "live-post-2",
+    "id": "live-post-7",
     "opz_name": "LAZIS MUHAMMADIYAH",
     "opz_scale": "Nasional",
     "title": "Peduli Kelompok Rentan, Aisyiyah dan Lazismu Wisuda 43 Lansia di Program Sekolah Lansia",
@@ -30,7 +105,7 @@
     "image_url": "https://lazismuorg.sgp1.digitaloceanspaces.com/wp-content/uploads/2026/11/17152142/Lansia.jpg"
   },
   {
-    "id": "live-post-3",
+    "id": "live-post-8",
     "opz_name": "LAZIS MUHAMMADIYAH",
     "opz_scale": "Nasional",
     "title": "BPKH dan Lazismu Lewat Program Kemaslahatan Salurkan Kendaraan Dakwah dan Smartboard",
@@ -45,22 +120,7 @@
     "image_url": "https://lazismuorg.sgp1.digitaloceanspaces.com/wp-content/uploads/2026/11/17115557/BPKH-LAZISMU-Maslahat-Klaten.jpg"
   },
   {
-    "id": "live-post-4",
-    "opz_name": "LAZIS MUHAMMADIYAH",
-    "opz_scale": "Nasional",
-    "title": "Bertahan Lawan Kabut Asap, Lazismu dan Samator Group Salurkan Oksigen Portabel",
-    "summary": "PULANG PISAU -- Kabut asap berangsur pudar di langit kabupaten Pulang Pisau, Kalimantan Tengah. Namun kualitas udara belum sepenuhnya membaik. Dampak asap karhu...",
-    "asnaf": "Fakir & Miskin",
-    "category": "Ekonomi Mustahik",
-    "location": "Indonesia",
-    "published_at": "17 Nov 2026",
-    "source_url": "https://lazismu.org/2026/11/17/bertahan-lawan-kabut-asap-lazismu-dan-samator-group-salurkan-oksigen-portabel/",
-    "donation_url": "https://lazismu.org/",
-    "instagram_url": "https://www.instagram.com/lazismupusat/",
-    "image_url": "https://lazismuorg.sgp1.digitaloceanspaces.com/wp-content/uploads/2026/11/17101927/Oksigen-Portabel.jpg"
-  },
-  {
-    "id": "live-post-5",
+    "id": "live-post-9",
     "opz_name": "DOMPET DHUAFA",
     "opz_scale": "Nasional",
     "title": "Dari Kampus untuk Masyarakat, Dompet Dhuafa dan UIN Jakarta Bekali Mahasiswa dengan Kapasitas Kepemimpinan dan Kerelawanan",
@@ -75,7 +135,7 @@
     "image_url": "https://www.dompetdhuafa.org/wp-content/uploads/2026/11/From-Care-to-Action-1.jpg"
   },
   {
-    "id": "live-post-6",
+    "id": "live-post-10",
     "opz_name": "DOMPET DHUAFA",
     "opz_scale": "Nasional",
     "title": "Buah Manis Merawat Amanah Donatur, Dompet Dhuafa Tuai Predikat ‘Excellent’ dalam Indonesia Best Customer Satisfaction 2026",
@@ -90,7 +150,7 @@
     "image_url": "https://www.dompetdhuafa.org/wp-content/uploads/2026/11/SWA-Costumer-Excellent-4.png"
   },
   {
-    "id": "live-post-7",
+    "id": "live-post-11",
     "opz_name": "DOMPET DHUAFA",
     "opz_scale": "Nasional",
     "title": "Puasa Ramadan 2027/1448 H: Perkiraan Tanggal, Persiapan, dan Seperti Apa Tantangannya?",
@@ -105,7 +165,7 @@
     "image_url": "https://www.dompetdhuafa.org/wp-content/uploads/2026/02/Haul-Zakat-6.jpg"
   },
   {
-    "id": "live-post-8",
+    "id": "live-post-12",
     "opz_name": "DOMPET DHUAFA",
     "opz_scale": "Nasional",
     "title": "Adab Sholat Tahajud agar Doa Cepat Dikabulkan",
@@ -120,7 +180,7 @@
     "image_url": "https://www.dompetdhuafa.org/wp-content/uploads/2025/09/Cover-Web-Blog-6.png"
   },
   {
-    "id": "live-post-9",
+    "id": "live-post-13",
     "opz_name": "RUMAH ZAKAT",
     "opz_scale": "Nasional",
     "title": "Jodoh Sudah Cocok, tetapi Orang Tua Tidak Merestui. Apa Kata Islam?",
@@ -135,7 +195,7 @@
     "image_url": "https://www.rumahzakat.org/wp-content/uploads/2026/11/THUMBNAIL-82.jpg"
   },
   {
-    "id": "live-post-10",
+    "id": "live-post-14",
     "opz_name": "RUMAH ZAKAT",
     "opz_scale": "Nasional",
     "title": "Rumah Zakat Salurkan Bantuan Bahan Pokok untuk Warga Terdampak Banjir di Pidie Jaya",
@@ -150,7 +210,7 @@
     "image_url": "https://www.rumahzakat.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-18-at-07.49.39.jpeg"
   },
   {
-    "id": "live-post-11",
+    "id": "live-post-15",
     "opz_name": "RUMAH ZAKAT",
     "opz_scale": "Nasional",
     "title": "Apa Itu Kafarat dalam Islam? Pengertian, Jenis, dan Cara Membayarnya",
@@ -165,7 +225,7 @@
     "image_url": "https://www.rumahzakat.org/wp-content/uploads/2026/11/photo_2026-11-18_09-45-08.jpg"
   },
   {
-    "id": "live-post-12",
+    "id": "live-post-16",
     "opz_name": "RUMAH ZAKAT",
     "opz_scale": "Nasional",
     "title": "Saat Hidup Terasa Berat, Ingatlah Bahwa Allah Tidak Pernah Meninggalkan Hamba-Nya",
@@ -178,5 +238,65 @@
     "donation_url": "https://www.rumahzakat.org/donasi",
     "instagram_url": "https://www.instagram.com/rumahzakat/",
     "image_url": "https://www.rumahzakat.org/wp-content/uploads/2026/11/photo_2026-11-18_09-26-55.jpg"
+  },
+  {
+    "id": "live-post-17",
+    "opz_name": "BAITUL MAAL HIDAYATULLAH",
+    "opz_scale": "Nasional",
+    "title": "Perkuat Pembinaan dan Semangat Dakwah, LAZNAS BMH Dukung Lailatul Ijtima’ Hidayatullah Bulungan",
+    "summary": "Sebagai bentuk dukungan terhadap perjuangan para dai dan kader, LAZNAS BMH Bulungan mendukung penyelenggaraan kegiatan Lailatul Ijtima’ Hidayatullah Bulungan di...",
+    "asnaf": "Fisabilillah",
+    "category": "Dakwah",
+    "location": "Indonesia",
+    "published_at": "18 Nov 2026",
+    "source_url": "https://bmh.or.id/perkuat-pembinaan-dan-semangat-dakwah-laznas-bmh-dukung-lailatul-ijtima-hidayatullah-bulungan/",
+    "donation_url": "https://bmh.or.id/",
+    "instagram_url": "https://www.instagram.com/bmh.pusat/",
+    "image_url": "http://bmh.or.id/wp-content/uploads/2026/11/IMG-20261118-WA0020.jpg"
+  },
+  {
+    "id": "live-post-18",
+    "opz_name": "BAITUL MAAL HIDAYATULLAH",
+    "opz_scale": "Nasional",
+    "title": "Dukung Perjuangan Ibu Tiga Anak, LAZNAS BMH Salurkan Bantuan Modal Usaha untuk Ibu Rina",
+    "summary": "Keterbatasan modal kerap menjadi tantangan bagi pelaku usaha kecil untuk mempertahankan usahanya. Kondisi ini juga dialami Ibu Rina Faradila, seorang ibu yang b...",
+    "asnaf": "Fakir & Miskin",
+    "category": "Ekonomi Mustahik",
+    "location": "Indonesia",
+    "published_at": "18 Nov 2026",
+    "source_url": "https://bmh.or.id/dukung-perjuangan-ibu-tiga-anak-laznas-bmh-salurkan-bantuan-modal-usaha-untuk-ibu-rina/",
+    "donation_url": "https://bmh.or.id/",
+    "instagram_url": "https://www.instagram.com/bmh.pusat/",
+    "image_url": "https://bmh.or.id/wp-content/uploads/2026/11/20261116_101016-scaled.jpg"
+  },
+  {
+    "id": "live-post-19",
+    "opz_name": "BAITUL MAAL HIDAYATULLAH",
+    "opz_scale": "Nasional",
+    "title": "Wujudkan Lingkungan Nyaman, LAZNAS BMH Salurkan 82 Galon Cat Tembok untuk Masjid dan Rumah di Paser",
+    "summary": "Kenyamanan beribadah dan belajar turut didukung oleh lingkungan yang bersih dan tertata. Melalui Program Sahabat Peduli, LAZNAS BMH Kalimantan Timur menyalurkan...",
+    "asnaf": "Fisabilillah",
+    "category": "Pendidikan",
+    "location": "Indonesia",
+    "published_at": "18 Nov 2026",
+    "source_url": "https://bmh.or.id/wujudkan-lingkungan-nyaman-laznas-bmh-salurkan-82-galon-cat-tembok-untuk-masjid-dan-rumah-di-paser/",
+    "donation_url": "https://bmh.or.id/",
+    "instagram_url": "https://www.instagram.com/bmh.pusat/",
+    "image_url": "http://bmh.or.id/wp-content/uploads/2026/11/IMG-20261118-WA0017.jpg"
+  },
+  {
+    "id": "live-post-20",
+    "opz_name": "BAITUL MAAL HIDAYATULLAH",
+    "opz_scale": "Nasional",
+    "title": "Ringankan Kebutuhan Warga, LAZNAS BMH Salurkan Bantuan Sembako untuk Keluarga Ibu Jumianty dan Ibu Mirtasia",
+    "summary": "Kepedulian terhadap sesama terus diwujudkan oleh LAZNAS BMH Kepulauan Riau melalui penyaluran bantuan kebutuhan pokok bagi masyarakat yang membutuhkan. Kali ini...",
+    "asnaf": "Fakir & Miskin",
+    "category": "Ekonomi Mustahik",
+    "location": "Indonesia",
+    "published_at": "17 Nov 2026",
+    "source_url": "https://bmh.or.id/ringankan-kebutuhan-warga-laznas-bmh-salurkan-bantuan-sembako-untuk-keluarga-ibu-jumianty-dan-ibu-mirtasia/",
+    "donation_url": "https://bmh.or.id/",
+    "instagram_url": "https://www.instagram.com/bmh.pusat/",
+    "image_url": "http://bmh.or.id/wp-content/uploads/2026/11/IMG-20261117-WA00081-scaled.jpg"
   }
 ]
