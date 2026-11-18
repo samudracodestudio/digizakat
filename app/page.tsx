@@ -324,22 +324,17 @@ export default function HomePage() {
                   </p>
                 </div>
 
-                {/* 3 SUB-KOLOM MINI DI BAWAH HEADLINE (PERSIS TAMPILAN TEMPO) */}
+                {/* 3 SUB-KOLOM MINI DI BAWAH HEADLINE */}
                 <div className="mt-6 pt-6 border-t border-slate-200 grid grid-cols-3 divide-x divide-slate-200">
                   {secondaryPosts.slice(0, 3).map((subPost) => (
                     <div key={subPost.id} className="px-3 first:pl-0 last:pr-0 group cursor-pointer">
-                      <div className="flex items-start gap-1.5">
-                        <span className="bg-red-600 text-white font-black text-[9px] px-1 py-0.5 rounded-xs shrink-0 mt-0.5">
-                          T+
+                      <div className="space-y-1">
+                        <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
+                          {subPost.title}
+                        </h4>
+                        <span className="text-[10px] text-slate-400 block font-medium">
+                          {subPost.opz_name}
                         </span>
-                        <div>
-                          <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
-                            {subPost.title}
-                          </h4>
-                          <span className="text-[10px] text-slate-400 mt-1 block font-medium">
-                            {subPost.opz_name}
-                          </span>
-                        </div>
                       </div>
                     </div>
                   ))}
@@ -526,16 +521,11 @@ export default function HomePage() {
                         />
                       </div>
                       
-                      {/* Badge T+ & Judul */}
+                      {/* Judul & Waktu */}
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-start gap-1">
-                          <span className="bg-red-600 text-white font-black text-[9px] px-1 py-0.2 rounded-xs shrink-0 mt-0.5">
-                            T+
-                          </span>
-                          <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
-                            {post.title}
-                          </h4>
-                        </div>
+                        <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
+                          {post.title}
+                        </h4>
                         <span className="text-[10px] text-slate-400 mt-1 block">
                           {post.published_at}
                         </span>
