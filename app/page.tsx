@@ -20,7 +20,12 @@ import {
   Phone,
   Mail,
   X,
-  UserCheck
+  UserCheck,
+  TrendingUp,
+  Clock,
+  Compass,
+  FileText,
+  Calculator
 } from 'lucide-react';
 import { LAZItem, OPZPost, EncyclopediaEntry, SAMPLE_POSTS, SAMPLE_ENCYCLOPEDIA } from '../data/types';
 
@@ -35,8 +40,8 @@ function InstagramIcon({ className = 'w-4 h-4' }: { className?: string }) {
 }
 
 export default function HomePage() {
-  // Navigation tabs for mobile view
-  const [activeTab, setActiveTab] = useState<'radar' | 'laz' | 'ensiklopedia'>('radar');
+  // Mobile Navigation tabs
+  const [activeTab, setActiveTab] = useState<'berita' | 'laz' | 'ensiklopedia'>('berita');
   
   // Data states
   const [lazList, setLazList] = useState<LAZItem[]>([]);
@@ -48,8 +53,20 @@ export default function HomePage() {
   const [selectedSkala, setSelectedSkala] = useState<string>('Semua');
   const [selectedProvinsi, setSelectedProvinsi] = useState<string>('Semua');
 
-  // Selected LAZ for dedicated in-app Profile Modal
+  // Selected LAZ for in-app Profile Modal
   const [activeLazDetail, setActiveLazDetail] = useState<LAZItem | null>(null);
+
+  // Quick Zakat Calculator Modal State
+  const [showCalculator, setShowCalculator] = useState(false);
+  const [gajiBulanan, setGajiBulanan] = useState<number | ''>('');
+  const [bonusLain, setBonusLain] = useState<number | ''>('');
+  const hargaEmasPerGram = 1450000; // Standar emas terkini
+  const nisabTahunan = 85 * hargaEmasPerGram; // 85 gram emas
+  const nisabBulanan = Math.round(nisabTahunan / 12);
+
+  const totalPendapatan = (Number(gajiBulanan) || 0) + (Number(bonusLain) || 0);
+  const wajibZakat = totalPendapatan >= nisabBulanan;
+  const nilaiZakat = wajibZakat ? Math.round(totalPendapatan * 0.025) : 0;
 
   // Fetch verified 218 LAZ data
   useEffect(() => {
@@ -93,18 +110,52 @@ export default function HomePage() {
     });
   }, [selectedCategory, searchQuery]);
 
+  // Headline item (Post 1) & Secondary items (Posts 2, 3, 4)
+  const headlinePost = filteredPosts[0] || SAMPLE_POSTS[0];
+  const secondaryPosts = filteredPosts.slice(1);
+
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
+    <div className="min-h-screen flex flex-col bg-white text-slate-800 font-sans">
       
       {/* ============================================================== */}
-      {/* 1. TOP NAVBAR (CLEAN & MINIMALIST)                             */}
+      {/* 1. TOP BAR & EDITORIAL TICKER (ALA TEMPO.CO)                    */}
       {/* ============================================================== */}
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div className="bg-[#1e1b4b] text-slate-200 text-xs border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
+            <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase shrink-0">
+              RADAR TERKINI
+            </span>
+            <span className="text-slate-300 truncate text-xs">
+              Memonitor 218 Lembaga Amil Zakat Resmi Kemenag RI & Anggota Forum Zakat (FOZ)
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4 shrink-0 text-[11px] text-slate-300">
+            <button 
+              onClick={() => setShowCalculator(true)}
+              className="flex items-center gap-1.5 text-teal-300 hover:text-white font-medium transition"
+            >
+              <Calculator className="w-3.5 h-3.5 text-[#31c0c6]" />
+              <span>Kalkulator Zakat</span>
+            </button>
+            <div className="hidden sm:flex items-center gap-1.5 text-emerald-400 font-medium">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span>Independen & Nirlaba</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ============================================================== */}
+      {/* 2. MAIN HEADER & LOGO (EDITORIAL JOURNALISM STYLE)             */}
+      {/* ============================================================== */}
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-6">
           
-          {/* Logo Brand */}
-          <div className="flex items-center gap-3">
-            <div className="relative h-9 w-28 sm:w-36">
+          {/* Logo & Slogan */}
+          <div className="flex items-center gap-4">
+            <div className="relative h-10 w-32 sm:w-40">
               <Image 
                 src="/digizakat_logo.png" 
                 alt="Digizakat Logo" 
@@ -113,266 +164,389 @@ export default function HomePage() {
                 priority
               />
             </div>
-            <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#f2f0fa] text-[#382f6e] border border-[#d6d0ee]">
-              <Sparkles className="w-3 h-3 text-[#5a4ea4]" /> Neo Ensiklopedi
-            </span>
+            <div className="hidden lg:block pl-4 border-l border-slate-200">
+              <span className="text-[11px] font-semibold text-slate-400 block tracking-wider uppercase">
+                Ensiklopedi & Radar
+              </span>
+              <span className="text-xs font-bold text-[#5a4ea4]">
+                Gerakan Zakat Indonesia
+              </span>
+            </div>
           </div>
 
           {/* Quick Search Bar */}
-          <div className="flex-1 max-w-md relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <div className="flex-1 max-w-lg relative">
+            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
               <Search className="h-4 w-4 text-slate-400" />
             </div>
             <input
               type="text"
-              placeholder="Cari nama lembaga, kota, program, istilah zakat..."
+              placeholder="Cari program, LAZ, fiqh nisab, atau kota..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-4 py-1.5 text-sm bg-slate-100 hover:bg-slate-50 focus:bg-white border border-slate-200 focus:border-[#5a4ea4] rounded-full focus:outline-none transition-all shadow-sm"
+              className="w-full pl-10 pr-4 py-2 text-xs sm:text-sm bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-[#5a4ea4] rounded-full focus:outline-none transition-all"
             />
           </div>
 
-          {/* Official Verification Badge */}
-          <div className="hidden lg:flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
-            <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span>218 LAZ SIMZAT Kemenag RI & FOZ</span>
+          {/* Cek Legalitas Button */}
+          <div className="hidden md:flex items-center gap-2">
+            <a
+              href="#direktori-laz"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition"
+            >
+              <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" />
+              <span>Direktori 218 LAZ</span>
+            </a>
+          </div>
+
+        </div>
+
+        {/* Editorial Rubric Categories Bar */}
+        <div className="border-t border-slate-100 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-6 overflow-x-auto no-scrollbar py-2 text-xs font-medium text-slate-600">
+            <button 
+              onClick={() => setSelectedCategory('Semua')}
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+                selectedCategory === 'Semua' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
+              }`}
+            >
+              Semua Berita
+            </button>
+            <button 
+              onClick={() => setSelectedCategory('Ekonomi Mustahik')}
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+                selectedCategory === 'Ekonomi Mustahik' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
+              }`}
+            >
+              Ekonomi Mustahik
+            </button>
+            <button 
+              onClick={() => setSelectedCategory('Kebencanaan')}
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+                selectedCategory === 'Kebencanaan' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
+              }`}
+            >
+              Tanggap Bencana
+            </button>
+            <button 
+              onClick={() => setSelectedCategory('Pendidikan')}
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+                selectedCategory === 'Pendidikan' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
+              }`}
+            >
+              Pendidikan & Beasiswa
+            </button>
+            <button 
+              onClick={() => setSelectedCategory('Kesehatan')}
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+                selectedCategory === 'Kesehatan' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
+              }`}
+            >
+              Kesehatan Dhuafa
+            </button>
+            <a 
+              href="#khazanah-fiqh" 
+              className="whitespace-nowrap pb-0.5 border-b-2 border-transparent text-slate-500 hover:text-slate-900 flex items-center gap-1 ml-auto"
+            >
+              <BookOpen className="w-3.5 h-3.5 text-[#5a4ea4]" /> Fiqh & Fatwa
+            </a>
           </div>
         </div>
 
-        {/* Mobile Sub-Navigation Header Bar (Only visible on Mobile) */}
-        <div className="md:hidden flex overflow-x-auto px-4 py-2 bg-slate-100 border-t border-slate-200 no-scrollbar gap-2">
+        {/* Mobile View Tab Chips */}
+        <div className="md:hidden flex px-4 py-2 bg-slate-100 border-t border-slate-200 gap-2 overflow-x-auto no-scrollbar">
           <button 
-            onClick={() => setActiveTab('radar')}
-            className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
-              activeTab === 'radar' ? 'bg-[#5a4ea4] text-white shadow' : 'bg-white text-slate-600 border border-slate-200'
+            onClick={() => setActiveTab('berita')}
+            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
+              activeTab === 'berita' ? 'bg-[#5a4ea4] text-white' : 'bg-white text-slate-600 border border-slate-200'
             }`}
           >
-            <Radio className="w-3 h-3" /> Radar Aksi
+            Radar Berita
           </button>
           <button 
             onClick={() => setActiveTab('laz')}
-            className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
-              activeTab === 'laz' ? 'bg-[#5a4ea4] text-white shadow' : 'bg-white text-slate-600 border border-slate-200'
+            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
+              activeTab === 'laz' ? 'bg-[#5a4ea4] text-white' : 'bg-white text-slate-600 border border-slate-200'
             }`}
           >
-            <Building2 className="w-3 h-3" /> 218 LAZ Legal
+            Direktori 218 LAZ
           </button>
           <button 
             onClick={() => setActiveTab('ensiklopedia')}
-            className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
-              activeTab === 'ensiklopedia' ? 'bg-[#5a4ea4] text-white shadow' : 'bg-white text-slate-600 border border-slate-200'
+            className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition ${
+              activeTab === 'ensiklopedia' ? 'bg-[#5a4ea4] text-white' : 'bg-white text-slate-600 border border-slate-200'
             }`}
           >
-            <BookOpen className="w-3 h-3" /> Ensiklopedi
+            Ensiklopedi
           </button>
         </div>
       </header>
 
       {/* ============================================================== */}
-      {/* 2. MAIN CONTAINER                                             */}
+      {/* 3. MAIN EDITORIAL CONTENT (TEMPO.CO 2-COLUMN STRUCTURE)        */}
       {/* ============================================================== */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
         
-        {/* Banner Hero Mini */}
-        <div className="mb-6 bg-gradient-to-r from-[#433880] via-[#5a4ea4] to-[#1e1b4b] rounded-2xl p-5 sm:p-6 text-white shadow-md relative overflow-hidden">
-          <div className="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-300 via-purple-300 to-transparent pointer-events-none" />
-          <div className="relative z-10 max-w-2xl">
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium bg-white/20 text-teal-200 mb-2">
-              <ShieldCheck className="w-3.5 h-3.5" /> Direktori & Agregator Independen Gerakan Zakat
-            </div>
-            <h1 className="text-xl sm:text-2xl font-bold tracking-tight">
-              Ensiklopedi & Radar Penyaluran Zakat Indonesia
-            </h1>
-            <p className="mt-1.5 text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Memantau rilis aksi penyaluran 218 LAZ berizin resmi Kemenag RI, khazanah fiqh asnaf, dan akses langsung ke portal crowdfunding lembaga terpercaya anggota Forum Zakat (FOZ).
-            </p>
-          </div>
-        </div>
-
-        {/* ------------------------------------------------------------- */}
-        {/* DESKTOP VIEW: 2-COLUMN BALANCED LAYOUT (>= md screens)        */}
-        {/* ------------------------------------------------------------- */}
-        <div className="hidden md:grid grid-cols-12 gap-6 items-start">
+        {/* DESKTOP VIEW (>= md) */}
+        <div className="hidden md:grid grid-cols-12 gap-8 items-start">
           
-          {/* KOLOM KIRI (7 Kolom): Radar Aksi OPZ + Khazanah Ensiklopedi */}
-          <section className="col-span-7 space-y-5">
+          {/* ----------------------------------------------------------- */}
+          {/* KOLOM KIRI (7 Kolom): BERITA UTAMA + SUB-BERITA + ENSIKLOPEDI */}
+          {/* ----------------------------------------------------------- */}
+          <div className="col-span-7 space-y-8">
             
-            {/* Filter Kategori Asnaf & Isu */}
-            <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
-              <div className="flex items-center gap-1.5 shrink-0">
-                <span className="text-xs font-semibold text-slate-500 pl-1 flex items-center gap-1">
-                  <Filter className="w-3.5 h-3.5 text-[#5a4ea4]" /> Topik:
-                </span>
-              </div>
-              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
-                {['Semua', 'Ekonomi Mustahik', 'Pendidikan', 'Kebencanaan', 'Kesehatan'].map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`text-xs px-3 py-1 rounded-full whitespace-nowrap font-medium transition ${
-                      selectedCategory === cat 
-                        ? 'bg-[#5a4ea4] text-white shadow-sm' 
-                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                    }`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </div>
+            {/* BERITA UTAMA / HEADLINE EDITORIAL (FOKUS) */}
+            {headlinePost && (
+              <section className="border-b border-slate-200 pb-8">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs font-bold text-[#5a4ea4] tracking-wider uppercase">
+                    FOKUS UTAMA
+                  </span>
+                  <span className="text-slate-300">•</span>
+                  <span className="text-xs text-slate-500 font-medium">
+                    {headlinePost.published_at}
+                  </span>
+                </div>
 
-            {/* List Feed Berita & Aksi */}
-            <div className="space-y-4">
-              <div className="flex items-center justify-between text-xs text-slate-500 font-medium px-1">
-                <span className="flex items-center gap-1.5 font-semibold text-slate-700">
-                  <Radio className="w-3.5 h-3.5 text-rose-500 animate-pulse" /> Live Wire Rilis Aksi OPZ
-                </span>
-                <span>Menampilkan {filteredPosts.length} rilis</span>
-              </div>
+                <div className="group cursor-pointer">
+                  <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 group-hover:text-[#5a4ea4] transition leading-tight">
+                    {headlinePost.title}
+                  </h1>
 
-              {filteredPosts.map((post) => (
-                <article key={post.id} className="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
-                  <div className="p-4 sm:p-5">
-                    
-                    {/* Header Card: Nama OPZ & Asnaf */}
-                    <div className="flex items-center justify-between gap-2 mb-2.5">
-                      <div className="flex items-center gap-2">
-                        <div className="w-7 h-7 rounded-full bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs">
-                          {post.opz_name.substring(0, 2)}
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-1.5">
-                            <span className="text-xs font-bold text-slate-900">{post.opz_name}</span>
-                            <span className="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-1.5 py-0.2 rounded font-medium">
-                              Legal
-                            </span>
-                          </div>
-                          <div className="flex items-center gap-2 text-[11px] text-slate-400">
-                            <span className="flex items-center gap-1"><MapPin className="w-3 h-3" />{post.location}</span>
-                            <span>•</span>
-                            <span>{post.published_at}</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <span className="text-[11px] bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-medium">
-                        Asnaf: {post.asnaf}
-                      </span>
+                  {/* Foto Utama Besar */}
+                  <div className="mt-4 relative h-72 sm:h-80 w-full rounded-lg overflow-hidden bg-slate-100">
+                    <Image 
+                      src={headlinePost.image_url} 
+                      alt={headlinePost.title} 
+                      fill 
+                      className="object-cover group-hover:scale-102 transition duration-500" 
+                      priority
+                    />
+                    <div className="absolute top-3 left-3 bg-[#1e1b4b]/90 text-white backdrop-blur-sm px-2.5 py-1 rounded text-xs font-bold">
+                      {headlinePost.opz_name}
                     </div>
-
-                    {/* Judul & Ringkasan */}
-                    <h2 className="text-base font-bold text-slate-900 hover:text-[#5a4ea4] transition leading-snug cursor-pointer">
-                      {post.title}
-                    </h2>
-                    <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                      {post.summary}
-                    </p>
-
-                    {/* Image Preview */}
-                    <div className="mt-3 relative h-48 w-full rounded-xl overflow-hidden bg-slate-100">
-                      <Image 
-                        src={post.image_url} 
-                        alt={post.title} 
-                        fill 
-                        className="object-cover hover:scale-105 transition-transform duration-300" 
-                      />
+                    <div className="absolute top-3 right-3 bg-white/90 text-slate-800 px-2 py-0.5 rounded text-[11px] font-semibold">
+                      Asnaf: {headlinePost.asnaf}
                     </div>
+                  </div>
 
-                    {/* Action Bar: Direct Donation & Source & Instagram */}
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
-                      <div className="flex items-center gap-3">
-                        <a 
-                          href={post.source_url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-xs text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1 font-medium"
-                        >
-                          Baca rilis asli <ExternalLink className="w-3 h-3" />
-                        </a>
-                        {post.instagram_url && (
-                          <a
-                            href={post.instagram_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs text-rose-600 hover:text-rose-700 flex items-center gap-1 bg-rose-50 px-2 py-0.5 rounded-md font-medium"
-                          >
-                            <InstagramIcon className="w-3.5 h-3.5" /> Instagram
-                          </a>
-                        )}
-                      </div>
+                  {/* Lead Text Editorial */}
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
+                    {headlinePost.summary}
+                  </p>
+                </div>
 
-                      {/* TOMBOL DONASI KE LEMBAGA TERPERCAYA */}
-                      <a
-                        href={post.donation_url}
+                {/* Bar Aksi Donasi & Link */}
+                <div className="mt-4 pt-3 flex items-center justify-between border-t border-slate-100">
+                  <div className="flex items-center gap-3">
+                    <a 
+                      href={headlinePost.source_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-xs font-medium text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1"
+                    >
+                      Baca Rilis Lengkap <ExternalLink className="w-3 h-3" />
+                    </a>
+                    {headlinePost.instagram_url && (
+                      <a 
+                        href={headlinePost.instagram_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-sm hover:shadow transition transform active:scale-95"
+                        className="text-xs font-medium text-rose-600 hover:text-rose-700 flex items-center gap-1"
                       >
-                        <HeartHandshake className="w-4 h-4" />
-                        Donasi di Portal Resmi OPZ ↗
+                        <InstagramIcon className="w-3.5 h-3.5" /> Instagram
                       </a>
-                    </div>
-
+                    )}
                   </div>
-                </article>
-              ))}
-            </div>
 
-            {/* Ensiklopedia Section di bawah Feed (Kompak & Interaktif) */}
-            <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-3">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-                <h3 className="font-bold text-sm text-slate-900 flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-[#5a4ea4]" /> Khazanah & Ensiklopedi Zakat
-                </h3>
-                <span className="text-xs bg-slate-100 text-slate-600 px-2.5 py-0.5 rounded-full font-medium">
-                  {SAMPLE_ENCYCLOPEDIA.length} Entri Pilihan
+                  <a
+                    href={headlinePost.donation_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-bold text-xs shadow-xs hover:shadow transition"
+                  >
+                    <HeartHandshake className="w-4 h-4" />
+                    Salurkan Donasi di Portal Resmi ↗
+                  </a>
+                </div>
+              </section>
+            )}
+
+            {/* DAFTAR BERITA SUB-HEADLINE (LIST HORIZONTAL ALA TEMPO) */}
+            <section className="space-y-6">
+              <div className="border-b-2 border-slate-900 pb-1.5 flex items-center justify-between">
+                <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                  LIPUTAN KHUSUS & PROGRAM GERAKAN
+                </h2>
+                <span className="text-xs text-slate-500 font-medium">
+                  {secondaryPosts.length} rilis terverifikasi
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              <div className="divide-y divide-slate-200 space-y-6">
+                {secondaryPosts.map((post) => (
+                  <article key={post.id} className="pt-6 first:pt-0 group">
+                    <div className="grid grid-cols-12 gap-4 items-start">
+                      
+                      {/* Konten Teks */}
+                      <div className="col-span-8 space-y-1.5">
+                        <div className="flex items-center gap-2 text-[11px] text-slate-500">
+                          <span className="font-bold text-[#5a4ea4]">{post.opz_name}</span>
+                          <span>•</span>
+                          <span>{post.published_at}</span>
+                          <span>•</span>
+                          <span className="text-slate-400">{post.location}</span>
+                        </div>
+
+                        <h3 className="text-base font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug">
+                          {post.title}
+                        </h3>
+
+                        <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
+                          {post.summary}
+                        </p>
+
+                        <div className="pt-2 flex items-center gap-3">
+                          <a
+                            href={post.donation_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-bold text-[#1d8286] hover:text-[#176a6e] inline-flex items-center gap-1"
+                          >
+                            Donasi di Situs Lembaga ↗
+                          </a>
+                          <span className="text-slate-300">•</span>
+                          {post.instagram_url && (
+                            <a
+                              href={post.instagram_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-slate-400 hover:text-rose-600 inline-flex items-center gap-1"
+                            >
+                              <InstagramIcon className="w-3 h-3" /> IG
+                            </a>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* Thumbnail Gambar */}
+                      <div className="col-span-4 relative h-24 sm:h-28 rounded-lg overflow-hidden bg-slate-100">
+                        <Image 
+                          src={post.image_url} 
+                          alt={post.title} 
+                          fill 
+                          className="object-cover group-hover:scale-105 transition duration-300" 
+                        />
+                      </div>
+
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+
+            {/* KHAZANAH & ENSIKLOPEDI FIQH ZAKAT (MODULAR BOX ALA EDITORIAL) */}
+            <section id="khazanah-fiqh" className="bg-slate-50 rounded-xl border border-slate-200 p-6 space-y-4">
+              <div className="border-b border-slate-200 pb-3 flex items-center justify-between">
+                <div>
+                  <span className="text-[10px] font-bold tracking-wider text-[#5a4ea4] uppercase block">
+                    RUJUKAN FIQH & ASNAF
+                  </span>
+                  <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                    <BookOpen className="w-5 h-5 text-[#5a4ea4]" /> Ensiklopedi & Fatwa Zakat
+                  </h3>
+                </div>
+                <button 
+                  onClick={() => setShowCalculator(true)}
+                  className="px-3 py-1.5 bg-white border border-[#d6d0ee] hover:bg-[#f2f0fa] text-[#433880] rounded-lg text-xs font-bold flex items-center gap-1 transition"
+                >
+                  <Calculator className="w-3.5 h-3.5 text-[#5a4ea4]" /> Hitung Zakat
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {SAMPLE_ENCYCLOPEDIA.map((item) => (
-                  <div key={item.id} className="p-3 rounded-xl bg-slate-50/80 border border-slate-200 hover:border-[#d6d0ee] transition hover:bg-[#f7f6fc] group">
+                  <div key={item.id} className="bg-white p-4 rounded-lg border border-slate-200 hover:border-[#5a4ea4] transition group shadow-xs">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4]">
+                      <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4]">
                         {item.term}
-                      </span>
+                      </h4>
                       {item.arabic && (
                         <span className="text-xs font-serif text-slate-400">
                           {item.arabic}
                         </span>
                       )}
                     </div>
-                    <p className="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+                    <p className="mt-1.5 text-xs text-slate-600 leading-relaxed line-clamp-3">
                       {item.definition}
                     </p>
-                    <div className="mt-2 text-[10px] text-slate-400">
-                      Rujukan: {item.references[0]}
+                    <div className="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-400 flex items-center justify-between">
+                      <span>Rujukan: {item.references[0]}</span>
+                      <span className="text-[#5a4ea4] font-medium group-hover:underline">Detail ↗</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+          </div>
+
+
+          {/* ----------------------------------------------------------- */}
+          {/* KOLOM KANAN (5 Kolom): TERKINI / POPULER & DIREKTORI 218 LAZ */}
+          {/* ----------------------------------------------------------- */}
+          <aside className="col-span-5 space-y-6">
+            
+            {/* WIDGET 1: TERKINI DI LEMBAGA (NUMBERED LIST ALA TEMPO) */}
+            <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-xs">
+              <div className="border-b-2 border-red-600 pb-2 mb-4 flex items-center justify-between">
+                <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide flex items-center gap-1.5">
+                  <TrendingUp className="w-4 h-4 text-red-600" /> TERKINI DARI LEMBAGA
+                </h3>
+                <span className="text-[11px] text-slate-400">Live Wire</span>
+              </div>
+
+              <div className="space-y-4">
+                {filteredPosts.map((post, idx) => (
+                  <div key={post.id} className="flex items-start gap-3.5 group cursor-pointer">
+                    <span className="text-2xl font-black text-slate-300 group-hover:text-[#5a4ea4] transition shrink-0 w-6">
+                      0{idx + 1}
+                    </span>
+                    <div className="space-y-1">
+                      <div className="text-[11px] text-slate-400 flex items-center gap-1.5">
+                        <span className="font-semibold text-slate-600">{post.opz_name}</span>
+                        <span>•</span>
+                        <span>{post.published_at}</span>
+                      </div>
+                      <h4 className="text-xs font-bold text-slate-800 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
+                        {post.title}
+                      </h4>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
 
-          </section>
-
-          {/* KOLOM KANAN (5 Kolom): Direktori 218 LAZ Resmi & Filter */}
-          <aside className="col-span-5 sticky top-24 space-y-4">
-            <div className="bg-white rounded-xl border border-slate-200 p-4 sm:p-5 shadow-sm">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-                <h3 className="font-bold text-sm text-slate-900 flex items-center gap-2">
-                  <Building2 className="w-4 h-4 text-[#5a4ea4]" /> Direktori 218 LAZ Legal
-                </h3>
-                <span className="text-xs bg-[#f7f6fc] text-[#433880] font-bold px-2.5 py-0.5 rounded-full border border-[#d6d0ee]">
-                  {filteredLaz.length} Lembaga
+            {/* WIDGET 2: DIREKTORI 218 LAZ RESMI (KOMPAK & SEARCHABLE) */}
+            <div id="direktori-laz" className="bg-white rounded-xl border border-slate-200 p-5 shadow-xs sticky top-24">
+              <div className="border-b-2 border-[#5a4ea4] pb-2 mb-3 flex items-center justify-between">
+                <div>
+                  <h3 className="text-sm font-extrabold text-slate-900 uppercase tracking-wide flex items-center gap-1.5">
+                    <Building2 className="w-4 h-4 text-[#5a4ea4]" /> DIREKTORI 218 LAZ RESMI
+                  </h3>
+                  <span className="text-[11px] text-slate-500">Izin Kemenag RI & Anggota FOZ</span>
+                </div>
+                <span className="text-xs font-bold bg-[#f2f0fa] text-[#433880] px-2 py-0.5 rounded border border-[#d6d0ee]">
+                  {filteredLaz.length}
                 </span>
               </div>
 
               {/* Filter Skala & Provinsi */}
-              <div className="mt-3 grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-2 gap-2 mb-3">
                 <select
                   value={selectedSkala}
                   onChange={(e) => setSelectedSkala(e.target.value)}
-                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-2 font-medium focus:outline-none focus:border-[#5a4ea4]"
+                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-md p-1.5 font-medium focus:outline-none focus:border-[#5a4ea4]"
                 >
                   <option value="Semua">Semua Skala</option>
                   <option value="Nasional">Nasional (62)</option>
@@ -383,7 +557,7 @@ export default function HomePage() {
                 <select
                   value={selectedProvinsi}
                   onChange={(e) => setSelectedProvinsi(e.target.value)}
-                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-2 font-medium focus:outline-none focus:border-[#5a4ea4]"
+                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-md p-1.5 font-medium focus:outline-none focus:border-[#5a4ea4]"
                 >
                   {provinces.map((prov) => (
                     <option key={prov} value={prov}>{prov}</option>
@@ -391,35 +565,33 @@ export default function HomePage() {
                 </select>
               </div>
 
-              {/* LAZ List Scrollable */}
-              <div className="mt-3 divide-y divide-slate-100 max-h-[620px] overflow-y-auto pr-1 space-y-1">
+              {/* LAZ List Container */}
+              <div className="divide-y divide-slate-100 max-h-[520px] overflow-y-auto pr-1">
                 {loadingLaz ? (
-                  <div className="py-8 text-center text-xs text-slate-400">Memuat 218 LAZ...</div>
+                  <div className="py-8 text-center text-xs text-slate-400">Memuat data 218 LAZ...</div>
                 ) : filteredLaz.length === 0 ? (
-                  <div className="py-8 text-center text-xs text-slate-400">Tidak ada LAZ yang cocok.</div>
+                  <div className="py-8 text-center text-xs text-slate-400">Tidak ada LAZ yang sesuai kriteria.</div>
                 ) : (
                   filteredLaz.map((laz) => (
-                    <div key={laz.no} className="pt-3 pb-3 first:pt-1 group">
-                      
-                      {/* Logo + Info Lembaga */}
+                    <div key={laz.no} className="py-3 first:pt-1 group">
                       <div className="flex items-start gap-3">
                         {laz.logo_url ? (
-                          <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5 mt-0.5 shadow-xs">
+                          <div className="relative w-9 h-9 rounded-lg overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5 mt-0.5 shadow-xs">
                             <img src={laz.logo_url} alt={laz.name} className="w-full h-full object-contain" />
                           </div>
                         ) : (
-                          <div className="w-10 h-10 rounded-xl bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs shrink-0 border border-[#d6d0ee] mt-0.5">
+                          <div className="w-9 h-9 rounded-lg bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs shrink-0 border border-[#d6d0ee] mt-0.5">
                             {laz.name.substring(0, 2)}
                           </div>
                         )}
                         <div className="flex-1 min-w-0">
                           <h4 
                             onClick={() => setActiveLazDetail(laz)}
-                            className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer line-clamp-1"
+                            className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer line-clamp-1"
                           >
                             {laz.name}
                           </h4>
-                          <div className="mt-1 flex items-center gap-1.5 text-[11px] text-slate-500">
+                          <div className="mt-1 flex items-center gap-1.5 text-[10px] text-slate-500">
                             <span className="px-1.5 py-0.2 bg-slate-100 rounded text-slate-700 font-medium">
                               {laz.skala}
                             </span>
@@ -430,13 +602,13 @@ export default function HomePage() {
                       </div>
 
                       {/* Tombol Aksi: Profil, Instagram, Donasi */}
-                      <div className="mt-3 flex items-center justify-between gap-2">
+                      <div className="mt-2.5 flex items-center justify-between gap-2">
                         <div className="flex items-center gap-1.5">
                           <button
                             onClick={() => setActiveLazDetail(laz)}
-                            className="text-xs font-semibold text-slate-700 hover:text-[#5a4ea4] bg-slate-100 hover:bg-slate-200 px-2.5 py-1 rounded-lg transition flex items-center gap-1"
+                            className="text-[11px] font-semibold text-slate-700 hover:text-[#5a4ea4] bg-slate-100 hover:bg-slate-200 px-2 py-0.5 rounded transition flex items-center gap-1"
                           >
-                            <Info className="w-3.5 h-3.5 text-[#5a4ea4]" /> Profil
+                            <Info className="w-3 h-3 text-[#5a4ea4]" /> Profil
                           </button>
                           
                           {laz.instagram_url && (
@@ -444,7 +616,7 @@ export default function HomePage() {
                               href={laz.instagram_url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-xs text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 p-1.5 rounded-lg transition border border-rose-100"
+                              className="text-slate-400 hover:text-rose-600 p-1 rounded transition"
                               title="Instagram Resmi"
                             >
                               <InstagramIcon className="w-3.5 h-3.5" />
@@ -456,209 +628,128 @@ export default function HomePage() {
                           href={laz.donation_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-xs font-bold text-[#1d8286] hover:text-[#176a6e] bg-[#eaf9fa] hover:bg-[#d6f4f5] px-3.5 py-1.5 rounded-lg transition flex items-center gap-1 border border-[#cbfbf1]"
+                          className="text-[11px] font-bold text-[#1d8286] hover:text-[#176a6e] bg-[#eaf9fa] hover:bg-[#d6f4f5] px-2.5 py-1 rounded transition flex items-center gap-1 border border-[#cbfbf1]"
                         >
                           Donasi ↗
                         </a>
                       </div>
-
                     </div>
                   ))
                 )}
               </div>
 
-              <div className="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-400 text-center">
-                Sumber resmi: SIMZAT Kemenag RI & FOZ
+              <div className="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-400 text-center">
+                Data resmi: SIMZAT Kemenag RI & FOZ
               </div>
             </div>
+
           </aside>
 
         </div>
 
 
         {/* ------------------------------------------------------------- */}
-        {/* MOBILE VIEW: APP-LIKE SINGLE FEED + BOTTOM NAVIGATION (< md)   */}
+        {/* MOBILE VIEW (< md)                                            */}
         {/* ------------------------------------------------------------- */}
-        <div className="md:hidden pb-16">
+        <div className="md:hidden pb-16 space-y-4">
           
-          {/* TAB 1: RADAR AKSI OPZ */}
-          {activeTab === 'radar' && (
+          {/* TAB 1: RADAR BERITA */}
+          {activeTab === 'berita' && (
             <div className="space-y-4">
-              
-              {/* Category Pills */}
-              <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
-                {['Semua', 'Ekonomi Mustahik', 'Pendidikan', 'Kebencanaan', 'Kesehatan'].map((cat) => (
-                  <button
-                    key={cat}
-                    onClick={() => setSelectedCategory(cat)}
-                    className={`text-xs px-3.5 py-1.5 rounded-full whitespace-nowrap font-medium transition ${
-                      selectedCategory === cat 
-                        ? 'bg-[#5a4ea4] text-white shadow-sm' 
-                        : 'bg-white text-slate-700 border border-slate-200'
-                    }`}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-
-              {/* Cards Feed */}
-              {filteredPosts.map((post) => (
-                <div key={post.id} className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
-                  
-                  {/* Image */}
+              {headlinePost && (
+                <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-xs">
                   <div className="relative h-48 w-full bg-slate-100">
                     <Image 
-                      src={post.image_url} 
-                      alt={post.title} 
+                      src={headlinePost.image_url} 
+                      alt={headlinePost.title} 
                       fill 
                       className="object-cover" 
                     />
-                    <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[11px] font-bold text-slate-900 shadow">
-                      {post.opz_name}
-                    </div>
-                    <div className="absolute top-3 right-3 bg-[#433880] text-white px-2 py-0.5 rounded-full text-[10px] font-medium shadow">
-                      {post.category}
+                    <div className="absolute top-2 left-2 bg-[#1e1b4b]/90 text-white px-2 py-0.5 rounded text-[10px] font-bold">
+                      {headlinePost.opz_name}
                     </div>
                   </div>
-
                   <div className="p-4">
-                    <div className="flex items-center gap-2 text-[11px] text-slate-400 mb-1.5">
-                      <span>{post.location}</span>
-                      <span>•</span>
-                      <span>{post.published_at}</span>
-                      <span>•</span>
-                      <span className="text-[#5a4ea4] font-medium">Asnaf: {post.asnaf}</span>
-                    </div>
-
-                    <h3 className="text-sm font-bold text-slate-900 leading-snug">
-                      {post.title}
-                    </h3>
-                    
-                    <p className="mt-2 text-xs text-slate-600 line-clamp-3 leading-relaxed">
-                      {post.summary}
+                    <div className="text-[10px] text-slate-400 mb-1">{headlinePost.published_at} • {headlinePost.location}</div>
+                    <h2 className="text-base font-bold text-slate-900 leading-snug">
+                      {headlinePost.title}
+                    </h2>
+                    <p className="mt-2 text-xs text-slate-600 line-clamp-2">
+                      {headlinePost.summary}
                     </p>
-
-                    {/* Mobile Card Action Bar */}
-                    <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2">
-                      {post.instagram_url && (
-                        <a
-                          href={post.instagram_url}
-                          target="_blank"
+                    <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center gap-2">
+                      {headlinePost.instagram_url && (
+                        <a 
+                          href={headlinePost.instagram_url} 
+                          target="_blank" 
                           rel="noopener noreferrer"
-                          className="p-2.5 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center border border-rose-200"
+                          className="p-2 bg-rose-50 text-rose-600 rounded-lg border border-rose-200"
                         >
                           <InstagramIcon className="w-4 h-4" />
                         </a>
                       )}
-                      <a
-                        href={post.donation_url}
-                        target="_blank"
+                      <a 
+                        href={headlinePost.donation_url} 
+                        target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 py-2.5 bg-[#31c0c6] active:bg-[#208b8f] text-white rounded-xl text-center text-xs font-bold shadow flex items-center justify-center gap-1.5"
+                        className="flex-1 py-2 bg-[#31c0c6] text-white rounded-lg text-center text-xs font-bold"
                       >
-                        <HeartHandshake className="w-4 h-4" />
-                        Salurkan Donasi di Portal Resmi ↗
+                        Donasi di Situs Resmi ↗
                       </a>
                     </div>
                   </div>
                 </div>
-              ))}
+              )}
+
+              {/* List Berita Lainnya */}
+              <div className="divide-y divide-slate-200 bg-white border border-slate-200 rounded-xl p-3">
+                {secondaryPosts.map((post) => (
+                  <div key={post.id} className="py-3 first:pt-1">
+                    <div className="flex gap-3">
+                      <div className="flex-1">
+                        <span className="text-[10px] text-[#5a4ea4] font-bold block">{post.opz_name}</span>
+                        <h3 className="text-xs font-bold text-slate-900 line-clamp-2 mt-0.5">{post.title}</h3>
+                        <span className="text-[10px] text-slate-400 mt-1 block">{post.published_at}</span>
+                      </div>
+                      <div className="relative w-20 h-16 rounded-md overflow-hidden bg-slate-100 shrink-0">
+                        <Image src={post.image_url} alt={post.title} fill className="object-cover" />
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
-          {/* TAB 2: DIREKTORI 218 LAZ RESMI */}
+          {/* TAB 2: DIREKTORI 218 LAZ */}
           {activeTab === 'laz' && (
-            <div className="space-y-4">
-              <div className="bg-[#f2f0fa] border border-[#d6d0ee] rounded-xl p-3.5 flex items-center justify-between">
-                <div>
-                  <h3 className="text-xs font-bold text-[#2a2354]">218 LAZ Berizin Kemenag RI</h3>
-                  <p className="text-[11px] text-[#433880]">Lembaga resmi terdaftar & anggota FOZ</p>
-                </div>
-                <span className="text-xs bg-[#5a4ea4] text-white font-bold px-2 py-1 rounded-lg">
-                  {filteredLaz.length}
-                </span>
+            <div className="space-y-3">
+              <div className="p-3 bg-slate-100 rounded-xl flex items-center justify-between text-xs">
+                <span className="font-bold text-slate-800">218 Lembaga Resmi Kemenag RI</span>
+                <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded-full font-bold text-[10px]">{filteredLaz.length}</span>
               </div>
-
-              {/* Skala Selector */}
-              <div className="grid grid-cols-2 gap-2">
-                <select
-                  value={selectedSkala}
-                  onChange={(e) => setSelectedSkala(e.target.value)}
-                  className="w-full text-xs bg-white border border-slate-200 rounded-xl p-2 font-medium"
-                >
-                  <option value="Semua">Semua Skala</option>
-                  <option value="Nasional">Nasional (62)</option>
-                  <option value="Provinsi">Provinsi (49)</option>
-                  <option value="Kabupaten/Kota">Kab/Kota (107)</option>
-                </select>
-
-                <select
-                  value={selectedProvinsi}
-                  onChange={(e) => setSelectedProvinsi(e.target.value)}
-                  className="w-full text-xs bg-white border border-slate-200 rounded-xl p-2 font-medium"
-                >
-                  {provinces.map((p) => (
-                    <option key={p} value={p}>{p}</option>
-                  ))}
-                </select>
-              </div>
-
-              {/* LAZ List Cards */}
-              <div className="space-y-2.5">
+              
+              <div className="divide-y divide-slate-200 bg-white border border-slate-200 rounded-xl p-3">
                 {filteredLaz.map((laz) => (
-                  <div key={laz.no} className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
-                    <div className="flex items-start justify-between gap-2">
-                      <div className="flex items-start gap-2.5">
-                        {laz.logo_url ? (
-                          <div className="relative w-9 h-9 rounded-xl overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5 mt-0.5">
-                            <img src={laz.logo_url} alt={laz.name} className="w-full h-full object-contain" />
-                          </div>
-                        ) : (
-                          <div className="w-9 h-9 rounded-xl bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs shrink-0 border border-[#d6d0ee] mt-0.5">
-                            {laz.name.substring(0, 2)}
-                          </div>
-                        )}
-                        <div>
-                          <span className="text-[10px] font-semibold text-[#433880] bg-[#f7f6fc] px-2 py-0.5 rounded">
-                            {laz.skala} • {laz.provinsi}
-                          </span>
-                          <h4 
-                            onClick={() => setActiveLazDetail(laz)}
-                            className="mt-1 text-xs font-bold text-slate-900 cursor-pointer hover:text-[#5a4ea4]"
-                          >
-                            {laz.name}
-                          </h4>
-                        </div>
-                      </div>
-                      <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <div key={laz.no} className="py-3 first:pt-1 flex items-center justify-between gap-3">
+                    <div className="min-w-0">
+                      <h4 onClick={() => setActiveLazDetail(laz)} className="text-xs font-bold text-slate-900 truncate">
+                        {laz.name}
+                      </h4>
+                      <p className="text-[10px] text-slate-500">{laz.skala} • {laz.provinsi}</p>
                     </div>
-
-                    <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between gap-2">
-                      <div className="flex items-center gap-1.5">
-                        <button
-                          onClick={() => setActiveLazDetail(laz)}
-                          className="text-xs text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg font-medium flex items-center gap-1"
-                        >
-                          <Info className="w-3.5 h-3.5 text-[#5a4ea4]" /> Profil
-                        </button>
-                        {laz.instagram_url && (
-                          <a
-                            href={laz.instagram_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-1.5 bg-rose-50 text-rose-600 rounded-lg border border-rose-100"
-                          >
-                            <InstagramIcon className="w-3.5 h-3.5" />
-                          </a>
-                        )}
-                      </div>
-
-                      <a
-                        href={laz.donation_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-3.5 py-1.5 bg-[#31c0c6] active:bg-[#208b8f] text-white font-semibold text-xs rounded-lg shadow-sm flex items-center gap-1"
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <button 
+                        onClick={() => setActiveLazDetail(laz)} 
+                        className="text-[10px] bg-slate-100 px-2 py-1 rounded font-semibold text-slate-700"
+                      >
+                        Profil
+                      </button>
+                      <a 
+                        href={laz.donation_url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="text-[10px] bg-[#31c0c6] text-white px-2 py-1 rounded font-bold"
                       >
                         Donasi ↗
                       </a>
@@ -669,38 +760,17 @@ export default function HomePage() {
             </div>
           )}
 
-          {/* TAB 3: ENSIKLOPEDIA & KHAZANAH */}
+          {/* TAB 3: ENSIKLOPEDI */}
           {activeTab === 'ensiklopedia' && (
             <div className="space-y-3">
-              <div className="bg-slate-900 text-white p-4 rounded-xl">
-                <h3 className="text-sm font-bold flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-teal-400" /> Ensiklopedia Fiqh & Gerakan
-                </h3>
-                <p className="mt-1 text-xs text-slate-300">
-                  Panduan komprehensif istilah nisab, 8 asnaf, fatwa kontemporer, dan sejarah gerakan zakat.
-                </p>
-              </div>
-
               {SAMPLE_ENCYCLOPEDIA.map((item) => (
-                <div key={item.id} className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-2">
+                <div key={item.id} className="p-4 bg-white border border-slate-200 rounded-xl space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-[#382f6e] bg-[#f7f6fc] px-2 py-0.5 rounded">
-                      {item.category}
-                    </span>
-                    {item.arabic && (
-                      <span className="text-xs font-serif text-slate-500">
-                        {item.arabic}
-                      </span>
-                    )}
+                    <h4 className="text-xs font-bold text-slate-900">{item.term}</h4>
+                    {item.arabic && <span className="text-xs font-serif text-slate-400">{item.arabic}</span>}
                   </div>
-                  <h4 className="text-sm font-bold text-slate-900">{item.term}</h4>
                   <p className="text-xs text-slate-600">{item.definition}</p>
-                  <p className="text-xs text-slate-500 bg-slate-50 p-2.5 rounded-lg border border-slate-100 leading-relaxed">
-                    {item.explanation}
-                  </p>
-                  <div className="text-[10px] text-slate-400">
-                    Rujukan: {item.references.join(', ')}
-                  </div>
+                  <p className="text-[11px] text-slate-500 leading-relaxed">{item.explanation}</p>
                 </div>
               ))}
             </div>
@@ -711,44 +781,151 @@ export default function HomePage() {
       </main>
 
       {/* ============================================================== */}
-      {/* 3. MODAL PROFILE LEMBAGA RESMI (INTERNAL DIALOG)               */}
+      {/* 4. MODAL KALKULATOR ZAKAT (RINGKAS & EDUKATIF)                  */}
       {/* ============================================================== */}
-      {activeLazDetail && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fade-in">
-          <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col max-h-[90vh]">
+      {showCalculator && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white w-full max-w-md rounded-2xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
             
-            {/* Header Modal */}
-            <div className="p-4 sm:p-5 bg-gradient-to-r from-[#433880] to-[#5a4ea4] text-white flex items-start justify-between">
-              <div className="flex items-center gap-3">
-                {activeLazDetail.logo_url && (
-                  <div className="w-12 h-12 rounded-xl bg-white p-1 border border-white/30 shrink-0 shadow-sm flex items-center justify-center">
-                    <img src={activeLazDetail.logo_url} alt={activeLazDetail.name} className="w-full h-full object-contain" />
-                  </div>
-                )}
-                <div>
-                  <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-white/20 text-teal-200 mb-1">
-                    <ShieldCheck className="w-3 h-3" /> Lembaga Amil Zakat Berizin Kemenag RI
-                  </div>
-                  <h3 className="text-base sm:text-lg font-bold leading-snug">
-                    {activeLazDetail.name}
-                  </h3>
-                  <p className="text-xs text-slate-200 mt-0.5">
-                    Tingkat: <span className="font-semibold text-white">{activeLazDetail.skala}</span> • Wilayah: <span className="font-semibold text-white">{activeLazDetail.provinsi}</span>
-                  </p>
-                </div>
+            <div className="p-4 bg-gradient-to-r from-[#433880] to-[#5a4ea4] text-white flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Calculator className="w-5 h-5 text-teal-300" />
+                <h3 className="font-bold text-sm">Kalkulator Zakat Penghasilan</h3>
               </div>
               <button 
-                onClick={() => setActiveLazDetail(null)}
-                className="p-1 rounded-full hover:bg-white/20 text-white/80 hover:text-white transition"
+                onClick={() => setShowCalculator(false)}
+                className="text-white/80 hover:text-white p-1 rounded-lg"
               >
                 <X className="w-5 h-5" />
               </button>
             </div>
 
-            {/* Body Content Modal */}
-            <div className="p-4 sm:p-5 space-y-4 overflow-y-auto flex-1 text-xs sm:text-sm">
+            <div className="p-5 space-y-4 text-xs">
               
-              {/* Info Legalitas & SK */}
+              <div className="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
+                <div className="flex items-center justify-between text-slate-600">
+                  <span>Standar Nisab Emas (85 gr):</span>
+                  <span className="font-bold text-slate-800">Rp {nisabTahunan.toLocaleString('id-ID')} / tahun</span>
+                </div>
+                <div className="flex items-center justify-between text-slate-600">
+                  <span>Nisab per Bulan:</span>
+                  <span className="font-bold text-[#5a4ea4]">Rp {nisabBulanan.toLocaleString('id-ID')} / bulan</span>
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-slate-700 font-bold mb-1">Gaji / Penghasilan Pokok per Bulan (Rp):</label>
+                <input 
+                  type="number"
+                  placeholder="Contoh: 10000000"
+                  value={gajiBulanan}
+                  onChange={(e) => setGajiBulanan(e.target.value ? Number(e.target.value) : '')}
+                  className="w-full p-2.5 border border-slate-200 rounded-lg text-sm font-semibold focus:border-[#5a4ea4] focus:outline-none"
+                />
+              </div>
+
+              <div>
+                <label className="block text-slate-700 font-bold mb-1">Tunjangan, Bonus, atau Freelance (Rp):</label>
+                <input 
+                  type="number"
+                  placeholder="Contoh: 2000000"
+                  value={bonusLain}
+                  onChange={(e) => setBonusLain(e.target.value ? Number(e.target.value) : '')}
+                  className="w-full p-2.5 border border-slate-200 rounded-lg text-sm font-semibold focus:border-[#5a4ea4] focus:outline-none"
+                />
+              </div>
+
+              {/* Hasil Perhitungan */}
+              <div className={`p-4 rounded-xl border ${
+                wajibZakat 
+                  ? 'bg-emerald-50 border-emerald-200 text-emerald-900' 
+                  : 'bg-slate-50 border-slate-200 text-slate-600'
+              }`}>
+                <div className="text-[11px] font-semibold uppercase tracking-wider mb-1">
+                  Status Nisab:
+                </div>
+                {wajibZakat ? (
+                  <div>
+                    <div className="text-sm font-bold text-emerald-800">
+                      Wajib Zakat (Mencapai Nisab)
+                    </div>
+                    <div className="mt-2 flex items-center justify-between pt-2 border-t border-emerald-200">
+                      <span className="text-xs">Besaran Zakat (2.5%):</span>
+                      <span className="text-base font-extrabold text-emerald-700">
+                        Rp {nilaiZakat.toLocaleString('id-ID')} / bulan
+                      </span>
+                    </div>
+                  </div>
+                ) : (
+                  <div>
+                    <div className="text-sm font-bold text-slate-700">
+                      Belum Mencapai Nisab
+                    </div>
+                    <p className="mt-1 text-[11px] text-slate-500">
+                      Total pendapatan belum melampaui batas Rp {nisabBulanan.toLocaleString('id-ID')}/bln. Anda dianjurkan bersedekah atau infak sukarela.
+                    </p>
+                  </div>
+                )}
+              </div>
+
+            </div>
+
+            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-between gap-3">
+              <span className="text-[10px] text-slate-400">Rujukan: Fatwa MUI No. 3 Th 2003</span>
+              <button
+                onClick={() => {
+                  setShowCalculator(false);
+                  const el = document.getElementById('direktori-laz');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="px-4 py-2 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-lg text-xs font-bold transition"
+              >
+                Salurkan ke LAZ Pilihan ↗
+              </button>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+      {/* ============================================================== */}
+      {/* 5. MODAL PROFIL LAZ (TERVERIFIKASI & LENGKAP)                   */}
+      {/* ============================================================== */}
+      {activeLazDetail && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white w-full max-w-lg rounded-2xl shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+            
+            {/* Header Modal */}
+            <div className="p-5 bg-gradient-to-r from-[#433880] to-[#5a4ea4] text-white relative">
+              <button 
+                onClick={() => setActiveLazDetail(null)}
+                className="absolute top-4 right-4 text-white/80 hover:text-white p-1 rounded-full hover:bg-white/10 transition"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="flex items-center gap-3">
+                {activeLazDetail.logo_url ? (
+                  <div className="w-12 h-12 rounded-xl bg-white p-1 shrink-0 shadow">
+                    <img src={activeLazDetail.logo_url} alt={activeLazDetail.name} className="w-full h-full object-contain" />
+                  </div>
+                ) : (
+                  <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center font-bold text-lg">
+                    {activeLazDetail.name.substring(0, 2)}
+                  </div>
+                )}
+                <div>
+                  <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-400 text-emerald-950">
+                    <ShieldCheck className="w-3 h-3" /> Berizin Kemenag RI
+                  </div>
+                  <h3 className="text-base font-bold leading-tight mt-1">{activeLazDetail.name}</h3>
+                  <p className="text-xs text-purple-200">{activeLazDetail.skala} • {activeLazDetail.provinsi}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Konten Detail Profil */}
+            <div className="p-5 space-y-4 max-h-[60vh] overflow-y-auto text-xs">
               <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-slate-500">Nomor Registrasi SIMZAT:</span>
@@ -774,46 +951,37 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Detail Kantor & Kontak */}
-              <div className="space-y-2.5">
-                <div className="flex items-start gap-2 text-slate-600">
+              <div className="space-y-2.5 text-slate-600">
+                <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-slate-900 block">Kantor Pusat:</span>
+                    <span className="font-semibold text-slate-900 block">Kantor:</span>
                     <span>{activeLazDetail.alamat || `${activeLazDetail.provinsi}, Indonesia`}</span>
                   </div>
                 </div>
 
                 {activeLazDetail.pimpinan && (
-                  <div className="flex items-start gap-2 text-slate-600">
+                  <div className="flex items-start gap-2">
                     <UserCheck className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-slate-900 block">Pimpinan Lembaga:</span>
+                      <span className="font-semibold text-slate-900 block">Pimpinan:</span>
                       <span>{activeLazDetail.pimpinan}</span>
                     </div>
                   </div>
                 )}
 
                 {activeLazDetail.phone && (
-                  <div className="flex items-center gap-2 text-slate-600">
+                  <div className="flex items-center gap-2">
                     <Phone className="w-4 h-4 text-[#5a4ea4] shrink-0" />
                     <span className="font-semibold text-slate-900">Kontak:</span>
                     <span>{activeLazDetail.phone}</span>
                   </div>
                 )}
-
-                {activeLazDetail.email && (
-                  <div className="flex items-center gap-2 text-slate-600">
-                    <Mail className="w-4 h-4 text-[#5a4ea4] shrink-0" />
-                    <span className="font-semibold text-slate-900">Email:</span>
-                    <span>{activeLazDetail.email}</span>
-                  </div>
-                )}
               </div>
 
-              {/* Tautan Resmi (Website & Instagram) */}
+              {/* Tautan Media Sosial & Website */}
               <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-2">
-                {activeLazDetail.instagram_url ? (
+                {activeLazDetail.instagram_url && (
                   <a
                     href={activeLazDetail.instagram_url}
                     target="_blank"
@@ -822,10 +990,7 @@ export default function HomePage() {
                   >
                     <InstagramIcon className="w-4 h-4" /> Instagram Resmi
                   </a>
-                ) : (
-                  <div className="text-[11px] text-slate-400 italic py-1">Akun media sosial terdaftar di direktori FOZ</div>
                 )}
-
                 {activeLazDetail.website_url && (
                   <a
                     href={activeLazDetail.website_url}
@@ -840,7 +1005,7 @@ export default function HomePage() {
 
             </div>
 
-            {/* Footer Modal CTA */}
+            {/* Modal Footer CTA */}
             <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center gap-2">
               <a
                 href={activeLazDetail.simzat_detail_url}
@@ -848,7 +1013,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="text-xs text-slate-500 hover:text-slate-800 underline px-2 py-1 flex items-center gap-1"
               >
-                Cek Dokumen SK SIMZAT <ExternalLink className="w-3 h-3" />
+                Cek SK Kemenag <ExternalLink className="w-3 h-3" />
               </a>
 
               <a
@@ -858,7 +1023,7 @@ export default function HomePage() {
                 className="flex-1 py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-bold shadow flex items-center justify-center gap-1.5 transition"
               >
                 <HeartHandshake className="w-4 h-4" />
-                Salurkan Donasi di Portal Resmi ↗
+                Donasi di Situs Resmi ↗
               </a>
             </div>
 
@@ -867,17 +1032,17 @@ export default function HomePage() {
       )}
 
       {/* ============================================================== */}
-      {/* 4. MOBILE BOTTOM NAVIGATION BAR (FIXED)                         */}
+      {/* 6. MOBILE BOTTOM NAVIGATION (FIXED)                            */}
       {/* ============================================================== */}
       <nav className="md:hidden fixed bottom-0 inset-x-0 bg-white border-t border-slate-200 z-40 px-4 py-2 flex items-center justify-around shadow-lg">
         <button
-          onClick={() => setActiveTab('radar')}
+          onClick={() => setActiveTab('berita')}
           className={`flex flex-col items-center gap-1 ${
-            activeTab === 'radar' ? 'text-[#5a4ea4] font-bold' : 'text-slate-400'
+            activeTab === 'berita' ? 'text-[#5a4ea4] font-bold' : 'text-slate-400'
           }`}
         >
           <Radio className="w-5 h-5" />
-          <span className="text-[10px]">Radar Aksi</span>
+          <span className="text-[10px]">Radar Berita</span>
         </button>
 
         <button
@@ -902,23 +1067,55 @@ export default function HomePage() {
       </nav>
 
       {/* ============================================================== */}
-      {/* 5. FOOTER (DESKTOP)                                            */}
+      {/* 7. FOOTER (EDITORIAL CLEAN)                                    */}
       {/* ============================================================== */}
-      <footer className="hidden md:block bg-white border-t border-slate-200 mt-12 py-8 text-xs text-slate-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="relative h-7 w-28">
-              <Image 
-                src="/digizakat_logo.png" 
-                alt="Digizakat Logo" 
-                fill 
-                className="object-contain object-left"
-              />
+      <footer className="hidden md:block bg-slate-900 text-slate-300 border-t border-slate-800 mt-16 py-10 text-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+            <div className="col-span-5 space-y-3">
+              <div className="relative h-8 w-32 filter brightness-0 invert">
+                <Image 
+                  src="/digizakat_logo.png" 
+                  alt="Digizakat Logo" 
+                  fill 
+                  className="object-contain object-left"
+                />
+              </div>
+              <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
+                Ensiklopedi independen dan radar gerakan zakat di Indonesia. Tidak mengumpulkan maupun memotong donasi publik. Seluruh transaksi diarahkan langsung ke portal crowdfunding resmi 218 LAZ berizin Kementerian Agama RI.
+              </p>
             </div>
-            <span>• Neo Ensiklopedi & Kanal Eksposur Gerakan Zakat</span>
+
+            <div className="col-span-3 space-y-2">
+              <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Rubrik & Liputan</h4>
+              <ul className="space-y-1.5 text-slate-400">
+                <li><a href="#" className="hover:text-white">Ekonomi Mustahik</a></li>
+                <li><a href="#" className="hover:text-white">Tanggap Darurat Bencana</a></li>
+                <li><a href="#" className="hover:text-white">Pendidikan & Santri</a></li>
+                <li><a href="#" className="hover:text-white">Kesehatan Dhuafa</a></li>
+              </ul>
+            </div>
+
+            <div className="col-span-4 space-y-2">
+              <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Transparansi & Regulasi</h4>
+              <p className="text-slate-400 text-xs leading-relaxed">
+                Basis data kelembagaan disinkronkan secara berkala dengan Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kemenag RI dan Forum Zakat (FOZ).
+              </p>
+              <div className="pt-2 text-teal-400 font-semibold">
+                Domain Resmi: digizakat.com
+              </div>
+            </div>
           </div>
-          <div className="text-center sm:text-right">
-            <span>Data 218 LAZ bersumber dari SIMZAT Kementerian Agama RI & Forum Zakat (FOZ).</span>
+
+          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-slate-500 text-[11px] gap-2">
+            <div>© {new Date().getFullYear()} Neo Digizakat. Ensiklopedi & Radar Gerakan Zakat Indonesia.</div>
+            <div className="flex gap-4">
+              <span>Nirlaba & Edukasi Publik</span>
+              <span>•</span>
+              <span>SIMZAT Kemenag RI</span>
+              <span>•</span>
+              <span>Forum Zakat (FOZ)</span>
+            </div>
           </div>
         </div>
       </footer>
