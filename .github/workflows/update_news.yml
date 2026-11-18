@@ -22,7 +22,7 @@ jobs:
         run: |
           pip install beautifulsoup4 lxml
 
-      - name: Crawl Live Feeds
+      - name: Crawl Live Feeds & Deduplicate Archives
         run: |
           python scripts/fetch_live_news.py
 
@@ -30,5 +30,5 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/data/live_news.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated OPZ news wire update [skip ci]" && git push)
+          git add public/data/live_news.json public/data/archive_news.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated OPZ news wire update & two-tier archive [skip ci]" && git push)
