@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Open_Sans } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const roboto = Roboto({
+  weight: ["300", "400", "500", "700", "900"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
-});
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-open-sans",
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id" className={`${inter.variable} ${openSans.variable}`}>
-      <body className={`${inter.className} min-h-screen bg-white text-slate-900 selection:bg-purple-100 selection:text-purple-900 antialiased`}>
+    <html lang="id" className={roboto.variable}>
+      <body className={`${roboto.className} min-h-screen bg-white text-slate-900 selection:bg-purple-100 selection:text-purple-900 antialiased`}>
         {children}
       </body>
     </html>
