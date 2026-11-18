@@ -9,26 +9,20 @@ import {
   Building2, 
   ExternalLink, 
   ShieldCheck, 
-  Share2, 
   MapPin, 
   Filter, 
   Sparkles, 
   ChevronRight, 
-  Layers, 
-  Bookmark, 
   HeartHandshake,
   CheckCircle2,
-  SlidersHorizontal,
   Info,
   Globe,
   Phone,
   Mail,
-  FileText,
   X,
   UserCheck
 } from 'lucide-react';
 import { LAZItem, OPZPost, EncyclopediaEntry, SAMPLE_POSTS, SAMPLE_ENCYCLOPEDIA } from '../data/types';
-
 
 function InstagramIcon({ className = 'w-4 h-4' }: { className?: string }) {
   return (
@@ -42,7 +36,7 @@ function InstagramIcon({ className = 'w-4 h-4' }: { className?: string }) {
 
 export default function HomePage() {
   // Navigation tabs for mobile view
-  const [activeTab, setActiveTab] = useState<'radar' | 'ensiklopedia' | 'laz' | 'about'>('radar');
+  const [activeTab, setActiveTab] = useState<'radar' | 'laz' | 'ensiklopedia'>('radar');
   
   // Data states
   const [lazList, setLazList] = useState<LAZItem[]>([]);
@@ -103,7 +97,7 @@ export default function HomePage() {
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800">
       
       {/* ============================================================== */}
-      {/* 1. TOP NAVBAR (SHARED DESKTOP & MOBILE)                        */}
+      {/* 1. TOP NAVBAR (CLEAN & MINIMALIST)                             */}
       {/* ============================================================== */}
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
@@ -131,7 +125,7 @@ export default function HomePage() {
             </div>
             <input
               type="text"
-              placeholder="Cari 218 LAZ resmi, fatwa, istilah asnaf..."
+              placeholder="Cari nama lembaga, kota, program, istilah zakat..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-4 py-1.5 text-sm bg-slate-100 hover:bg-slate-50 focus:bg-white border border-slate-200 focus:border-[#5a4ea4] rounded-full focus:outline-none transition-all shadow-sm"
@@ -196,81 +190,41 @@ export default function HomePage() {
         </div>
 
         {/* ------------------------------------------------------------- */}
-        {/* DESKTOP VIEW: 3-COLUMN MODERN DASHBOARD (>= md screens)        */}
+        {/* DESKTOP VIEW: 2-COLUMN BALANCED LAYOUT (>= md screens)        */}
         {/* ------------------------------------------------------------- */}
         <div className="hidden md:grid grid-cols-12 gap-6 items-start">
           
-          {/* KOLOM KIRI (3 Cols): Ensiklopedi & Khazanah Knowledge */}
-          <aside className="col-span-3 sticky top-24 space-y-4">
-            <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-                <h3 className="font-semibold text-sm text-slate-900 flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-[#5a4ea4]" /> Khazanah Zakat
-                </h3>
-                <span className="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-medium">
-                  {SAMPLE_ENCYCLOPEDIA.length} Entri
-                </span>
-              </div>
-
-              <div className="mt-3 space-y-3">
-                {SAMPLE_ENCYCLOPEDIA.map((item) => (
-                  <div key={item.id} className="group p-2.5 rounded-lg hover:bg-slate-50 transition border border-transparent hover:border-slate-200 cursor-pointer">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-semibold text-slate-800 group-hover:text-[#433880]">
-                        {item.term}
-                      </span>
-                      {item.arabic && (
-                        <span className="text-xs font-arabic text-slate-400 font-serif">
-                          {item.arabic}
-                        </span>
-                      )}
-                    </div>
-                    <p className="text-xs text-slate-500 mt-1 line-clamp-2">
-                      {item.definition}
-                    </p>
-                    <div className="mt-1.5 flex items-center gap-1 text-[10px] text-[#5a4ea4] font-medium">
-                      <span>Lihat dalil & rujukan</span>
-                      <ChevronRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-4 pt-3 border-t border-slate-100 text-center">
-                <span className="text-xs text-slate-400">
-                  Data referensi: Fatwa MUI, BAZNAS & UU No. 23/2011
-                </span>
-              </div>
-            </div>
-          </aside>
-
-          {/* KOLOM TENGAH (6 Cols): Kanal Eksposur (Radar Aksi OPZ) */}
-          <section className="col-span-6 space-y-4">
+          {/* KOLOM KIRI (7 Kolom): Radar Aksi OPZ + Khazanah Ensiklopedi */}
+          <section className="col-span-7 space-y-5">
             
             {/* Filter Kategori Asnaf & Isu */}
-            <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex items-center gap-2 overflow-x-auto no-scrollbar">
-              <span className="text-xs font-semibold text-slate-500 pl-1 flex items-center gap-1">
-                <Filter className="w-3 h-3" /> Filter:
-              </span>
-              {['Semua', 'Ekonomi Mustahik', 'Pendidikan', 'Kebencanaan', 'Kesehatan'].map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={`text-xs px-3 py-1 rounded-full whitespace-nowrap font-medium transition ${
-                    selectedCategory === cat 
-                      ? 'bg-[#5a4ea4] text-white shadow-sm' 
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
+            <div className="bg-white rounded-xl border border-slate-200 p-3 shadow-sm flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+              <div className="flex items-center gap-1.5 shrink-0">
+                <span className="text-xs font-semibold text-slate-500 pl-1 flex items-center gap-1">
+                  <Filter className="w-3.5 h-3.5 text-[#5a4ea4]" /> Topik:
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+                {['Semua', 'Ekonomi Mustahik', 'Pendidikan', 'Kebencanaan', 'Kesehatan'].map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`text-xs px-3 py-1 rounded-full whitespace-nowrap font-medium transition ${
+                      selectedCategory === cat 
+                        ? 'bg-[#5a4ea4] text-white shadow-sm' 
+                        : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* List Feed Berita & Aksi */}
             <div className="space-y-4">
               <div className="flex items-center justify-between text-xs text-slate-500 font-medium px-1">
-                <span className="flex items-center gap-1.5">
+                <span className="flex items-center gap-1.5 font-semibold text-slate-700">
                   <Radio className="w-3.5 h-3.5 text-rose-500 animate-pulse" /> Live Wire Rilis Aksi OPZ
                 </span>
                 <span>Menampilkan {filteredPosts.length} rilis</span>
@@ -301,7 +255,7 @@ export default function HomePage() {
                         </div>
                       </div>
 
-                      <span className="text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded-full font-medium">
+                      <span className="text-[11px] bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-medium">
                         Asnaf: {post.asnaf}
                       </span>
                     </div>
@@ -315,7 +269,7 @@ export default function HomePage() {
                     </p>
 
                     {/* Image Preview */}
-                    <div className="mt-3 relative h-44 w-full rounded-lg overflow-hidden bg-slate-100">
+                    <div className="mt-3 relative h-48 w-full rounded-xl overflow-hidden bg-slate-100">
                       <Image 
                         src={post.image_url} 
                         alt={post.title} 
@@ -331,7 +285,7 @@ export default function HomePage() {
                           href={post.source_url} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xs text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1"
+                          className="text-xs text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1 font-medium"
                         >
                           Baca rilis asli <ExternalLink className="w-3 h-3" />
                         </a>
@@ -340,7 +294,7 @@ export default function HomePage() {
                             href={post.instagram_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xs text-rose-600 hover:text-rose-700 flex items-center gap-1 bg-rose-50 px-2 py-0.5 rounded-md"
+                            className="text-xs text-rose-600 hover:text-rose-700 flex items-center gap-1 bg-rose-50 px-2 py-0.5 rounded-md font-medium"
                           >
                             <InstagramIcon className="w-3.5 h-3.5" /> Instagram
                           </a>
@@ -363,37 +317,73 @@ export default function HomePage() {
                 </article>
               ))}
             </div>
+
+            {/* Ensiklopedia Section di bawah Feed (Kompak & Interaktif) */}
+            <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm space-y-3">
+              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
+                <h3 className="font-bold text-sm text-slate-900 flex items-center gap-2">
+                  <BookOpen className="w-4 h-4 text-[#5a4ea4]" /> Khazanah & Ensiklopedi Zakat
+                </h3>
+                <span className="text-xs bg-slate-100 text-slate-600 px-2.5 py-0.5 rounded-full font-medium">
+                  {SAMPLE_ENCYCLOPEDIA.length} Entri Pilihan
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                {SAMPLE_ENCYCLOPEDIA.map((item) => (
+                  <div key={item.id} className="p-3 rounded-xl bg-slate-50/80 border border-slate-200 hover:border-[#d6d0ee] transition hover:bg-[#f7f6fc] group">
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4]">
+                        {item.term}
+                      </span>
+                      {item.arabic && (
+                        <span className="text-xs font-serif text-slate-400">
+                          {item.arabic}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-xs text-slate-600 mt-1 line-clamp-2 leading-relaxed">
+                      {item.definition}
+                    </p>
+                    <div className="mt-2 text-[10px] text-slate-400">
+                      Rujukan: {item.references[0]}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </section>
 
-          {/* KOLOM KANAN (3 Cols): Direktori 218 LAZ Kemenag */}
-          <aside className="col-span-3 sticky top-24 space-y-4">
-            <div className="bg-white rounded-xl border border-slate-200 p-4 shadow-sm">
+          {/* KOLOM KANAN (5 Kolom): Direktori 218 LAZ Resmi & Filter */}
+          <aside className="col-span-5 sticky top-24 space-y-4">
+            <div className="bg-white rounded-xl border border-slate-200 p-4 sm:p-5 shadow-sm">
               <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-                <h3 className="font-semibold text-sm text-slate-900 flex items-center gap-2">
-                  <Building2 className="w-4 h-4 text-[#5a4ea4]" /> Direktori LAZ Legal
+                <h3 className="font-bold text-sm text-slate-900 flex items-center gap-2">
+                  <Building2 className="w-4 h-4 text-[#5a4ea4]" /> Direktori 218 LAZ Legal
                 </h3>
-                <span className="text-xs bg-[#f7f6fc] text-[#433880] font-bold px-2 py-0.5 rounded-full">
-                  {lazList.length || '218'} LAZ
+                <span className="text-xs bg-[#f7f6fc] text-[#433880] font-bold px-2.5 py-0.5 rounded-full border border-[#d6d0ee]">
+                  {filteredLaz.length} Lembaga
                 </span>
               </div>
 
               {/* Filter Skala & Provinsi */}
-              <div className="mt-3 space-y-2">
+              <div className="mt-3 grid grid-cols-2 gap-2">
                 <select
                   value={selectedSkala}
                   onChange={(e) => setSelectedSkala(e.target.value)}
-                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-1.5 focus:outline-none focus:border-[#5a4ea4]"
+                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-2 font-medium focus:outline-none focus:border-[#5a4ea4]"
                 >
                   <option value="Semua">Semua Skala</option>
-                  <option value="Nasional">Skala Nasional (62)</option>
-                  <option value="Provinsi">Skala Provinsi (49)</option>
-                  <option value="Kabupaten/Kota">Skala Kab/Kota (107)</option>
+                  <option value="Nasional">Nasional (62)</option>
+                  <option value="Provinsi">Provinsi (49)</option>
+                  <option value="Kabupaten/Kota">Kab/Kota (107)</option>
                 </select>
 
                 <select
                   value={selectedProvinsi}
                   onChange={(e) => setSelectedProvinsi(e.target.value)}
-                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-1.5 focus:outline-none focus:border-[#5a4ea4]"
+                  className="w-full text-xs bg-slate-50 border border-slate-200 rounded-lg p-2 font-medium focus:outline-none focus:border-[#5a4ea4]"
                 >
                   {provinces.map((prov) => (
                     <option key={prov} value={prov}>{prov}</option>
@@ -401,51 +391,52 @@ export default function HomePage() {
                 </select>
               </div>
 
-              {/* LAZ List Mini Scrollable */}
-              <div className="mt-3 divide-y divide-slate-100 max-h-[460px] overflow-y-auto pr-1">
+              {/* LAZ List Scrollable */}
+              <div className="mt-3 divide-y divide-slate-100 max-h-[620px] overflow-y-auto pr-1 space-y-1">
                 {loadingLaz ? (
-                  <div className="py-6 text-center text-xs text-slate-400">Memuat 218 LAZ...</div>
+                  <div className="py-8 text-center text-xs text-slate-400">Memuat 218 LAZ...</div>
                 ) : filteredLaz.length === 0 ? (
-                  <div className="py-6 text-center text-xs text-slate-400">Tidak ada LAZ yang cocok.</div>
+                  <div className="py-8 text-center text-xs text-slate-400">Tidak ada LAZ yang cocok.</div>
                 ) : (
                   filteredLaz.map((laz) => (
-                    <div key={laz.no} className="py-2.5 first:pt-0 group">
-                      <div className="flex items-start justify-between gap-1">
-                        <div className="flex items-start gap-2.5">
-                          {laz.logo_url ? (
-                            <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5">
-                              <img src={laz.logo_url} alt={laz.name} className="w-full h-full object-contain" />
-                            </div>
-                          ) : (
-                            <div className="w-8 h-8 rounded-lg bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-[10px] shrink-0 border border-[#d6d0ee]">
-                              {laz.name.substring(0, 2)}
-                            </div>
-                          )}
-                          <div>
-                            <h4 
-                              onClick={() => setActiveLazDetail(laz)}
-                              className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer"
-                            >
-                              {laz.name}
-                            </h4>
-                            <div className="mt-1 flex items-center gap-1.5 text-[10px] text-slate-500">
-                              <span className="px-1.5 py-0.2 bg-slate-100 rounded text-slate-700 font-medium">
-                                {laz.skala}
-                              </span>
-                              <span>{laz.provinsi}</span>
-                            </div>
+                    <div key={laz.no} className="pt-3 pb-3 first:pt-1 group">
+                      
+                      {/* Logo + Info Lembaga */}
+                      <div className="flex items-start gap-3">
+                        {laz.logo_url ? (
+                          <div className="relative w-10 h-10 rounded-xl overflow-hidden bg-white border border-slate-200 shrink-0 p-0.5 mt-0.5 shadow-xs">
+                            <img src={laz.logo_url} alt={laz.name} className="w-full h-full object-contain" />
+                          </div>
+                        ) : (
+                          <div className="w-10 h-10 rounded-xl bg-[#f2f0fa] flex items-center justify-center text-[#5a4ea4] font-bold text-xs shrink-0 border border-[#d6d0ee] mt-0.5">
+                            {laz.name.substring(0, 2)}
+                          </div>
+                        )}
+                        <div className="flex-1 min-w-0">
+                          <h4 
+                            onClick={() => setActiveLazDetail(laz)}
+                            className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer line-clamp-1"
+                          >
+                            {laz.name}
+                          </h4>
+                          <div className="mt-1 flex items-center gap-1.5 text-[11px] text-slate-500">
+                            <span className="px-1.5 py-0.2 bg-slate-100 rounded text-slate-700 font-medium">
+                              {laz.skala}
+                            </span>
+                            <span>•</span>
+                            <span className="truncate">{laz.provinsi}</span>
                           </div>
                         </div>
                       </div>
 
-                      {/* Tombol Aksi: Profile Detail, Instagram, Donasi */}
-                      <div className="mt-2 flex items-center justify-between gap-1.5">
-                        <div className="flex items-center gap-1">
+                      {/* Tombol Aksi: Profil, Instagram, Donasi */}
+                      <div className="mt-3 flex items-center justify-between gap-2">
+                        <div className="flex items-center gap-1.5">
                           <button
                             onClick={() => setActiveLazDetail(laz)}
-                            className="text-[11px] font-medium text-slate-600 hover:text-[#5a4ea4] bg-slate-100 hover:bg-slate-200 px-2 py-0.5 rounded transition flex items-center gap-1"
+                            className="text-xs font-semibold text-slate-700 hover:text-[#5a4ea4] bg-slate-100 hover:bg-slate-200 px-2.5 py-1 rounded-lg transition flex items-center gap-1"
                           >
-                            <Info className="w-3 h-3 text-[#5a4ea4]" /> Profil
+                            <Info className="w-3.5 h-3.5 text-[#5a4ea4]" /> Profil
                           </button>
                           
                           {laz.instagram_url && (
@@ -453,10 +444,10 @@ export default function HomePage() {
                               href={laz.instagram_url}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-[11px] text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 p-1 rounded transition"
+                              className="text-xs text-rose-600 hover:text-rose-700 bg-rose-50 hover:bg-rose-100 p-1.5 rounded-lg transition border border-rose-100"
                               title="Instagram Resmi"
                             >
-                              <InstagramIcon className="w-3 h-3" />
+                              <InstagramIcon className="w-3.5 h-3.5" />
                             </a>
                           )}
                         </div>
@@ -465,21 +456,23 @@ export default function HomePage() {
                           href={laz.donation_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[11px] font-semibold text-[#1d8286] hover:text-[#176a6e] bg-[#eaf9fa] hover:bg-[#d6f4f5] px-2.5 py-1 rounded-md transition flex items-center gap-1"
+                          className="text-xs font-bold text-[#1d8286] hover:text-[#176a6e] bg-[#eaf9fa] hover:bg-[#d6f4f5] px-3.5 py-1.5 rounded-lg transition flex items-center gap-1 border border-[#cbfbf1]"
                         >
                           Donasi ↗
                         </a>
                       </div>
+
                     </div>
                   ))
                 )}
               </div>
 
-              <div className="mt-3 pt-2 border-t border-slate-100 text-[10px] text-slate-400 text-center">
+              <div className="mt-3 pt-2.5 border-t border-slate-100 text-[11px] text-slate-400 text-center">
                 Sumber resmi: SIMZAT Kemenag RI & FOZ
               </div>
             </div>
           </aside>
+
         </div>
 
 
@@ -565,7 +558,7 @@ export default function HomePage() {
                         className="flex-1 py-2.5 bg-[#31c0c6] active:bg-[#208b8f] text-white rounded-xl text-center text-xs font-bold shadow flex items-center justify-center gap-1.5"
                       >
                         <HeartHandshake className="w-4 h-4" />
-                        Salurkan Donasi ke Portal Resmi ↗
+                        Salurkan Donasi di Portal Resmi ↗
                       </a>
                     </div>
                   </div>
