@@ -1,0 +1,34 @@
+name: Update Live OPZ News
+
+on:
+  schedule:
+    # Run every 6 hours automatically
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # Enable manual run button
+
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          pip install beautifulsoup4 lxml
+
+      - name: Crawl Live Feeds
+        run: |
+          python scripts/fetch_live_news.py
+
+      - name: Commit and Push if updated
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data/live_news.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated OPZ news wire update [skip ci]" && git push)

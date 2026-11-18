@@ -46,6 +46,7 @@ export default function HomePage() {
   // Data states
   const [lazList, setLazList] = useState<LAZItem[]>([]);
   const [loadingLaz, setLoadingLaz] = useState(true);
+  const [postsList, setPostsList] = useState<OPZPost[]>(SAMPLE_POSTS);
   
   // Search & Filter states
   const [searchQuery, setSearchQuery] = useState('');
@@ -68,7 +69,7 @@ export default function HomePage() {
   const wajibZakat = totalPendapatan >= nisabBulanan;
   const nilaiZakat = wajibZakat ? Math.round(totalPendapatan * 0.025) : 0;
 
-  // Fetch verified 218 LAZ data
+  // Fetch verified 218 LAZ data and live wire news
   useEffect(() => {
     fetch('/data/laz_verified.json')
       .then((res) => res.json())
@@ -79,6 +80,17 @@ export default function HomePage() {
       .catch((err) => {
         console.error('Failed to load LAZ data', err);
         setLoadingLaz(false);
+      });
+
+    fetch('/data/live_news.json')
+      .then((res) => res.json())
+      .then((data: OPZPost[]) => {
+        if (data && data.length > 0) {
+          setPostsList(data);
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to load live news, fallback to sample', err);
       });
   }, []);
 
@@ -101,17 +113,17 @@ export default function HomePage() {
 
   // Filtered Posts
   const filteredPosts = useMemo(() => {
-    return SAMPLE_POSTS.filter((post) => {
+    return postsList.filter((post) => {
       const matchCat = selectedCategory === 'Semua' || post.category === selectedCategory || post.asnaf.includes(selectedCategory);
       const matchSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           post.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           post.opz_name.toLowerCase().includes(searchQuery.toLowerCase());
       return matchCat && matchSearch;
     });
-  }, [selectedCategory, searchQuery]);
+  }, [postsList, selectedCategory, searchQuery]);
 
   // Headline item (Post 1) & Secondary items (Posts 2, 3, 4)
-  const headlinePost = filteredPosts[0] || SAMPLE_POSTS[0];
+  const headlinePost = filteredPosts[0] || postsList[0];
   const secondaryPosts = filteredPosts.slice(1);
 
   return (
