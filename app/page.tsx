@@ -123,7 +123,7 @@ export default function HomePage() {
       <div className="bg-[#1e1b4b] text-slate-200 text-xs border-b border-slate-800">
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] py-2 flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
-            <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase shrink-0">
+            <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase shrink-0">
               RADAR TERKINI
             </span>
             <span className="text-slate-300 truncate text-xs">
@@ -168,7 +168,7 @@ export default function HomePage() {
               <span className="text-[11px] font-semibold text-slate-400 block tracking-wider uppercase">
                 Ensiklopedi & Radar
               </span>
-              <span className="text-xs font-bold text-[#5a4ea4]">
+              <span className="text-xs font-semibold text-[#5a4ea4]">
                 Gerakan Zakat Indonesia
               </span>
             </div>
@@ -192,7 +192,7 @@ export default function HomePage() {
           <div className="hidden md:flex items-center gap-2">
             <a
               href="#direktori-laz"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition"
             >
               <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" />
               <span>Direktori 218 LAZ</span>
@@ -206,7 +206,7 @@ export default function HomePage() {
           <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] flex items-center gap-6 overflow-x-auto no-scrollbar py-2 text-xs font-medium text-slate-600">
             <button 
               onClick={() => setSelectedCategory('Semua')}
-              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-semibold transition ${
                 selectedCategory === 'Semua' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
               }`}
             >
@@ -214,7 +214,7 @@ export default function HomePage() {
             </button>
             <button 
               onClick={() => setSelectedCategory('Ekonomi Mustahik')}
-              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-semibold transition ${
                 selectedCategory === 'Ekonomi Mustahik' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
               }`}
             >
@@ -222,7 +222,7 @@ export default function HomePage() {
             </button>
             <button 
               onClick={() => setSelectedCategory('Kebencanaan')}
-              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-semibold transition ${
                 selectedCategory === 'Kebencanaan' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
               }`}
             >
@@ -230,7 +230,7 @@ export default function HomePage() {
             </button>
             <button 
               onClick={() => setSelectedCategory('Pendidikan')}
-              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-semibold transition ${
                 selectedCategory === 'Pendidikan' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
               }`}
             >
@@ -238,7 +238,7 @@ export default function HomePage() {
             </button>
             <button 
               onClick={() => setSelectedCategory('Kesehatan')}
-              className={`whitespace-nowrap pb-0.5 border-b-2 font-bold transition ${
+              className={`whitespace-nowrap pb-0.5 border-b-2 font-semibold transition ${
                 selectedCategory === 'Kesehatan' ? 'border-[#5a4ea4] text-[#5a4ea4]' : 'border-transparent hover:text-slate-900'
               }`}
             >
@@ -280,13 +280,13 @@ export default function HomePage() {
                       className="object-cover group-hover:scale-101 transition duration-500" 
                       priority
                     />
-                    <div className="absolute bottom-3 left-4 text-[11px] font-bold text-white/95 drop-shadow-md tracking-wider uppercase bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-lg">
+                    <div className="absolute bottom-3 left-4 text-[11px] font-semibold text-white/95 drop-shadow-md tracking-wider uppercase bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-lg">
                       DIGIZAKAT / {headlinePost.opz_name}
                     </div>
                   </div>
 
                   {/* Judul Headline Besar Bold */}
-                  <h1 className="mt-4 text-3xl sm:text-4xl font-black text-slate-950 group-hover:text-[#5a4ea4] transition leading-tight tracking-tight">
+                  <h1 className="mt-4 text-3xl sm:text-4xl font-semibold text-slate-950 group-hover:text-[#5a4ea4] transition leading-tight tracking-tight">
                     {headlinePost.title}
                   </h1>
 
@@ -301,7 +301,7 @@ export default function HomePage() {
                   {secondaryPosts.slice(0, 3).map((subPost) => (
                     <div key={subPost.id} className="p-3.5 bg-slate-50 hover:bg-[#f7f6fc] rounded-xl border border-slate-100 hover:border-[#d6d0ee] transition group cursor-pointer">
                       <div className="space-y-1">
-                        <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
+                        <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
                           {subPost.title}
                         </h4>
                         <span className="text-[10px] text-slate-400 block font-medium">
@@ -339,7 +339,7 @@ export default function HomePage() {
                     href={headlinePost.donation_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-bold text-xs shadow-xs hover:shadow transition"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-xs hover:shadow transition"
                   >
                     <HeartHandshake className="w-4 h-4" />
                     Salurkan Donasi di Portal Resmi ↗
@@ -351,7 +351,7 @@ export default function HomePage() {
             {/* DAFTAR BERITA SUB-HEADLINE (LIST HORIZONTAL ALA TEMPO) */}
             <section className="space-y-6">
               <div className="border-b-2 border-slate-900 pb-1.5 flex items-center justify-between">
-                <h2 className="text-base font-extrabold text-slate-900 uppercase tracking-wide">
+                <h2 className="text-base font-semibold text-slate-900 uppercase tracking-wide">
                   LIPUTAN KHUSUS & PROGRAM GERAKAN
                 </h2>
                 <span className="text-xs text-slate-500 font-medium">
@@ -367,14 +367,14 @@ export default function HomePage() {
                       {/* Konten Teks */}
                       <div className="col-span-9 space-y-1.5">
                         <div className="flex items-center gap-2 text-[11px] text-slate-500">
-                          <span className="font-bold text-[#5a4ea4]">{post.opz_name}</span>
+                          <span className="font-semibold text-[#5a4ea4]">{post.opz_name}</span>
                           <span>•</span>
                           <span>{post.published_at}</span>
                           <span>•</span>
                           <span className="text-slate-400">{post.location}</span>
                         </div>
 
-                        <h3 className="text-base font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug">
+                        <h3 className="text-base font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug">
                           {post.title}
                         </h3>
 
@@ -387,7 +387,7 @@ export default function HomePage() {
                             href={post.donation_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xs font-bold text-[#1d8286] hover:text-[#176a6e] inline-flex items-center gap-1"
+                            className="text-xs font-semibold text-[#1d8286] hover:text-[#176a6e] inline-flex items-center gap-1"
                           >
                             Donasi di Situs Lembaga ↗
                           </a>
@@ -425,16 +425,16 @@ export default function HomePage() {
             <section id="khazanah-fiqh" className="bg-slate-50 rounded-xl border border-slate-200 p-6 space-y-4">
               <div className="border-b border-slate-200 pb-3 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] font-bold tracking-wider text-[#5a4ea4] uppercase block">
+                  <span className="text-[10px] font-semibold tracking-wider text-[#5a4ea4] uppercase block">
                     RUJUKAN FIQH & ASNAF
                   </span>
-                  <h3 className="text-lg font-bold text-slate-900 flex items-center gap-2">
+                  <h3 className="text-lg font-semibold text-slate-900 flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-[#5a4ea4]" /> Ensiklopedi & Fatwa Zakat
                   </h3>
                 </div>
                 <button 
                   onClick={() => setShowCalculator(true)}
-                  className="px-3 py-1.5 bg-white border border-[#d6d0ee] hover:bg-[#f2f0fa] text-[#433880] rounded-lg text-xs font-bold flex items-center gap-1 transition"
+                  className="px-3 py-1.5 bg-white border border-[#d6d0ee] hover:bg-[#f2f0fa] text-[#433880] rounded-lg text-xs font-semibold flex items-center gap-1 transition"
                 >
                   <Calculator className="w-3.5 h-3.5 text-[#5a4ea4]" /> Hitung Zakat
                 </button>
@@ -444,7 +444,7 @@ export default function HomePage() {
                 {SAMPLE_ENCYCLOPEDIA.map((item) => (
                   <div key={item.id} className="bg-white p-4 rounded-lg border border-slate-200 hover:border-[#5a4ea4] transition group shadow-xs">
                     <div className="flex items-center justify-between">
-                      <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4]">
+                      <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4]">
                         {item.term}
                       </h4>
                       {item.arabic && (
@@ -475,7 +475,7 @@ export default function HomePage() {
             
             {/* WIDGET ARTIKEL TERBARU PERSIS TAMPILAN TEMPO */}
             <div className="bg-white pb-5">
-              <h3 className="text-sm font-black text-slate-950 uppercase tracking-tight mb-4 border-b border-slate-900 pb-1.5">
+              <h3 className="text-sm font-semibold text-slate-950 uppercase tracking-tight mb-4 border-b border-slate-900 pb-1.5">
                 ARTIKEL TERBARU
               </h3>
 
@@ -495,7 +495,7 @@ export default function HomePage() {
                       
                       {/* Judul & Waktu */}
                       <div className="flex-1 min-w-0">
-                        <h4 className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
+                        <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
                           {post.title}
                         </h4>
                         <span className="text-[10px] text-slate-400 mt-1 block">
@@ -511,10 +511,10 @@ export default function HomePage() {
             {/* DIREKTORI 218 LAZ RESMI (KOMPAK & STICKY) */}
             <div id="direktori-laz" className="bg-slate-50/80 rounded-2xl border border-slate-200 p-4 sticky top-24 shadow-xs">
               <div className="flex items-center justify-between mb-3 border-b border-slate-200 pb-2.5">
-                <h3 className="text-xs font-black text-slate-950 uppercase tracking-tight flex items-center gap-1.5">
+                <h3 className="text-xs font-semibold text-slate-950 uppercase tracking-tight flex items-center gap-1.5">
                   <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" /> DIREKTORI 218 LAZ
                 </h3>
-                <span className="text-[10px] font-bold bg-[#f2f0fa] text-[#433880] px-2.5 py-0.5 rounded-full border border-[#d6d0ee]">
+                <span className="text-[10px] font-semibold bg-[#f2f0fa] text-[#433880] px-2.5 py-0.5 rounded-full border border-[#d6d0ee]">
                   {filteredLaz.length}
                 </span>
               </div>
@@ -544,7 +544,7 @@ export default function HomePage() {
                         <div className="min-w-0">
                           <h4 
                             onClick={() => setActiveLazDetail(laz)}
-                            className="text-xs font-bold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer line-clamp-1"
+                            className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug cursor-pointer line-clamp-1"
                           >
                             {laz.name}
                           </h4>
@@ -556,7 +556,7 @@ export default function HomePage() {
                           href={laz.donation_url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[10px] font-bold text-[#1d8286] bg-[#eaf9fa] hover:bg-[#d5f5f7] px-2.5 py-1 rounded-lg shrink-0 border border-[#cbfbf1] transition shadow-xs"
+                          className="text-[10px] font-semibold text-[#1d8286] bg-[#eaf9fa] hover:bg-[#d5f5f7] px-2.5 py-1 rounded-lg shrink-0 border border-[#cbfbf1] transition shadow-xs"
                         >
                           Donasi ↗
                         </a>
@@ -593,13 +593,13 @@ export default function HomePage() {
                       fill 
                       className="object-cover" 
                     />
-                    <div className="absolute top-2 left-2 bg-[#1e1b4b]/90 text-white px-2 py-0.5 rounded text-[10px] font-bold">
+                    <div className="absolute top-2 left-2 bg-[#1e1b4b]/90 text-white px-2 py-0.5 rounded text-[10px] font-semibold">
                       {headlinePost.opz_name}
                     </div>
                   </div>
                   <div className="p-4">
                     <div className="text-[10px] text-slate-400 mb-1">{headlinePost.published_at} • {headlinePost.location}</div>
-                    <h2 className="text-base font-bold text-slate-900 leading-snug">
+                    <h2 className="text-base font-semibold text-slate-900 leading-snug">
                       {headlinePost.title}
                     </h2>
                     <p className="mt-2 text-xs text-slate-600 line-clamp-2">
@@ -620,7 +620,7 @@ export default function HomePage() {
                         href={headlinePost.donation_url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 py-2 bg-[#31c0c6] text-white rounded-lg text-center text-xs font-bold"
+                        className="flex-1 py-2 bg-[#31c0c6] text-white rounded-lg text-center text-xs font-semibold"
                       >
                         Donasi di Situs Resmi ↗
                       </a>
@@ -635,8 +635,8 @@ export default function HomePage() {
                   <div key={post.id} className="py-3 first:pt-1">
                     <div className="flex gap-3">
                       <div className="flex-1">
-                        <span className="text-[10px] text-[#5a4ea4] font-bold block">{post.opz_name}</span>
-                        <h3 className="text-xs font-bold text-slate-900 line-clamp-2 mt-0.5">{post.title}</h3>
+                        <span className="text-[10px] text-[#5a4ea4] font-semibold block">{post.opz_name}</span>
+                        <h3 className="text-xs font-semibold text-slate-900 line-clamp-2 mt-0.5">{post.title}</h3>
                         <span className="text-[10px] text-slate-400 mt-1 block">{post.published_at}</span>
                       </div>
                       <div className="relative w-20 h-16 rounded-md overflow-hidden bg-slate-100 shrink-0">
@@ -653,15 +653,15 @@ export default function HomePage() {
           {activeTab === 'laz' && (
             <div className="space-y-3">
               <div className="p-3 bg-slate-100 rounded-xl flex items-center justify-between text-xs">
-                <span className="font-bold text-slate-800">218 Lembaga Resmi Kemenag RI</span>
-                <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded-full font-bold text-[10px]">{filteredLaz.length}</span>
+                <span className="font-semibold text-slate-800">218 Lembaga Resmi Kemenag RI</span>
+                <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded-full font-semibold text-[10px]">{filteredLaz.length}</span>
               </div>
               
               <div className="divide-y divide-slate-200 bg-white border border-slate-200 rounded-xl p-3">
                 {filteredLaz.map((laz) => (
                   <div key={laz.no} className="py-3 first:pt-1 flex items-center justify-between gap-3">
                     <div className="min-w-0">
-                      <h4 onClick={() => setActiveLazDetail(laz)} className="text-xs font-bold text-slate-900 truncate">
+                      <h4 onClick={() => setActiveLazDetail(laz)} className="text-xs font-semibold text-slate-900 truncate">
                         {laz.name}
                       </h4>
                       <p className="text-[10px] text-slate-500">{laz.skala} • {laz.provinsi}</p>
@@ -677,7 +677,7 @@ export default function HomePage() {
                         href={laz.donation_url} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="text-[10px] bg-[#31c0c6] text-white px-2 py-1 rounded font-bold"
+                        className="text-[10px] bg-[#31c0c6] text-white px-2 py-1 rounded font-semibold"
                       >
                         Donasi ↗
                       </a>
@@ -694,7 +694,7 @@ export default function HomePage() {
               {SAMPLE_ENCYCLOPEDIA.map((item) => (
                 <div key={item.id} className="p-4 bg-white border border-slate-200 rounded-xl space-y-1.5">
                   <div className="flex items-center justify-between">
-                    <h4 className="text-xs font-bold text-slate-900">{item.term}</h4>
+                    <h4 className="text-xs font-semibold text-slate-900">{item.term}</h4>
                     {item.arabic && <span className="text-xs font-serif text-slate-400">{item.arabic}</span>}
                   </div>
                   <p className="text-xs text-slate-600">{item.definition}</p>
@@ -718,7 +718,7 @@ export default function HomePage() {
             <div className="p-4 bg-gradient-to-r from-[#433880] to-[#5a4ea4] text-white flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Calculator className="w-5 h-5 text-teal-300" />
-                <h3 className="font-bold text-sm">Kalkulator Zakat Penghasilan</h3>
+                <h3 className="font-semibold text-sm">Kalkulator Zakat Penghasilan</h3>
               </div>
               <button 
                 onClick={() => setShowCalculator(false)}
@@ -733,16 +733,16 @@ export default function HomePage() {
               <div className="bg-slate-50 p-3 rounded-xl border border-slate-200 space-y-1">
                 <div className="flex items-center justify-between text-slate-600">
                   <span>Standar Nisab Emas (85 gr):</span>
-                  <span className="font-bold text-slate-800">Rp {nisabTahunan.toLocaleString('id-ID')} / tahun</span>
+                  <span className="font-semibold text-slate-800">Rp {nisabTahunan.toLocaleString('id-ID')} / tahun</span>
                 </div>
                 <div className="flex items-center justify-between text-slate-600">
                   <span>Nisab per Bulan:</span>
-                  <span className="font-bold text-[#5a4ea4]">Rp {nisabBulanan.toLocaleString('id-ID')} / bulan</span>
+                  <span className="font-semibold text-[#5a4ea4]">Rp {nisabBulanan.toLocaleString('id-ID')} / bulan</span>
                 </div>
               </div>
 
               <div>
-                <label className="block text-slate-700 font-bold mb-1">Gaji / Penghasilan Pokok per Bulan (Rp):</label>
+                <label className="block text-slate-700 font-semibold mb-1">Gaji / Penghasilan Pokok per Bulan (Rp):</label>
                 <input 
                   type="number"
                   placeholder="Contoh: 10000000"
@@ -753,7 +753,7 @@ export default function HomePage() {
               </div>
 
               <div>
-                <label className="block text-slate-700 font-bold mb-1">Tunjangan, Bonus, atau Freelance (Rp):</label>
+                <label className="block text-slate-700 font-semibold mb-1">Tunjangan, Bonus, atau Freelance (Rp):</label>
                 <input 
                   type="number"
                   placeholder="Contoh: 2000000"
@@ -774,19 +774,19 @@ export default function HomePage() {
                 </div>
                 {wajibZakat ? (
                   <div>
-                    <div className="text-sm font-bold text-emerald-800">
+                    <div className="text-sm font-semibold text-emerald-800">
                       Wajib Zakat (Mencapai Nisab)
                     </div>
                     <div className="mt-2 flex items-center justify-between pt-2 border-t border-emerald-200">
                       <span className="text-xs">Besaran Zakat (2.5%):</span>
-                      <span className="text-base font-extrabold text-emerald-700">
+                      <span className="text-base font-semibold text-emerald-700">
                         Rp {nilaiZakat.toLocaleString('id-ID')} / bulan
                       </span>
                     </div>
                   </div>
                 ) : (
                   <div>
-                    <div className="text-sm font-bold text-slate-700">
+                    <div className="text-sm font-semibold text-slate-700">
                       Belum Mencapai Nisab
                     </div>
                     <p className="mt-1 text-[11px] text-slate-500">
@@ -806,7 +806,7 @@ export default function HomePage() {
                   const el = document.getElementById('direktori-laz');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="px-4 py-2 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-lg text-xs font-bold transition"
+                className="px-4 py-2 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-lg text-xs font-semibold transition"
               >
                 Salurkan ke LAZ Pilihan ↗
               </button>
@@ -838,15 +838,15 @@ export default function HomePage() {
                     <img src={activeLazDetail.logo_url} alt={activeLazDetail.name} className="w-full h-full object-contain" />
                   </div>
                 ) : (
-                  <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center font-bold text-lg">
+                  <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center font-semibold text-lg">
                     {activeLazDetail.name.substring(0, 2)}
                   </div>
                 )}
                 <div>
-                  <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-400 text-emerald-950">
+                  <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-emerald-400 text-emerald-950">
                     <ShieldCheck className="w-3 h-3" /> Berizin Kemenag RI
                   </div>
-                  <h3 className="text-base font-bold leading-tight mt-1">{activeLazDetail.name}</h3>
+                  <h3 className="text-base font-semibold leading-tight mt-1">{activeLazDetail.name}</h3>
                   <p className="text-xs text-purple-200">{activeLazDetail.skala} • {activeLazDetail.provinsi}</p>
                 </div>
               </div>
@@ -857,12 +857,12 @@ export default function HomePage() {
               <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-slate-500">Nomor Registrasi SIMZAT:</span>
-                  <span className="font-mono font-bold text-slate-800">#{activeLazDetail.no}</span>
+                  <span className="font-mono font-semibold text-slate-800">#{activeLazDetail.no}</span>
                 </div>
                 {activeLazDetail.sk_number && (
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-slate-500">Nomor SK Izin LAZ:</span>
-                    <span className="font-bold text-purple-900">{activeLazDetail.sk_number}</span>
+                    <span className="font-semibold text-purple-900">{activeLazDetail.sk_number}</span>
                   </div>
                 )}
                 {activeLazDetail.berlaku_sampai && (
@@ -873,7 +873,7 @@ export default function HomePage() {
                 )}
                 <div className="flex items-center justify-between">
                   <span className="font-semibold text-slate-500">Keanggotaan Forum Zakat (FOZ):</span>
-                  <span className="inline-flex items-center gap-1 font-bold text-emerald-700">
+                  <span className="inline-flex items-center gap-1 font-semibold text-emerald-700">
                     <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Terdaftar Aktif
                   </span>
                 </div>
@@ -948,7 +948,7 @@ export default function HomePage() {
                 href={activeLazDetail.donation_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-bold shadow flex items-center justify-center gap-1.5 transition"
+                className="flex-1 py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-semibold shadow flex items-center justify-center gap-1.5 transition"
               >
                 <HeartHandshake className="w-4 h-4" />
                 Donasi di Situs Resmi ↗
@@ -966,7 +966,7 @@ export default function HomePage() {
         <button
           onClick={() => setActiveTab('berita')}
           className={`flex flex-col items-center gap-1 ${
-            activeTab === 'berita' ? 'text-[#5a4ea4] font-bold' : 'text-slate-400'
+            activeTab === 'berita' ? 'text-[#5a4ea4] font-semibold' : 'text-slate-400'
           }`}
         >
           <Radio className="w-5 h-5" />
@@ -976,7 +976,7 @@ export default function HomePage() {
         <button
           onClick={() => setActiveTab('laz')}
           className={`flex flex-col items-center gap-1 ${
-            activeTab === 'laz' ? 'text-[#5a4ea4] font-bold' : 'text-slate-400'
+            activeTab === 'laz' ? 'text-[#5a4ea4] font-semibold' : 'text-slate-400'
           }`}
         >
           <Building2 className="w-5 h-5" />
@@ -986,7 +986,7 @@ export default function HomePage() {
         <button
           onClick={() => setActiveTab('ensiklopedia')}
           className={`flex flex-col items-center gap-1 ${
-            activeTab === 'ensiklopedia' ? 'text-[#5a4ea4] font-bold' : 'text-slate-400'
+            activeTab === 'ensiklopedia' ? 'text-[#5a4ea4] font-semibold' : 'text-slate-400'
           }`}
         >
           <BookOpen className="w-5 h-5" />
@@ -1015,7 +1015,7 @@ export default function HomePage() {
             </div>
 
             <div className="col-span-3 space-y-2">
-              <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Rubrik & Liputan</h4>
+              <h4 className="font-semibold text-white uppercase tracking-wider text-[11px]">Rubrik & Liputan</h4>
               <ul className="space-y-1.5 text-slate-400">
                 <li><a href="#" className="hover:text-white">Ekonomi Mustahik</a></li>
                 <li><a href="#" className="hover:text-white">Tanggap Darurat Bencana</a></li>
@@ -1025,7 +1025,7 @@ export default function HomePage() {
             </div>
 
             <div className="col-span-4 space-y-2">
-              <h4 className="font-bold text-white uppercase tracking-wider text-[11px]">Transparansi & Regulasi</h4>
+              <h4 className="font-semibold text-white uppercase tracking-wider text-[11px]">Transparansi & Regulasi</h4>
               <p className="text-slate-400 text-xs leading-relaxed">
                 Basis data kelembagaan disinkronkan secara berkala dengan Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kemenag RI dan Forum Zakat (FOZ).
               </p>
