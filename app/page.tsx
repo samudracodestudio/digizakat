@@ -282,7 +282,12 @@ export default function HomePage() {
             {/* BERITA UTAMA / HEADLINE EDITORIAL (FOKUS ALA TEMPO) */}
             {headlinePost && (
               <section className="border-b border-slate-200 pb-8">
-                <div className="group cursor-pointer">
+                <a 
+                  href={headlinePost.source_url} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="group block cursor-pointer"
+                >
                   {/* Foto Utama Besar Dominan */}
                   <div className="relative h-[420px] w-full rounded-2xl overflow-hidden bg-slate-100 shadow-sm">
                     <Image 
@@ -306,12 +311,18 @@ export default function HomePage() {
                   <p className="mt-3 text-base text-slate-600 leading-relaxed font-normal">
                     {headlinePost.summary}
                   </p>
-                </div>
+                </a>
 
                 {/* 3 SUB-KOLOM MINI DI BAWAH HEADLINE */}
                 <div className="mt-6 pt-6 border-t border-slate-200 grid grid-cols-3 gap-3">
                   {secondaryPosts.slice(0, 3).map((subPost) => (
-                    <div key={subPost.id} className="p-3.5 bg-slate-50 hover:bg-[#f7f6fc] rounded-xl border border-slate-100 hover:border-[#d6d0ee] transition group cursor-pointer">
+                    <a 
+                      key={subPost.id} 
+                      href={subPost.source_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="p-3.5 bg-slate-50 hover:bg-[#f7f6fc] rounded-xl border border-slate-100 hover:border-[#d6d0ee] transition group block cursor-pointer"
+                    >
                       <div className="space-y-1">
                         <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
                           {subPost.title}
@@ -320,7 +331,7 @@ export default function HomePage() {
                           {subPost.opz_name}
                         </span>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
 
@@ -386,15 +397,31 @@ export default function HomePage() {
                           <span className="text-slate-400">{post.location}</span>
                         </div>
 
-                        <h3 className="text-base font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug">
-                          {post.title}
-                        </h3>
+                        <a 
+                          href={post.source_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="block"
+                        >
+                          <h3 className="text-base font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug">
+                            {post.title}
+                          </h3>
+                        </a>
 
                         <p className="text-xs text-slate-600 line-clamp-2 leading-relaxed">
                           {post.summary}
                         </p>
 
                         <div className="pt-2 flex items-center gap-3">
+                          <a
+                            href={post.source_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-medium text-slate-500 hover:text-[#5a4ea4] inline-flex items-center gap-1"
+                          >
+                            Baca Rilis <ExternalLink className="w-3 h-3" />
+                          </a>
+                          <span className="text-slate-300">•</span>
                           <a
                             href={post.donation_url}
                             target="_blank"
@@ -403,29 +430,36 @@ export default function HomePage() {
                           >
                             Donasi di Situs Lembaga ↗
                           </a>
-                          <span className="text-slate-300">•</span>
                           {post.instagram_url && (
-                            <a
-                              href={post.instagram_url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-xs text-slate-400 hover:text-rose-600 inline-flex items-center gap-1"
-                            >
-                              <InstagramIcon className="w-3 h-3" /> IG
-                            </a>
+                            <>
+                              <span className="text-slate-300">•</span>
+                              <a
+                                href={post.instagram_url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xs text-slate-400 hover:text-rose-600 inline-flex items-center gap-1"
+                              >
+                                <InstagramIcon className="w-3 h-3" /> IG
+                              </a>
+                            </>
                           )}
                         </div>
                       </div>
 
-                      {/* Thumbnail Gambar */}
-                      <div className="col-span-3 relative h-24 rounded-xl overflow-hidden bg-slate-100 shadow-xs">
+                      {/* Thumbnail Gambar (Bisa di-klik juga) */}
+                      <a 
+                        href={post.source_url} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="col-span-3 relative h-24 rounded-xl overflow-hidden bg-slate-100 shadow-xs block shrink-0"
+                      >
                         <Image 
                           src={post.image_url} 
                           alt={post.title} 
                           fill 
                           className="object-cover group-hover:scale-105 transition duration-300" 
                         />
-                      </div>
+                      </a>
 
                     </div>
                   </article>
@@ -493,7 +527,13 @@ export default function HomePage() {
 
               <div className="divide-y divide-slate-100">
                 {filteredPosts.map((post) => (
-                  <div key={post.id} className="py-3 first:pt-0 group cursor-pointer">
+                  <a 
+                    key={post.id} 
+                    href={post.source_url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="py-3 first:pt-0 group cursor-pointer block"
+                  >
                     <div className="flex items-start gap-2.5">
                       {/* Thumbnail Kotak Persegi Kecil */}
                       <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-slate-100 shrink-0 shadow-xs">
@@ -515,7 +555,7 @@ export default function HomePage() {
                         </span>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
@@ -644,7 +684,13 @@ export default function HomePage() {
               {/* List Berita Lainnya */}
               <div className="divide-y divide-slate-200 bg-white border border-slate-200 rounded-xl p-3">
                 {secondaryPosts.map((post) => (
-                  <div key={post.id} className="py-3 first:pt-1">
+                  <a 
+                    key={post.id} 
+                    href={post.source_url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="py-3 first:pt-1 block"
+                  >
                     <div className="flex gap-3">
                       <div className="flex-1">
                         <span className="text-[10px] text-[#5a4ea4] font-semibold block">{post.opz_name}</span>
@@ -655,7 +701,7 @@ export default function HomePage() {
                         <Image src={post.image_url} alt={post.title} fill className="object-cover" />
                       </div>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
