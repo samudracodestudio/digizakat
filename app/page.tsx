@@ -338,34 +338,26 @@ export default function HomePage() {
                 {/* Bar Aksi Donasi & Link Rilis */}
                 <div className="mt-6 pt-3 flex items-center justify-between border-t border-slate-100">
                   <div className="flex items-center gap-3">
-                    <a 
-                      href={headlinePost.source_url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-xs font-medium text-slate-500 hover:text-[#5a4ea4] flex items-center gap-1"
-                    >
-                      Baca Rilis Lengkap <ExternalLink className="w-3 h-3" />
-                    </a>
                     {headlinePost.instagram_url && (
                       <a 
                         href={headlinePost.instagram_url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs font-medium text-rose-600 hover:text-rose-700 flex items-center gap-1"
+                        className="text-xs font-medium text-rose-600 hover:text-rose-700 flex items-center gap-1 bg-rose-50 px-2.5 py-1 rounded-lg border border-rose-100 transition"
                       >
-                        <InstagramIcon className="w-3.5 h-3.5" /> Instagram
+                        <InstagramIcon className="w-3.5 h-3.5" /> Instagram Resmi
                       </a>
                     )}
                   </div>
 
                   <a
-                    href={headlinePost.donation_url}
+                    href={headlinePost.source_url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-xs hover:shadow transition"
                   >
-                    <HeartHandshake className="w-4 h-4" />
-                    Salurkan Donasi di Portal Resmi ↗
+                    <span>Baca Rilis Selengkapnya</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
               </section>
@@ -417,18 +409,10 @@ export default function HomePage() {
                             href={post.source_url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-xs font-medium text-slate-500 hover:text-[#5a4ea4] inline-flex items-center gap-1"
+                            className="text-xs font-semibold text-[#1d8286] hover:text-[#176a6e] inline-flex items-center gap-1 bg-[#eaf9fa] px-2.5 py-1 rounded-lg border border-[#cbfbf1]"
                           >
-                            Baca Rilis <ExternalLink className="w-3 h-3" />
-                          </a>
-                          <span className="text-slate-300">•</span>
-                          <a
-                            href={post.donation_url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-xs font-semibold text-[#1d8286] hover:text-[#176a6e] inline-flex items-center gap-1"
-                          >
-                            Donasi di Situs Lembaga ↗
+                            <span>Baca Rilis</span>
+                            <ExternalLink className="w-3 h-3" />
                           </a>
                           {post.instagram_url && (
                             <>
@@ -669,12 +653,13 @@ export default function HomePage() {
                         </a>
                       )}
                       <a 
-                        href={headlinePost.donation_url} 
+                        href={headlinePost.source_url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 py-2 bg-[#31c0c6] text-white rounded-lg text-center text-xs font-semibold"
+                        className="flex-1 py-2 bg-[#31c0c6] text-white rounded-lg text-center text-xs font-semibold flex items-center justify-center gap-1.5"
                       >
-                        Donasi di Situs Resmi ↗
+                        <span>Baca Rilis Selengkapnya</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
                       </a>
                     </div>
                   </div>
