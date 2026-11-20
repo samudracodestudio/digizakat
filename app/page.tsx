@@ -332,36 +332,6 @@ export default function HomePage() {
             {headlinePost && (
               <section className="border-b border-slate-200 pb-8">
                 
-                {/* Bar Aksi (Instagram & Baca Rilis) Berada DI ATAS Gambar Headline */}
-                <div className="mb-4 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    {headlinePost.instagram_url ? (
-                      <a 
-                        href={headlinePost.instagram_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-semibold text-rose-600 hover:text-rose-700 flex items-center gap-1.5 bg-rose-50 hover:bg-rose-100 px-3 py-1.5 rounded-lg border border-rose-200 transition"
-                      >
-                        <InstagramIcon className="w-3.5 h-3.5" /> <span>Instagram Resmi</span>
-                      </a>
-                    ) : (
-                      <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                        RILIS RESMI OPZ
-                      </span>
-                    )}
-                  </div>
-
-                  <a
-                    href={headlinePost.source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-xs hover:shadow transition"
-                  >
-                    <span>Baca Rilis Selengkapnya</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-
                 <a 
                   href={headlinePost.source_url} 
                   target="_blank" 
@@ -391,6 +361,36 @@ export default function HomePage() {
                     {headlinePost.summary}
                   </p>
                 </a>
+
+                {/* Bar Aksi (Instagram & Baca Rilis) Tepat Di Bawah Judul & Ringkasan Berita */}
+                <div className="mt-4 pt-3 flex items-center justify-between border-t border-slate-100">
+                  <div className="flex items-center gap-2">
+                    {headlinePost.instagram_url ? (
+                      <a 
+                        href={headlinePost.instagram_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-semibold text-rose-600 hover:text-rose-700 flex items-center gap-1.5 bg-rose-50 hover:bg-rose-100 px-3 py-1.5 rounded-lg border border-rose-200 transition"
+                      >
+                        <InstagramIcon className="w-3.5 h-3.5" /> <span>Instagram Resmi</span>
+                      </a>
+                    ) : (
+                      <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                        RILIS RESMI OPZ
+                      </span>
+                    )}
+                  </div>
+
+                  <a
+                    href={headlinePost.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-xs hover:shadow transition"
+                  >
+                    <span>Baca Rilis Selengkapnya</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
 
                 {/* ROLLING DECK: 4 BERITA TERBARU DI BAWAH HEADLINE */}
                 {top4Posts.length > 1 && (
@@ -697,34 +697,6 @@ export default function HomePage() {
             <div className="space-y-4">
               {headlinePost && (
                 <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-xs">
-                  {/* Bar Aksi di Atas Gambar Headline (Mobile) */}
-                  <div className="p-3 bg-slate-50 border-b border-slate-100 flex items-center justify-between gap-2">
-                    {headlinePost.instagram_url ? (
-                      <a 
-                        href={headlinePost.instagram_url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="px-2.5 py-1.5 bg-rose-50 text-rose-600 rounded-lg border border-rose-200 text-xs font-semibold flex items-center gap-1.5"
-                      >
-                        <InstagramIcon className="w-3.5 h-3.5" />
-                        <span>Instagram</span>
-                      </a>
-                    ) : (
-                      <span className="text-[10px] font-semibold text-slate-500 uppercase">
-                        RILIS OPZ
-                      </span>
-                    )}
-                    <a 
-                      href={headlinePost.source_url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="px-3 py-1.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-lg text-xs font-semibold flex items-center gap-1 shadow-xs"
-                    >
-                      <span>Baca Rilis</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  </div>
-
                   <a 
                     href={headlinePost.source_url} 
                     target="_blank" 
@@ -751,6 +723,34 @@ export default function HomePage() {
                       </p>
                     </div>
                   </a>
+
+                  {/* Bar Aksi di Bawah Teks Judul & Ringkasan Berita (Mobile) */}
+                  <div className="p-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                    {headlinePost.instagram_url ? (
+                      <a 
+                        href={headlinePost.instagram_url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="px-2.5 py-1.5 bg-rose-50 text-rose-600 rounded-lg border border-rose-200 text-xs font-semibold flex items-center gap-1.5"
+                      >
+                        <InstagramIcon className="w-3.5 h-3.5" />
+                        <span>Instagram</span>
+                      </a>
+                    ) : (
+                      <span className="text-[10px] font-semibold text-slate-500 uppercase">
+                        RILIS OPZ
+                      </span>
+                    )}
+                    <a 
+                      href={headlinePost.source_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-lg text-xs font-semibold flex items-center gap-1 shadow-xs"
+                    >
+                      <span>Baca Rilis</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </div>
 
                   {/* Rolling 4 Berita Selector di Mobile */}
                   {top4Posts.length > 1 && (
