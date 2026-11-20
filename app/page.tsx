@@ -374,7 +374,7 @@ export default function HomePage() {
                 </a>
 
                 {/* Bar Aksi (Instagram & Baca Rilis) Tepat Di Bawah Judul & Ringkasan Berita */}
-                <div className="mt-4 pt-3 flex items-center justify-between border-t border-slate-100">
+                <div className="mt-4 flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     {headlinePost.instagram_url ? (
                       <a 
@@ -736,7 +736,7 @@ export default function HomePage() {
                   </a>
 
                   {/* Bar Aksi di Bawah Teks Judul & Ringkasan Berita (Mobile) */}
-                  <div className="p-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between gap-2">
+                  <div className="p-3 bg-slate-50 flex items-center justify-between gap-2">
                     {headlinePost.instagram_url ? (
                       <a 
                         href={headlinePost.instagram_url} 
