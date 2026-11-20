@@ -39,6 +39,42 @@ function InstagramIcon({ className = 'w-4 h-4' }: { className?: string }) {
   );
 }
 
+function SafeImage({ 
+  src, 
+  alt, 
+  fallbackSrc = 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80',
+  className,
+  priority = false
+}: { 
+  src: string; 
+  alt: string; 
+  fallbackSrc?: string;
+  className?: string;
+  priority?: boolean;
+}) {
+  const [imgSrc, setImgSrc] = useState(src);
+
+  useEffect(() => {
+    setImgSrc(src);
+  }, [src]);
+
+  return (
+    <Image 
+      src={imgSrc || fallbackSrc} 
+      alt={alt} 
+      fill 
+      priority={priority}
+      referrerPolicy="no-referrer"
+      onError={() => {
+        if (imgSrc !== fallbackSrc) {
+          setImgSrc(fallbackSrc);
+        }
+      }}
+      className={className} 
+    />
+  );
+}
+
 export default function HomePage() {
   // Mobile Navigation tabs
   const [activeTab, setActiveTab] = useState<'berita' | 'laz' | 'ensiklopedia'>('berita');
@@ -165,22 +201,27 @@ export default function HomePage() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] h-20 flex items-center justify-between gap-6">
           
-          {/* Logo & Slogan */}
-          <div className="flex items-center gap-4">
-            <div className="relative h-10 w-32 sm:w-40">
+          {/* Logo Brand & Slogan */}
+          <div className="flex items-center gap-3">
+            <div className="relative h-11 w-11 shrink-0">
               <Image 
-                src="/digizakat_logo.png" 
-                alt="Digizakat Logo" 
+                src="/digizakat_icon.png" 
+                alt="Digizakat Icon" 
                 fill 
-                className="object-contain object-left"
+                className="object-contain"
                 priority
               />
             </div>
-            <div className="hidden lg:block pl-4 border-l border-slate-200">
-              <span className="text-[11px] font-semibold text-slate-400 block tracking-wider uppercase">
-                Ensiklopedi & Radar
+            <div className="flex flex-col">
+              <span className="text-lg font-bold tracking-tight text-[#5a4ea4] leading-tight">
+                Digizakat
               </span>
-              <span className="text-xs font-semibold text-[#5a4ea4]">
+              <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
+                Radar & Ensiklopedi
+              </span>
+            </div>
+            <div className="hidden lg:block pl-3 border-l border-slate-200 ml-1">
+              <span className="text-xs font-semibold text-slate-600">
                 Gerakan Zakat Indonesia
               </span>
             </div>
@@ -290,10 +331,9 @@ export default function HomePage() {
                 >
                   {/* Foto Utama Besar Dominan */}
                   <div className="relative h-[420px] w-full rounded-2xl overflow-hidden bg-slate-100 shadow-sm">
-                    <Image 
+                    <SafeImage 
                       src={headlinePost.image_url} 
                       alt={headlinePost.title} 
-                      fill 
                       className="object-cover group-hover:scale-101 transition duration-500" 
                       priority
                     />
@@ -437,10 +477,9 @@ export default function HomePage() {
                         rel="noopener noreferrer" 
                         className="col-span-3 relative h-24 rounded-xl overflow-hidden bg-slate-100 shadow-xs block shrink-0"
                       >
-                        <Image 
+                        <SafeImage 
                           src={post.image_url} 
                           alt={post.title} 
-                          fill 
                           className="object-cover group-hover:scale-105 transition duration-300" 
                         />
                       </a>
@@ -521,10 +560,9 @@ export default function HomePage() {
                     <div className="flex items-start gap-2.5">
                       {/* Thumbnail Kotak Persegi Kecil */}
                       <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-slate-100 shrink-0 shadow-xs">
-                        <Image 
+                        <SafeImage 
                           src={post.image_url} 
                           alt={post.title} 
-                          fill 
                           className="object-cover" 
                         />
                       </div>
@@ -623,10 +661,9 @@ export default function HomePage() {
               {headlinePost && (
                 <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-xs">
                   <div className="relative h-48 w-full bg-slate-100">
-                    <Image 
+                    <SafeImage 
                       src={headlinePost.image_url} 
                       alt={headlinePost.title} 
-                      fill 
                       className="object-cover" 
                     />
                     <div className="absolute top-2 left-2 bg-[#1e1b4b]/90 text-white px-2 py-0.5 rounded text-[10px] font-semibold">
@@ -683,7 +720,7 @@ export default function HomePage() {
                         <span className="text-[10px] text-slate-400 mt-1 block">{post.published_at}</span>
                       </div>
                       <div className="relative w-20 h-16 rounded-md overflow-hidden bg-slate-100 shrink-0">
-                        <Image src={post.image_url} alt={post.title} fill className="object-cover" />
+                        <SafeImage src={post.image_url} alt={post.title} className="object-cover" />
                       </div>
                     </div>
                   </a>
@@ -1044,13 +1081,16 @@ export default function HomePage() {
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%]">
           <div className="grid grid-cols-12 gap-8 pb-8 border-b border-slate-800">
             <div className="col-span-5 space-y-3">
-              <div className="relative h-8 w-32 filter brightness-0 invert">
-                <Image 
-                  src="/digizakat_logo.png" 
-                  alt="Digizakat Logo" 
-                  fill 
-                  className="object-contain object-left"
-                />
+              <div className="flex items-center gap-2.5">
+                <div className="relative h-9 w-9 shrink-0">
+                  <Image 
+                    src="/digizakat_icon.png" 
+                    alt="Digizakat Icon" 
+                    fill 
+                    className="object-contain"
+                  />
+                </div>
+                <span className="text-lg font-bold text-white tracking-tight">Digizakat</span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
                 Ensiklopedi independen dan radar gerakan zakat di Indonesia. Tidak mengumpulkan maupun memotong donasi publik. Seluruh transaksi diarahkan langsung ke portal crowdfunding resmi 218 LAZ berizin Kementerian Agama RI.

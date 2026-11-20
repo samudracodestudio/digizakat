@@ -12,6 +12,18 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "Neo Digizakat - Ensiklopedi & Radar Gerakan Zakat Indonesia",
   description: "Pusat khazanah gerakan zakat, radar rilis aksi 218 LAZ resmi Kemenag RI, dan gerbang donasi ke platform crowdfunding resmi anggota FOZ.",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/digizakat_icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png' },
+    ],
+  },
+  other: {
+    'referrer': 'no-referrer-when-downgrade',
+  },
 };
 
 export default function RootLayout({
