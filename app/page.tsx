@@ -130,6 +130,8 @@ export default function HomePage() {
       });
   }, []);
 
+  const [activeHeadlineIndex, setActiveHeadlineIndex] = useState(0);
+
   // Filtered LAZ
   const filteredLaz = useMemo(() => {
     return lazList.filter((item) => {
@@ -158,9 +160,15 @@ export default function HomePage() {
     });
   }, [postsList, selectedCategory, searchQuery]);
 
-  // Headline item (Post 1) & Secondary items (Posts 2, 3, 4)
-  const headlinePost = filteredPosts[0] || postsList[0];
-  const secondaryPosts = filteredPosts.slice(1);
+  // 4 Berita Teratas untuk Headline Rolling Deck
+  const top4Posts = useMemo(() => {
+    return filteredPosts.slice(0, 4);
+  }, [filteredPosts]);
+
+  // Headline item yang sedang aktif di-rolling
+  const headlinePost = top4Posts[activeHeadlineIndex] || filteredPosts[0] || postsList[0];
+  // Sub-cards (3 berita lain dari top 4 selain headlinePost, atau semua 4 berita dengan indikator aktif)
+  const secondaryPosts = filteredPosts.slice(4);
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-800 font-sans">
@@ -320,9 +328,40 @@ export default function HomePage() {
           {/* ----------------------------------------------------------- */}
           <div className="col-span-9 space-y-8 pr-2">
             
-            {/* BERITA UTAMA / HEADLINE EDITORIAL (FOKUS ALA TEMPO) */}
+            {/* BERITA UTAMA / HEADLINE EDITORIAL (FOKUS ALA TEMPO DENGAN ROLLING 4 TERBARU) */}
             {headlinePost && (
               <section className="border-b border-slate-200 pb-8">
+                
+                {/* Bar Aksi (Instagram & Baca Rilis) Berada DI ATAS Gambar Headline */}
+                <div className="mb-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    {headlinePost.instagram_url ? (
+                      <a 
+                        href={headlinePost.instagram_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-semibold text-rose-600 hover:text-rose-700 flex items-center gap-1.5 bg-rose-50 hover:bg-rose-100 px-3 py-1.5 rounded-lg border border-rose-200 transition"
+                      >
+                        <InstagramIcon className="w-3.5 h-3.5" /> <span>Instagram Resmi</span>
+                      </a>
+                    ) : (
+                      <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
+                        RILIS RESMI OPZ
+                      </span>
+                    )}
+                  </div>
+
+                  <a
+                    href={headlinePost.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-xs hover:shadow transition"
+                  >
+                    <span>Baca Rilis Selengkapnya</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+
                 <a 
                   href={headlinePost.source_url} 
                   target="_blank" 
@@ -353,53 +392,51 @@ export default function HomePage() {
                   </p>
                 </a>
 
-                {/* 3 SUB-KOLOM MINI DI BAWAH HEADLINE */}
-                <div className="mt-6 pt-6 border-t border-slate-200 grid grid-cols-3 gap-3">
-                  {secondaryPosts.slice(0, 3).map((subPost) => (
-                    <a 
-                      key={subPost.id} 
-                      href={subPost.source_url} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="p-3.5 bg-slate-50 hover:bg-[#f7f6fc] rounded-xl border border-slate-100 hover:border-[#d6d0ee] transition group block cursor-pointer"
-                    >
-                      <div className="space-y-1">
-                        <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition leading-snug line-clamp-2">
-                          {subPost.title}
-                        </h4>
-                        <span className="text-[10px] text-slate-400 block font-medium">
-                          {subPost.opz_name}
-                        </span>
-                      </div>
-                    </a>
-                  ))}
-                </div>
+                {/* ROLLING DECK: 4 BERITA TERBARU DI BAWAH HEADLINE */}
+                {top4Posts.length > 1 && (
+                  <div className="mt-6 pt-5 border-t border-slate-200">
+                    <div className="flex items-center justify-between mb-2.5">
+                      <span className="text-[11px] font-semibold tracking-wider uppercase text-slate-400">
+                        PILIH HEADLINE (4 TERBARU)
+                      </span>
+                      <span className="text-[11px] text-[#5a4ea4] font-medium">
+                        Klik kolom untuk memutar headline
+                      </span>
+                    </div>
 
-                {/* Bar Aksi Donasi & Link Rilis */}
-                <div className="mt-6 pt-3 flex items-center justify-between border-t border-slate-100">
-                  <div className="flex items-center gap-3">
-                    {headlinePost.instagram_url && (
-                      <a 
-                        href={headlinePost.instagram_url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-medium text-rose-600 hover:text-rose-700 flex items-center gap-1 bg-rose-50 px-2.5 py-1 rounded-lg border border-rose-100 transition"
-                      >
-                        <InstagramIcon className="w-3.5 h-3.5" /> Instagram Resmi
-                      </a>
-                    )}
+                    <div className="grid grid-cols-4 gap-2.5">
+                      {top4Posts.map((post, idx) => {
+                        const isActive = idx === activeHeadlineIndex;
+                        return (
+                          <button
+                            key={post.id || idx}
+                            type="button"
+                            onClick={() => setActiveHeadlineIndex(idx)}
+                            className={`p-3 text-left rounded-xl border transition cursor-pointer flex flex-col justify-between ${
+                              isActive 
+                                ? 'bg-[#f4f2fb] border-[#5a4ea4] shadow-xs ring-1 ring-[#5a4ea4]/30' 
+                                : 'bg-slate-50 hover:bg-[#f7f6fc] border-slate-200 hover:border-[#d6d0ee]'
+                            }`}
+                          >
+                            <div className="space-y-1">
+                              <div className="flex items-center justify-between">
+                                <span className={`text-[10px] font-bold uppercase tracking-wider ${isActive ? 'text-[#5a4ea4]' : 'text-slate-400'}`}>
+                                  {isActive ? '● SEDANG AKTIF' : `#${idx + 1}`}
+                                </span>
+                              </div>
+                              <h4 className={`text-xs font-semibold leading-snug line-clamp-2 ${isActive ? 'text-[#382f6e]' : 'text-slate-800'}`}>
+                                {post.title}
+                              </h4>
+                            </div>
+                            <span className="text-[10px] text-slate-400 block font-medium mt-2 truncate">
+                              {post.opz_name}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
                   </div>
-
-                  <a
-                    href={headlinePost.source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[#31c0c6] hover:bg-[#259fa4] text-white font-semibold text-xs shadow-xs hover:shadow transition"
-                  >
-                    <span>Baca Rilis Selengkapnya</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
+                )}
               </section>
             )}
 
@@ -660,46 +697,91 @@ export default function HomePage() {
             <div className="space-y-4">
               {headlinePost && (
                 <div className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-xs">
-                  <div className="relative h-48 w-full bg-slate-100">
-                    <SafeImage 
-                      src={headlinePost.image_url} 
-                      alt={headlinePost.title} 
-                      className="object-cover" 
-                    />
-                    <div className="absolute top-2 left-2 bg-[#1e1b4b]/90 text-white px-2 py-0.5 rounded text-[10px] font-semibold">
-                      {headlinePost.opz_name}
-                    </div>
-                  </div>
-                  <div className="p-4">
-                    <div className="text-[10px] text-slate-400 mb-1">{headlinePost.published_at} • {headlinePost.location}</div>
-                    <h2 className="text-base font-semibold text-slate-900 leading-snug">
-                      {headlinePost.title}
-                    </h2>
-                    <p className="mt-2 text-xs text-slate-600 line-clamp-2">
-                      {headlinePost.summary}
-                    </p>
-                    <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center gap-2">
-                      {headlinePost.instagram_url && (
-                        <a 
-                          href={headlinePost.instagram_url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="p-2 bg-rose-50 text-rose-600 rounded-lg border border-rose-200"
-                        >
-                          <InstagramIcon className="w-4 h-4" />
-                        </a>
-                      )}
+                  {/* Bar Aksi di Atas Gambar Headline (Mobile) */}
+                  <div className="p-3 bg-slate-50 border-b border-slate-100 flex items-center justify-between gap-2">
+                    {headlinePost.instagram_url ? (
                       <a 
-                        href={headlinePost.source_url} 
+                        href={headlinePost.instagram_url} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 py-2 bg-[#31c0c6] text-white rounded-lg text-center text-xs font-semibold flex items-center justify-center gap-1.5"
+                        className="px-2.5 py-1.5 bg-rose-50 text-rose-600 rounded-lg border border-rose-200 text-xs font-semibold flex items-center gap-1.5"
                       >
-                        <span>Baca Rilis Selengkapnya</span>
-                        <ExternalLink className="w-3.5 h-3.5" />
+                        <InstagramIcon className="w-3.5 h-3.5" />
+                        <span>Instagram</span>
                       </a>
-                    </div>
+                    ) : (
+                      <span className="text-[10px] font-semibold text-slate-500 uppercase">
+                        RILIS OPZ
+                      </span>
+                    )}
+                    <a 
+                      href={headlinePost.source_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="px-3 py-1.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-lg text-xs font-semibold flex items-center gap-1 shadow-xs"
+                    >
+                      <span>Baca Rilis</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
                   </div>
+
+                  <a 
+                    href={headlinePost.source_url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <div className="relative h-48 w-full bg-slate-100">
+                      <SafeImage 
+                        src={headlinePost.image_url} 
+                        alt={headlinePost.title} 
+                        className="object-cover" 
+                      />
+                      <div className="absolute top-2 left-2 bg-[#1e1b4b]/90 text-white px-2 py-0.5 rounded text-[10px] font-semibold">
+                        {headlinePost.opz_name}
+                      </div>
+                    </div>
+                    <div className="p-4">
+                      <div className="text-[10px] text-slate-400 mb-1">{headlinePost.published_at} • {headlinePost.location}</div>
+                      <h2 className="text-base font-semibold text-slate-900 leading-snug">
+                        {headlinePost.title}
+                      </h2>
+                      <p className="mt-2 text-xs text-slate-600 line-clamp-2">
+                        {headlinePost.summary}
+                      </p>
+                    </div>
+                  </a>
+
+                  {/* Rolling 4 Berita Selector di Mobile */}
+                  {top4Posts.length > 1 && (
+                    <div className="p-3 bg-slate-50 border-t border-slate-100">
+                      <span className="text-[10px] font-semibold tracking-wider uppercase text-slate-400 block mb-2">
+                        PILIH HEADLINE
+                      </span>
+                      <div className="grid grid-cols-2 gap-1.5">
+                        {top4Posts.map((post, idx) => {
+                          const isActive = idx === activeHeadlineIndex;
+                          return (
+                            <button
+                              key={post.id || idx}
+                              type="button"
+                              onClick={() => setActiveHeadlineIndex(idx)}
+                              className={`p-2 rounded-lg text-left border transition text-[11px] leading-tight ${
+                                isActive 
+                                  ? 'bg-[#f4f2fb] border-[#5a4ea4] text-[#382f6e] font-semibold' 
+                                  : 'bg-white border-slate-200 text-slate-700'
+                              }`}
+                            >
+                              <div className="truncate font-bold text-[9px] uppercase text-slate-400 mb-0.5">
+                                {isActive ? '● AKTIF' : `#${idx + 1}`}
+                              </div>
+                              <span className="line-clamp-2">{post.title}</span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
