@@ -165,13 +165,13 @@ export default function HomePage() {
     return filteredPosts.slice(0, 4);
   }, [filteredPosts]);
 
-  // Auto-roll headline tiap 5 detik
+  // Auto-roll headline tiap 10 detik
   useEffect(() => {
     if (top4Posts.length <= 1) return;
 
     const interval = setInterval(() => {
       setActiveHeadlineIndex((prev) => (prev + 1) % top4Posts.length);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [top4Posts.length]);
