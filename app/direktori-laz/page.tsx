@@ -120,15 +120,6 @@ export default function DirektoriLazPage() {
           </div>
 
           <div className="flex items-center gap-4 shrink-0 text-[11px] text-slate-300">
-            <a
-              href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 text-teal-300 hover:text-white font-medium transition"
-            >
-              <span>Verifikasi SIMZAT Kemenag</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
             <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
               <ShieldCheck className="w-3.5 h-3.5" />
               <span>218 Terdata</span>
@@ -388,16 +379,9 @@ export default function DirektoriLazPage() {
                     {/* Legalitas status preview */}
                     <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] gap-2">
                       <span className="text-slate-400 shrink-0">SK Kemenag:</span>
-                      <a
-                        href={laz.simzat_detail_url || 'https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz'}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-semibold text-slate-700 hover:text-[#5a4ea4] underline decoration-slate-300 hover:decoration-[#5a4ea4] truncate text-right font-mono text-[10px] inline-flex items-center gap-1 transition"
-                        title="Buka verifikasi SK di SIMZAT Kemenag"
-                      >
-                        <span className="truncate">{laz.sk_number ? `No. ${laz.sk_number}` : 'Cek SK Kemenag'}</span>
-                        <ExternalLink className="w-3 h-3 shrink-0 text-slate-400" />
-                      </a>
+                      <span className="font-semibold text-slate-700 truncate text-right font-mono text-[10px]" title={laz.sk_number}>
+                        {laz.sk_number ? `No. ${laz.sk_number}` : 'Terdaftar'}
+                      </span>
                     </div>
 
                   </div>
@@ -534,21 +518,12 @@ export default function DirektoriLazPage() {
             </div>
 
             {/* Modal Footer CTA */}
-            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center gap-2">
+            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-end">
               <a
-                href={activeLazDetail.simzat_detail_url}
+                href={activeLazDetail.donation_url || activeLazDetail.website_url || '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-slate-500 hover:text-slate-800 underline px-2 py-1 flex items-center gap-1"
-              >
-                Cek SK Kemenag <ExternalLink className="w-3 h-3" />
-              </a>
-
-              <a
-                href={activeLazDetail.donation_url || activeLazDetail.simzat_detail_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-semibold shadow flex items-center justify-center gap-1.5 transition"
+                className="w-full py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-semibold shadow flex items-center justify-center gap-1.5 transition"
               >
                 <HeartHandshake className="w-4 h-4" />
                 Donasi di Situs Resmi ↗
