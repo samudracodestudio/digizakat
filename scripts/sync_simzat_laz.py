@@ -116,7 +116,7 @@ def sync_simzat():
             "skala": skala,
             "provinsi": provinsi,
             "simzat_detail_url": detail_url or item.get('simzat_detail_url', ''),
-            "foz_member": item.get('foz_member', True),
+            "foz_member": item.get('foz_member', False),
             "donation_url": item.get('donation_url', detail_url),
             "slug": item.get('slug', name.lower().replace(' ', '-')),
             "instagram_url": item.get('instagram_url', ''),
