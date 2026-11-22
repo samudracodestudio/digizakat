@@ -186,26 +186,23 @@ export default function DirektoriLazPage() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] h-20 flex items-center justify-between gap-6">
           
-          <div className="flex items-center gap-4">
-            <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="relative h-10 w-10 shrink-0">
+          <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center shrink-0">
+              <div className="relative h-10 sm:h-11 w-[130px] sm:w-[148px] shrink-0">
                 <Image 
-                  src="/digizakat_icon.png" 
-                  alt="Digizakat Icon" 
+                  src="/digizakat_logo.png" 
+                  alt="Digizakat Logo" 
                   fill 
-                  className="object-contain"
+                  className="object-contain object-left"
                   priority
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold tracking-tight text-[#5a4ea4] group-hover:text-[#433880] transition leading-tight">
-                  Digizakat
-                </span>
-                <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
-                  Direktori 218 LAZ
-                </span>
-              </div>
             </Link>
+            <div className="hidden lg:block pl-3 border-l border-slate-200 ml-1">
+              <span className="text-xs font-semibold text-slate-600">
+                Direktori 218 LAZ
+              </span>
+            </div>
           </div>
 
           {/* Quick Search */}
