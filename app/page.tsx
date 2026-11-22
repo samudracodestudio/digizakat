@@ -1087,14 +1087,6 @@ export default function HomePage() {
                     </div>
                   </div>
                 )}
-
-                {activeLazDetail.phone && (
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-[#5a4ea4] shrink-0" />
-                    <span className="font-semibold text-slate-900">Kontak:</span>
-                    <span>{activeLazDetail.phone}</span>
-                  </div>
-                )}
               </div>
 
               {/* Tautan Media Sosial & Website */}
