@@ -18,6 +18,7 @@ export interface MapLazItem {
   provinsi: string;
   lokasi_singkat?: string;
   sk_number?: string;
+  logo_url?: string;
   lat?: number;
   lng?: number;
   coord_exact?: boolean;
@@ -140,24 +141,35 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
 
       const scaleStyle = SCALE_COLORS[laz.skala] || { fill: '#5a4ea4', stroke: '#382f6e' };
 
+      const logoHtml = laz.logo_url
+        ? `<div style="width:42px;height:42px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;padding:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;">
+            <img src="${laz.logo_url}" alt="${laz.name}" referrerpolicy="no-referrer" style="width:100%;height:100%;object-fit:contain;" />
+          </div>`
+        : '';
+
       const popupEl = document.createElement('div');
-      popupEl.style.minWidth = '215px';
+      popupEl.style.minWidth = '230px';
       popupEl.style.fontFamily = 'inherit';
       popupEl.innerHTML = `
-        <div style="margin-bottom:4px;">
-          ${typeBadge}
-          <span style="display:inline-block;padding:2px 7px;border-radius:999px;background:${scaleStyle.fill}18;color:${scaleStyle.stroke};font-size:10px;font-weight:700;text-transform:uppercase;">
-            ${laz.skala}
-          </span>
-          ${branchNote}
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;">
+          ${logoHtml}
+          <div style="min-width:0;flex:1;">
+            <div style="margin-bottom:4px;">
+              ${typeBadge}
+              <span style="display:inline-block;padding:2px 7px;border-radius:999px;background:${scaleStyle.fill}18;color:${scaleStyle.stroke};font-size:10px;font-weight:700;text-transform:uppercase;">
+                ${laz.skala}
+              </span>
+              ${branchNote}
+            </div>
+            <div style="font-weight:700;font-size:13px;color:#0f172a;line-height:1.3;margin-bottom:3px;">
+              ${laz.name}
+            </div>
+            <div style="font-size:11px;color:#64748b;line-height:1.35;">
+              ${isBranch ? `${branchWilayah || ''}${branchAlamat ? `<br/><span style="font-size:10px;color:#94a3b8;">${branchAlamat}</span>` : ''}` : laz.lokasi_singkat || laz.provinsi}
+            </div>
+          </div>
         </div>
-        <div style="font-weight:700;font-size:13px;color:#0f172a;line-height:1.3;margin-bottom:4px;">
-          ${laz.name}
-        </div>
-        <div style="font-size:11px;color:#64748b;margin-bottom:8px;line-height:1.35;">
-          ${isBranch ? `${branchWilayah || ''}${branchAlamat ? `<br/><span style="font-size:10px;color:#94a3b8;">${branchAlamat}</span>` : ''}` : laz.lokasi_singkat || laz.provinsi}
-        </div>
-        <button type="button" data-laz-open="${laz.no}" style="width:100%;padding:6px 10px;border-radius:8px;background:#5a4ea4;color:#ffffff;font-size:11px;font-weight:600;border:none;cursor:pointer;">
+        <button type="button" data-laz-open="${laz.no}" style="width:100%;padding:7px 10px;border-radius:8px;background:#5a4ea4;color:#ffffff;font-size:11px;font-weight:600;border:none;cursor:pointer;">
           Lihat Profil & SK
         </button>
       `;
