@@ -10,6 +10,7 @@ import {
   ExternalLink,
   ShieldCheck,
   CheckCircle2,
+  ChevronDown,
   ChevronRight,
   Filter,
   ArrowLeft,
@@ -292,12 +293,12 @@ export default function DirektoriLazPage() {
             </div>
 
             {/* Province Select Dropdown */}
-            <div className="w-full md:w-56">
+            <div className="w-full md:w-56 relative">
               <select
                 value={selectedProvinsi}
                 onChange={(e) => setSelectedProvinsi(e.target.value)}
                 aria-label="Filter berdasarkan Provinsi"
-                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:border-[#5a4ea4] focus:outline-none font-medium text-slate-700"
+                className="w-full appearance-none pl-3.5 pr-9 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:border-[#5a4ea4] focus:outline-none font-medium text-slate-700 cursor-pointer"
               >
                 {provinces.map((prov) => (
                   <option key={prov} value={prov}>
@@ -305,6 +306,7 @@ export default function DirektoriLazPage() {
                   </option>
                 ))}
               </select>
+              <ChevronDown className="w-4 h-4 text-slate-500 pointer-events-none absolute right-3 top-1/2 -translate-y-1/2" />
             </div>
 
           </div>
