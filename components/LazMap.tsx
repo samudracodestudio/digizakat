@@ -34,6 +34,11 @@ interface LazMapProps {
   onSelectLaz: (no: number) => void;
 }
 
+const INDONESIA_BOUNDS: L.LatLngBoundsExpression = [
+  [6.8, 94.2],   // Barat Laut (Aceh / Sabang)
+  [-11.5, 141.5], // Tenggara (NTT / Papua)
+];
+
 const SCALE_COLORS: Record<string, { fill: string; stroke: string }> = {
   Nasional: { fill: '#059669', stroke: '#065f46' }, // Hijau
   Provinsi: { fill: '#31c0c6', stroke: '#1d8286' }, // Tosca
@@ -75,13 +80,16 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     if (!mapContainerRef.current || mapRef.current) return;
 
     const map = L.map(mapContainerRef.current, {
-      center: [-2.5, 118.0],
-      zoom: 5,
-      minZoom: 4,
+      center: [-2.4, 118.0],
+      zoom: 4.5,
+      minZoom: 3.5,
       maxZoom: 18,
+      zoomSnap: 0.25,
+      zoomDelta: 0.5,
       scrollWheelZoom: false,
       zoomControl: true,
     });
+    map.fitBounds(INDONESIA_BOUNDS, { padding: [16, 16] });
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -110,7 +118,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
         L.DomEvent.disableClickPropagation(container);
         L.DomEvent.on(btn, 'click', (e) => {
           L.DomEvent.preventDefault(e);
-          map.flyTo([-2.5, 118.0], 5, { duration: 0.6 });
+          map.flyToBounds(INDONESIA_BOUNDS, { padding: [16, 16], duration: 0.6 });
         });
         return container;
       },
@@ -120,7 +128,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     const clusterGroup = L.markerClusterGroup({
       showCoverageOnHover: false,
       spiderfyOnMaxZoom: true,
-      maxClusterRadius: 48,
+      maxClusterRadius: (zoom) => (zoom <= 5.5 ? 82 : zoom <= 7.5 ? 58 : 42),
       disableClusteringAtZoom: 13,
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
@@ -282,7 +290,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
         map.flyToBounds(bounds, { padding: [40, 40], maxZoom: 11, duration: 0.7 });
       }
     } else {
-      map.flyTo([-2.5, 118.0], 5, { duration: 0.7 });
+      map.flyToBounds(INDONESIA_BOUNDS, { padding: [16, 16], duration: 0.7 });
     }
   }, [items, selectedProvinsi, isProvinceSelected]);
 
