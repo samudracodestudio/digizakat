@@ -1,0 +1,590 @@
+'use client';
+
+import React, { useState, useEffect, useMemo } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import {
+  Search,
+  Building2,
+  MapPin,
+  ExternalLink,
+  ShieldCheck,
+  CheckCircle2,
+  ChevronRight,
+  Filter,
+  ArrowLeft,
+  Globe,
+  Phone,
+  UserCheck,
+  HeartHandshake,
+  FileText,
+  BadgeCheck,
+  Layers,
+  Sparkles
+} from 'lucide-react';
+
+interface LAZItem {
+  no: number;
+  name: string;
+  skala: string;
+  provinsi: string;
+  simzat_detail_url: string;
+  foz_member?: boolean;
+  donation_url?: string;
+  slug?: string;
+  instagram_url?: string;
+  website_url?: string;
+  sk_number?: string;
+  berlaku_sampai?: string;
+  alamat?: string;
+  email?: string;
+  phone?: string;
+  pimpinan?: string;
+  logo_url?: string;
+}
+
+export default function DirektoriLazPage() {
+  const [lazList, setLazList] = useState<LAZItem[]>([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedSkala, setSelectedSkala] = useState('Semua');
+  const [selectedProvinsi, setSelectedProvinsi] = useState('Semua');
+  const [activeLazDetail, setActiveLazDetail] = useState<LAZItem | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/data/laz_verified.json')
+      .then((res) => res.json())
+      .then((data: LAZItem[]) => {
+        if (data && data.length > 0) {
+          setLazList(data);
+        }
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.error('Failed to load LAZ directory', err);
+        setIsLoading(false);
+      });
+  }, []);
+
+  // Filtered LAZ
+  const filteredLaz = useMemo(() => {
+    return lazList.filter((item) => {
+      const matchSearch =
+        item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        item.provinsi.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (item.alamat && item.alamat.toLowerCase().includes(searchQuery.toLowerCase()));
+      const matchSkala = selectedSkala === 'Semua' || item.skala === selectedSkala;
+      const matchProvinsi = selectedProvinsi === 'Semua' || item.provinsi === selectedProvinsi;
+      return matchSearch && matchSkala && matchProvinsi;
+    });
+  }, [lazList, searchQuery, selectedSkala, selectedProvinsi]);
+
+  // Unique provinces list
+  const provinces = useMemo(() => {
+    const setP = new Set(lazList.map((item) => item.provinsi).filter(Boolean));
+    return ['Semua', ...Array.from(setP).sort()];
+  }, [lazList]);
+
+  // Counts by scale
+  const skalaCounts = useMemo(() => {
+    const counts: Record<string, number> = { Semua: lazList.length, Nasional: 0, Provinsi: 0, 'Kabupaten/Kota': 0 };
+    lazList.forEach((item) => {
+      if (counts[item.skala] !== undefined) {
+        counts[item.skala]++;
+      }
+    });
+    return counts;
+  }, [lazList]);
+
+  return (
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-800 font-sans">
+      
+      {/* 1. TOP ANNOUNCEMENT BAR */}
+      <div className="bg-[#1e1b4b] text-slate-200 text-xs border-b border-slate-800">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] py-2 flex items-center justify-between gap-4">
+          <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
+            <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase shrink-0">
+              DATABASE RESMI
+            </span>
+            <span className="text-slate-300 truncate text-xs">
+              Sinkronisasi SIMZAT Kementerian Agama RI & Forum Zakat (FOZ)
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4 shrink-0 text-[11px] text-slate-300">
+            <a
+              href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center gap-1.5 text-teal-300 hover:text-white font-medium transition"
+            >
+              <span>Verifikasi SIMZAT Kemenag</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+            <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span>218 Terverifikasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 2. HEADER NAV */}
+      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-xs">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] h-20 flex items-center justify-between gap-6">
+          
+          <div className="flex items-center gap-4">
+            <Link 
+              href="/"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-[#5a4ea4] hover:bg-slate-100 transition border border-slate-200"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              <span>Beranda Radar</span>
+            </Link>
+
+            <Link href="/" className="flex items-center gap-2.5">
+              <div className="relative h-10 w-10 shrink-0">
+                <Image 
+                  src="/digizakat_icon.png" 
+                  alt="Digizakat Icon" 
+                  fill 
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold tracking-tight text-[#5a4ea4] leading-tight">
+                  Digizakat
+                </span>
+                <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
+                  Direktori 218 LAZ
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          {/* Quick Search */}
+          <div className="flex-1 max-w-md relative hidden sm:block">
+            <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+              <Search className="h-4 w-4 text-slate-400" />
+            </div>
+            <input
+              type="text"
+              placeholder="Ketik nama LAZ, kota, atau provinsi..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-2 text-xs sm:text-sm bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-[#5a4ea4] rounded-full focus:outline-none transition-all"
+            />
+          </div>
+
+          <a
+            href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition shrink-0"
+          >
+            <span>Sumber Asli SIMZAT</span>
+            <ExternalLink className="w-3.5 h-3.5 text-[#5a4ea4]" />
+          </a>
+
+        </div>
+      </header>
+
+      {/* 3. HERO / PAGE TITLE */}
+      <section className="bg-gradient-to-b from-white to-slate-50 border-b border-slate-200 py-8">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%]">
+          <div className="max-w-3xl space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#eaf9fa] text-[#1d8286] border border-[#cbfbf1]">
+              <BadgeCheck className="w-4 h-4 text-[#31c0c6]" />
+              <span>Direktori Lengkap Lembaga Amil Zakat Berizin Kemenag RI</span>
+            </div>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
+              Pencarian & Verifikasi Legalitas 218 LAZ Resmi
+            </h1>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              Cari dan periksa status legalitas Lembaga Amil Zakat (LAZ) di seluruh Indonesia. Terkoneksi dengan Surat Keputusan (SK) izin operasional Kemenag RI dan jaringan Forum Zakat (FOZ).
+            </p>
+          </div>
+
+          {/* Quick Stats Cards */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
+              <span className="text-[11px] font-semibold text-slate-400 block uppercase">Total Lembaga</span>
+              <span className="text-2xl font-bold text-[#5a4ea4]">218</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Berizin Kemenag RI</span>
+            </div>
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
+              <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Nasional</span>
+              <span className="text-2xl font-bold text-emerald-600">{skalaCounts['Nasional'] || 39}</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Cakupan Seluruh RI</span>
+            </div>
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
+              <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Provinsi</span>
+              <span className="text-2xl font-bold text-blue-600">{skalaCounts['Provinsi'] || 35}</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Tingkat Wilayah</span>
+            </div>
+            <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
+              <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Kab/Kota</span>
+              <span className="text-2xl font-bold text-teal-600">{skalaCounts['Kabupaten/Kota'] || 144}</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Akar Rumput Daerah</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 4. FILTER & SEARCH CONTROL */}
+      <section className="bg-white border-b border-slate-200 py-4 sticky top-20 z-30 shadow-xs">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%]">
+          
+          <div className="flex flex-col md:flex-row gap-3 items-stretch md:items-center justify-between">
+            
+            {/* Search Input (Always visible on mobile & desktop) */}
+            <div className="flex-1 relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Search className="h-4 w-4 text-slate-400" />
+              </div>
+              <input
+                type="text"
+                placeholder="Cari nama lembaga, kota, atau provinsi..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-9 pr-4 py-2 text-xs sm:text-sm bg-slate-50 focus:bg-white border border-slate-200 focus:border-[#5a4ea4] rounded-xl focus:outline-none transition"
+              />
+            </div>
+
+            {/* Scale Filter Tabs */}
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none">
+              {(['Semua', 'Nasional', 'Provinsi', 'Kabupaten/Kota'] as const).map((skala) => (
+                <button
+                  key={skala}
+                  onClick={() => setSelectedSkala(skala)}
+                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition cursor-pointer ${
+                    selectedSkala === skala
+                      ? 'bg-[#5a4ea4] text-white shadow-xs'
+                      : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+                  }`}
+                >
+                  {skala} ({skalaCounts[skala] || 0})
+                </button>
+              ))}
+            </div>
+
+            {/* Province Select Dropdown */}
+            <div className="w-full md:w-56">
+              <select
+                value={selectedProvinsi}
+                onChange={(e) => setSelectedProvinsi(e.target.value)}
+                aria-label="Filter berdasarkan Provinsi"
+                className="w-full px-3 py-2 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:border-[#5a4ea4] focus:outline-none font-medium text-slate-700"
+              >
+                {provinces.map((prov) => (
+                  <option key={prov} value={prov}>
+                    {prov === 'Semua' ? 'Semua Provinsi' : prov}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+          </div>
+
+          {/* Results Summary bar */}
+          <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
+            <span>
+              Menampilkan <strong className="text-slate-900">{filteredLaz.length}</strong> dari 218 lembaga amil zakat
+            </span>
+            {(searchQuery || selectedSkala !== 'Semua' || selectedProvinsi !== 'Semua') && (
+              <button
+                onClick={() => {
+                  setSearchQuery('');
+                  setSelectedSkala('Semua');
+                  setSelectedProvinsi('Semua');
+                }}
+                className="text-xs font-semibold text-[#5a4ea4] hover:underline cursor-pointer"
+              >
+                Reset Filter
+              </button>
+            )}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 5. MAIN DIRECTORY GRID / TABLE */}
+      <main className="flex-1 w-full mx-auto px-4 sm:px-6 md:px-[10%] py-8">
+        
+        {isLoading ? (
+          <div className="text-center py-16 space-y-3">
+            <div className="inline-block animate-spin rounded-full h-8 w-8 border-4 border-slate-200 border-t-[#5a4ea4]" />
+            <p className="text-xs text-slate-500 font-medium">Memuat data direktori 218 LAZ...</p>
+          </div>
+        ) : filteredLaz.length === 0 ? (
+          <div className="text-center py-16 bg-white rounded-2xl border border-slate-200 p-8 space-y-3">
+            <Building2 className="w-12 h-12 text-slate-300 mx-auto" />
+            <h3 className="text-base font-semibold text-slate-800">Tidak ada lembaga ditemukan</h3>
+            <p className="text-xs text-slate-500 max-w-md mx-auto">
+              Tidak ada lembaga amil zakat yang cocok dengan pencarian &quot;{searchQuery}&quot;. Coba gunakan kata kunci nama lain atau ubah filter skala/provinsi.
+            </p>
+            <button
+              onClick={() => {
+                setSearchQuery('');
+                setSelectedSkala('Semua');
+                setSelectedProvinsi('Semua');
+              }}
+              className="mt-2 px-4 py-2 bg-[#5a4ea4] text-white rounded-xl text-xs font-semibold"
+            >
+              Tampilkan Semua Lembaga
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {filteredLaz.map((laz) => {
+              const isNasional = laz.skala === 'Nasional';
+              const isProvinsi = laz.skala === 'Provinsi';
+
+              return (
+                <div
+                  key={laz.no}
+                  className="bg-white rounded-2xl border border-slate-200 hover:border-[#5a4ea4]/50 hover:shadow-md transition duration-200 p-5 flex flex-col justify-between group"
+                >
+                  <div className="space-y-3">
+                    
+                    {/* Top Badges */}
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[11px] font-bold text-slate-400">
+                        #{laz.no}
+                      </span>
+                      
+                      <div className="flex items-center gap-1.5">
+                        <span
+                          className={`px-2 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wider ${
+                            isNasional
+                              ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                              : isProvinsi
+                              ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                              : 'bg-teal-50 text-teal-700 border border-teal-200'
+                          }`}
+                        >
+                          {laz.skala}
+                        </span>
+
+                        <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-[#5a4ea4] border border-purple-200">
+                          FOZ
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* LAZ Name */}
+                    <h3 
+                      onClick={() => setActiveLazDetail(laz)}
+                      className="text-base font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition cursor-pointer line-clamp-2 leading-snug"
+                    >
+                      {laz.name}
+                    </h3>
+
+                    {/* Location Info */}
+                    <div className="flex items-start gap-2 text-xs text-slate-500">
+                      <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0 mt-0.5" />
+                      <span className="line-clamp-2">
+                        {laz.alamat || `${laz.provinsi}, Indonesia`}
+                      </span>
+                    </div>
+
+                    {/* Legalitas status preview */}
+                    <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                      <span className="text-slate-400">SK Kemenag:</span>
+                      <span className="font-semibold text-emerald-600 flex items-center gap-1">
+                        <CheckCircle2 className="w-3 h-3 text-emerald-500" /> Resmi Berizin
+                      </span>
+                    </div>
+
+                  </div>
+
+                  {/* Actions CTA */}
+                  <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2">
+                    <button
+                      onClick={() => setActiveLazDetail(laz)}
+                      className="flex-1 py-2 px-3 bg-slate-50 hover:bg-[#f2f0fa] text-[#433880] rounded-xl text-xs font-semibold text-center border border-slate-200 hover:border-[#d6d0ee] transition cursor-pointer"
+                    >
+                      Lihat Profil & SK
+                    </button>
+
+                    <a
+                      href={laz.simzat_detail_url || 'https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Buka halaman verifikasi resmi di SIMZAT Kemenag"
+                      className="p-2 bg-slate-50 hover:bg-slate-100 text-slate-500 hover:text-slate-800 rounded-xl border border-slate-200 transition shrink-0"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+      </main>
+
+      {/* 6. MODAL DETAIL POPUP */}
+      {activeLazDetail && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
+          <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-200">
+            
+            {/* Modal Header */}
+            <div className="p-5 bg-gradient-to-r from-[#1e1b4b] to-[#382f6e] text-white flex items-start justify-between">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="bg-white/20 text-white text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">
+                    {activeLazDetail.skala}
+                  </span>
+                  <span className="bg-emerald-400/20 text-emerald-200 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
+                    <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Terdaftar Kemenag
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-white leading-snug">
+                  {activeLazDetail.name}
+                </h3>
+              </div>
+              <button 
+                onClick={() => setActiveLazDetail(null)}
+                className="text-white/70 hover:text-white p-1 hover:bg-white/10 rounded-lg transition"
+              >
+                ✕
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-5 space-y-4 text-xs">
+              
+              <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-slate-500">Nomor Registrasi:</span>
+                  <span className="font-bold text-[#5a4ea4]">LAZ #{activeLazDetail.no}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-slate-500">Cakupan Wilayah:</span>
+                  <span className="font-medium text-slate-700">{activeLazDetail.provinsi}</span>
+                </div>
+                {activeLazDetail.sk_number && (
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-500">Nomor SK Kemenag:</span>
+                    <span className="font-mono text-slate-800 text-[11px] font-semibold">{activeLazDetail.sk_number}</span>
+                  </div>
+                )}
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-slate-500">Keanggotaan Forum Zakat (FOZ):</span>
+                  <span className="inline-flex items-center gap-1 font-semibold text-emerald-700">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Terdaftar Aktif
+                  </span>
+                </div>
+              </div>
+
+              <div className="space-y-2.5 text-slate-600">
+                <div className="flex items-start gap-2">
+                  <MapPin className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-semibold text-slate-900 block">Kantor:</span>
+                    <span>{activeLazDetail.alamat || `${activeLazDetail.provinsi}, Indonesia`}</span>
+                  </div>
+                </div>
+
+                {activeLazDetail.pimpinan && (
+                  <div className="flex items-start gap-2">
+                    <UserCheck className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-slate-900 block">Pimpinan:</span>
+                      <span>{activeLazDetail.pimpinan}</span>
+                    </div>
+                  </div>
+                )}
+
+                {activeLazDetail.phone && (
+                  <div className="flex items-center gap-2">
+                    <Phone className="w-4 h-4 text-[#5a4ea4] shrink-0" />
+                    <span className="font-semibold text-slate-900">Kontak:</span>
+                    <span>{activeLazDetail.phone}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Tautan Media Sosial & Website */}
+              <div className="pt-2 border-t border-slate-100 flex flex-wrap gap-2">
+                {activeLazDetail.instagram_url && (
+                  <a
+                    href={activeLazDetail.instagram_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-2 px-3 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded-xl font-semibold flex items-center justify-center gap-1.5 transition border border-rose-200"
+                  >
+                    Instagram Resmi
+                  </a>
+                )}
+                {activeLazDetail.website_url && (
+                  <a
+                    href={activeLazDetail.website_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 py-2 px-3 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl font-semibold flex items-center justify-center gap-1.5 transition border border-slate-200"
+                  >
+                    <Globe className="w-4 h-4" /> Web Utama
+                  </a>
+                )}
+              </div>
+
+            </div>
+
+            {/* Modal Footer CTA */}
+            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center gap-2">
+              <a
+                href={activeLazDetail.simzat_detail_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-slate-500 hover:text-slate-800 underline px-2 py-1 flex items-center gap-1"
+              >
+                Cek SK Kemenag <ExternalLink className="w-3 h-3" />
+              </a>
+
+              <a
+                href={activeLazDetail.donation_url || activeLazDetail.simzat_detail_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-semibold shadow flex items-center justify-center gap-1.5 transition"
+              >
+                <HeartHandshake className="w-4 h-4" />
+                Donasi di Situs Resmi ↗
+              </a>
+            </div>
+
+          </div>
+        </div>
+      )}
+
+      {/* 7. FOOTER */}
+      <footer className="bg-white border-t border-slate-200 py-8 text-xs text-slate-500">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-2">
+            <div className="relative h-6 w-6">
+              <Image src="/digizakat_icon.png" alt="Digizakat" fill className="object-contain" />
+            </div>
+            <span>© {new Date().getFullYear()} Digizakat.com — Ensiklopedi & Radar Gerakan Zakat Indonesia.</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Link href="/" className="hover:text-[#5a4ea4] underline">Beranda Radar</Link>
+            <a 
+              href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-[#5a4ea4] underline"
+            >
+              SIMZAT Kemenag RI ↗
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  );
+}

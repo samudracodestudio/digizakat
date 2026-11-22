@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { 
   Search, 
   BookOpen, 
@@ -262,13 +263,13 @@ export default function HomePage() {
 
           {/* Cek Legalitas Button */}
           <div className="hidden md:flex items-center gap-2">
-            <a
-              href="#direktori-laz"
+            <Link
+              href="/direktori-laz"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition"
             >
               <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" />
               <span>Direktori 218 LAZ</span>
-            </a>
+            </Link>
           </div>
 
         </div>
@@ -688,8 +689,16 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="mt-3 pt-2 border-t border-slate-200 text-[10px] text-slate-400 text-center">
-                SIMZAT Kemenag & FOZ
+              <div className="mt-3 pt-2 border-t border-slate-200 flex items-center justify-between text-[11px]">
+                <Link
+                  href="/direktori-laz"
+                  className="font-semibold text-[#5a4ea4] hover:underline flex items-center gap-1"
+                >
+                  Buka Halaman Lengkap ↗
+                </Link>
+                <span className="text-[10px] text-slate-400">
+                  SIMZAT Kemenag
+                </span>
               </div>
             </div>
 
@@ -827,7 +836,13 @@ export default function HomePage() {
             <div className="space-y-3">
               <div className="p-3 bg-slate-100 rounded-xl flex items-center justify-between text-xs">
                 <span className="font-semibold text-slate-800">218 Lembaga Resmi Kemenag RI</span>
-                <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded-full font-semibold text-[10px]">{filteredLaz.length}</span>
+                <Link
+                  href="/direktori-laz"
+                  className="bg-[#5a4ea4] text-white px-2.5 py-1 rounded-lg font-semibold text-[11px] flex items-center gap-1 shadow-xs"
+                >
+                  <span>Buka Halaman Penuh</span>
+                  <ExternalLink className="w-3 h-3" />
+                </Link>
               </div>
               
               <div className="divide-y divide-slate-200 bg-white border border-slate-200 rounded-xl p-3">
