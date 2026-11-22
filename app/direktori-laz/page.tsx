@@ -683,7 +683,7 @@ export default function DirektoriLazPage() {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="bg-white rounded-2xl max-w-md w-full overflow-hidden shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-150 cursor-default"
+            className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-150 cursor-default"
           >
             <div className="px-5 py-3.5 border-b border-slate-100 flex items-center justify-between gap-3">
               <h4 className="text-sm font-semibold text-slate-900 truncate">
@@ -697,11 +697,11 @@ export default function DirektoriLazPage() {
                 ✕
               </button>
             </div>
-            <div className="p-8 bg-slate-50 flex items-center justify-center min-h-[260px]">
+            <div className="p-6 bg-slate-50 flex items-center justify-center">
               <img
                 src={previewLogo.url}
                 alt={previewLogo.name}
-                className="max-h-64 max-w-full object-contain drop-shadow-xs"
+                className="w-full h-72 sm:h-80 object-contain drop-shadow-xs"
                 referrerPolicy="no-referrer"
               />
             </div>
