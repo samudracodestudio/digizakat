@@ -128,7 +128,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     const clusterGroup = L.markerClusterGroup({
       showCoverageOnHover: false,
       spiderfyOnMaxZoom: true,
-      maxClusterRadius: (zoom) => (zoom <= 5.5 ? 82 : zoom <= 7.5 ? 58 : 42),
+      maxClusterRadius: (zoom) => (zoom <= 5.5 ? 115 : zoom <= 7.5 ? 58 : 42),
       disableClusteringAtZoom: 13,
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
