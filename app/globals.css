@@ -39,3 +39,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* Grayscale editorial base map while keeping markers & popups in full color */
+.leaflet-tile-pane {
+  filter: grayscale(100%) contrast(1.06) brightness(1.03);
+}
