@@ -15,51 +15,56 @@ def sync_simzat():
     print("Memeriksa update data dari portal resmi SIMZAT Kemenag RI...")
     
     # 1. Buka halaman utama SIMZAT untuk ambil session cookie & csrf token
-    req1 = urllib.request.Request(
-        'https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz',
-        headers=HEADERS
-    )
-    resp1 = urllib.request.urlopen(req1, context=ctx, timeout=15)
-    html = resp1.read().decode('utf-8', errors='ignore')
-    cookie = resp1.headers.get('Set-Cookie', '')
+    try:
+        req1 = urllib.request.Request(
+            'https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz',
+            headers=HEADERS
+        )
+        resp1 = urllib.request.urlopen(req1, context=ctx, timeout=30)
+        html = resp1.read().decode('utf-8', errors='ignore')
+        cookie = resp1.headers.get('Set-Cookie', '')
 
-    csrf_match = re.search(r'csrfHash\s*=\s*[\'\"]([a-f0-9]+)[\'\"]', html)
-    if not csrf_match:
-        print("❌ Gagal membaca CSRF token dari SIMZAT.")
+        csrf_match = re.search(r'csrfHash\s*=\s*[\'\"]([a-f0-9]+)[\'\"]', html)
+        if not csrf_match:
+            print("❌ Gagal membaca CSRF token dari SIMZAT.")
+            return False
+        csrf_hash = csrf_match.group(1)
+
+        # 2. Fetch data LAZ via internal DataTables POST endpoint (ambil hingga 300 record)
+        post_data = urllib.parse.urlencode({
+            'csrf_icraft_token': csrf_hash,
+            'draw': 1,
+            'start': 0,
+            'length': 300
+        }).encode('utf-8')
+
+        req2 = urllib.request.Request(
+            'https://simzat.kemenag.go.id/simzat/apps/web/data_laz',
+            data=post_data,
+            headers={
+                **HEADERS,
+                'X-Requested-With': 'XMLHttpRequest',
+                'Cookie': cookie,
+                'Referer': 'https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz'
+            }
+        )
+
+        with urllib.request.urlopen(req2, context=ctx, timeout=40) as r:
+            res = json.loads(r.read().decode('utf-8'))
+            records_total = res.get('recordsTotal', 0)
+            raw_rows = res.get('data', [])
+    except Exception as e:
+        print("⚠️ Koneksi SIMZAT Kemenag sedang padat/timeout:", e)
+        print("   -> Menggunakan cache database lokal yang sudah tersimpan aman.")
         return False
-    csrf_hash = csrf_match.group(1)
 
-    # 2. Fetch data LAZ via internal DataTables POST endpoint (ambil hingga 300 record)
-    post_data = urllib.parse.urlencode({
-        'csrf_icraft_token': csrf_hash,
-        'draw': 1,
-        'start': 0,
-        'length': 300
-    }).encode('utf-8')
-
-    req2 = urllib.request.Request(
-        'https://simzat.kemenag.go.id/simzat/apps/web/data_laz',
-        data=post_data,
-        headers={
-            **HEADERS,
-            'X-Requested-With': 'XMLHttpRequest',
-            'Cookie': cookie,
-            'Referer': 'https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz'
-        }
-    )
-
-    with urllib.request.urlopen(req2, context=ctx, timeout=20) as r:
-        res = json.loads(r.read().decode('utf-8'))
-        records_total = res.get('recordsTotal', 0)
-        raw_rows = res.get('data', [])
-
-    print(f"✅ Data diterima dari SIMZAT: {records_total} lembaga terdaftar.")
+    print(f"✅ Data diterima dari SIMZAT: {records_total} lembaga terdaftar aktif.")
 
     if not raw_rows:
         print("Data kosong dari SIMZAT.")
         return False
 
-    # Baca data laz_verified.json yang sudah ada (untuk mempertahankan data nomor SK, telepon, pimpinan yang sudah diperkaya)
+    # Baca data laz_verified.json yang sudah ada sebelumnya
     existing_map = {}
     if os.path.exists(LAZ_FILE):
         try:
@@ -70,9 +75,11 @@ def sync_simzat():
         except Exception as e:
             print("Gagal membaca file eksisting:", e)
 
+    # Catat semua nama LAZ yang aktif terdaftar di SIMZAT saat ini
+    current_active_names = set()
     updated_list = []
+
     for row in raw_rows:
-        # row: [no, '<a href="...">Nama LAZ</a>', skala, kantor_pusat]
         no_val = int(row[0]) if str(row[0]).isdigit() else len(updated_list) + 1
         link_html = row[1]
         skala = row[2].strip()
@@ -85,7 +92,23 @@ def sync_simzat():
         name = name_match.group(1).strip() if name_match else link_html.strip()
 
         key = name.upper()
+        current_active_names.add(key)
         item = existing_map.get(key, {})
+
+        # Cek apakah di SIMZAT ada teks status khusus (misal "Proses Perpanjangan" / "Dicabut")
+        cell_full_text = re.sub(r'<[^>]+>', ' ', link_html).lower()
+        if 'perpanjang' in cell_full_text:
+            status = 'perpanjangan'
+            status_label = 'Proses Perpanjangan Izin'
+            is_hidden = False # Bisa diatur apakah mau disembunyikan atau diberi label khusus
+        elif 'cabut' in cell_full_text or 'beku' in cell_full_text:
+            status = 'dibekukan'
+            status_label = 'Izin Dibekukan / Tidak Aktif'
+            is_hidden = True
+        else:
+            status = 'aktif'
+            status_label = 'Resmi Berizin Kemenag RI'
+            is_hidden = item.get('is_hidden', False) # pertahankan override manual jika ada
 
         updated_item = {
             "no": no_val,
@@ -104,15 +127,37 @@ def sync_simzat():
             "email": item.get('email', ''),
             "phone": item.get('phone', ''),
             "pimpinan": item.get('pimpinan', 'Pimpinan Lembaga'),
-            "logo_url": item.get('logo_url', '')
+            "logo_url": item.get('logo_url', ''),
+            "status": status,
+            "status_label": status_label,
+            "is_hidden": is_hidden
         }
         updated_list.append(updated_item)
+
+    # SKENARIO HIDE OTOMATIS:
+    # Jika suatu lembaga sebelumnya ada di database kita, tetapi tiba-tiba HILANG / TIDAK ADA
+    # lagi di data tabel SIMZAT (karena sedang masa perpanjangan izin / evaluasi Kemenag),
+    # kita TIDAK MENGHAPUSNYA permanen, melainkan menandainya dengan status 'perpanjangan'
+    # dan is_hidden = True (disembunyikan dari direktori publik)
+    hidden_count = 0
+    for key, old_item in existing_map.items():
+        if key not in current_active_names:
+            hidden_copy = dict(old_item)
+            hidden_copy["status"] = "perpanjangan"
+            hidden_copy["status_label"] = "Sedang Masa Perpanjangan Izin / Verifikasi Ulang Kemenag"
+            hidden_copy["is_hidden"] = True
+            updated_list.append(hidden_copy)
+            hidden_count += 1
+            print(f"  ⚠️ Lembaga '{old_item['name']}' tidak muncul di SIMZAT -> otomatis di-hide (status: perpanjangan).")
 
     # Simpan kembali jika berhasil
     with open(LAZ_FILE, 'w', encoding='utf-8') as f:
         json.dump(updated_list, f, ensure_ascii=False, indent=2)
 
+    active_count = len(updated_list) - hidden_count
     print(f"🎉 Sukses menyinkronkan {len(updated_list)} data LAZ ke {LAZ_FILE}!")
+    print(f"   • Aktif tampil: {active_count}")
+    print(f"   • Disembunyikan (Hide/Perpanjangan): {hidden_count}")
     return True
 
 if __name__ == '__main__':

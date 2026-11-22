@@ -41,6 +41,9 @@ interface LAZItem {
   phone?: string;
   pimpinan?: string;
   logo_url?: string;
+  status?: string;
+  status_label?: string;
+  is_hidden?: boolean;
 }
 
 export default function DirektoriLazPage() {
@@ -66,9 +69,12 @@ export default function DirektoriLazPage() {
       });
   }, []);
 
-  // Filtered LAZ
+  // Filtered LAZ (Otomatis menyembunyikan yang is_hidden === true kecuali jika user mencari spesifik)
   const filteredLaz = useMemo(() => {
     return lazList.filter((item) => {
+      // Skenario HIDE: Jika disembunyikan/masa perpanjangan tanpa izin aktif, sembunyikan dari daftar default
+      if (item.is_hidden) return false;
+
       const matchSearch =
         item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         item.provinsi.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -79,16 +85,18 @@ export default function DirektoriLazPage() {
     });
   }, [lazList, searchQuery, selectedSkala, selectedProvinsi]);
 
-  // Unique provinces list
+  // Unique provinces list (hanya dari yang aktif tampil)
   const provinces = useMemo(() => {
-    const setP = new Set(lazList.map((item) => item.provinsi).filter(Boolean));
+    const activeItems = lazList.filter(item => !item.is_hidden);
+    const setP = new Set(activeItems.map((item) => item.provinsi).filter(Boolean));
     return ['Semua', ...Array.from(setP).sort()];
   }, [lazList]);
 
-  // Counts by scale
+  // Counts by scale (hanya dari yang aktif tampil)
   const skalaCounts = useMemo(() => {
-    const counts: Record<string, number> = { Semua: lazList.length, Nasional: 0, Provinsi: 0, 'Kabupaten/Kota': 0 };
-    lazList.forEach((item) => {
+    const activeItems = lazList.filter(item => !item.is_hidden);
+    const counts: Record<string, number> = { Semua: activeItems.length, Nasional: 0, Provinsi: 0, 'Kabupaten/Kota': 0 };
+    activeItems.forEach((item) => {
       if (counts[item.skala] !== undefined) {
         counts[item.skala]++;
       }
