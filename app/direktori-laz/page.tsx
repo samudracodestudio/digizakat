@@ -366,9 +366,11 @@ export default function DirektoriLazPage() {
                           {laz.skala}
                         </span>
 
-                        <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-[#5a4ea4] border border-purple-200">
-                          FOZ
-                        </span>
+                        {laz.foz_member && (
+                          <span className="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-[#5a4ea4] border border-purple-200">
+                            FOZ
+                          </span>
+                        )}
                       </div>
                     </div>
 
@@ -472,12 +474,14 @@ export default function DirektoriLazPage() {
                     <span className="font-mono text-slate-800 text-[11px] font-semibold">{activeLazDetail.sk_number}</span>
                   </div>
                 )}
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold text-slate-500">Keanggotaan Forum Zakat (FOZ):</span>
-                  <span className="inline-flex items-center gap-1 font-semibold text-emerald-700">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Terdaftar Aktif
-                  </span>
-                </div>
+                {activeLazDetail.foz_member && (
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-500">Keanggotaan Forum Zakat (FOZ):</span>
+                    <span className="inline-flex items-center gap-1 font-semibold text-emerald-700">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Terdaftar Anggota
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="space-y-2.5 text-slate-600">
