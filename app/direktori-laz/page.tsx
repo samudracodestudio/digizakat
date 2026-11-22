@@ -19,6 +19,7 @@ import {
   Search,
   Building2,
   MapPin,
+  Map as MapIcon,
   ExternalLink,
   ShieldCheck,
   CheckCircle2,
@@ -74,6 +75,7 @@ export default function DirektoriLazPage() {
   const [selectedProvinsi, setSelectedProvinsi] = useState('Semua');
   const [activeLazDetail, setActiveLazDetail] = useState<LAZItem | null>(null);
   const [previewLogo, setPreviewLogo] = useState<{ url: string; name: string } | null>(null);
+  const [showMobileMap, setShowMobileMap] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -240,16 +242,43 @@ export default function DirektoriLazPage() {
             </p>
           </div>
 
-          {/* Interactive Map of LAZ Locations */}
-          <div className="mt-6 isolate">
-            <LazMap
-              items={filteredLaz}
-              selectedProvinsi={selectedProvinsi}
-              onSelectLaz={(no) => {
-                const found = lazList.find((x) => x.no === no);
-                if (found) setActiveLazDetail(found);
-              }}
-            />
+          {/* Interactive Map of LAZ Locations — Desktop langsung tampil, Mobile pakai tombol Lihat Peta Sebaran */}
+          <div className="mt-6">
+            {/* Mobile Toggle Button */}
+            <div className="md:hidden">
+              <button
+                type="button"
+                onClick={() => setShowMobileMap((prev) => !prev)}
+                className="w-full py-2.5 px-4 rounded-xl bg-white hover:bg-[#f2f0fa] text-[#433880] border border-[#d6d0ee] shadow-xs text-xs font-semibold flex items-center justify-center gap-2 transition cursor-pointer"
+              >
+                <MapIcon className="w-4 h-4 text-[#5a4ea4]" />
+                <span>{showMobileMap ? 'Tutup Peta Sebaran' : 'Lihat Peta Sebaran'}</span>
+              </button>
+              {showMobileMap && (
+                <div className="mt-3 isolate">
+                  <LazMap
+                    items={filteredLaz}
+                    selectedProvinsi={selectedProvinsi}
+                    onSelectLaz={(no) => {
+                      const found = lazList.find((x) => x.no === no);
+                      if (found) setActiveLazDetail(found);
+                    }}
+                  />
+                </div>
+              )}
+            </div>
+
+            {/* Desktop Direct Map */}
+            <div className="hidden md:block isolate">
+              <LazMap
+                items={filteredLaz}
+                selectedProvinsi={selectedProvinsi}
+                onSelectLaz={(no) => {
+                  const found = lazList.find((x) => x.no === no);
+                  if (found) setActiveLazDetail(found);
+                }}
+              />
+            </div>
           </div>
 
           {/* Quick Stats Cards */}
