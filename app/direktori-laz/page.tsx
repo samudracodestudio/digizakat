@@ -572,7 +572,7 @@ export default function DirektoriLazPage() {
                 <span className="bg-emerald-100 text-emerald-800 text-[10px] font-semibold px-2 py-0.5 rounded-full">Tersinkronisasi</span>
               </div>
               <p className="text-slate-500 text-xs leading-relaxed max-w-2xl">
-                Seluruh data direktori 218 Lembaga Amil Zakat di halaman ini bersumber langsung dari Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kementerian Agama Republik Indonesia dan diverifikasi bersama Forum Zakat (FOZ).
+                Seluruh data direktori 218 Lembaga Amil Zakat di halaman ini bersumber langsung dari Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kementerian Agama Republik Indonesia.
               </p>
             </div>
             <a
@@ -581,7 +581,7 @@ export default function DirektoriLazPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-[#5a4ea4] border border-[#d6d0ee] transition shadow-xs shrink-0"
             >
-              <span>Buka Portal Asli SIMZAT</span>
+              <span>Buka Portal SIMZAT</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
