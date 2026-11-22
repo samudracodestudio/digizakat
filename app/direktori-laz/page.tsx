@@ -561,9 +561,6 @@ export default function DirektoriLazPage() {
                     <span className="bg-white/20 text-white text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">
                       {activeLazDetail.skala}
                     </span>
-                    <span className="bg-emerald-400/20 text-emerald-200 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
-                      <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Terdaftar Kemenag
-                    </span>
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-white leading-tight line-clamp-2">
                     {activeLazDetail.name}
