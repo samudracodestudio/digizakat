@@ -3,6 +3,8 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import 'leaflet.markercluster';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
 
 export interface BranchItem {
   wilayah: string;
@@ -41,14 +43,13 @@ const SCALE_COLORS: Record<string, { fill: string; stroke: string }> = {
 export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapProps) {
   const mapContainerRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<L.Map | null>(null);
-  const layerGroupRef = useRef<L.LayerGroup | null>(null);
+  const clusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
   const onSelectRef = useRef(onSelectLaz);
 
   useEffect(() => {
     onSelectRef.current = onSelectLaz;
   }, [onSelectLaz]);
 
-  // Compute points to plot based on selectedProvinsi
   const isProvinceSelected = selectedProvinsi !== 'Semua';
 
   // Count HQ & branches in current view for top bar display
@@ -58,17 +59,18 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     if (!isProvinceSelected || laz.provinsi === selectedProvinsi) {
       if (typeof laz.lat === 'number' && typeof laz.lng === 'number') hqCount++;
     }
-    if (isProvinceSelected && laz.perwakilan_daerah) {
+    if (laz.perwakilan_daerah) {
       laz.perwakilan_daerah.forEach((c) => {
         const bp = c.wilayah.split(',')[0].trim();
-        if (bp.toLowerCase() === selectedProvinsi.toLowerCase() && typeof c.lat === 'number' && typeof c.lng === 'number') {
+        const matchProv = !isProvinceSelected || bp.toLowerCase() === selectedProvinsi.toLowerCase();
+        if (matchProv && typeof c.lat === 'number' && typeof c.lng === 'number') {
           branchCount++;
         }
       });
     }
   });
 
-  // Initialize Leaflet map once
+  // Initialize Leaflet map + MarkerClusterGroup once
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
@@ -86,28 +88,58 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       maxZoom: 19,
     }).addTo(map);
 
-    const group = L.layerGroup().addTo(map);
+    const clusterGroup = L.markerClusterGroup({
+      showCoverageOnHover: false,
+      spiderfyOnMaxZoom: true,
+      maxClusterRadius: 48,
+      disableClusteringAtZoom: 13,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        let size = 34;
+        let bg = '#31c0c6'; // Tosca untuk cluster kecil
+        let ring = 'rgba(49, 192, 198, 0.28)';
+
+        if (count >= 50) {
+          size = 44;
+          bg = '#433880'; // Ungu tua untuk cluster besar
+          ring = 'rgba(67, 56, 128, 0.30)';
+        } else if (count >= 15) {
+          size = 38;
+          bg = '#5a4ea4'; // Ungu Digizakat untuk cluster sedang
+          ring = 'rgba(90, 78, 164, 0.28)';
+        }
+
+        return L.divIcon({
+          html: `<div style="width:${size}px;height:${size}px;border-radius:9999px;background:${bg};color:#ffffff;font-weight:700;font-size:${count >= 100 ? 11 : 12}px;display:flex;align-items:center;justify-content:center;border:2.5px solid #ffffff;box-shadow:0 0 0 4px ${ring}, 0 2px 6px rgba(15,23,42,0.22);">${count}</div>`,
+          className: 'digizakat-cluster-icon',
+          iconSize: L.point(size, size),
+        });
+      },
+    });
+
+    map.addLayer(clusterGroup);
     mapRef.current = map;
-    layerGroupRef.current = group;
+    clusterGroupRef.current = clusterGroup;
 
     return () => {
       map.remove();
       mapRef.current = null;
-      layerGroupRef.current = null;
+      clusterGroupRef.current = null;
     };
   }, []);
 
   // Update markers & auto-fly to selected province
   useEffect(() => {
     const map = mapRef.current;
-    const group = layerGroupRef.current;
-    if (!map || !group) return;
+    const clusterGroup = clusterGroupRef.current;
+    if (!map || !clusterGroup) return;
 
-    group.clearLayers();
+    clusterGroup.clearLayers();
 
     const validPoints: [number, number][] = [];
+    const markersToAdd: L.Layer[] = [];
 
-    const addMarker = (
+    const createMarker = (
       lat: number,
       lng: number,
       laz: MapLazItem,
@@ -119,16 +151,16 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
         ? { fill: '#5a4ea4', stroke: '#382f6e' } // Ungu untuk Kantor Cabang
         : SCALE_COLORS[laz.skala] || { fill: '#5a4ea4', stroke: '#382f6e' };
 
-      const radius = isBranch ? 6 : laz.skala === 'Nasional' ? 7 : laz.skala === 'Provinsi' ? 6 : 5.5;
+      const dotSize = isBranch ? 12 : laz.skala === 'Nasional' ? 14 : 13;
 
-      const marker = L.circleMarker([lat, lng], {
-        radius,
-        fillColor: style.fill,
-        color: '#ffffff',
-        weight: 1.5,
-        opacity: 1,
-        fillOpacity: 0.92,
+      const dotIcon = L.divIcon({
+        html: `<div style="width:${dotSize}px;height:${dotSize}px;border-radius:9999px;background:${style.fill};border:2px solid #ffffff;box-shadow:0 1px 4px rgba(15,23,42,0.35);"></div>`,
+        className: 'digizakat-pin-dot',
+        iconSize: L.point(dotSize, dotSize),
+        iconAnchor: L.point(dotSize / 2, dotSize / 2),
       });
+
+      const marker = L.marker([lat, lng], { icon: dotIcon });
 
       const typeBadge = isBranch
         ? `<span style="display:inline-block;padding:2px 7px;border-radius:999px;background:#f2f0fa;color:#5a4ea4;font-size:10px;font-weight:700;text-transform:uppercase;margin-right:4px;">Kantor Cabang</span>`
@@ -182,35 +214,34 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
         });
       }
 
-      marker.bindPopup(popupEl, { maxWidth: 260 });
-      marker.addTo(group);
+      marker.bindPopup(popupEl, { maxWidth: 265 });
+      markersToAdd.push(marker);
       validPoints.push([lat, lng]);
     };
 
     items.forEach((laz) => {
-      // Plot Kantor Pusat jika tidak sedang filter provinsi, ATAU kantor pusat memang di provinsi terpilih
+      // Plot Kantor Pusat
       if (!isProvinceSelected || laz.provinsi === selectedProvinsi) {
         if (typeof laz.lat === 'number' && typeof laz.lng === 'number') {
-          addMarker(laz.lat, laz.lng, laz, false);
+          createMarker(laz.lat, laz.lng, laz, false);
         }
       }
 
-      // Jika sedang memilih provinsi tertentu, plot juga seluruh Kantor Cabang di provinsi tersebut
-      if (isProvinceSelected && laz.perwakilan_daerah) {
+      // Plot seluruh Kantor Cabang (baik di Semua Provinsi maupun provinsi terpilih)
+      if (laz.perwakilan_daerah) {
         laz.perwakilan_daerah.forEach((c) => {
           const bp = c.wilayah.split(',')[0].trim();
-          if (
-            bp.toLowerCase() === selectedProvinsi.toLowerCase() &&
-            typeof c.lat === 'number' &&
-            typeof c.lng === 'number'
-          ) {
-            addMarker(c.lat, c.lng, laz, true, c.wilayah, c.alamat);
+          const matchProv = !isProvinceSelected || bp.toLowerCase() === selectedProvinsi.toLowerCase();
+          if (matchProv && typeof c.lat === 'number' && typeof c.lng === 'number') {
+            createMarker(c.lat, c.lng, laz, true, c.wilayah, c.alamat);
           }
         });
       }
     });
 
-    if (validPoints.length > 0 && (isProvinceSelected || validPoints.length < 180)) {
+    clusterGroup.addLayers(markersToAdd);
+
+    if (validPoints.length > 0 && (isProvinceSelected || items.length < 180)) {
       if (validPoints.length === 1) {
         map.flyTo(validPoints[0], 11, { duration: 0.7 });
       } else {
@@ -247,30 +278,20 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
               <span className="w-2.5 h-2.5 rounded-full bg-blue-600 inline-block" />
               Kab/Kota
             </span>
-            {isProvinceSelected && branchCount > 0 && (
-              <span className="inline-flex items-center gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#5a4ea4] inline-block" />
-                Cabang
-              </span>
-            )}
+            <span className="inline-flex items-center gap-1.5">
+              <span className="w-2.5 h-2.5 rounded-full bg-[#5a4ea4] inline-block" />
+              Cabang
+            </span>
           </div>
         </div>
 
         <div className="flex items-center gap-3 text-[11px]">
           <span className="text-slate-500">
-            {isProvinceSelected ? (
+            <strong className="text-slate-800">{hqCount}</strong> pusat
+            {branchCount > 0 && (
               <>
-                <strong className="text-slate-800">{hqCount}</strong> pusat
-                {branchCount > 0 && (
-                  <>
-                    {' • '}
-                    <strong className="text-[#5a4ea4]">{branchCount}</strong> cabang
-                  </>
-                )}
-              </>
-            ) : (
-              <>
-                <strong className="text-slate-800">{hqCount}</strong> titik lokasi
+                {' • '}
+                <strong className="text-[#5a4ea4]">{branchCount}</strong> cabang
               </>
             )}
           </span>

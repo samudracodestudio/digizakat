@@ -44,3 +44,9 @@ body {
 .leaflet-tile-pane {
   filter: grayscale(100%) contrast(1.06) brightness(1.03);
 }
+
+.digizakat-cluster-icon,
+.digizakat-pin-dot {
+  background: transparent;
+  border: none;
+}
