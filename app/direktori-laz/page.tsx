@@ -194,13 +194,13 @@ export default function DirektoriLazPage() {
           <div className="max-w-3xl space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#eaf9fa] text-[#1d8286] border border-[#cbfbf1]">
               <BadgeCheck className="w-4 h-4 text-[#31c0c6]" />
-              <span>Direktori Lengkap Lembaga Amil Zakat Berizin Kemenag RI</span>
+              <span>Direktori Lembaga Amil Zakat Berizin Kemenag RI</span>
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
-              Pencarian & Verifikasi Legalitas 218 LAZ Resmi
+              Pencarian LAZ Terdata
             </h1>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Cari dan periksa status legalitas Lembaga Amil Zakat (LAZ) di seluruh Indonesia. Terkoneksi dengan Surat Keputusan (SK) izin operasional Kemenag RI dan jaringan Forum Zakat (FOZ).
+              Cari data Lembaga Amil Zakat (LAZ) resmi yang terdaftar di Kementerian Agama Republik Indonesia (Kemenag RI).
             </p>
           </div>
 
