@@ -229,7 +229,7 @@ export default function DirektoriLazPage() {
       {/* 3. HERO / PAGE TITLE */}
       <section className="bg-gradient-to-b from-white to-slate-50 border-b border-slate-200 py-8">
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%]">
-          <div className="max-w-3xl space-y-3">
+          <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#eaf9fa] text-[#1d8286] border border-[#cbfbf1]">
               <BadgeCheck className="w-4 h-4 text-[#31c0c6]" />
               <span>Direktori Lembaga Amil Zakat Berizin Kemenag RI</span>
