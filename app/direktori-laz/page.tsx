@@ -44,6 +44,8 @@ interface LAZItem {
   phone?: string;
   pimpinan?: string;
   logo_url?: string;
+  jumlah_perwakilan?: number;
+  perwakilan_daerah?: { wilayah: string; alamat: string }[];
   status?: string;
   status_label?: string;
   is_hidden?: boolean;
@@ -399,12 +401,19 @@ export default function DirektoriLazPage() {
                       </h3>
                     </div>
 
-                    {/* Location Info (Kabupaten, Provinsi) */}
-                    <div className="flex items-center gap-1.5 text-xs text-slate-500">
-                      <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0" />
-                      <span className="truncate font-medium">
-                        {laz.lokasi_singkat || (laz.kabupaten ? `${laz.kabupaten}, ${laz.provinsi}` : `${laz.provinsi}, Indonesia`)}
-                      </span>
+                    {/* Location Info (Kabupaten, Provinsi) & Info Cabang */}
+                    <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0" />
+                        <span className="truncate font-medium">
+                          {laz.lokasi_singkat || (laz.kabupaten ? `${laz.kabupaten}, ${laz.provinsi}` : `${laz.provinsi}, Indonesia`)}
+                        </span>
+                      </div>
+                      {laz.jumlah_perwakilan && laz.jumlah_perwakilan > 0 ? (
+                        <span className="text-[10px] font-semibold text-[#5a4ea4] bg-[#f2f0fa] px-2 py-0.5 rounded-full border border-[#d6d0ee] shrink-0">
+                          +{laz.jumlah_perwakilan} Cabang
+                        </span>
+                      ) : null}
                     </div>
 
                     {/* Legalitas status preview */}
@@ -437,11 +446,17 @@ export default function DirektoriLazPage() {
 
       {/* 6. MODAL DETAIL POPUP */}
       {activeLazDetail && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
-          <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-200">
+        <div
+          onClick={() => setActiveLazDetail(null)}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] flex flex-col overflow-hidden shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-200"
+          >
             
             {/* Modal Header */}
-            <div className="p-5 bg-gradient-to-r from-[#1e1b4b] to-[#382f6e] text-white flex items-start justify-between gap-3">
+            <div className="p-5 bg-gradient-to-r from-[#1e1b4b] to-[#382f6e] text-white flex items-start justify-between gap-3 shrink-0">
               <div className="flex items-center gap-3 min-w-0">
                 <button
                   type="button"
@@ -493,7 +508,7 @@ export default function DirektoriLazPage() {
             </div>
 
             {/* Modal Body */}
-            <div className="p-5 space-y-4 text-xs">
+            <div className="p-5 space-y-4 text-xs overflow-y-auto flex-1">
               
               <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200 space-y-2">
                 <div className="flex items-center justify-between">
@@ -514,6 +529,12 @@ export default function DirektoriLazPage() {
                     </span>
                   </div>
                 )}
+                {activeLazDetail.jumlah_perwakilan && activeLazDetail.jumlah_perwakilan > 0 ? (
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-500">Kantor Perwakilan / Cabang:</span>
+                    <span className="font-semibold text-[#5a4ea4]">{activeLazDetail.jumlah_perwakilan} Wilayah</span>
+                  </div>
+                ) : null}
               </div>
 
               <div className="space-y-2.5 text-slate-600">
@@ -531,6 +552,31 @@ export default function DirektoriLazPage() {
                     )}
                   </div>
                 </div>
+
+                {activeLazDetail.perwakilan_daerah && activeLazDetail.perwakilan_daerah.length > 0 && (
+                  <div className="pt-2 border-t border-slate-100">
+                    <div className="flex items-center gap-1.5 mb-2">
+                      <Building2 className="w-4 h-4 text-[#5a4ea4] shrink-0" />
+                      <span className="font-semibold text-slate-900">
+                        Kantor Perwakilan / Cabang ({activeLazDetail.perwakilan_daerah.length})
+                      </span>
+                    </div>
+                    <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
+                      {activeLazDetail.perwakilan_daerah.map((cabang, idx) => (
+                        <div key={idx} className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
+                          <span className="font-semibold text-slate-800 block text-[11px]">
+                            {idx + 1}. {cabang.wilayah}
+                          </span>
+                          {cabang.alamat && (
+                            <span className="text-[11px] text-slate-500 block mt-0.5 leading-snug">
+                              {cabang.alamat}
+                            </span>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 {activeLazDetail.pimpinan && (
                   <div className="flex items-start gap-2">

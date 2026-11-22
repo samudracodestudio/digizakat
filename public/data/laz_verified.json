@@ -23,7 +23,9 @@
     "kabupaten": "Bogor",
     "lokasi_singkat": "Kota Bogor, Jawa Barat",
     "alamat_lengkap": "Ruko Taman Yasmin Sektor VI , Jl. KH. R. Abdullah bin Nuh No. 212, RT.05 RW.09 Curug Mekar , Kec. Bogor Barat, Kota Bogor , Jawa Barat 16113",
-    "susunlogo_id": "170n36yTYI7fYNFkcPn4PBOjBUnDgBLff"
+    "susunlogo_id": "170n36yTYI7fYNFkcPn4PBOjBUnDgBLff",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 2,
@@ -49,7 +51,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Gegerkalong Hilir No.155A",
-    "susunlogo_id": "1YNYc57gChroCQQrX5Kdkpr_GEWpggFWp"
+    "susunlogo_id": "1YNYc57gChroCQQrX5Kdkpr_GEWpggFWp",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 3,
@@ -75,7 +79,30 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jln Sisingamangaraja, Kebayoran Baru, No.6",
-    "susunlogo_id": "1pVxqWutrUVNP_A8IT5TffMsnbdUj3PCN"
+    "susunlogo_id": "1pVxqWutrUVNP_A8IT5TffMsnbdUj3PCN",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Tengah, Kab. Sukoharjo",
+        "alamat": "Jl. Rajawali Ngebrak, Songgolangit, Gentan, Kec. Baki, Kabupaten Sukoharjo, Jawa Tengah 57556"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl.Baratajaya XX No.3U RT 07 RW 03, Baratajaya, Kec. Gubeng, Kota Surabaya"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Jl. Lingkar Utara Sinduadi, Melati, Sleman, Yogyakarta"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Telanai Pura, No. F6, Rt 05/ Rw15, Kel. Surau Gadang, Kec. Nanggalo, Kota Padang, Prov. Sumatera Barat"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Summarecon Mutiara Makassar, Jl. Rainbow Square Timur Blok G/02 Summarecon Mutiara Makassar, Sulawesi Selatan"
+      }
+    ]
   },
   {
     "no": 4,
@@ -101,7 +128,22 @@
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
     "alamat_lengkap": "Jln. Gubeng Kertajaya VIIIC/No.17 Surabaya",
-    "susunlogo_id": "1x38xZm-W0EDTSiYhH8hPzPT_hRQXUDpk"
+    "susunlogo_id": "1x38xZm-W0EDTSiYhH8hPzPT_hRQXUDpk",
+    "jumlah_perwakilan": 3,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Graha Zakat Jl. Kertajaya VIII C No 17"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Durian Raya Kompleks No.34, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Jogokaryan No.68, Mantrijeron, Kec. Mantrijeron, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55143"
+      }
+    ]
   },
   {
     "no": 5,
@@ -127,7 +169,78 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Gegerkalong Girang No.32",
-    "susunlogo_id": "1zh6IjUJoWVM4Np-PKe7Ol4GV-nrb9Voe"
+    "susunlogo_id": "1zh6IjUJoWVM4Np-PKe7Ol4GV-nrb9Voe",
+    "jumlah_perwakilan": 17,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Lamper Tengah 12 No.19"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "Komp. Pesantren Daarut Tauhiid, Jl. Trans Barelang"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jl. Pangeran Hidayatullah Komplek Andai Raya Permai II Bangunan Lantai 2 (Samping Mesjid Jami Haji Muhammad Saleh)"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Bantul",
+        "alamat": "Perum Tjokro Boulevard no. A3. Jl. Imogiri Barat km. 7 Sewon Bantul Yogyakarta"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Palembang No. 2 Ulak Karang Selatan, Padang Utara, Padang, Sumatera Barat Kode Pos : 25731"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Jl. Cipaku 1 No 18 Kebayoran Baru, Jakarta Selatan, DKI Jakarta"
+      },
+      {
+        "wilayah": "Jambi, Jambi",
+        "alamat": "JL. Jendral Sudirman Thehok, (Seberang Polda Jambi) No. 2A RT. 29 Kel. Tambak Sari, Kec. Jambi Selatan Provinsi Jambi"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Gegerkalong Girang, No. 32, Isola, Sukasari, Bandung, Jawa Barat 40154"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl Terusan Way Semangka No 42 Pahoman Bandar Lampung"
+      },
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jl. Sukamulya V No.1 RT. 01 RW. 09 Kp. Dukuh Kelurahan Sarua Indah Kecamatan Ciputat Kota Tangerang Selatan Provinsi Banten Kode Pos: 15414"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl Dg Tata I Blok IV, No.75, Rt 02 Rw 03 Kel. Parang Tambung, Kec. Tamalate Kota Makassar Sulawesi Selatan"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl.Jetis Seraten Ruko Sakura Regency Blok O-3, Ketintang, Gayungan, Surabaya, Jawa Timur 60231"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Tgk. Moh. Daud Beureuh, No. 6, Kelurahan Tanjung Rejo, Kecamatan Medan Sunggal, Kota Medan, Sumatera Utara"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "JALAN TGK. MOHAMMAD DAUD BEURUEH, N0.56, KAMPUNG KRAMAT, KUTA ALAM, BANDA ACEH"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Marsan Sejahtera, No.8, Sidomulyo Barat, Tuah Madani, Kota Pekanbaru, Riau, 28294"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jalan Gersik, Lorong Bakung, No.1455"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Jln. Pendidikan Blok III No.4, Rt/Rw 001/001 Gomong, Selaparang, Kota Mataram, Nusa Tenggara Barat 83113"
+      }
+    ]
   },
   {
     "no": 6,
@@ -153,7 +266,18 @@
     "kabupaten": "Kab. Sidoarjo",
     "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
     "alamat_lengkap": "Ruko Citra City Blok R-28 Sarirogo, Sidoarjo, Jawa Timur",
-    "susunlogo_id": "1xyfTkkiNcf0q-daMdanR1-jw6EK_wLgM"
+    "susunlogo_id": "1xyfTkkiNcf0q-daMdanR1-jw6EK_wLgM",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Kab. Gresik",
+        "alamat": "Jl. Demak 1 No.6 GKB Gresik Jawa Timur"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Blitar",
+        "alamat": "Perumahan Gardenia G1,Lingk.Bence 2 Kel.Bence Kec.Garum Blitar"
+      }
+    ]
   },
   {
     "no": 7,
@@ -179,7 +303,9 @@
     "kabupaten": "Kab. Sidoarjo",
     "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
     "alamat_lengkap": "Jl Raya Buncitan No 1",
-    "susunlogo_id": "1J8uJuAUkKjLt_3WAEq8ERQzB9QQi8g1K"
+    "susunlogo_id": "1J8uJuAUkKjLt_3WAEq8ERQzB9QQi8g1K",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 8,
@@ -205,7 +331,14 @@
     "kabupaten": "Tangerang Selatan",
     "lokasi_singkat": "Kota Tangerang Selatan, Banten",
     "alamat_lengkap": "Jl.Rawabuntu Utara Blok Y No 3 Rawabuntu Serpong Tangerang Selatan",
-    "susunlogo_id": "1POG6G28KXdK45PmEfrwIBmwRATaLlqhv"
+    "susunlogo_id": "1POG6G28KXdK45PmEfrwIBmwRATaLlqhv",
+    "jumlah_perwakilan": 1,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jl. Elang Raya Blok HG 8 No 7"
+      }
+    ]
   },
   {
     "no": 9,
@@ -231,7 +364,62 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Jl. Jambrut No.5, Kenari, Kec. Senen, Jakarta Pusat 10430",
-    "susunlogo_id": "1Hmotk3qFVlC2egZFjk1gAsRBhVcPS0FK"
+    "susunlogo_id": "1Hmotk3qFVlC2egZFjk1gAsRBhVcPS0FK",
+    "jumlah_perwakilan": 13,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Gedung Da'wah Muhammadiyah Lampung, Jl. Kapten Tendean No.7, Palapa, Kec. Tj. Karang Pusat, Kota Bandar Lampung, Lampung 35116"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Sancang No.6, Burangrang, Kec. Lengkong, Kota Bandung, Jawa Barat 40262"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Sisingamangaraja No. 136 Ps. Merah Bar., Kec. Medan Kota, Kota Medan, Sumatera Utara 20213"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Gedongkuning No.152, RT.41, Rejowinangun, Kec. Kotagede, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55171"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. KH. Ahmad Dahlan No.88, Kp. Tengah, Kec. Sukajadi, Kota Pekanbaru, Riau 28122"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Masjid At Taqwa UNIMUS, Jl. Kedungmundu No.18, Kedungmundu, Kec. Tembalang, Kota Semarang, Jawa Tengah 50273"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "Jalan Pak Kasih Gg. Merak 3 No. 9 B Pontianak"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Sidoarjo",
+        "alamat": "Gedung Kemanusiaan Lazismu, Jl. Jawa No.5, Binangun Indah, Wadungasih, Kec. Buduran, Kabupaten Sidoarjo, Jawa Timur 61252"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl. Perintis Kemerdekaan KM. 10 No. 38, Tamalarea Jaya, Kota Makassar-Sulawesi Selatan"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Pusat",
+        "alamat": "Jl. Kramat Raya No. 49 Rt. 003/004, Kel. Kramat, Kec. Senen, Jakarta Pusat Kode Pos 10450, DKI Jakarta"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jl. S. Parman No.88, Ps. Lama, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70115"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Bundo Kanduang No 1 Kel. Belakang Tangsi Kec Padang Barat, Kota Padang, Sumatera Brata"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Samarinda",
+        "alamat": "Komplek Muhammadiyah Kaltim Center, Jl. K.H. Siradj Salman RT. 27, Kelurahan Teluk Lerong Ilir, Kota Samarinda, Kalimantan Timur"
+      }
+    ]
   },
   {
     "no": 10,
@@ -257,7 +445,18 @@
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
     "alamat_lengkap": "Jl. Ring Road Bar. No.66, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291",
-    "susunlogo_id": "1bglMP3Tx7yEeyt4sfAAlsoJEfbMySlHj"
+    "susunlogo_id": "1bglMP3Tx7yEeyt4sfAAlsoJEfbMySlHj",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Jl. Ring Road Bar. No.66, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Ring Road Bar. No.66, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291"
+      }
+    ]
   },
   {
     "no": 11,
@@ -283,7 +482,34 @@
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
     "alamat_lengkap": "Perum ikip Gunung Anyar B 48 Surabaya",
-    "susunlogo_id": "1KseKAPeTnX2xW6f5tRRgP0qVUjOnwoaX"
+    "susunlogo_id": "1KseKAPeTnX2xW6f5tRRgP0qVUjOnwoaX",
+    "jumlah_perwakilan": 6,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Jl. DI Panjaitan no.30D RT29 Gunung Guntur Balikpapan Tengah"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Ruko Perum Kampoeng Semawis A8 Kedungmundu RT .01 RW.09 Ds.Kedungmundu Kec.Tembalang Kota Semarang"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Ireda no.181A"
+      },
+      {
+        "wilayah": "Jawa Barat, Kab. Bandung",
+        "alamat": "Jl. Raya Percobaan No.30, Cileunyi Kulon"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Komplek Setiabudi Estate Blok A No 1"
+      },
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jl. Ir H. Juanda No. 55c"
+      }
+    ]
   },
   {
     "no": 12,
@@ -309,7 +535,9 @@
     "kabupaten": "Jambi",
     "lokasi_singkat": "Kota Jambi, Jambi",
     "alamat_lengkap": "Jl. HOS. Cokroaminoto, Simpang III Sipin",
-    "susunlogo_id": "1zofulBPOhQx_poLsX9LCB_lmkEPinKgK"
+    "susunlogo_id": "1zofulBPOhQx_poLsX9LCB_lmkEPinKgK",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 13,
@@ -335,7 +563,18 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl Cibaduyut Lama, Komplek Sauyunan Raya 1 No 14",
-    "susunlogo_id": "19jopOCYXrkcNm7-AM2bM_fn-fsm460GT"
+    "susunlogo_id": "19jopOCYXrkcNm7-AM2bM_fn-fsm460GT",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "JL Tebet Barat IV No 4"
+      },
+      {
+        "wilayah": "Jawa Barat, Bekasi",
+        "alamat": "Jl Sultan Agung No 9 RT 001 RW 002"
+      }
+    ]
   },
   {
     "no": 14,
@@ -360,7 +599,9 @@
     "is_hidden": false,
     "kabupaten": "Makassar",
     "lokasi_singkat": "Kota Makassar, Sulawesi Selatan",
-    "alamat_lengkap": "Jl. Baji Rupa No. 8 (Gedung Serbaguna Lt.2)"
+    "alamat_lengkap": "Jl. Baji Rupa No. 8 (Gedung Serbaguna Lt.2)",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 15,
@@ -386,7 +627,30 @@
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
     "alamat_lengkap": "Jalan Gayungsari Barat 1, No.40",
-    "susunlogo_id": "1Xbq02k39Df6S6gCHGw9Q5lt5oMZNQWEN"
+    "susunlogo_id": "1Xbq02k39Df6S6gCHGw9Q5lt5oMZNQWEN",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Kab. Bojonegoro",
+        "alamat": "Dusun Balong"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Malang",
+        "alamat": "Jl. Segaran nomer 8"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Sidoarjo",
+        "alamat": "Griya Samudra Asri G3 - 27, Dusun Jegu"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Tulungagung",
+        "alamat": "Jl. Raya MojoarumNo. 4"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Jember",
+        "alamat": "Bumi Mangli Permai AC-03"
+      }
+    ]
   },
   {
     "no": 16,
@@ -412,7 +676,30 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Perintis Kemerdekaan No. 2",
-    "susunlogo_id": "1DLb_GSw-HvG9-vWSmikitpsBK8yZuls5"
+    "susunlogo_id": "1DLb_GSw-HvG9-vWSmikitpsBK8yZuls5",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "DKI Jakarta, Jakarta Pusat",
+        "alamat": "Jl. Johar Baru I/22"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "JL. Ringroad, No. 1D, Kel. T. Sari, Kec. Medan selayang, Kota Medan, Provinsi Sumatera Utara"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl. Sungai Sausu No. 19"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Jl. Banten No.51, Kebaharan, Kec. Serang, Kota Serang, Provinsi Banten"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Shinta Kenanga No. 2"
+      }
+    ]
   },
   {
     "no": 17,
@@ -437,7 +724,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Karawang",
     "lokasi_singkat": "Kab. Karawang, Jawa Barat",
-    "alamat_lengkap": "Jl. Singaperbangsa No. 09"
+    "alamat_lengkap": "Jl. Singaperbangsa No. 09",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 18,
@@ -462,7 +751,54 @@
     "is_hidden": false,
     "kabupaten": "Kab. Pasuruan",
     "lokasi_singkat": "Kab. Pasuruan, Jawa Timur",
-    "alamat_lengkap": "Jl Raya Sidogiri"
+    "alamat_lengkap": "Jl Raya Sidogiri",
+    "jumlah_perwakilan": 11,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Kab. Pasuruan",
+        "alamat": "Jl Raya Sidogiri"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "JL. TABRANI ACHMAD GG. BERDIKARI I RT/RW. 05/06, SUNGAI JAWI"
+      },
+      {
+        "wilayah": "Kalimantan Tengah, Kab. Kotawaringin Barat",
+        "alamat": "JL. A. YANI RT. 12, SUNGAI BUUN"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarbaru",
+        "alamat": "JL KEMUNING NO 14 LOKTABAT SELATAN, BANJARBARU"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "JL. ADI SUCIPTO PERUM. TAMAN ISTANA ANGKASA NO. 21, PEJARAKAN, MATARAM, KOTA MATARAM, NUSA TENGGARA BARAT, LOMBOK"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "JL. MAYJEN SUTOYO RT. 38 NO. 44 , Klandasan Ilir"
+      },
+      {
+        "wilayah": "Nusa Tenggara Timur, Kab. Belu",
+        "alamat": "Jl Dewi Sartika Dewi 002/001"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Jl. Kusuma Bangsa Utama III No 01 Ruko, Peguyangan Kangin"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Timur",
+        "alamat": "Taman Modern jl. Sakura Blok D5 No : 17 Kel Ujung Menteng Kec. Cakung , Jakarta Timur 13960"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "Plamo Garden, jalan Sudirman, Baloi Permai, Blok G 04 No 15, Baloi Permai"
+      },
+      {
+        "wilayah": "Jawa Barat, Kab. Bekasi",
+        "alamat": "PP. Sidogiri, JL. TEGALDADAS No.18, Jatireja"
+      }
+    ]
   },
   {
     "no": 19,
@@ -488,7 +824,9 @@
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
     "alamat_lengkap": "Jl. Rajawali Raya No.73, RT.009/RW.002, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144, Indonesia",
-    "susunlogo_id": "17qVX_XfeZYLHI0JQiJkO0xuZTimgdboT"
+    "susunlogo_id": "17qVX_XfeZYLHI0JQiJkO0xuZTimgdboT",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 20,
@@ -514,7 +852,58 @@
     "kabupaten": "Makassar",
     "lokasi_singkat": "Kota Makassar, Sulawesi Selatan",
     "alamat_lengkap": "Jl. Urip Sumoharjo no.15",
-    "susunlogo_id": "16qBO1h7M1NhXYmZq7ZdfQsLHMpU6DWFz"
+    "susunlogo_id": "16qBO1h7M1NhXYmZq7ZdfQsLHMpU6DWFz",
+    "jumlah_perwakilan": 12,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Gedung Nyi Ageng Serang Lt.6, Jl. H.R. Rasuna Said No.22."
+      },
+      {
+        "wilayah": "Sulawesi Barat, Kab. Mamuju",
+        "alamat": "Jl. Musa Karim No. 32 Kompleks SIT Wildan"
+      },
+      {
+        "wilayah": "Sulawesi Tenggara, Kendari",
+        "alamat": "BTN Tawang Alun Blok B1/5"
+      },
+      {
+        "wilayah": "Gorontalo, Gorontalo",
+        "alamat": "Jl. Pangeran Hidayat 2"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Kab. Maros",
+        "alamat": "Jl. Poros Palopo Makassar"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Mushalla Jamiul Wafa"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Srigunting, Air Tawar Barat, Kota Padang, Sumatera Barat"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl. Lekatu, No. 27 A"
+      },
+      {
+        "wilayah": "Kalimantan Utara, Tarakan",
+        "alamat": "Jl Akasia RT 3 NO 71"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Bantul",
+        "alamat": "Masjid Ukhuwah Islamiyah Sutopadan (MUIS) - Lantai 2 - Jl. Sutopadan, Cobongan"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Samarinda",
+        "alamat": "Jl Gerilya Ruko D1"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Jl. Belakang Terminal Pakupatan No.1"
+      }
+    ]
   },
   {
     "no": 21,
@@ -540,7 +929,70 @@
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
     "alamat_lengkap": "Jl. Jati Raya Perumnas No.B6, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263",
-    "susunlogo_id": "1woU7bYzOp4nvWcrWq73GBRY4sUP45VeP"
+    "susunlogo_id": "1woU7bYzOp4nvWcrWq73GBRY4sUP45VeP",
+    "jumlah_perwakilan": 15,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Jati Raya Perumnas No.B6, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263"
+      },
+      {
+        "wilayah": "Jawa Tengah, Magelang",
+        "alamat": "Jalan Jeruk Raya No 4A (Barat RSI) Sanden, Kel. Kramat Utara, Kec. Magelang Utara, Kota Magelang"
+      },
+      {
+        "wilayah": "Jawa Tengah, Surakarta",
+        "alamat": "Jalan Basuki Rahmat No.50B, Kel. Jajar, Kec. Laweyan, Kota Surakarta"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Pemalang",
+        "alamat": "Jalan Sulawesi 1 No 8 Mulyoharjo Pemalang ( Sebrang Pengadilan Agama )"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Purbalingga",
+        "alamat": "Jl. Letnan Ahmad Nur No.11, Purbalingga, Purbalingga Lor, Kec. Purbalingga, Kab. Purbalingga Jawa Tengah 53311"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Sragen",
+        "alamat": "Kebayanan Jetis, Pilangsari, Kec. Ngrampal, Kabupaten Sragen, Jawa Tengah"
+      },
+      {
+        "wilayah": "Jawa Tengah, Salatiga",
+        "alamat": "Jl. Nanggulan, Kutowinangun Kidul, Kec. Tingkir, Kota Salatiga, Jawa Tengah 50742"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Grobogan",
+        "alamat": "Jl. Tentara Pelajar No.212, Kwarungan, Purwodadi, Kec. Purwodadi, Kabupaten Grobogan, Jawa Tengah 58111"
+      },
+      {
+        "wilayah": "Jawa Tengah, Tegal",
+        "alamat": "Jl. Cempaka No.10, Kejambon, Kec. Tegal Tim., Kota Tegal, Jawa Tengah 52124"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Wonogiri",
+        "alamat": "Jl. Raya Wonogiri-Ponorogo No.KM. 3, Brubuh, Ngadirojo Lor, Kec. Ngadirojo, Kabupaten Wonogiri, Jawa Tengah"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Sukoharjo",
+        "alamat": "Jl. Brotojoyo No.16, Larangan Wetan, Gayam, Kec. Sukoharjo, Kabupaten Sukoharjo, Jawa Tengah 57514"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Kebumen",
+        "alamat": "Jl. KH Ahmad Dahlan, Wiradapayung, Kedawung"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Temanggung",
+        "alamat": "Bebengan, Kertosari, Kec. Temanggung, Kabupaten Temanggung, Jawa Tengah"
+      },
+      {
+        "wilayah": "Jawa Tengah, Pekalongan",
+        "alamat": "Perumahan Binagriya Jl. Peni No. 31 RT 06 RW 17 Kelurahan Pringrejo Kecamatan Pekalongan Barat"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Banyumas",
+        "alamat": "Jln. Sultan Agung No 4A. Rt 7 Rw 3, Teluk, Purwokerto Selatan. Kab Banyumas"
+      }
+    ]
   },
   {
     "no": 22,
@@ -565,7 +1017,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Centennial Tower, Jl. Gatot Subroto No.24-25 Lantai 22, RT 02 RW 02"
+    "alamat_lengkap": "Centennial Tower, Jl. Gatot Subroto No.24-25 Lantai 22, RT 02 RW 02",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 23,
@@ -591,7 +1045,42 @@
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
     "alamat_lengkap": "Ruko Mitra Matraman, Jl. Matraman Raya No.27 Blok A1 Rt.1 Rw.4 Kebon Manggis",
-    "susunlogo_id": "1dxsQRoOU2k5a4k0LFbamH-LATe38MCxh"
+    "susunlogo_id": "1dxsQRoOU2k5a4k0LFbamH-LATe38MCxh",
+    "jumlah_perwakilan": 8,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Aceh, Kab. Aceh Besar",
+        "alamat": "Jl. Utama No.12 Rt.6 Rw.3, Bukit Meusara"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Taman Pabrik"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Gaharu No. 76 B Kel. Gaharu Kec. Medan Timur Kota Medan"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Gatot Subroto Nomor 636 RT02 RW 5, Kel. Kalipancur, Kec. Ngaliyan, Semarang, Jawa Tengah"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Manyar Kartika I No.31, Menur Pumpungan, Kec. Sukolilo, Surabaya, Jawa Timur 60118"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl. Waduk Tunggu Pampang No.31, Antang, Kec. Manggala, Kota Makassar, Sulawesi Selatan 90234"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Timur",
+        "alamat": "Ruko Mitra Matraman, Jl. Matraman Raya No. 27 Blok A1"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Tabanan no 12"
+      }
+    ]
   },
   {
     "no": 24,
@@ -617,7 +1106,62 @@
     "kabupaten": "Kab. Kubu Raya",
     "lokasi_singkat": "Kab. Kubu Raya, Kalimantan Barat",
     "alamat_lengkap": "Jalan Sungai Raya Dalam Gg.Imaduddin",
-    "susunlogo_id": "1ea_E9jjc_pK0aAh7B-BC1zcCrBeyaYL1"
+    "susunlogo_id": "1ea_E9jjc_pK0aAh7B-BC1zcCrBeyaYL1",
+    "jumlah_perwakilan": 13,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl. Basuki Rahmat 1, Lorong Menara 1 (Kompleks Masjid At-Taubah)"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Kab. Sintang",
+        "alamat": "Jl. Stadion No.20 Baning Kota"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Jl Ciledug Raya No 10"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Kab. Pinrang",
+        "alamat": "Jalan Pelanduk No.15"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Samarinda",
+        "alamat": "Jln. Drs.Anang Hasyim Perumahan Kehutanan No.178 A Kadrie Oening"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarbaru",
+        "alamat": "Jl. Lingkar Utara Banjarbaru Landasan Ulin, Kota Banjarbaru"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl Puri Dago Timur 1 No 29."
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Bantul",
+        "alamat": "Jalan Ahmad Yani No 10"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jl. Residen Danubroto, No. 122, Lamlagang"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Pangeran Tirtayasa No:40 Suka Bumi, Bandar lampung"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "Jl. Engku Putri. Besment Masjid Agung Raja Hamidah. Batam Canter. Kec. Batam kota. Kota Batam"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Jalan Cadika No. 50A RT 02 RW 12"
+      },
+      {
+        "wilayah": "Maluku, Ambon",
+        "alamat": "Jln. BTN Manusela"
+      }
+    ]
   },
   {
     "no": 25,
@@ -643,7 +1187,42 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Jl Surabaya No 58",
-    "susunlogo_id": "1dk-UNwyZUMwLdbvxVmcw_CBEQRv8kEix"
+    "susunlogo_id": "1dk-UNwyZUMwLdbvxVmcw_CBEQRv8kEix",
+    "jumlah_perwakilan": 8,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Basuki Rahmat No.17-19"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Asia Afrika No.174, Paledang, Kec. Lengkong, Kota Bandung, Jawa Barat, Kel. Paledang, Kec. Lengkong Kota Bandung"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. S. Parman No. 250 E/8, Kel. Petisah Hulu, Kec. Medan Baru Kota Medan"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl. Jendral Sudirman No.774 Kel. 20 Ilir, Kec. Ilir Timur I, Kota Palembang"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jl. Ahmad Dahlan No. 111, Kel. Merduati, Kec. Kuta Raja Kota Banda Aceh"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Pandanaran No.127, Kel. Pekunden, Kec. Semarang Timur Kota Semarang"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jl. Lambung Mangkurat, Kel. Kertak Baru Ulu, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan., Kel. Kertak Baru, Kec. Banjarmasin Kota Banjarmasin"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl. Dr. Ratulangi No. 79, Makassar, Sulawesi Selatan., Kel. -, Kec. - Kota Makassar"
+      }
+    ]
   },
   {
     "no": 26,
@@ -668,7 +1247,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Menara Bank Mega Syariah, Jl. H. R. Rasuna Said No.Kav. 19 A, RT.8/RW.4, Kuningan Tim.,"
+    "alamat_lengkap": "Menara Bank Mega Syariah, Jl. H. R. Rasuna Said No.Kav. 19 A, RT.8/RW.4, Kuningan Tim.,",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 27,
@@ -694,7 +1275,90 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Philanthropy Building Jl. Warung Jati Barat No.14 Jakarta Selatan 12540, Indonesia",
-    "susunlogo_id": "1VDpSmykUva8weqWMo0s3OCVEaKgtrSDX"
+    "susunlogo_id": "1VDpSmykUva8weqWMo0s3OCVEaKgtrSDX",
+    "jumlah_perwakilan": 20,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Ir. Juanda No.31C Pasar Pagi"
+      },
+      {
+        "wilayah": "Maluku, Ambon",
+        "alamat": "Jl. Lakdya Leo Wattimena, Komplek Ruko Pasar Perumnas Waiheru, Desa Waiheru, Kec. Baguala, Kota Ambon"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "JL BAKTI NO 27, CASTAVIA ROYALE AQSHO RUKAN NO. 02, KEL. TANGKERANG BARAT, KEC. MARPOYAN DAMAI, KOTA PEKANBARU - RIAU"
+      },
+      {
+        "wilayah": "Nusa Tenggara Timur, Kupang",
+        "alamat": "JL. HATI MULIA III"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "Ruko Botania 2 Blok B18 No.10 Batam Center"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl, Bintan No. 40"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Jl. Gn. Agung Jl. Pertokoan Bali Gria Husada, Pemecutan, Kec. Denpasar Bar., Kota Denpasar, Bali 80223"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Ruko Grand City Regency, Jl. Rungkut Mutiara Blk. B No.24, Rungkut Tengah, Kec. Gn. Anyar, Surabaya, Jawa Timur 60293"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "JL. MADUBRONTO NO. 35"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jln. T. Imuem Lueng Bata No. 61 C"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Urip Sumoharjo No.22A, Surabaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35123"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Menoreh I No. 49"
+      },
+      {
+        "wilayah": "Sulawesi Tenggara, Kendari",
+        "alamat": "Jl. Jend. AH. Nasution, Kambu, Kec. Kambu, Kota Kendari, Sulawesi Tenggara 93561"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "JL Rsi Faisal VII No.10 Rt 005/Rw 002 Kel banta bantaeng Kec rappocini kota makassar"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Perumnas Ciracas, Jln P.A Adikara 1 No 275, RT 01/RW 11, Serang, Kecamatan Serang, Banten"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. R.A.A Martanegara No. 22A"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Komplek Ruko Balikpapan Baru Blok B1"
+      },
+      {
+        "wilayah": "Kalimantan Tengah, Palangkaraya",
+        "alamat": "Jalan Bandar Utama Kel. Panarung Kec. Pahandut Kota Palangka Raya"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Komplek Kapten Muslim Business Point Blok e no 17 Sei Sikambing c Medan Helvetia"
+      },
+      {
+        "wilayah": "Sulawesi Utara, Manado",
+        "alamat": "Jl Dahlia Utana 2E, No 30"
+      }
+    ]
   },
   {
     "no": 28,
@@ -720,7 +1384,18 @@
     "kabupaten": "Denpasar",
     "lokasi_singkat": "Kota Denpasar, Bali",
     "alamat_lengkap": "Jl Diponegoro No 222 Sanglah",
-    "susunlogo_id": "1njZdzFGVsSBp4TljoVb6bbv4JUz6ZHNk"
+    "susunlogo_id": "1njZdzFGVsSBp4TljoVb6bbv4JUz6ZHNk",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Bali, Kab. Buleleng",
+        "alamat": "JL A YANI NO 198"
+      },
+      {
+        "wilayah": "Bali, Kab. Jembrana",
+        "alamat": "Jl Danau Batur"
+      }
+    ]
   },
   {
     "no": 29,
@@ -746,7 +1421,9 @@
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
     "alamat_lengkap": "Jl. Caman Raya No.65, RT.003/RW.003",
-    "susunlogo_id": "1bWK-d-gogkR-FsWrbScd8_Z6xFKFUs8z"
+    "susunlogo_id": "1bWK-d-gogkR-FsWrbScd8_Z6xFKFUs8z",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 30,
@@ -772,7 +1449,138 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jalan Teluk Jakarta No.9 Komp. AL Rawa Bambu, Pasar Minggu, Jakarta Selatan 12520",
-    "susunlogo_id": "1_2JDiiJt2bClj1JUOUTWlmM5aOCjAX0z"
+    "susunlogo_id": "1_2JDiiJt2bClj1JUOUTWlmM5aOCjAX0z",
+    "jumlah_perwakilan": 32,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Lolong Karan No.23B"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Imam Bonjol No. 576 Sumber Rejo Kemiling Bandar Lampung"
+      },
+      {
+        "wilayah": "Kalimantan Tengah, Palangkaraya",
+        "alamat": "Jln. Kinibalu No. 29 Kav. 2"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl. Nusa Tamalanrea Indah Blok TC 2"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jl. Prof. Ali Hasyimi, Desa Pango Raya"
+      },
+      {
+        "wilayah": "Nusa Tenggara Timur, Kupang",
+        "alamat": "Ruko Wisma Harapan Baik, Jl. Perintis Lemerdekaan I, Kayu Putih, Oebobo"
+      },
+      {
+        "wilayah": "Kepulauan Bangka Belitung, Pangkal Pinang",
+        "alamat": "Jl Kejaksaan No 135 RT 004"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Jl. Grand Sutera Serang No.3 Blok B9"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Jl. Pattimura Perum Batu Ampar Lestari Tahap IV No. B-30"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jln Ahmad Yani 153"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Jl. Sapta Pesona No. 44, BTN Pagutan Permai, Kel. Pagutan Barat, Kec. Mataram, Kota Mataram, Nusa Tenggara Barat-83127"
+      },
+      {
+        "wilayah": "Sulawesi Barat, Kab. Mamuju",
+        "alamat": "Jl. Kurungan Bassi"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "Jl. Sumbawa No. 132, Pontianak"
+      },
+      {
+        "wilayah": "Maluku, Ambon",
+        "alamat": "BTN. Manusela Blok D No. 1"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Tanjung Pinang",
+        "alamat": "Komplek Ruko Pinlang Mas Blok Batang No. 9-10"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl Pipit No 10, Tanamodindi Kec Palu Selatan, Kota Palu Sulawesi Tengah"
+      },
+      {
+        "wilayah": "Sulawesi Tenggara, Kendari",
+        "alamat": "Jl. Syech Yusuf Gedung Salsa Lantai 1"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Gambiran No.85A, Pandeyan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Tapah No. 20"
+      },
+      {
+        "wilayah": "Papua Barat, Kab. Manokwari",
+        "alamat": "Swapen Perkebunan 001/013 Manokwari Barat"
+      },
+      {
+        "wilayah": "Bengkulu, Bengkulu",
+        "alamat": "Jl. Bandaraya"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jalan Arjuna No.9"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Sukoharjo",
+        "alamat": "Jalan Lawu No 5B Banaran Grogol Sukoharjo"
+      },
+      {
+        "wilayah": "Jambi, Jambi",
+        "alamat": "Jln.Kaca Piring II Simpang IV Sipin, Telanaipura Kota Jambi, Jambi 36122"
+      },
+      {
+        "wilayah": "Kalimantan Utara, Tarakan",
+        "alamat": "Jl. KH Ahmad Dahlan RT.28 No.62 Sebengkok Waru Tarakan"
+      },
+      {
+        "wilayah": "Maluku Utara, Ternate",
+        "alamat": "Jl. Falajawa Puncak, RT.012/RW.006, Jati Perumnas, Kec. Ternate Sel., Kota Ternate, Maluku Utara"
+      },
+      {
+        "wilayah": "Gorontalo, Kab. Gorontalo",
+        "alamat": "Jln. Rajawadi Palapa, Taman Telaga Desa Bulila Kec. Telaga"
+      },
+      {
+        "wilayah": "Jawa Barat, Kab. Subang",
+        "alamat": "Jl. Arief Rahman Hakim No.9"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Pasar 1 No. 19-I"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl. Srijaya No. 294 E RT. 04 RW. 02 Kel. Srijaya Kec. Alang-Alang Lebar Kota Palembang Sumatera Selatan 30153"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Jl Tukad Badung XVI Blok E no. 7A panjer Denpasar Selatan Bali"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Timur",
+        "alamat": "Jl. Mede No.42 5, RT.6/RW.8, Utan Kayu Utara, Jakarta, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13120"
+      }
+    ]
   },
   {
     "no": 31,
@@ -798,7 +1606,50 @@
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
     "alamat_lengkap": "Jalan Baratajaya XXII no 20",
-    "susunlogo_id": "1wTB-4orIRaEFz8mXZxOK2MHyNYUvfMG0"
+    "susunlogo_id": "1wTB-4orIRaEFz8mXZxOK2MHyNYUvfMG0",
+    "jumlah_perwakilan": 10,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "JL. DESA PUTRA, SRENGSENG SAWAH, KEC. JAGAKARSA, KOTA JAKARTA SELATAN"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Bantul",
+        "alamat": "GANG PARKIT NO.C - 15"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "JL FLAMBOYAN III NO 85"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "JL AP PETTARANI III LRG. 3C NO. 4A"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "JL TUKAD MELANGIT NOMOR 36C"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "Ruko KDA Cluster Kepodang 6 Nomor 8"
+      },
+      {
+        "wilayah": "Gorontalo, Gorontalo",
+        "alamat": "JL. JALALUDIN TANTU"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "JL MUSI 6 NOMOR 38"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Sidoarjo",
+        "alamat": "PERUM LARANGAN MEGAS ASRI NO 33 BLOK D"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "JL Dr. Wahidin, Gang Sepakat 2, Komplek Sepakat Griya No. B10"
+      }
+    ]
   },
   {
     "no": 32,
@@ -824,7 +1675,26 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jln. Mampang Prapatan Raya No.61",
-    "susunlogo_id": "1MwMjj7_pvxsGcOp3IOomj9FFnvKlsY8U"
+    "susunlogo_id": "1MwMjj7_pvxsGcOp3IOomj9FFnvKlsY8U",
+    "jumlah_perwakilan": 4,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Soekarno Hatta No. 486"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Balai Kota No. 12-14"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Pemuda No. 73"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Pahlawan No. 120"
+      }
+    ]
   },
   {
     "no": 33,
@@ -850,7 +1720,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Ruko Komplek Kurdi Regency No. 33A, Jl. Inhoftank",
-    "susunlogo_id": "1XpDef239W3o4EoW5jIS4J_vgMifu7vuI"
+    "susunlogo_id": "1XpDef239W3o4EoW5jIS4J_vgMifu7vuI",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 34,
@@ -875,7 +1747,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Tangerang",
     "lokasi_singkat": "Kab. Tangerang, Banten",
-    "alamat_lengkap": "ICE Business Park G 16/17 Jl. BSD Grand Boulevard, BSD City Tangerang"
+    "alamat_lengkap": "ICE Business Park G 16/17 Jl. BSD Grand Boulevard, BSD City Tangerang",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 35,
@@ -901,7 +1775,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jalan Gelap Nyawang Nomor 4",
-    "susunlogo_id": "1aIIY2jBumjbBh2xWlWjzy-DApvSVv1SQ"
+    "susunlogo_id": "1aIIY2jBumjbBh2xWlWjzy-DApvSVv1SQ",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 36,
@@ -927,7 +1803,98 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jalan Turangga Nomor 33",
-    "susunlogo_id": "1xAWZRIsg6U9YlTq04h6-lm6RGtuldcoN"
+    "susunlogo_id": "1xAWZRIsg6U9YlTq04h6-lm6RGtuldcoN",
+    "jumlah_perwakilan": 22,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Banten, Tangerang",
+        "alamat": "Ruko Victoria Park Jl. Imam Bonjol Blok A2 No.19A Tangerang, Banten"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Timur",
+        "alamat": "Rukan Mitra Matraman Jl. Matraman Raya No. 148 Blok A1 No. 5A, Jakarta Timur."
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Turangga No. 33 – Bandung"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Dr. Sutomo No. 53 Kota Semarang"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Darmokali No. 62 C Kel. Darmo, Kec. Wonokromo, Kota Surabaya"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "Jl. Irian No. 35 Sebelah Masjid Jihad Kel. Akcaya kec. Pontianak Selatan"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jl. Sultan Adam Ruko No.1 RT 33 (Samping Komplek Ar Rahim 1) Kel Sungai Miai Kec. Banjarmasin Utara"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Samarinda",
+        "alamat": "Jln. Abdul Azis Samad Rt 33 No 54 Lambung Mangkurat, Kelurahan Pelita, Kecamatan Samarinda Ilir Kaltim Kode pos 75117"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "Komplek Lotus Garden Blok A No. 8 Kel. Teluk Tering, Kec. Batam"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Teuku Umar No. 111/1b, RW.02, Penengahan, Kec. Kedaton, Kota Bandar Lampung, Lampung 35123"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Jl. Panji Tilar Negara No. 150 A Tanjung Karang Kota Mataram"
+      },
+      {
+        "wilayah": "Papua, Jayapura",
+        "alamat": "Jl. Raya Abepura-Sentani No. 91, RT. 02/RW. 07, Padang Bulan, Kel. Hedam, Kec. Heram, Kota Jayapura"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Bakti No. 27 Kel. Tengkerang Barat Kec. Marpoyan Damai"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jln. AP Pettarani Ruko 4-5 Dekat Fly Over, Kel.Sinrijala, Kec.Panakukang, Kota Makassar, Sulawesi Selatan 90231"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Dr. M. Hatta RT. 01 RW. 001"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl. Basuki Rahmat No. 1 Kel. Ario Kemuning, Kec. Kemuning Kota Palembang"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Setiabudi No. 32D Kel. Tanjungrejo Kec. Medan Sunggal (Dekat Titi Bobrok)"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Veteran No 9, Kel. Mujamuju, Kec. Umbulharjo"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl. Juanda No. 03 Kelurahan Besusu Timur Kec. Palu Timur Kota Madya Palu Prov. Sulawesi Tengah, Kode Pos : 94118"
+      },
+      {
+        "wilayah": "Bengkulu, Bengkulu",
+        "alamat": "JL. HIBRIDA 13 RT/RW 01/04 KEL. SUMUR DEWA, KEC. SELEBAR KOTA BENGKULU"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jl. DR. Mohammad Hasan No. 137 Batoh, Banda Aceh (Ruko Samping Terminal Bus-Batoh, Banda Aceh)"
+      },
+      {
+        "wilayah": "Nusa Tenggara Timur, Kupang",
+        "alamat": "BTN Kolhua H No. 6"
+      }
+    ]
   },
   {
     "no": 37,
@@ -953,7 +1920,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Sidomukti No. 99H",
-    "susunlogo_id": "13Ff61k3AUDDR5oJFtuySdIWLFhgCtYHl"
+    "susunlogo_id": "13Ff61k3AUDDR5oJFtuySdIWLFhgCtYHl",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 38,
@@ -979,7 +1948,34 @@
     "kabupaten": "Kab. Karanganyar",
     "lokasi_singkat": "Kab. Karanganyar, Jawa Tengah",
     "alamat_lengkap": "Komplek Griya Smart, Jl. Tentara Pelajar, Jetak",
-    "susunlogo_id": "1MOzSHeVQhAbeWMX0JHSnhw3-ELKVmCk3"
+    "susunlogo_id": "1MOzSHeVQhAbeWMX0JHSnhw3-ELKVmCk3",
+    "jumlah_perwakilan": 6,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Tengah, Surakarta",
+        "alamat": "Jl. Petir RT 001 RW 014 Gendingan"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Wonogiri",
+        "alamat": "Jl. Diponegoro KM 2"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Sukoharjo",
+        "alamat": "Jl. Pemuda No. 8"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Klaten",
+        "alamat": "Jl. Sersan Sadikin No. 6"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Sragen",
+        "alamat": "Jl. Raya Sukowati Barat KM 2 No. 30"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Karanganyar",
+        "alamat": "Jl. Petir RT 001 RW 014 Gendingan, Jebres, Surakarta"
+      }
+    ]
   },
   {
     "no": 39,
@@ -1005,7 +2001,9 @@
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
     "alamat_lengkap": "Jl. Tusam Timur Raya No. 44, Pedalangan, Banyumanik, Semarang",
-    "susunlogo_id": "1oFtI45rTZCP1cqdCxcJ1RxaXyMSfBpcN"
+    "susunlogo_id": "1oFtI45rTZCP1cqdCxcJ1RxaXyMSfBpcN",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 40,
@@ -1031,7 +2029,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Ir. H. Juanda No. 285",
-    "susunlogo_id": "1JHKeGKj7S-HX-Z6reHc7FtjNMO9bDG-E"
+    "susunlogo_id": "1JHKeGKj7S-HX-Z6reHc7FtjNMO9bDG-E",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 41,
@@ -1057,7 +2057,9 @@
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
     "alamat_lengkap": "Gedung KH. Wahid Hasyim Lt. 1 Jl. Kaliurang KM. 14,5",
-    "susunlogo_id": "1Y0ZX-at2mU5s-F65ubuwcOD7i__EORpq"
+    "susunlogo_id": "1Y0ZX-at2mU5s-F65ubuwcOD7i__EORpq",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 42,
@@ -1082,7 +2084,18 @@
     "is_hidden": false,
     "kabupaten": "Kendari",
     "lokasi_singkat": "Kota Kendari, Sulawesi Tenggara",
-    "alamat_lengkap": "Jl. Prof Abdurauf Tarimana"
+    "alamat_lengkap": "Jl. Prof Abdurauf Tarimana",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sulawesi Tenggara, Kab. Konawe",
+        "alamat": "Jl. Bhayangkara No. 148 (Depan kantor polres konawe)"
+      },
+      {
+        "wilayah": "Sulawesi Tenggara, Kab. Kolaka",
+        "alamat": "Komp. Baitul Arqom Polinggona"
+      }
+    ]
   },
   {
     "no": 43,
@@ -1108,7 +2121,70 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Jl. Kramat Raya No.164, RT.7/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110",
-    "susunlogo_id": "1G_OOdnCQZPrNkAYQ8CAPYFGgn0UnBFEG"
+    "susunlogo_id": "1G_OOdnCQZPrNkAYQ8CAPYFGgn0UnBFEG",
+    "jumlah_perwakilan": 15,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Terusan Galunggung No.9, Lkr. Sel., Kec. Lengkong, Kota Bandung, Jawa Barat"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. MT. Haryono No.40-42, Suryodiningratan, Kec. Mantrijeron, Kota Yogyakarta, Daerah Istimewa Yogyakarta"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Masjid Al Akbar Timur No. 9. Kel. Gayungan, Kec. Gayungan, Kota Surabaya"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "Jl. Husein Hamzah, Sungai Jawi, Pontianak Barat, Kota Pontianak, Kalimantan Barat."
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "l. Perintis Kemerdekaan No.29, Tamalanrea Indah, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan 90245"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Gg. Pura Demak II No.88A, Pemecutan Klod, Kec. Denpasar Bar., Kota Denpasar, Bali"
+      },
+      {
+        "wilayah": "Aceh, Kab. Aceh Besar",
+        "alamat": "Jln Ir Mohd Thahier No 09, Komplek Dayah Thalibul Huda Bayu-Lamcot, Kec. Darul Imarah, Kab. Aceh Besar"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Lobak Gg. Damai No. 3C Kel. Tobek Godang Kec. Bina Widya Kota Pekanbaru"
+      },
+      {
+        "wilayah": "Nusa Tenggara Timur, Kupang",
+        "alamat": "Jln. W.H.M. Oematan Taman Nostalgia No. 21/22 Kelapa Lima, Kota Kupang – NTT"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Jl. TB Simatupang No.10 2, RT.10/RW.4, Cilandak Bar., Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 1243"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Cut Meutia No. 28 Kec. Telukbetung Utara Kota Bandar Lampung"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Dr. Cipto No.180, Kel. Karangtempel, Kec. Semarang Timur, Kota Semarang, Jawa Tengah"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Gedung PWNU Lt. 3. Jl. Pendidikan No. 6 Kota Mataram"
+      },
+      {
+        "wilayah": "Jambi, Jambi",
+        "alamat": "Jl. Arif Rahman Hakim Depan MAL IAIN STS Jambi Kel. SImpang IV Sipin Kec. Telanaipura Kota Jambi"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl. May. Salim Batubara, No 1988 Lor. Nurul Huda Kel. Sekip Kec. Kemuning Kota Palembang Prov. Sumatera Selatan"
+      }
+    ]
   },
   {
     "no": 44,
@@ -1134,7 +2210,34 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Gedung Menara Dakwah, Jl. Kramat Raya No.45 Lantai 1, Kramat, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450",
-    "susunlogo_id": "1erObj38mRNdNhSm2NwIIvyn8S104Bnt8"
+    "susunlogo_id": "1erObj38mRNdNhSm2NwIIvyn8S104Bnt8",
+    "jumlah_perwakilan": 6,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Purwadadi Raya 86-88, Surabaya"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "14 Jalan Waturenggong Panjer"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Sutan Jamil No. 28, kel. Gd. Meneng, kec. Rajabasa, Bandar Lampung"
+      },
+      {
+        "wilayah": "Bengkulu, Bengkulu",
+        "alamat": "Jalan Sadang 2 RT 007 RW 002 Kelurahan Lingkar Barat, Kecamatan Gading Cempaka, Kota Bengkulu"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Karanganyar",
+        "alamat": "Pulosari RT 02 RW 04, Malangjiwan, Colomadu, Karanganyar, Jawa Tengah"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Veteran Gg. Bekisar No. 716 Q Pandeyan Umbulharjo Yogyakarta 55161"
+      }
+    ]
   },
   {
     "no": 45,
@@ -1159,7 +2262,14 @@
     "is_hidden": false,
     "kabupaten": "Medan",
     "lokasi_singkat": "Kota Medan, Sumatera Utara",
-    "alamat_lengkap": "Jl. Setia Budi No. 123 C"
+    "alamat_lengkap": "Jl. Setia Budi No. 123 C",
+    "jumlah_perwakilan": 1,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sumatera Utara, Kab. Labuhanbatu",
+        "alamat": "Jl. H.M. Said No. 213"
+      }
+    ]
   },
   {
     "no": 46,
@@ -1185,7 +2295,78 @@
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
     "alamat_lengkap": "Jl. Raya Condet No. 27 G",
-    "susunlogo_id": "1KgBkjrRNY9IeCtsqgeT-j8x1nPxBaOJQ"
+    "susunlogo_id": "1KgBkjrRNY9IeCtsqgeT-j8x1nPxBaOJQ",
+    "jumlah_perwakilan": 17,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Ruko Celesta, Jl. Graha Raya No.18 Blok K, Pd. Jagung Tim., Kec. Serpong Utara, Kota Tangerang Selatan, Banten 15326"
+      },
+      {
+        "wilayah": "Bengkulu, Bengkulu",
+        "alamat": "Jl. Raflesia No. 6 (Samping Kedai Kopi Luwak Bengkulu)"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Cikutra No. 95"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Pucang Anom No. 57"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Basudewo No. 753 B"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Bangirejo Taman No.9"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Jl. Syarifuddin Yoes Ruko de Royale Regency Blok H5 No. 12"
+      },
+      {
+        "wilayah": "Kalimantan Utara, Tarakan",
+        "alamat": "Jl. Kusuma Bangsa RT.13 No.09"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Z.A. Pagar Alam No. 4"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Paus No. 10 C"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Kasuari No. 29 C"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl. Let Simanjuntak RT.18 RW.07 No. 1168"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Berok Raya No. 3"
+      },
+      {
+        "wilayah": "Sulawesi Tenggara, Kendari",
+        "alamat": "Jl. Jati Raya No. 10"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl. Banteng Raya Blok E No, 7, Kel. Birobuli Selatan, Kec. Palu Selatan, Kota Palu, Provinsi Sulawesi Tengah 94231"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl. Monumen Emmy Saelan No.60-27, Tidung, Kec. Rappocini, Kota Makassar, Sulawesi Selatan 90222"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Timur",
+        "alamat": "Jl. Raya Condet No.54 D-E, Batu Ampar, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13520"
+      }
+    ]
   },
   {
     "no": 47,
@@ -1211,7 +2392,14 @@
     "kabupaten": "Tangerang",
     "lokasi_singkat": "Kota Tangerang, Banten",
     "alamat_lengkap": "Kawasan Bisnis CBD Cileduk, Jl. HOS Cokroaminoto No.21, RT.001/RW.001, Karang Tengah, Kec. Karang Tengah, Kota Tangerang, Banten 15157",
-    "susunlogo_id": "19gfDVK6LVa-oMOImorbUx3c8zrv85y3j"
+    "susunlogo_id": "19gfDVK6LVa-oMOImorbUx3c8zrv85y3j",
+    "jumlah_perwakilan": 1,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Pakis No.55, Pakis, Kec. Sawahan, Surabaya, Jawa Timur 60256"
+      }
+    ]
   },
   {
     "no": 48,
@@ -1237,7 +2425,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jl. Kalibata Utara II No.84 10, RT.13/RW.2, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760",
-    "susunlogo_id": "1jSmHFBdP4IUN2Sn1MKxDAWtWFm0uI1HT"
+    "susunlogo_id": "1jSmHFBdP4IUN2Sn1MKxDAWtWFm0uI1HT",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 49,
@@ -1263,7 +2453,18 @@
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
     "alamat_lengkap": "JL. KETINTANG TIMUR PTT VB SURABAYA",
-    "susunlogo_id": "15lVQJptftRrxTUVDAU8-sX6Xlcz-uALu"
+    "susunlogo_id": "15lVQJptftRrxTUVDAU8-sX6Xlcz-uALu",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Mojokerto",
+        "alamat": "Perumahan Jl. Griya Permata Meri No.23 Blok D, Mergelo"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Jember",
+        "alamat": "Jl. Letjend Sutoyo Perum Kebonsari Indah Blok Q no 17"
+      }
+    ]
   },
   {
     "no": 50,
@@ -1289,7 +2490,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jl. Tebet Utara III No.21, RT.8/RW.2,",
-    "susunlogo_id": "1q_BDrbGhZreV1BBoboqKRFGntMHwqF7u"
+    "susunlogo_id": "1q_BDrbGhZreV1BBoboqKRFGntMHwqF7u",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 51,
@@ -1315,7 +2518,9 @@
     "kabupaten": "Jambi",
     "lokasi_singkat": "Kota Jambi, Jambi",
     "alamat_lengkap": "Jl. Otto iskandardinata No.15",
-    "susunlogo_id": "11BD144eoNpPsvQVNFFMUKcBXLLgohK6O"
+    "susunlogo_id": "11BD144eoNpPsvQVNFFMUKcBXLLgohK6O",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 52,
@@ -1341,7 +2546,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "WISMA BAKRIE 1 LANTAI 2 JALAN RASUNA SAID KAV B1, RT 05 RW 05",
-    "susunlogo_id": "10QYlWnvlQLFEIopIfjz-N876ANATGaPH"
+    "susunlogo_id": "10QYlWnvlQLFEIopIfjz-N876ANATGaPH",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 53,
@@ -1367,7 +2574,26 @@
     "kabupaten": "Serang",
     "lokasi_singkat": "Kota Serang, Banten",
     "alamat_lengkap": "Jl. Ciwaru Raya Pondok Citra 1 No. 1B",
-    "susunlogo_id": "1DanaGk3f_C9X84hbyv3NYYrfum4BHC-q"
+    "susunlogo_id": "1DanaGk3f_C9X84hbyv3NYYrfum4BHC-q",
+    "jumlah_perwakilan": 4,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Banten, Cilegon",
+        "alamat": "Cluster Srikandi Perumahan Gedong Cilegon Damai Blok S2 No. 2"
+      },
+      {
+        "wilayah": "Banten, Kab. Pandeglang",
+        "alamat": "Jl. KH. Abdul Halim No. Km 6"
+      },
+      {
+        "wilayah": "Banten, Kab. Lebak",
+        "alamat": "Jl. Profesor DR. Insinyur Soetami No.7"
+      },
+      {
+        "wilayah": "Banten, Tangerang",
+        "alamat": "Jalan Raden Patah No. 5 Lantai 3"
+      }
+    ]
   },
   {
     "no": 54,
@@ -1393,7 +2619,9 @@
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
     "alamat_lengkap": "Jl. K.H.M.Yusuf Raya No.95",
-    "susunlogo_id": "1rgiKd-9sGUTsib4iJxm0NRBV_NXsixhz"
+    "susunlogo_id": "1rgiKd-9sGUTsib4iJxm0NRBV_NXsixhz",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 55,
@@ -1419,7 +2647,106 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Kalibata Office Park, Jl. KH. Guru Amin, No.21 No. Blok H, Kode Pos 12780",
-    "susunlogo_id": "1-qt5SKhCgl7s4vHZ-AK9_x0xwPoFqvF6"
+    "susunlogo_id": "1-qt5SKhCgl7s4vHZ-AK9_x0xwPoFqvF6",
+    "jumlah_perwakilan": 24,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Kalimantan Utara, Tarakan",
+        "alamat": "JLN. AKI BALAK RT 15"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Tusam Timur raya No 3A banyumanik, Semarang"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Tepi Bandar Kali, Jl. Manggis No. 47, Kel. Ujung Gurun, Kec. Padang Barat, Kota Padang, Sumatera barat"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Jalan MT Haryono Ruko BDI Blok II No 7A Balikpapan"
+      },
+      {
+        "wilayah": "Kalimantan Tengah, Palangkaraya",
+        "alamat": "Jalan Bukit Keminting Gang Bukit Zaitun Ruko No. 3"
+      },
+      {
+        "wilayah": "Bengkulu, Bengkulu",
+        "alamat": "Jl. WR. Supratman No.2, Beringin Raya, Kec. Muara Bangka Hulu, Kota Bengkulu, Bengkulu 38119"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Karya Wisata No. 20D, Medan Johor, Kota Medan"
+      },
+      {
+        "wilayah": "Sulawesi Tenggara, Kendari",
+        "alamat": "Jl. Malaka, Ruko Citraland Blok H/18, Kel. Anduonohu, Kec. Poasia, Kota Kendari."
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Ruko Nusantara Square No. 3A, Jl. Udayana, Selaparang, Kota Mataram"
+      },
+      {
+        "wilayah": "Papua Barat, Sorong",
+        "alamat": "Jl. Danau Tempe Kampung Salak"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "BTP, Poros, Jl. Bumi Tamalanrea Permai No.27A Blok M, Tamalanrea, Kec. Tamalanrea, Kota Makassar, Sulawesi Selatan 90245"
+      },
+      {
+        "wilayah": "Nusa Tenggara Timur, Kupang",
+        "alamat": "Jl. A. Nisnoni, No. 17"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Jl. Taman Pancing Timur No. 9x Denpasar"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Ruko Candi Indah Ka. 4, Jl. Kaliurang Km. 11,5, D.I.Y"
+      },
+      {
+        "wilayah": "Kepulauan Riau, Batam",
+        "alamat": "RUKO CEMARA ASRI BLOK BB10 NO15"
+      },
+      {
+        "wilayah": "Gorontalo, Gorontalo",
+        "alamat": "Jl. Hos Cokroaminoto. Heledulaa Limba U I. Kota Selatan Gorontalo."
+      },
+      {
+        "wilayah": "Maluku Utara, Ternate",
+        "alamat": "Jl. Folaraha, Kelurahan Kalumata, Kec. Ternate Selatan"
+      },
+      {
+        "wilayah": "Sulawesi Barat, Kab. Mamuju",
+        "alamat": "Jl. Abdul Syakur No. 02, Kel, Karema, Kab. Mamuju, Prov. Sulawesi Barat"
+      },
+      {
+        "wilayah": "Jawa Barat, Kab. Bandung",
+        "alamat": "JL. R E SUWANDA NO 18A PASIRLEUTIK - PADASUKA"
+      },
+      {
+        "wilayah": "Maluku, Ambon",
+        "alamat": "Jl. Tanjakan 2000, Batu Tagepe, Sirimau, Batu Merah, Kota Ambon, Maluku"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Jl. Serang-Pandeglang Km. 03 No. 4"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarbaru",
+        "alamat": "Jl. RO Ulin No. 32 RT 01 RW 04 Loktabat Selatan Banjarbaru"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl Raya Mulyosari No. 398 Surabaya"
+      },
+      {
+        "wilayah": "Sulawesi Utara, Bitung",
+        "alamat": "Jln. Beringin"
+      }
+    ]
   },
   {
     "no": 56,
@@ -1444,7 +2771,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bandung Barat",
     "lokasi_singkat": "Kab. Bandung Barat, Jawa Barat",
-    "alamat_lengkap": "Jl. Gadobangkong No.19"
+    "alamat_lengkap": "Jl. Gadobangkong No.19",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 57,
@@ -1470,7 +2799,34 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jl. Ulujami Raya No.111, RT.2/RW.7, Ulujami, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12250",
-    "susunlogo_id": "1yyKnfpeRiDL-BwUM1-5f3ImsFde2wE6_"
+    "susunlogo_id": "1yyKnfpeRiDL-BwUM1-5f3ImsFde2wE6_",
+    "jumlah_perwakilan": 6,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jl. Bintaro Utama 3, No. 50, Blok AP, Rt.011/Rw.08, Pd Betung, Kec. Pondok Aren, Kota Tangerang Selatan, Banten 15221"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Jl. Ulujami Raya No.109, RT.2/RW.7, Ulujami, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12250"
+      },
+      {
+        "wilayah": "Jawa Barat, Cimahi",
+        "alamat": "Jl. Jend. H. Amir Machmud No.658, Cimahi, Kec. Cimahi Tengah, Kota Cimahi, Jawa Barat 40525"
+      },
+      {
+        "wilayah": "Jawa Tengah, Surakarta",
+        "alamat": "Jl. Gajahmada No.158, Ketelan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57132"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl. Dukuh Kupang XXV No.49 A"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Melati Wetan No.8A, 55225,"
+      }
+    ]
   },
   {
     "no": 58,
@@ -1496,7 +2852,9 @@
     "kabupaten": "Makassar",
     "lokasi_singkat": "Kota Makassar, Sulawesi Selatan",
     "alamat_lengkap": "Wisma Kalla, Jl. DR. Ratulangi No. 8",
-    "susunlogo_id": "1_zNCUIRLmGpGHjHEh0kzk7mvzdnJVTJS"
+    "susunlogo_id": "1_zNCUIRLmGpGHjHEh0kzk7mvzdnJVTJS",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 59,
@@ -1522,7 +2880,34 @@
     "kabupaten": "Mataram",
     "lokasi_singkat": "Kota Mataram, Nusa Tenggara Barat",
     "alamat_lengkap": "Jl. Bung Karno No. 76B Pagesangan Timur Kec. Mataram Kota Mataram",
-    "susunlogo_id": "1qapLUosXOst5PWNxW9mKXSRAkO_AvyLi"
+    "susunlogo_id": "1qapLUosXOst5PWNxW9mKXSRAkO_AvyLi",
+    "jumlah_perwakilan": 6,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Nusa Tenggara Barat, Kab. Lombok Tengah",
+        "alamat": "Dusun Batu Apit Ling. Bagek Rende Jontlak"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Kab. Lombok Utara",
+        "alamat": "Dusun Lendang Berora, Sigar Penjalin Residence Blok H No. 1"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Kab. Lombok Timur",
+        "alamat": "Jl. Hasanudin Bumbasari"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Kab. Lombok Barat",
+        "alamat": "Jl. Soetomo No. 39"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Kab. Sumbawa Barat",
+        "alamat": "Jl Lintas Taliwang - Maluk"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Jl. Tanjung Bebera No. 09 Griya Pagutan Indah"
+      }
+    ]
   },
   {
     "no": 60,
@@ -1548,7 +2933,54 @@
     "kabupaten": "Tangerang Selatan",
     "lokasi_singkat": "Kota Tangerang Selatan, Banten",
     "alamat_lengkap": "Jl Haji Cari No.58",
-    "susunlogo_id": "1A2inSgQLmhUMAv-zcO5t_hiBOT5E3SlC"
+    "susunlogo_id": "1A2inSgQLmhUMAv-zcO5t_hiBOT5E3SlC",
+    "jumlah_perwakilan": 11,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Prof H. M. Yamin no. 231"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Jl. Strat III Indrakila, No 33, kel. Gn Samarinda Baru, Balikpapan (depan pertigaan kampung timur) kel. Gn Samarinda Baru, Balikpapan (depan pertigaan kampung timur)."
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Rambutan No. 28, Kel. Sidomulyo Timur, Kec. Marpoyan Damai Pekanbaru"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jl. Residen Danubroto No 1 Kelurahan Geuce Kaye Jato,Kecamatan Bandar Raya, Kota Banda Aceh"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Karambi condong rt 04 rw 02 kel sungai sapih kec kuranji ,(gang mushala nurul islam karambi condong) padang sumbar 25159"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Bantul",
+        "alamat": "JL. Bugisan selatan 340, Jomegatan Rt 11 Kec. Kasihan, bantul Yogyakarta Yogyakarta"
+      },
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jl. Graha Raya Blok M7 No. 25, Cluster Bougenville, Bintaro, Tangerang Selatan (Sebelah Bridgestone)"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarbaru",
+        "alamat": "Jl. R.O. Ulin No.18A RT 02 RW 02 Kel. Loktabat Selatan, Banjarbaru Landasan Ulin"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Hos cokroaminoto No. 90, Enggal, Kec, Tanjungkarang Timur, Kota Bandar Lampung,Lampung 35213"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Jl. Raya Moch. Kahfi 1 No. 62 RT 003/004 Kelurahan Jagakarsa, Kecamatan Jagakarsa, Jakarta Selatan"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl. Meranti no. 232"
+      }
+    ]
   },
   {
     "no": 61,
@@ -1574,7 +3006,18 @@
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
     "alamat_lengkap": "jl. Ketintang Madya 1 No 6C",
-    "susunlogo_id": "1hg1e1mPlS-5Nhqwp5fCYhiBFCEJOV2b6"
+    "susunlogo_id": "1hg1e1mPlS-5Nhqwp5fCYhiBFCEJOV2b6",
+    "jumlah_perwakilan": 2,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Kab. Jombang",
+        "alamat": "Parimono no14A, Gg. Masjid II,"
+      },
+      {
+        "wilayah": "Jawa Timur, Batu",
+        "alamat": "Villa Adelwaies Kav 8 Jl Abdul Ghoni atas Batu"
+      }
+    ]
   },
   {
     "no": 62,
@@ -1600,7 +3043,30 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jalan Buahbatu No. 296",
-    "susunlogo_id": "15OsLB3YIKzXzQ6VTtvuHLPEEYonFU0UL"
+    "susunlogo_id": "15OsLB3YIKzXzQ6VTtvuHLPEEYonFU0UL",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jalan Cut Meutia II Blok FG 2 No 38 Kelurahan Jurang Mangu Barat, Kecamatan Pondok Aren, Kota Tangerang Selatan, Provinsi Banten Kode Pos 15224"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Jl. Gunung Agung No. 126"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Jl. Angkatan 66 No. 17"
+      },
+      {
+        "wilayah": "Jawa Tengah, Tegal",
+        "alamat": "Jl. Werkudoro No. 207"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jl. Mayjen Sutoyo S No. 12"
+      }
+    ]
   },
   {
     "no": 63,
@@ -1625,7 +3091,74 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. Sungai Sambas I No.10 Keramat Pela Kebayoran Baru Jakarta Selatan"
+    "alamat_lengkap": "Jl. Sungai Sambas I No.10 Keramat Pela Kebayoran Baru Jakarta Selatan",
+    "jumlah_perwakilan": 16,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Jl. Mangkuyudan No. 34 RT/RW:026/008 Kel. Mantrijeron Kec. Mantrijeron Kota Yogyakarta"
+      },
+      {
+        "wilayah": "Banten, Serang",
+        "alamat": "Jl. HM. Muslih No. 1 RT/RW:04/04 Kel. Serang Kec. Serang Kota Serang Prov. Banten"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Pusat",
+        "alamat": "Jl. Menteng Raya No. 58"
+      },
+      {
+        "wilayah": "Papua, Jayapura",
+        "alamat": "Jl. Karang Lorong II No. 1 Waena Jayapura Prov. Papua"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Tanggulangin 1 RT. 02 Rw.IV No. 26 Banjardowo Genuk Kota Semarang Jawa Tengah"
+      },
+      {
+        "wilayah": "Kalimantan Barat, Pontianak",
+        "alamat": "Jl.Danau SentarumGg Pak Majid III/18"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl. Siekarno Hatta Lr.Bukit Zaitun"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Jermal IV A No. 3"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jl. H. Usman"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Komplek Perkamtoran Taman Mella Blok E.4 Lt. 3 jl. Tuanku Tambusai/Nangka marpoyan damai pekanbaru"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Jl. Perintis Kemerdekaan No 106"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Jl. Ahmad Yani no. 3"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Balikpapan",
+        "alamat": "Jl. Projakal No.117"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Jl. Sultan Adam"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "Jl Harimau No 7"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Gunung Pangilun No. 4, Depan MTsN Model Padang"
+      }
+    ]
   },
   {
     "no": 64,
@@ -1651,7 +3184,22 @@
     "kabupaten": "Kab. Jombang",
     "lokasi_singkat": "Kab. Jombang, Jawa Timur",
     "alamat_lengkap": "JL. Wr, Supratman No 38",
-    "susunlogo_id": "1tdF6KukO961YfRjsrtvc_msHqWeo41hO"
+    "susunlogo_id": "1tdF6KukO961YfRjsrtvc_msHqWeo41hO",
+    "jumlah_perwakilan": 3,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Timur, Kab. Lumajang",
+        "alamat": "Jalan Kapuas No 2, Area Sawahan/Kebun"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Jombang",
+        "alamat": "Lantai 2 Kantor LAZUQ, JL. WR. Suparman No 38"
+      },
+      {
+        "wilayah": "Jawa Timur, Kab. Magetan",
+        "alamat": "Jl. S. Parman RT. 01 RW. 01 Ds. Kebonagung Kec. Magetan Kab. Magetan"
+      }
+    ]
   },
   {
     "no": 65,
@@ -1676,7 +3224,9 @@
     "is_hidden": false,
     "kabupaten": "Cimahi",
     "lokasi_singkat": "Kab. Cimahi, Jawa Barat",
-    "alamat_lengkap": "Komplek Padasuka Indah B11"
+    "alamat_lengkap": "Komplek Padasuka Indah B11",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 66,
@@ -1701,7 +3251,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Kulon Progo",
     "lokasi_singkat": "Kab. Kulon Progo, D.I. Yogyakarta",
-    "alamat_lengkap": "Jl. Kyai Ronggo, Dk VII Dalangan, Rt. 015, Rw. 007, Triharjo, Wates, Kulon Progo"
+    "alamat_lengkap": "Jl. Kyai Ronggo, Dk VII Dalangan, Rt. 015, Rw. 007, Triharjo, Wates, Kulon Progo",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 67,
@@ -1726,7 +3278,9 @@
     "is_hidden": false,
     "kabupaten": "Pasuruan",
     "lokasi_singkat": "Kota Pasuruan, Jawa Timur",
-    "alamat_lengkap": "Jl. Raden Patah No. 45"
+    "alamat_lengkap": "Jl. Raden Patah No. 45",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 68,
@@ -1751,7 +3305,9 @@
     "is_hidden": false,
     "kabupaten": "Cimahi",
     "lokasi_singkat": "Kab. Cimahi, Jawa Barat",
-    "alamat_lengkap": "Komplek Padasuka Indah B11"
+    "alamat_lengkap": "Komplek Padasuka Indah B11",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 69,
@@ -1777,7 +3333,9 @@
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
     "alamat_lengkap": "jl i Dewa nyoman Oka 28",
-    "susunlogo_id": "1YqIBm4bXxOrsljpAl5whJRBJzVoUdupA"
+    "susunlogo_id": "1YqIBm4bXxOrsljpAl5whJRBJzVoUdupA",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 70,
@@ -1803,7 +3361,9 @@
     "kabupaten": "Kab. Subang",
     "lokasi_singkat": "Kab. Subang, Jawa Barat",
     "alamat_lengkap": "Jl. Raya Subang - Bandung Km 12",
-    "susunlogo_id": "1sJcwjPtZk4MGN_3y3h1MN-ojnKDCeGy7"
+    "susunlogo_id": "1sJcwjPtZk4MGN_3y3h1MN-ojnKDCeGy7",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 71,
@@ -1829,7 +3389,9 @@
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
     "alamat_lengkap": "Jl. Timoho II Gg. Delima No. 2",
-    "susunlogo_id": "1UbY8m9WLNQnD_MMiyutCruBgjIr-te3x"
+    "susunlogo_id": "1UbY8m9WLNQnD_MMiyutCruBgjIr-te3x",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 72,
@@ -1855,7 +3417,9 @@
     "kabupaten": "Batam",
     "lokasi_singkat": "Kota Batam, Kepulauan Riau",
     "alamat_lengkap": "Jl. Ahmad Yani, Ruko Alexandria Blok B8 No. 61",
-    "susunlogo_id": "1Cxdh2Xrd1McwWb8Y3M-Z-4AmurQh4Eyi"
+    "susunlogo_id": "1Cxdh2Xrd1McwWb8Y3M-Z-4AmurQh4Eyi",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 73,
@@ -1880,7 +3444,9 @@
     "is_hidden": false,
     "kabupaten": "Ambon",
     "lokasi_singkat": "Kota Ambon, Maluku",
-    "alamat_lengkap": "jln. Warasia Desa Batu Merah, Kec. Sirimau"
+    "alamat_lengkap": "jln. Warasia Desa Batu Merah, Kec. Sirimau",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 74,
@@ -1906,7 +3472,9 @@
     "kabupaten": "Kab. Klaten",
     "lokasi_singkat": "Kab. Klaten, Jawa Tengah",
     "alamat_lengkap": "Jl. Mayor Kusmanto Gg Ketapang Perak YKP RT.03/RW.04 Ngingas Baru",
-    "susunlogo_id": "1fO2IEnGHIOK5GfynuF2Po0e_nVTIF1YS"
+    "susunlogo_id": "1fO2IEnGHIOK5GfynuF2Po0e_nVTIF1YS",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 75,
@@ -1932,7 +3500,9 @@
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
     "alamat_lengkap": "Jl. Sulawesi Perum Puri Tanjung Intan No.B2",
-    "susunlogo_id": "1y5p7T5eSrAQ8vrAo-y9iGr_az3aLMxwY"
+    "susunlogo_id": "1y5p7T5eSrAQ8vrAo-y9iGr_az3aLMxwY",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 76,
@@ -1957,7 +3527,9 @@
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Cijagra no 21"
+    "alamat_lengkap": "Jl. Cijagra no 21",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 77,
@@ -1983,7 +3555,9 @@
     "kabupaten": "Malang",
     "lokasi_singkat": "Kota Malang, Jawa Timur",
     "alamat_lengkap": "Jl. Danau Matana Blok F6B-7",
-    "susunlogo_id": "1Lcg_50MrdTzzmcElPlD2z82e08U-HOYt"
+    "susunlogo_id": "1Lcg_50MrdTzzmcElPlD2z82e08U-HOYt",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 78,
@@ -2009,7 +3583,9 @@
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
     "alamat_lengkap": "Jalan Kranggan, Kranggan 1",
-    "susunlogo_id": "1fnR7CUYKIDvuUpUNhIQ5cDXahxl_2fhl"
+    "susunlogo_id": "1fnR7CUYKIDvuUpUNhIQ5cDXahxl_2fhl",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 79,
@@ -2035,7 +3611,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Riung Hegar Raya No. 10 Rt. 007 Rw. 008",
-    "susunlogo_id": "1aNjIyPwvs6E1yt30Au3986_YyGw45ypi"
+    "susunlogo_id": "1aNjIyPwvs6E1yt30Au3986_YyGw45ypi",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 80,
@@ -2060,7 +3638,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jalan Cipaku 1 No. 16"
+    "alamat_lengkap": "Jalan Cipaku 1 No. 16",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 81,
@@ -2085,7 +3665,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
-    "alamat_lengkap": "Jalan Sungai Citarik, Desa Sukamanah,"
+    "alamat_lengkap": "Jalan Sungai Citarik, Desa Sukamanah,",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 82,
@@ -2111,7 +3693,9 @@
     "kabupaten": "Kab. Jember",
     "lokasi_singkat": "Kab. Jember, Jawa Timur",
     "alamat_lengkap": "Jl. Letjen S. Parman No 10 Sumbersari",
-    "susunlogo_id": "1FNSyBsAFe47oW8q-KMS9gJcqvMBzz43D"
+    "susunlogo_id": "1FNSyBsAFe47oW8q-KMS9gJcqvMBzz43D",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 83,
@@ -2137,7 +3721,9 @@
     "kabupaten": "Tegal",
     "lokasi_singkat": "Kota Tegal, Jawa Tengah",
     "alamat_lengkap": "Jln Surabayan, Rt004/Rw014, Panggung, Tegal Timur, Kota Tegal",
-    "susunlogo_id": "1zk7-xQWxpmVMbhqkpiMBHrihzm-cuhOc"
+    "susunlogo_id": "1zk7-xQWxpmVMbhqkpiMBHrihzm-cuhOc",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 84,
@@ -2163,7 +3749,9 @@
     "kabupaten": "Kab. Lumajang",
     "lokasi_singkat": "Kab. Lumajang, Jawa Timur",
     "alamat_lengkap": "JL. VETERAN NO 57 KEPUHARJO LUMAJANG",
-    "susunlogo_id": "1MXbfoVI5j6gcxa6vjBmfVBs8lajrBQXS"
+    "susunlogo_id": "1MXbfoVI5j6gcxa6vjBmfVBs8lajrBQXS",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 85,
@@ -2189,7 +3777,9 @@
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
     "alamat_lengkap": "Jl. Sidanti No. 22 Sambisari Joho",
-    "susunlogo_id": "1uL_T9ZkN7RhLwA7slIZXRmbDhoXud2r3"
+    "susunlogo_id": "1uL_T9ZkN7RhLwA7slIZXRmbDhoXud2r3",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 86,
@@ -2214,7 +3804,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Pati",
     "lokasi_singkat": "Kab. Pati, Jawa Tengah",
-    "alamat_lengkap": "Gedung Ikosindo, Jl. Penjawi Gg. 5 No.RT 12 Lantai 2 RT.12 RW.3 Randukuning"
+    "alamat_lengkap": "Gedung Ikosindo, Jl. Penjawi Gg. 5 No.RT 12 Lantai 2 RT.12 RW.3 Randukuning",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 87,
@@ -2240,7 +3832,9 @@
     "kabupaten": "Medan",
     "lokasi_singkat": "Kota Medan, Sumatera Utara",
     "alamat_lengkap": "Jalan Brigjend. Katamso No.11",
-    "susunlogo_id": "1uEFM56gY58kJ5GD1cUnH3MwrOdMoq7G6"
+    "susunlogo_id": "1uEFM56gY58kJ5GD1cUnH3MwrOdMoq7G6",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 88,
@@ -2265,7 +3859,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Ponorogo",
     "lokasi_singkat": "Kab. Ponorogo, Jawa Timur",
-    "alamat_lengkap": "Jl. Ahmad Yani no. 278, Purbosuman"
+    "alamat_lengkap": "Jl. Ahmad Yani no. 278, Purbosuman",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 89,
@@ -2291,7 +3887,30 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Sukaraja Town Square kavling D dan E, Jl. Sukaraja II",
-    "susunlogo_id": "16lEwSz9U5nrGeVzH5lo0Q90k8npGAAuK"
+    "susunlogo_id": "16lEwSz9U5nrGeVzH5lo0Q90k8npGAAuK",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Ismailliyah Gg. Rahayu No.14 C Sukaramai I, Medan Area, Sumatera utara"
+      },
+      {
+        "wilayah": "Jawa Barat, Kab. Bandung",
+        "alamat": "Jl, Raya anjung, Komplek Margaasih REsidence, No. 24"
+      },
+      {
+        "wilayah": "Jawa Tengah, Kab. Banyumas",
+        "alamat": "Jl. Prov.M. Yamin V. No.03, Karangklesem, Karangpucung"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Kab. Maros",
+        "alamat": "Jl. Poros Makassar Maros KM 23 Komplek Graha Cemerlang Blok B No. 8 Batangase"
+      },
+      {
+        "wilayah": "Gorontalo, Kab. Gorontalo",
+        "alamat": "Jl. Hi Moh Non Pago, Se, Hepuhuwala"
+      }
+    ]
   },
   {
     "no": 90,
@@ -2317,7 +3936,9 @@
     "kabupaten": "Bandar Lampung",
     "lokasi_singkat": "Kota Bandar Lampung, Lampung",
     "alamat_lengkap": "Komplek Pujangga Alam Garden Blok B2 No. 3",
-    "susunlogo_id": "1rdIVo3j3BZZH9hqHdhklILKcbFyJMHRS"
+    "susunlogo_id": "1rdIVo3j3BZZH9hqHdhklILKcbFyJMHRS",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 91,
@@ -2343,7 +3964,9 @@
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
     "alamat_lengkap": "Cibubur Country Boulevard RBOF No. 3",
-    "susunlogo_id": "1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY"
+    "susunlogo_id": "1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 92,
@@ -2369,7 +3992,9 @@
     "kabupaten": "Magelang",
     "lokasi_singkat": "Kota Magelang, Jawa Tengah",
     "alamat_lengkap": "Jl. Serayu Timur No.2 Menowo Kedungsari",
-    "susunlogo_id": "1ZYqqaRRurwyvYMfMk2AHpmlcsep9zgcJ"
+    "susunlogo_id": "1ZYqqaRRurwyvYMfMk2AHpmlcsep9zgcJ",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 93,
@@ -2394,7 +4019,9 @@
     "is_hidden": false,
     "kabupaten": "Batam",
     "lokasi_singkat": "Kota Batam, Kepulauan Riau",
-    "alamat_lengkap": "Kantor Ruko Buana Impian Blok B1 No. 14"
+    "alamat_lengkap": "Kantor Ruko Buana Impian Blok B1 No. 14",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 94,
@@ -2420,7 +4047,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jl. Raya Desa Putra No.12 RT.11 RW.5",
-    "susunlogo_id": "1rVJrVu_eWXtbpCyl24o3SaikLZQ-76a1"
+    "susunlogo_id": "1rVJrVu_eWXtbpCyl24o3SaikLZQ-76a1",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 95,
@@ -2446,7 +4075,9 @@
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
     "alamat_lengkap": "Jl. Sambiroto 1 Dalam No.313, RT.08/RW.02, Sambiroto, Kec. Tembalang, Kota Semarang, Jawa Tengah 50276",
-    "susunlogo_id": "1rWv9Rxj638-MLBoxPNuDQbkjCT_1Z59d"
+    "susunlogo_id": "1rWv9Rxj638-MLBoxPNuDQbkjCT_1Z59d",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 96,
@@ -2471,7 +4102,9 @@
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "Jl. Tanjung Sadari No. 42 Perak Barat, Krembangan, Surabaya"
+    "alamat_lengkap": "Jl. Tanjung Sadari No. 42 Perak Barat, Krembangan, Surabaya",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 97,
@@ -2496,7 +4129,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bekasi",
     "lokasi_singkat": "Kab. Bekasi, Jawa Barat",
-    "alamat_lengkap": "Jl. Perjuangan No. 44 RT.02 RW.02 Desa Tambun Kec. Tambun Selatan"
+    "alamat_lengkap": "Jl. Perjuangan No. 44 RT.02 RW.02 Desa Tambun Kec. Tambun Selatan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 98,
@@ -2522,7 +4157,9 @@
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
     "alamat_lengkap": "Jl Veteran Gang Madukoro UH / 768 C",
-    "susunlogo_id": "1x0XQxsOz9ebERRVXJ_DHCTidQbRC1QpD"
+    "susunlogo_id": "1x0XQxsOz9ebERRVXJ_DHCTidQbRC1QpD",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 99,
@@ -2548,7 +4185,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jalan Langga Raya No.2 Lenteng Agung, Jagakarsa Jakarta Selatan",
-    "susunlogo_id": "1-bU7GQG2fukoW9lWWIhVB9lP3bu3A6XO"
+    "susunlogo_id": "1-bU7GQG2fukoW9lWWIhVB9lP3bu3A6XO",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 100,
@@ -2574,7 +4213,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "DeepSpace Office Jl. Melawai X No.9",
-    "susunlogo_id": "1SdD8QyBfDErNL383nF3NCz0QE3mri9Lx"
+    "susunlogo_id": "1SdD8QyBfDErNL383nF3NCz0QE3mri9Lx",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 101,
@@ -2599,7 +4240,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
-    "alamat_lengkap": "JL CERME"
+    "alamat_lengkap": "JL CERME",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 102,
@@ -2624,7 +4267,9 @@
     "is_hidden": false,
     "kabupaten": "Samarinda",
     "lokasi_singkat": "Kota Samarinda, Kalimantan Timur",
-    "alamat_lengkap": "Jl Suryanata Gg Kopta RT 58 nomor 26"
+    "alamat_lengkap": "Jl Suryanata Gg Kopta RT 58 nomor 26",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 103,
@@ -2650,7 +4295,9 @@
     "kabupaten": "Kab. Garut",
     "lokasi_singkat": "Kab. Garut, Jawa Barat",
     "alamat_lengkap": "Jl. KH. Hasan Arief Perum Banyuherang Blok A No 5",
-    "susunlogo_id": "1vorcuUPm8Y5StRxuxMBqN61NfcQ7hhAs"
+    "susunlogo_id": "1vorcuUPm8Y5StRxuxMBqN61NfcQ7hhAs",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 104,
@@ -2675,7 +4322,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Batang",
     "lokasi_singkat": "Kab. Batang, Jawa Tengah",
-    "alamat_lengkap": "Pondok Modern Tazakka, Desa Sidayu Kec. Bandar Kab. Batang Jawa Tengah 51254"
+    "alamat_lengkap": "Pondok Modern Tazakka, Desa Sidayu Kec. Bandar Kab. Batang Jawa Tengah 51254",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 105,
@@ -2701,7 +4350,9 @@
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
     "alamat_lengkap": "Jl. Rajiman No. 36",
-    "susunlogo_id": "1_o0MiSPMRQhkcFMrDXyHOzN7Lbt4uabC"
+    "susunlogo_id": "1_o0MiSPMRQhkcFMrDXyHOzN7Lbt4uabC",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 106,
@@ -2727,7 +4378,9 @@
     "kabupaten": "Kab. Karawang",
     "lokasi_singkat": "Kab. Karawang, Jawa Barat",
     "alamat_lengkap": "Jl. Jend A. Yani (Seberang Superindo Mall Cikampek)",
-    "susunlogo_id": "1hAaw7OfQ8aaCaPjzZcQauarYam7cRI0Z"
+    "susunlogo_id": "1hAaw7OfQ8aaCaPjzZcQauarYam7cRI0Z",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 107,
@@ -2753,7 +4406,9 @@
     "kabupaten": "Malang",
     "lokasi_singkat": "Kota Malang, Jawa Timur",
     "alamat_lengkap": "Jl Loncat Indah Hunian Islami De Prima Kav B 6",
-    "susunlogo_id": "1SCdJ-0NcxQic4V0_ERlpfdaK_41FNYj4"
+    "susunlogo_id": "1SCdJ-0NcxQic4V0_ERlpfdaK_41FNYj4",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 108,
@@ -2779,7 +4434,9 @@
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "17-zN2PlhuYQW6kJ_9LnDL3cg0mfX21CX"
+    "susunlogo_id": "17-zN2PlhuYQW6kJ_9LnDL3cg0mfX21CX",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 109,
@@ -2805,7 +4462,9 @@
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
     "alamat_lengkap": "Jl. Jambu Sari 2 no 8, Perumahan Jambu Sari Indah, Jetis",
-    "susunlogo_id": "1AqwCOZWwwmRMDlatWpS9Z_DdLRVyEDQW"
+    "susunlogo_id": "1AqwCOZWwwmRMDlatWpS9Z_DdLRVyEDQW",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 110,
@@ -2831,7 +4490,9 @@
     "kabupaten": "Pekanbaru",
     "lokasi_singkat": "Kota Pekanbaru, Riau",
     "alamat_lengkap": "Jl. Wisma PGRI No. 31a",
-    "susunlogo_id": "1_cNryTlt3XY_dGzOEZlwDk7iIIipoMLM"
+    "susunlogo_id": "1_cNryTlt3XY_dGzOEZlwDk7iIIipoMLM",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 111,
@@ -2857,7 +4518,9 @@
     "kabupaten": "Kab. Mimika",
     "lokasi_singkat": "Kab. Mimika, Papua",
     "alamat_lengkap": "Jl Poros SP 2 -SP 5",
-    "susunlogo_id": "1DzM70ItI1tbTTmouZu0Ekd5f9dM8dCwf"
+    "susunlogo_id": "1DzM70ItI1tbTTmouZu0Ekd5f9dM8dCwf",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 112,
@@ -2883,7 +4546,22 @@
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
     "alamat_lengkap": "Jl. Raya Tapos No.17 A, Tapos, Kota Depok, Jawa Barat 16517",
-    "susunlogo_id": "1oy26ou-YdXOchjqOUAEgMVqwE9jiLiRh"
+    "susunlogo_id": "1oy26ou-YdXOchjqOUAEgMVqwE9jiLiRh",
+    "jumlah_perwakilan": 3,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Jl. Kemuning No.236, Nologaten, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Jl. Pekanbaru No.1, Ulak Karang Sel., Kec. Padang Utara, Kota Padang, Sumatera Barat"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Jl. Angsa No. 18 B"
+      }
+    ]
   },
   {
     "no": 113,
@@ -2909,7 +4587,9 @@
     "kabupaten": "Surakarta",
     "lokasi_singkat": "Kota Surakarta, Jawa Tengah",
     "alamat_lengkap": "Jl. Ahmad Yani No. 305",
-    "susunlogo_id": "1w1vIcWvMSE2FHD4XW5nD2UCUc2O1VO6W"
+    "susunlogo_id": "1w1vIcWvMSE2FHD4XW5nD2UCUc2O1VO6W",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 114,
@@ -2934,7 +4614,9 @@
     "is_hidden": false,
     "kabupaten": "Denpasar",
     "lokasi_singkat": "Kota Denpasar, Bali",
-    "alamat_lengkap": "Jalan Gunung Bromo nomor 53"
+    "alamat_lengkap": "Jalan Gunung Bromo nomor 53",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 115,
@@ -2960,7 +4642,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "JL. ECENG NO. 6, LINGKAR SELATAN, KOTA BANDUNG",
-    "susunlogo_id": "1RoVBBgIIfi5JYQz3m9-kZdwsfmMtr95g"
+    "susunlogo_id": "1RoVBBgIIfi5JYQz3m9-kZdwsfmMtr95g",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 116,
@@ -2986,7 +4670,9 @@
     "kabupaten": "Cirebon",
     "lokasi_singkat": "Kota Cirebon, Jawa Barat",
     "alamat_lengkap": "Jl. Gelatik Raya No. 3",
-    "susunlogo_id": "1V-nRaEg8ur1SNyeFLq1mJ0hyJTWXSWyk"
+    "susunlogo_id": "1V-nRaEg8ur1SNyeFLq1mJ0hyJTWXSWyk",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 117,
@@ -3012,7 +4698,9 @@
     "kabupaten": "Surakarta",
     "lokasi_singkat": "Kota Surakarta, Jawa Tengah",
     "alamat_lengkap": "Jl. Ahmad Yani No. 305",
-    "susunlogo_id": "1GhYeBZ8s679tmVY-HdXU3E3Eo06uiDX4"
+    "susunlogo_id": "1GhYeBZ8s679tmVY-HdXU3E3Eo06uiDX4",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 118,
@@ -3038,7 +4726,14 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Jl. Batu Tulis XIV No. 1, Juanda III, Kel. Kebon Kelapa, Kec. Gambir, Kota Adm. Jakarta Pusat 10120,",
-    "susunlogo_id": "1KW-7GoVx9fJdp32gnP63T23-R5nhJ-HG"
+    "susunlogo_id": "1KW-7GoVx9fJdp32gnP63T23-R5nhJ-HG",
+    "jumlah_perwakilan": 1,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Barat, Kab. Tasikmalaya",
+        "alamat": "Kp. Sindanghurip, RT 001 RW 004, Desa Jatihurip, Kec. Cisayong, Kab. Tasikmalaya, Provinsi Jawa Barat"
+      }
+    ]
   },
   {
     "no": 119,
@@ -3064,7 +4759,9 @@
     "kabupaten": "Kab. Sragen",
     "lokasi_singkat": "Kab. Sragen, Jawa Tengah",
     "alamat_lengkap": "JL Asahan No 4 A RT 5/IV Mageru",
-    "susunlogo_id": "15HUrF2zS8k00LlKviyN0fQmWICRhfUUG"
+    "susunlogo_id": "15HUrF2zS8k00LlKviyN0fQmWICRhfUUG",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 120,
@@ -3090,7 +4787,9 @@
     "kabupaten": "Kab. Cirebon",
     "lokasi_singkat": "Kab. Cirebon, Jawa Barat",
     "alamat_lengkap": "Jl. Pangeran Cakrabuana No.179, Blok Gudang Air,",
-    "susunlogo_id": "1C70SFRUm65tQ57w6Pm3yi57O_hFsB_hZ"
+    "susunlogo_id": "1C70SFRUm65tQ57w6Pm3yi57O_hFsB_hZ",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 121,
@@ -3116,7 +4815,9 @@
     "kabupaten": "Padang",
     "lokasi_singkat": "Kota Padang, Sumatera Barat",
     "alamat_lengkap": "Jl Air Dingin",
-    "susunlogo_id": "1R2v-VBUkxSBw-Qe0B1HDO50D02MVOfhA"
+    "susunlogo_id": "1R2v-VBUkxSBw-Qe0B1HDO50D02MVOfhA",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 122,
@@ -3141,7 +4842,9 @@
     "is_hidden": false,
     "kabupaten": "Padang",
     "lokasi_singkat": "Kota Padang, Sumatera Barat",
-    "alamat_lengkap": "Jl. Dokter Wahidin II No. 23A, Ganting Parak Gadang, Kec. Padang Timur, Kota Padang"
+    "alamat_lengkap": "Jl. Dokter Wahidin II No. 23A, Ganting Parak Gadang, Kec. Padang Timur, Kota Padang",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 123,
@@ -3166,7 +4869,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jl. Cipinang Besar No. 2A"
+    "alamat_lengkap": "Jl. Cipinang Besar No. 2A",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 124,
@@ -3192,7 +4897,9 @@
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1aS-Y96XVFae5NPEdb1qI1IpZ2kin887N"
+    "susunlogo_id": "1aS-Y96XVFae5NPEdb1qI1IpZ2kin887N",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 125,
@@ -3218,7 +4925,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. kalijati Indah 2 No.5",
-    "susunlogo_id": "1DMgbc1jbOLG8Lyq-aKGFthXG_qrnL4GL"
+    "susunlogo_id": "1DMgbc1jbOLG8Lyq-aKGFthXG_qrnL4GL",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 126,
@@ -3243,7 +4952,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Tangerang",
     "lokasi_singkat": "Kab. Tangerang, Banten",
-    "alamat_lengkap": "Jl. Raya Mauk Km. 19"
+    "alamat_lengkap": "Jl. Raya Mauk Km. 19",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 127,
@@ -3268,7 +4979,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bandung Barat",
     "lokasi_singkat": "Kab. Bandung Barat, Jawa Barat",
-    "alamat_lengkap": "Jl H. Mukti II No. 38"
+    "alamat_lengkap": "Jl H. Mukti II No. 38",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 128,
@@ -3294,7 +5007,9 @@
     "kabupaten": "Kab. Kutai Timur",
     "lokasi_singkat": "Kab. Kutai Timur, Kalimantan Timur",
     "alamat_lengkap": "Jl. Dayung, No. 8",
-    "susunlogo_id": "1NN1cGosFdJh4wSwJNk5YIwv4_p_0R70o"
+    "susunlogo_id": "1NN1cGosFdJh4wSwJNk5YIwv4_p_0R70o",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 129,
@@ -3319,7 +5034,9 @@
     "is_hidden": false,
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
-    "alamat_lengkap": "JL. Raya Kalimulya, Cilodong, Kota Depok"
+    "alamat_lengkap": "JL. Raya Kalimulya, Cilodong, Kota Depok",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 130,
@@ -3344,7 +5061,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jalan Pemuda no 1G"
+    "alamat_lengkap": "Jalan Pemuda no 1G",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 131,
@@ -3369,7 +5088,9 @@
     "is_hidden": false,
     "kabupaten": "Pekanbaru",
     "lokasi_singkat": "Kota Pekanbaru, Riau",
-    "alamat_lengkap": "Jl. Tuanku Tambusai"
+    "alamat_lengkap": "Jl. Tuanku Tambusai",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 132,
@@ -3394,7 +5115,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
-    "alamat_lengkap": "Jalan Cendrawasih No 21"
+    "alamat_lengkap": "Jalan Cendrawasih No 21",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 133,
@@ -3419,7 +5142,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Blok Legok, Kp. Batong, Desa Tangkil,"
+    "alamat_lengkap": "Blok Legok, Kp. Batong, Desa Tangkil,",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 134,
@@ -3445,7 +5170,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Padasuka No 160",
-    "susunlogo_id": "1_PSvkSLsPEKqkzYfcFiKTjXeKiro3bwY"
+    "susunlogo_id": "1_PSvkSLsPEKqkzYfcFiKTjXeKiro3bwY",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 135,
@@ -3471,7 +5198,22 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Masjid Nurul Taqwa Lt.Dasar Jl.Medan Merdeka Barat No.21 Jakarta 10110",
-    "susunlogo_id": "1M9_3a4eTg8hZPqVnodsiOcUeA3IjSWB-"
+    "susunlogo_id": "1M9_3a4eTg8hZPqVnodsiOcUeA3IjSWB-",
+    "jumlah_perwakilan": 3,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Jl. Pandanaran No.131"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Jl.Kayoon No.72"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Selatan",
+        "alamat": "Jl.Poltangan Raya No.35"
+      }
+    ]
   },
   {
     "no": 136,
@@ -3497,7 +5239,9 @@
     "kabupaten": "Kab. Blitar",
     "lokasi_singkat": "Kab. Blitar, Jawa Timur",
     "alamat_lengkap": "Dusun Jatinom",
-    "susunlogo_id": "1_UNnXQ-S-TRXrDx4TBHv5NszBGqtYmTW"
+    "susunlogo_id": "1_UNnXQ-S-TRXrDx4TBHv5NszBGqtYmTW",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 137,
@@ -3523,7 +5267,74 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Gedung Olahraga BRI Lantai 2, Jalan Jenderal Sudirman Kav. 44-46",
-    "susunlogo_id": "1nQ3d55n2VRwkhd29RZPfGfvTrqHFcOWX"
+    "susunlogo_id": "1nQ3d55n2VRwkhd29RZPfGfvTrqHFcOWX",
+    "jumlah_perwakilan": 16,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Gedung Menara BRI RO Pekanbaru Lantai 8"
+      },
+      {
+        "wilayah": "DKI Jakarta, Jakarta Pusat",
+        "alamat": "Gedung BRI Kanwil Jakarta 1 Jl. Veteran II No.8"
+      },
+      {
+        "wilayah": "Bali, Denpasar",
+        "alamat": "Jl. Dr. Kusuma Atmaja No.01"
+      },
+      {
+        "wilayah": "Banten, Tangerang Selatan",
+        "alamat": "Jl.Kapt.Soebiyanto Djojohadikusuma No.1"
+      },
+      {
+        "wilayah": "D.I. Yogyakarta, Yogyakarta",
+        "alamat": "Gedung BRI Kanwil Yogyakarta Jl. Cik Ditiro No. 3"
+      },
+      {
+        "wilayah": "Sumatera Barat, Padang",
+        "alamat": "Gedung BRI Kanwil Padang Jl. Bagindo Azis Chan No. 30"
+      },
+      {
+        "wilayah": "Sulawesi Utara, Manado",
+        "alamat": "Lr. Simpony"
+      },
+      {
+        "wilayah": "Sulawesi Selatan, Makassar",
+        "alamat": "BRI KCP Slamet Riyadi Lantai 2, Jl. Slamet Riyadi No. 5, Kode Pos 90111"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Gedung BRI Kanwil Semarang Jl. Teuku Umar No. 24"
+      },
+      {
+        "wilayah": "Lampung, Bandar Lampung",
+        "alamat": "Gedung BRI Kanwil Bandar Lampung Jl. Raden Intan No. 51"
+      },
+      {
+        "wilayah": "Kalimantan Selatan, Banjarmasin",
+        "alamat": "Gedung BRI Kanwil Banjarmasin Jl. A. Yani KM 3 No. 151"
+      },
+      {
+        "wilayah": "Jawa Timur, Surabaya",
+        "alamat": "Masjid Al Muawanah Jl. Jemur Andayani No. 1"
+      },
+      {
+        "wilayah": "Sumatera Selatan, Palembang",
+        "alamat": "Gedung BRI Kanwil Palembang Jl. Kapten A. Rivai No. 15"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": ": 085270115291 Alamat Kantor Perwakilan : Gedung Menara BRI Medan Lt 9, Jl. Putri Hijau No. 2A"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Gedung BRI Kanwil Bandung Jl. Asia Afrika No. 57-59"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jalan Cut Meutia No. 17"
+      }
+    ]
   },
   {
     "no": 138,
@@ -3549,7 +5360,9 @@
     "kabupaten": "Kab. Bengkalis",
     "lokasi_singkat": "Kab. Bengkalis, Riau",
     "alamat_lengkap": "Jalan Mawar No. 5",
-    "susunlogo_id": "1L4wuCFFEGzIbJ8aWPGHiT5Ynq41jZeZA"
+    "susunlogo_id": "1L4wuCFFEGzIbJ8aWPGHiT5Ynq41jZeZA",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 139,
@@ -3575,7 +5388,9 @@
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
     "alamat_lengkap": "Rukan Emerald Blok UF 08 Sumarecon Bekasi",
-    "susunlogo_id": "1iUd9_NhCKYP9uI9R_tlEiEOOsaps_LI1"
+    "susunlogo_id": "1iUd9_NhCKYP9uI9R_tlEiEOOsaps_LI1",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 140,
@@ -3601,7 +5416,26 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Komp. Puri Asri No.4 RT.07/03 Duren Tiga Kec. Pancoran. Kota Jakarta Selatan. DKI Jakarta INDONESIA – 12760",
-    "susunlogo_id": "1d61CRPeu6AvQhdlRfXsDkVrYtTLw4K6Z"
+    "susunlogo_id": "1d61CRPeu6AvQhdlRfXsDkVrYtTLw4K6Z",
+    "jumlah_perwakilan": 4,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Barat, Kab. Cianjur",
+        "alamat": "Kavling Ancol Regency No. 1A"
+      },
+      {
+        "wilayah": "Sulawesi Tengah, Palu",
+        "alamat": "Jl Sultan Alaudin No 2 Kelurahan Tavanjuka, Kota Palu"
+      },
+      {
+        "wilayah": "Aceh, Banda Aceh",
+        "alamat": "Jln. Cut Nyak Dhien"
+      },
+      {
+        "wilayah": "Nusa Tenggara Barat, Mataram",
+        "alamat": "Perumahan Udayana Pratama Puri Aisyah Jalan Gili Gede No.17"
+      }
+    ]
   },
   {
     "no": 141,
@@ -3626,7 +5460,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. TB Simatupang No. 18"
+    "alamat_lengkap": "Jl. TB Simatupang No. 18",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 142,
@@ -3651,7 +5487,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Barat",
     "lokasi_singkat": "Kota Jakarta Barat, DKI Jakarta",
-    "alamat_lengkap": "Jl. Kedoya Raya No.38 Kedoya Selatan Jakarta Barat"
+    "alamat_lengkap": "Jl. Kedoya Raya No.38 Kedoya Selatan Jakarta Barat",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 143,
@@ -3677,7 +5515,9 @@
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
     "alamat_lengkap": "Jl. Raya Kaligawe KM.4 Semarang",
-    "susunlogo_id": "1MOwlOr-J4GfQTrQjCOBIMaLnWDgv6yV8"
+    "susunlogo_id": "1MOwlOr-J4GfQTrQjCOBIMaLnWDgv6yV8",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 144,
@@ -3703,7 +5543,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Melong Asih I No.03, Cijerah, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40213",
-    "susunlogo_id": "1R9RhK-FE5623vXq0ud1gjepRf3Dy0xS9"
+    "susunlogo_id": "1R9RhK-FE5623vXq0ud1gjepRf3Dy0xS9",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 145,
@@ -3729,7 +5571,9 @@
     "kabupaten": "Kab. Ciamis",
     "lokasi_singkat": "Kab. Ciamis, Jawa Barat",
     "alamat_lengkap": "Dusun Wetan",
-    "susunlogo_id": "1whSnMnDYknD47uUACsXJYrgxSlQtmJjl"
+    "susunlogo_id": "1whSnMnDYknD47uUACsXJYrgxSlQtmJjl",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 146,
@@ -3755,7 +5599,9 @@
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Parakan Arum No.26",
-    "susunlogo_id": "12_pqF6LdRohZR0xih9kahFnjEgveV5Gk"
+    "susunlogo_id": "12_pqF6LdRohZR0xih9kahFnjEgveV5Gk",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 147,
@@ -3780,7 +5626,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
-    "alamat_lengkap": "Jl dr Radjiman No. 44"
+    "alamat_lengkap": "Jl dr Radjiman No. 44",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 148,
@@ -3805,7 +5653,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Cirebon",
     "lokasi_singkat": "Kab. Cirebon, Jawa Barat",
-    "alamat_lengkap": "Jl. Jati Raya no 1"
+    "alamat_lengkap": "Jl. Jati Raya no 1",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 149,
@@ -3830,7 +5680,9 @@
     "is_hidden": false,
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
-    "alamat_lengkap": "Gedung PDHI “Sasonoworo”. Jl. Alun-Alun Utara, Ngupasan, Kec. Gondomanan, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55122"
+    "alamat_lengkap": "Gedung PDHI “Sasonoworo”. Jl. Alun-Alun Utara, Ngupasan, Kec. Gondomanan, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55122",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 150,
@@ -3855,7 +5707,9 @@
     "is_hidden": false,
     "kabupaten": "Makassar",
     "lokasi_singkat": "Kota Makassar, Sulawesi Selatan",
-    "alamat_lengkap": "Jalan Urip Sumoharjo Km 4 No 182"
+    "alamat_lengkap": "Jalan Urip Sumoharjo Km 4 No 182",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 151,
@@ -3880,7 +5734,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Batang",
     "lokasi_singkat": "Kab. Batang, Jawa Tengah",
-    "alamat_lengkap": "Jl. Kresna I Blok E-2"
+    "alamat_lengkap": "Jl. Kresna I Blok E-2",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 152,
@@ -3906,7 +5762,9 @@
     "kabupaten": "Kab. Sukoharjo",
     "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
     "alamat_lengkap": "Jln. Tentara Pelajar, Gang Saturnus, Gabahan RT 5/RW 12",
-    "susunlogo_id": "1cwyiy-17zMKuZskzNs-f3w39T7qGAY9p"
+    "susunlogo_id": "1cwyiy-17zMKuZskzNs-f3w39T7qGAY9p",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 153,
@@ -3932,7 +5790,9 @@
     "kabupaten": "Kab. Sukoharjo",
     "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
     "alamat_lengkap": "Mojotegalan Rt 02/01, Joho, Kec Sukoharjo, Kab Sukoharjo, Jawa Tengah 57513",
-    "susunlogo_id": "1PQ_M1rtjNhPYSXZdwu9Qiur64jV2IvMk"
+    "susunlogo_id": "1PQ_M1rtjNhPYSXZdwu9Qiur64jV2IvMk",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 154,
@@ -3957,7 +5817,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Sukoharjo",
     "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
-    "alamat_lengkap": "Jl. Mendungan, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57145"
+    "alamat_lengkap": "Jl. Mendungan, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57145",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 155,
@@ -3982,7 +5844,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bantul",
     "lokasi_singkat": "Kab. Bantul, D.I. Yogyakarta",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 156,
@@ -4008,7 +5872,9 @@
     "kabupaten": "Bukittinggi",
     "lokasi_singkat": "Kab. Bukittinggi, Sumatera Barat",
     "alamat_lengkap": "Jalan Tabek tuhua RT 03 RW 02",
-    "susunlogo_id": "1qAIMCJNOcIrfRMCCVF2aXJ-DV1w3Ql4-"
+    "susunlogo_id": "1qAIMCJNOcIrfRMCCVF2aXJ-DV1w3Ql4-",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 157,
@@ -4033,7 +5899,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jl. Musholla Fathul Ulum"
+    "alamat_lengkap": "Jl. Musholla Fathul Ulum",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 158,
@@ -4058,7 +5926,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Jl. Jami RT. 3 RW. 4 Desa Sukaja"
+    "alamat_lengkap": "Jl. Jami RT. 3 RW. 4 Desa Sukaja",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 159,
@@ -4084,7 +5954,9 @@
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1q193fWbM6tUCvQecPlQPv1YoKdN1EEw1"
+    "susunlogo_id": "1q193fWbM6tUCvQecPlQPv1YoKdN1EEw1",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 160,
@@ -4109,7 +5981,9 @@
     "is_hidden": false,
     "kabupaten": "Tangerang Selatan",
     "lokasi_singkat": "Kota Tangerang Selatan, Banten",
-    "alamat_lengkap": "Jl.Letnan Soetopo Ruko Golden Madrid X Blok B no 25,Kel.Rawa Mekar Jaya, Serpong, Kota Tangerang Selatan, Banten 15418"
+    "alamat_lengkap": "Jl.Letnan Soetopo Ruko Golden Madrid X Blok B no 25,Kel.Rawa Mekar Jaya, Serpong, Kota Tangerang Selatan, Banten 15418",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 161,
@@ -4134,7 +6008,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Jl. Cempaka Putih Tengah XXX No.30/7"
+    "alamat_lengkap": "Jl. Cempaka Putih Tengah XXX No.30/7",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 162,
@@ -4159,7 +6035,9 @@
     "is_hidden": false,
     "kabupaten": "Banda Aceh",
     "lokasi_singkat": "Kab. Banda Aceh, Aceh",
-    "alamat_lengkap": "Jl.Syeh Abdul Rauf, Kopelma Darussalam"
+    "alamat_lengkap": "Jl.Syeh Abdul Rauf, Kopelma Darussalam",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 163,
@@ -4184,7 +6062,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Cianjur",
     "lokasi_singkat": "Kab. Cianjur, Jawa Barat",
-    "alamat_lengkap": "jl aqso no 12 kp tegal lega"
+    "alamat_lengkap": "jl aqso no 12 kp tegal lega",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 164,
@@ -4209,7 +6089,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Jl. Jami RT. 3 RW. 4 Desa Sukaja"
+    "alamat_lengkap": "Jl. Jami RT. 3 RW. 4 Desa Sukaja",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 165,
@@ -4235,7 +6117,9 @@
     "kabupaten": "Bandar Lampung",
     "lokasi_singkat": "Kota Bandar Lampung, Lampung",
     "alamat_lengkap": "Jln. Kopi no 20, Rajabasa",
-    "susunlogo_id": "1uncZNSR7d9SYqAV6lWQeI-EwiWiuV_Ew"
+    "susunlogo_id": "1uncZNSR7d9SYqAV6lWQeI-EwiWiuV_Ew",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 166,
@@ -4260,7 +6144,9 @@
     "is_hidden": false,
     "kabupaten": "Padang",
     "lokasi_singkat": "Kota Padang, Sumatera Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 167,
@@ -4286,7 +6172,9 @@
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1al5kEhaafTP-HyPoAuAT43Tlz3mv-WRp"
+    "susunlogo_id": "1al5kEhaafTP-HyPoAuAT43Tlz3mv-WRp",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 168,
@@ -4311,7 +6199,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bekasi",
     "lokasi_singkat": "Kab. Bekasi, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 169,
@@ -4337,7 +6227,9 @@
     "kabupaten": "Kab. Jember",
     "lokasi_singkat": "Kab. Jember, Jawa Timur",
     "alamat_lengkap": "Jl. Wijaya Kusuma",
-    "susunlogo_id": "1XRdMFX0b2YADnvtIYxrMIgdm97wGLUkz"
+    "susunlogo_id": "1XRdMFX0b2YADnvtIYxrMIgdm97wGLUkz",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 170,
@@ -4362,7 +6254,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Sumenep",
     "lokasi_singkat": "Kab. Sumenep, Jawa Timur",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 171,
@@ -4388,7 +6282,30 @@
     "kabupaten": "Samarinda",
     "lokasi_singkat": "Kota Samarinda, Kalimantan Timur",
     "alamat_lengkap": "Jl. Siradj Salman Komplek Ruko Grand Mutiara Blok C, No. 3, Kel. Teluk Lerong Ilir, Kec. Samarinda Ulu, Samarinda",
-    "susunlogo_id": "10vZtjC8TWIGzp_VDwNhcFMKLeI9Z4lEg"
+    "susunlogo_id": "10vZtjC8TWIGzp_VDwNhcFMKLeI9Z4lEg",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Kalimantan Timur, Samarinda",
+        "alamat": "Jl. Anggrek Bulan No. 10 Komp. Batu Alam Permai"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Kab. Kutai Kartanegara",
+        "alamat": "JLN. AHMAD MUKSIN GANG KUBUR RT 3 NO.6"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Kab. Kutai Timur",
+        "alamat": "Jl. Dayung, RT. 42, Teluk Lingga Sangatta Utara, Kutai Timur"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Kab. Paser",
+        "alamat": "Jl. Dr. Cipto Mangunkusumo Gg. Rawa Makmur No.132b Rt.3 Rw.4"
+      },
+      {
+        "wilayah": "Kalimantan Timur, Kab. Berau",
+        "alamat": "Jl. Hj. Isa 3 No 9 RT 23 Tanjung Redeb"
+      }
+    ]
   },
   {
     "no": 172,
@@ -4413,7 +6330,9 @@
     "is_hidden": false,
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 173,
@@ -4439,7 +6358,9 @@
     "kabupaten": "Bengkulu",
     "lokasi_singkat": "Kota Bengkulu, Bengkulu",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY"
+    "susunlogo_id": "1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 174,
@@ -4465,7 +6386,9 @@
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
     "alamat_lengkap": "Jl. Jenderal Ahmad Yani No.41, RT.13/RW.2, Cemp. Putih Tim., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510",
-    "susunlogo_id": "1N9UaP50ftGoOT6h0WWNTWnVBza8WTKvS"
+    "susunlogo_id": "1N9UaP50ftGoOT6h0WWNTWnVBza8WTKvS",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 175,
@@ -4490,7 +6413,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl Ulujami raya no 86"
+    "alamat_lengkap": "Jl Ulujami raya no 86",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 176,
@@ -4516,7 +6441,9 @@
     "kabupaten": "Pekanbaru",
     "lokasi_singkat": "Kota Pekanbaru, Riau",
     "alamat_lengkap": "Jl. Paus No. 8C",
-    "susunlogo_id": "1nAhT5b6b39pZ7lcfya1b7zM7I13tce82"
+    "susunlogo_id": "1nAhT5b6b39pZ7lcfya1b7zM7I13tce82",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 177,
@@ -4541,7 +6468,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Jl. Sholeh Iskandar No. 1"
+    "alamat_lengkap": "Jl. Sholeh Iskandar No. 1",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 178,
@@ -4567,7 +6496,9 @@
     "kabupaten": "Bontang",
     "lokasi_singkat": "Kab. Bontang, Kalimantan Timur",
     "alamat_lengkap": "Jalan Brigjend Katamso KM 6 RT 6 No. 6",
-    "susunlogo_id": "1FxpAdBXzJK4cjuiWLjUkqcOWhrdPVJrI"
+    "susunlogo_id": "1FxpAdBXzJK4cjuiWLjUkqcOWhrdPVJrI",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 179,
@@ -4593,7 +6524,9 @@
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
     "alamat_lengkap": "Jalan Bina Marga No.25, C99 Business Park, Kaveling 9N",
-    "susunlogo_id": "1OsQLeVVYe9mWDjy2uXb8kWCeuGKybeGs"
+    "susunlogo_id": "1OsQLeVVYe9mWDjy2uXb8kWCeuGKybeGs",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 180,
@@ -4618,7 +6551,9 @@
     "is_hidden": false,
     "kabupaten": "Tangerang Selatan",
     "lokasi_singkat": "Kota Tangerang Selatan, Banten",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 181,
@@ -4644,7 +6579,14 @@
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
     "alamat_lengkap": "Jalan Tritunggal, No. 2",
-    "susunlogo_id": "1YXsrwlFu12flTtLc-ELLqCgE33_Yv3S9"
+    "susunlogo_id": "1YXsrwlFu12flTtLc-ELLqCgE33_Yv3S9",
+    "jumlah_perwakilan": 1,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Tengah, Kab. Pati",
+        "alamat": "Jl. P. Diponegoro No.151"
+      }
+    ]
   },
   {
     "no": 182,
@@ -4670,7 +6612,9 @@
     "kabupaten": "Malang",
     "lokasi_singkat": "Kota Malang, Jawa Timur",
     "alamat_lengkap": "Jl. Piranha Atas, 161 A",
-    "susunlogo_id": "1QU_Lqb5861tFCC4kDfNstELo5lbcE-ci"
+    "susunlogo_id": "1QU_Lqb5861tFCC4kDfNstELo5lbcE-ci",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 183,
@@ -4696,7 +6640,9 @@
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "11wySH_3OAvDBRo1EVgxEp2CqNYAYL78e"
+    "susunlogo_id": "11wySH_3OAvDBRo1EVgxEp2CqNYAYL78e",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 184,
@@ -4722,7 +6668,9 @@
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1zHrgaEJmDUOOCvrjaQDgTvkMvXVpxHmC"
+    "susunlogo_id": "1zHrgaEJmDUOOCvrjaQDgTvkMvXVpxHmC",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 185,
@@ -4747,7 +6695,14 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bantul",
     "lokasi_singkat": "Kab. Bantul, D.I. Yogyakarta",
-    "alamat_lengkap": "Dagen RT 05, Gumuk, Ringinharjo, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55712"
+    "alamat_lengkap": "Dagen RT 05, Gumuk, Ringinharjo, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55712",
+    "jumlah_perwakilan": 1,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "Jawa Barat, Bekasi",
+        "alamat": "Jl. Kp. Tenggilis"
+      }
+    ]
   },
   {
     "no": 186,
@@ -4772,7 +6727,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Majalengka",
     "lokasi_singkat": "Kab. Majalengka, Jawa Barat",
-    "alamat_lengkap": "Jalan Blengur, Blok Saptu, Desa Kulur"
+    "alamat_lengkap": "Jalan Blengur, Blok Saptu, Desa Kulur",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 187,
@@ -4797,7 +6754,9 @@
     "is_hidden": false,
     "kabupaten": "Jambi",
     "lokasi_singkat": "Kota Jambi, Jambi",
-    "alamat_lengkap": "Jl. Kapten A. Bakaruddin, Lorong Kasturi 1, STM Bawah, Kota Jambi"
+    "alamat_lengkap": "Jl. Kapten A. Bakaruddin, Lorong Kasturi 1, STM Bawah, Kota Jambi",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 188,
@@ -4822,7 +6781,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 189,
@@ -4847,7 +6808,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 190,
@@ -4873,7 +6836,9 @@
     "kabupaten": "Mataram",
     "lokasi_singkat": "Kota Mataram, Nusa Tenggara Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1DdqcmIhDmMcbjtmviHWG4GtzEajL24ce"
+    "susunlogo_id": "1DdqcmIhDmMcbjtmviHWG4GtzEajL24ce",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 191,
@@ -4898,7 +6863,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Bantul",
     "lokasi_singkat": "Kab. Bantul, D.I. Yogyakarta",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 192,
@@ -4923,7 +6890,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 193,
@@ -4949,7 +6918,9 @@
     "kabupaten": "Bandar Lampung",
     "lokasi_singkat": "Kota Bandar Lampung, Lampung",
     "alamat_lengkap": "Jl. Purnawirawan Raya No.114",
-    "susunlogo_id": "1dciO2LCyCt0MJ5IbVZm821tlcWUJp__Y"
+    "susunlogo_id": "1dciO2LCyCt0MJ5IbVZm821tlcWUJp__Y",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 194,
@@ -4974,7 +6945,9 @@
     "is_hidden": false,
     "kabupaten": "Ambon",
     "lokasi_singkat": "Kota Ambon, Maluku",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 195,
@@ -4999,7 +6972,9 @@
     "is_hidden": false,
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 196,
@@ -5024,7 +6999,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Pati",
     "lokasi_singkat": "Kab. Pati, Jawa Tengah",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 197,
@@ -5050,7 +7027,9 @@
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
     "alamat_lengkap": "Jl Tebet Barat Dalam VII No 3, Tebet, Jakarta Selatan",
-    "susunlogo_id": "15-15tWZRWnNy8O5b97lyJ0EwIGSOevV3"
+    "susunlogo_id": "15-15tWZRWnNy8O5b97lyJ0EwIGSOevV3",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 198,
@@ -5076,7 +7055,30 @@
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
     "alamat_lengkap": "Jl. Bambu apus raya no 62",
-    "susunlogo_id": "1gmax8RxhRuTLoSFOk3_MzlzndL5Qlt0_"
+    "susunlogo_id": "1gmax8RxhRuTLoSFOk3_MzlzndL5Qlt0_",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Jl Beringin Raya Garan, Denokan"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Work sapce Cordova Edupartmen Jl Bukit Sari Raya"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Komp. Villa Setia Budi Permai Blok A No. 1 Pasar 6,"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Naga Sakti"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Kanayakan Bawah No.6 RT05 RW08 Kel. Dago Kec. Coblong Kota Bandung 40135"
+      }
+    ]
   },
   {
     "no": 199,
@@ -5102,7 +7104,9 @@
     "kabupaten": "Kab. Karanganyar",
     "lokasi_singkat": "Kab. Karanganyar, Jawa Tengah",
     "alamat_lengkap": "Badran Mulyo",
-    "susunlogo_id": "1sa5gLlHw5tlc74lbfTxPJWqsE8pU3GWy"
+    "susunlogo_id": "1sa5gLlHw5tlc74lbfTxPJWqsE8pU3GWy",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 200,
@@ -5128,7 +7132,9 @@
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
     "alamat_lengkap": "Perumahan Cibubur Mansion Blok A2 No.15, Jl Alternatif Cibubur",
-    "susunlogo_id": "1tUwiWUEv9jKj6bv4Z2ct1BssjpORvmQN"
+    "susunlogo_id": "1tUwiWUEv9jKj6bv4Z2ct1BssjpORvmQN",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 201,
@@ -5154,7 +7160,9 @@
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1dB8L9GHkRhEp6HImrtn9B-XGc7V5gOOv"
+    "susunlogo_id": "1dB8L9GHkRhEp6HImrtn9B-XGc7V5gOOv",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 202,
@@ -5179,7 +7187,9 @@
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 203,
@@ -5205,7 +7215,9 @@
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Raya Bojongsoang No.223, Lengkong, Kec. Bojongsoang, Kabupaten Bandung",
-    "susunlogo_id": "1CrFOiUlFAZOyx1aiQnd-cPPaBl6x5bQn"
+    "susunlogo_id": "1CrFOiUlFAZOyx1aiQnd-cPPaBl6x5bQn",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 204,
@@ -5231,7 +7243,30 @@
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
     "alamat_lengkap": "Jl. Bambu apus raya no 62",
-    "susunlogo_id": "1IrrdoucoJmLo79RSSedTF3r_xxRfAS0V"
+    "susunlogo_id": "1IrrdoucoJmLo79RSSedTF3r_xxRfAS0V",
+    "jumlah_perwakilan": 5,
+    "perwakilan_daerah": [
+      {
+        "wilayah": "D.I. Yogyakarta, Kab. Sleman",
+        "alamat": "Jl Beringin Raya Garan, Denokan"
+      },
+      {
+        "wilayah": "Jawa Tengah, Semarang",
+        "alamat": "Work sapce Cordova Edupartmen Jl Bukit Sari Raya"
+      },
+      {
+        "wilayah": "Sumatera Utara, Medan",
+        "alamat": "Komp. Villa Setia Budi Permai Blok A No. 1 Pasar 6,"
+      },
+      {
+        "wilayah": "Riau, Pekanbaru",
+        "alamat": "Jl. Naga Sakti"
+      },
+      {
+        "wilayah": "Jawa Barat, Bandung",
+        "alamat": "Jl. Kanayakan Bawah No.6 RT05 RW08 Kel. Dago Kec. Coblong Kota Bandung 40135"
+      }
+    ]
   },
   {
     "no": 205,
@@ -5257,7 +7292,9 @@
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
     "alamat_lengkap": "Jl. Puspa Kencana No. 48, Cimekar Kec. Cileunyi kab. Bandung Jawa Barat 40623",
-    "susunlogo_id": "1qzR7G9YWCYolwCEIabfHGyyPLtOH0JAJ"
+    "susunlogo_id": "1qzR7G9YWCYolwCEIabfHGyyPLtOH0JAJ",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 206,
@@ -5282,7 +7319,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Ogan Komering Ulu Timur",
     "lokasi_singkat": "Kab. Ogan Komering Ulu Timur, Sumatera Selatan",
-    "alamat_lengkap": "Jl. Tuanku Imam Bonjol, Desa Peracak, Kec. Bunga Mayang, Kab. OKU Timur"
+    "alamat_lengkap": "Jl. Tuanku Imam Bonjol, Desa Peracak, Kec. Bunga Mayang, Kab. OKU Timur",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 207,
@@ -5307,7 +7346,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Sragen",
     "lokasi_singkat": "Kab. Sragen, Jawa Tengah",
-    "alamat_lengkap": "Widoro"
+    "alamat_lengkap": "Widoro",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 208,
@@ -5332,7 +7373,9 @@
     "is_hidden": false,
     "kabupaten": "Pekanbaru",
     "lokasi_singkat": "Kota Pekanbaru, Riau",
-    "alamat_lengkap": "Jl. SM. Amin No. 137 B"
+    "alamat_lengkap": "Jl. SM. Amin No. 137 B",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 209,
@@ -5357,7 +7400,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Probolinggo",
     "lokasi_singkat": "Kab. Probolinggo, Jawa Timur",
-    "alamat_lengkap": "Jalan Ir. H. Juanda Nomor 370 Patokan Krakaan"
+    "alamat_lengkap": "Jalan Ir. H. Juanda Nomor 370 Patokan Krakaan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 210,
@@ -5382,7 +7427,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Garut",
     "lokasi_singkat": "Kab. Garut, Jawa Barat",
-    "alamat_lengkap": "Kp.Koropeak"
+    "alamat_lengkap": "Kp.Koropeak",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 211,
@@ -5407,7 +7454,9 @@
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. Jaya Mandala IV No.31, RT.11/RW.1, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870"
+    "alamat_lengkap": "Jl. Jaya Mandala IV No.31, RT.11/RW.1, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 212,
@@ -5432,7 +7481,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Gresik",
     "lokasi_singkat": "Kab. Gresik, Jawa Timur",
-    "alamat_lengkap": "Komplek PPM Sunanul Muhtadin, Kertosono,"
+    "alamat_lengkap": "Komplek PPM Sunanul Muhtadin, Kertosono,",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 213,
@@ -5458,7 +7509,9 @@
     "kabupaten": "Kab. Sidoarjo",
     "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
     "alamat_lengkap": "Data belum diisikan",
-    "susunlogo_id": "1X-hMEg3IHJEeUCHmzsIPENsCsQuA-R-7"
+    "susunlogo_id": "1X-hMEg3IHJEeUCHmzsIPENsCsQuA-R-7",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 214,
@@ -5483,7 +7536,9 @@
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "jl. banteng dalam no. 19 kel. turangga kec. lengkong"
+    "alamat_lengkap": "jl. banteng dalam no. 19 kel. turangga kec. lengkong",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 215,
@@ -5508,7 +7563,9 @@
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "Jl. Gading No.02, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272"
+    "alamat_lengkap": "Jl. Gading No.02, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 216,
@@ -5533,7 +7590,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Polewali Mandar",
     "lokasi_singkat": "Kab. Polewali Mandar, Sulawesi Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 217,
@@ -5558,7 +7617,9 @@
     "is_hidden": false,
     "kabupaten": "Kab. Ponorogo",
     "lokasi_singkat": "Kab. Ponorogo, Jawa Timur",
-    "alamat_lengkap": "Jl. HOS Cokroaminoto No.66, Bangunsari, Kec. Ponorogo, Kabupaten Ponorogo, Jawa Timur 63411"
+    "alamat_lengkap": "Jl. HOS Cokroaminoto No.66, Bangunsari, Kec. Ponorogo, Kabupaten Ponorogo, Jawa Timur 63411",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   },
   {
     "no": 218,
@@ -5583,6 +7644,8 @@
     "is_hidden": false,
     "kabupaten": "Kab. Semarang",
     "lokasi_singkat": "Kab. Semarang, Jawa Tengah",
-    "alamat_lengkap": "Dusun Ketapang, RT.001/RW.002, Kel. Ketapang, Kec. Susukan, Kab. Semarang,"
+    "alamat_lengkap": "Dusun Ketapang, RT.001/RW.002, Kel. Ketapang, Kec. Susukan, Kab. Semarang,",
+    "jumlah_perwakilan": 0,
+    "perwakilan_daerah": []
   }
 ]
