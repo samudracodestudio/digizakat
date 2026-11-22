@@ -353,7 +353,7 @@ export default function HomePage() {
                       priority
                     />
                     <div className="absolute bottom-3 left-4 text-[11px] font-semibold text-white/95 drop-shadow-md tracking-wider uppercase bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-lg">
-                      DIGIZAKAT / {headlinePost.opz_name}
+                      {headlinePost.opz_name}
                     </div>
                   </div>
 
