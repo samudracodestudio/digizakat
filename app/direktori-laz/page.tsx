@@ -517,18 +517,20 @@ export default function DirektoriLazPage() {
 
             </div>
 
-            {/* Modal Footer CTA */}
-            <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-end">
-              <a
-                href={activeLazDetail.donation_url || activeLazDetail.website_url || '#'}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-semibold shadow flex items-center justify-center gap-1.5 transition"
-              >
-                <HeartHandshake className="w-4 h-4" />
-                Donasi di Situs Resmi ↗
-              </a>
-            </div>
+            {/* Modal Footer CTA (Hanya muncul jika lembaga memiliki platform crowdfunding/donasi resmi) */}
+            {activeLazDetail.donation_url && !activeLazDetail.donation_url.includes('simzat.kemenag.go.id') && (
+              <div className="p-4 bg-slate-50 border-t border-slate-200 flex items-center justify-end">
+                <a
+                  href={activeLazDetail.donation_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-2.5 bg-[#31c0c6] hover:bg-[#259fa4] text-white rounded-xl text-center text-xs font-semibold shadow flex items-center justify-center gap-1.5 transition"
+                >
+                  <HeartHandshake className="w-4 h-4" />
+                  Donasi di Platform Resmi ↗
+                </a>
+              </div>
+            )}
 
           </div>
         </div>
