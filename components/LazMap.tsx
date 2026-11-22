@@ -125,17 +125,21 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
         let size = 34;
-        let bg = '#31c0c6'; // Tosca untuk cluster kecil
-        let ring = 'rgba(49, 192, 198, 0.28)';
+        let bg = '#9b91d4'; // Ungu muda (< 10)
+        let ring = 'rgba(155, 145, 212, 0.30)';
 
-        if (count >= 50) {
-          size = 44;
-          bg = '#433880'; // Ungu tua untuk cluster besar
-          ring = 'rgba(67, 56, 128, 0.30)';
-        } else if (count >= 15) {
+        if (count >= 100) {
+          size = 46;
+          bg = '#382f6e'; // Ungu sangat pekat/kereng (>= 100)
+          ring = 'rgba(56, 47, 110, 0.34)';
+        } else if (count >= 30) {
+          size = 42;
+          bg = '#5a4ea4'; // Ungu pekat (30-99)
+          ring = 'rgba(90, 78, 164, 0.30)';
+        } else if (count >= 10) {
           size = 38;
-          bg = '#5a4ea4'; // Ungu Digizakat untuk cluster sedang
-          ring = 'rgba(90, 78, 164, 0.28)';
+          bg = '#7468be'; // Ungu sedang (10-29)
+          ring = 'rgba(116, 104, 190, 0.28)';
         }
 
         return L.divIcon({
@@ -177,7 +181,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       branchAlamat?: string
     ) => {
       const style = isBranch
-        ? { fill: '#5a4ea4', stroke: '#382f6e' } // Ungu untuk Kantor Cabang
+        ? { fill: '#eab308', stroke: '#a16207' } // Kuning untuk Kantor Cabang
         : SCALE_COLORS[laz.skala] || { fill: '#5a4ea4', stroke: '#382f6e' };
 
       const dotSize = isBranch ? 12 : laz.skala === 'Nasional' ? 14 : 13;
@@ -192,7 +196,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       const marker = L.marker([lat, lng], { icon: dotIcon });
 
       const typeBadge = isBranch
-        ? `<span style="display:inline-block;padding:2px 7px;border-radius:999px;background:#f2f0fa;color:#5a4ea4;font-size:10px;font-weight:700;text-transform:uppercase;margin-right:4px;">Kantor Cabang</span>`
+        ? `<span style="display:inline-block;padding:2px 7px;border-radius:999px;background:#fef9c3;color:#a16207;font-size:10px;font-weight:700;text-transform:uppercase;margin-right:4px;">Kantor Cabang</span>`
         : '';
 
       const branchNote =
@@ -304,7 +308,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
               Kab/Kota
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#5a4ea4] inline-block" />
+              <span className="w-2.5 h-2.5 rounded-full bg-yellow-500 inline-block" />
               Cabang
             </span>
           </div>
@@ -316,7 +320,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
             {branchCount > 0 && (
               <>
                 {' • '}
-                <strong className="text-[#5a4ea4]">{branchCount}</strong> cabang
+                <strong className="text-yellow-600">{branchCount}</strong> cabang
               </>
             )}
           </span>
