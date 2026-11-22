@@ -200,7 +200,7 @@ export default function DirektoriLazPage() {
               Pencarian LAZ Terdata
             </h1>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-              Cari data Lembaga Amil Zakat (LAZ) resmi yang terdaftar di Kementerian Agama Republik Indonesia (Kemenag RI).
+              Cari data Lembaga Amil Zakat (LAZ) yang terdaftar di Kementerian Agama Republik Indonesia (Kemenag RI).
             </p>
           </div>
 
@@ -575,7 +575,7 @@ export default function DirektoriLazPage() {
           <div className="bg-[#f8f9fc] p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div className="space-y-1">
               <div className="flex items-center gap-2">
-                <span className="font-semibold text-slate-900 text-xs sm:text-sm">Sumber Data Resmi: SIMZAT Kemenag RI</span>
+                <span className="font-semibold text-slate-900 text-xs sm:text-sm">Sumber Data: SIMZAT Kemenag RI</span>
                 <span className="bg-emerald-100 text-emerald-800 text-[10px] font-semibold px-2 py-0.5 rounded-full">Tersinkronisasi</span>
               </div>
               <p className="text-slate-500 text-xs leading-relaxed max-w-2xl">
