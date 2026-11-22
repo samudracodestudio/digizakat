@@ -562,26 +562,52 @@ export default function DirektoriLazPage() {
         </div>
       )}
 
-      {/* 7. FOOTER */}
-      <footer className="bg-white border-t border-slate-200 py-8 text-xs text-slate-500">
-        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="relative h-6 w-6">
-              <Image src="/digizakat_icon.png" alt="Digizakat" fill className="object-contain" />
+      {/* 7. FOOTER & ATRIBUSI RESMI SIMZAT */}
+      <footer className="bg-white border-t border-slate-200 py-10 text-xs text-slate-500">
+        <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] space-y-6">
+          
+          {/* Box Keterangan Sumber SIMZAT */}
+          <div className="bg-[#f8f9fc] p-4 sm:p-5 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="font-semibold text-slate-900 text-xs sm:text-sm">Sumber Data Resmi: SIMZAT Kemenag RI</span>
+                <span className="bg-emerald-100 text-emerald-800 text-[10px] font-semibold px-2 py-0.5 rounded-full">Tersinkronisasi</span>
+              </div>
+              <p className="text-slate-500 text-xs leading-relaxed max-w-2xl">
+                Seluruh data direktori 218 Lembaga Amil Zakat di halaman ini bersumber langsung dari Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kementerian Agama Republik Indonesia dan diverifikasi bersama Forum Zakat (FOZ).
+              </p>
             </div>
-            <span>© {new Date().getFullYear()} Digizakat.com — Ensiklopedi & Radar Gerakan Zakat Indonesia.</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <Link href="/" className="hover:text-[#5a4ea4] underline">Beranda Radar</Link>
-            <a 
-              href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-[#5a4ea4] underline"
+            <a
+              href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold bg-white hover:bg-slate-50 text-[#5a4ea4] border border-[#d6d0ee] transition shadow-xs shrink-0"
             >
-              SIMZAT Kemenag RI ↗
+              <span>Buka Portal Asli SIMZAT</span>
+              <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
+
+          <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2">
+              <div className="relative h-6 w-6">
+                <Image src="/digizakat_icon.png" alt="Digizakat" fill className="object-contain" />
+              </div>
+              <span>© {new Date().getFullYear()} Digizakat.com — Ensiklopedi & Radar Gerakan Zakat Indonesia.</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link href="/" className="hover:text-[#5a4ea4] underline font-medium">Beranda Radar</Link>
+              <a 
+                href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-[#5a4ea4] underline font-medium"
+              >
+                SIMZAT Kemenag RI ↗
+              </a>
+            </div>
+          </div>
+
         </div>
       </footer>
 
