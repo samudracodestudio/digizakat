@@ -16,13 +16,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=170n36yTYI7fYNFkcPn4PBOjBUnDgBLff&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=170n36yTYI7fYNFkcPn4PBOjBUnDgBLff&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bogor",
     "lokasi_singkat": "Kota Bogor, Jawa Barat",
-    "alamat_lengkap": "Ruko Taman Yasmin Sektor VI , Jl. KH. R. Abdullah bin Nuh No. 212, RT.05 RW.09 Curug Mekar , Kec. Bogor Barat, Kota Bogor , Jawa Barat 16113"
+    "alamat_lengkap": "Ruko Taman Yasmin Sektor VI , Jl. KH. R. Abdullah bin Nuh No. 212, RT.05 RW.09 Curug Mekar , Kec. Bogor Barat, Kota Bogor , Jawa Barat 16113",
+    "susunlogo_id": "170n36yTYI7fYNFkcPn4PBOjBUnDgBLff"
   },
   {
     "no": 2,
@@ -41,13 +42,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1YNYc57gChroCQQrX5Kdkpr_GEWpggFWp&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1YNYc57gChroCQQrX5Kdkpr_GEWpggFWp&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Gegerkalong Hilir No.155A"
+    "alamat_lengkap": "Jl. Gegerkalong Hilir No.155A",
+    "susunlogo_id": "1YNYc57gChroCQQrX5Kdkpr_GEWpggFWp"
   },
   {
     "no": 3,
@@ -66,13 +68,14 @@
     "email": "info@alazharpeduli.com",
     "phone": "0851-2442-5540",
     "pimpinan": "Abu Hurairah (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1pVxqWutrUVNP_A8IT5TffMsnbdUj3PCN&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1pVxqWutrUVNP_A8IT5TffMsnbdUj3PCN&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jln Sisingamangaraja, Kebayoran Baru, No.6"
+    "alamat_lengkap": "Jln Sisingamangaraja, Kebayoran Baru, No.6",
+    "susunlogo_id": "1pVxqWutrUVNP_A8IT5TffMsnbdUj3PCN"
   },
   {
     "no": 4,
@@ -91,13 +94,14 @@
     "email": "info@ydsf.org",
     "phone": "0811-3626-411",
     "pimpinan": "Jauhari Sani (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1x38xZm-W0EDTSiYhH8hPzPT_hRQXUDpk&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1x38xZm-W0EDTSiYhH8hPzPT_hRQXUDpk&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "Jln. Gubeng Kertajaya VIIIC/No.17 Surabaya"
+    "alamat_lengkap": "Jln. Gubeng Kertajaya VIIIC/No.17 Surabaya",
+    "susunlogo_id": "1x38xZm-W0EDTSiYhH8hPzPT_hRQXUDpk"
   },
   {
     "no": 5,
@@ -116,13 +120,14 @@
     "email": "info@dpudt.org",
     "phone": "0853-2107-6416",
     "pimpinan": "Jajang (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1zh6IjUJoWVM4Np-PKe7Ol4GV-nrb9Voe&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1zh6IjUJoWVM4Np-PKe7Ol4GV-nrb9Voe&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Gegerkalong Girang No.32"
+    "alamat_lengkap": "Jl. Gegerkalong Girang No.32",
+    "susunlogo_id": "1zh6IjUJoWVM4Np-PKe7Ol4GV-nrb9Voe"
   },
   {
     "no": 6,
@@ -141,13 +146,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1xyfTkkiNcf0q-daMdanR1-jw6EK_wLgM&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1xyfTkkiNcf0q-daMdanR1-jw6EK_wLgM&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sidoarjo",
     "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
-    "alamat_lengkap": "Ruko Citra City Blok R-28 Sarirogo, Sidoarjo, Jawa Timur"
+    "alamat_lengkap": "Ruko Citra City Blok R-28 Sarirogo, Sidoarjo, Jawa Timur",
+    "susunlogo_id": "1xyfTkkiNcf0q-daMdanR1-jw6EK_wLgM"
   },
   {
     "no": 7,
@@ -166,13 +172,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1J8uJuAUkKjLt_3WAEq8ERQzB9QQi8g1K&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1J8uJuAUkKjLt_3WAEq8ERQzB9QQi8g1K&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sidoarjo",
     "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
-    "alamat_lengkap": "Jl Raya Buncitan No 1"
+    "alamat_lengkap": "Jl Raya Buncitan No 1",
+    "susunlogo_id": "1J8uJuAUkKjLt_3WAEq8ERQzB9QQi8g1K"
   },
   {
     "no": 8,
@@ -191,13 +198,14 @@
     "email": "arfin@griyayatim.com",
     "phone": "0813-8636-4670",
     "pimpinan": "Engkos Kosasih (Ketua LAZ)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1POG6G28KXdK45PmEfrwIBmwRATaLlqhv&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1POG6G28KXdK45PmEfrwIBmwRATaLlqhv&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Tangerang Selatan",
     "lokasi_singkat": "Kota Tangerang Selatan, Banten",
-    "alamat_lengkap": "Jl.Rawabuntu Utara Blok Y No 3 Rawabuntu Serpong Tangerang Selatan"
+    "alamat_lengkap": "Jl.Rawabuntu Utara Blok Y No 3 Rawabuntu Serpong Tangerang Selatan",
+    "susunlogo_id": "1POG6G28KXdK45PmEfrwIBmwRATaLlqhv"
   },
   {
     "no": 9,
@@ -216,13 +224,14 @@
     "email": "info@lazismu.org",
     "phone": "0812-5050-4241",
     "pimpinan": "Ibnu Tsani (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1Hmotk3qFVlC2egZFjk1gAsRBhVcPS0FK&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1Hmotk3qFVlC2egZFjk1gAsRBhVcPS0FK&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Jl. Jambrut No.5, Kenari, Kec. Senen, Jakarta Pusat 10430"
+    "alamat_lengkap": "Jl. Jambrut No.5, Kenari, Kec. Senen, Jakarta Pusat 10430",
+    "susunlogo_id": "1Hmotk3qFVlC2egZFjk1gAsRBhVcPS0FK"
   },
   {
     "no": 10,
@@ -241,13 +250,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1bglMP3Tx7yEeyt4sfAAlsoJEfbMySlHj&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1bglMP3Tx7yEeyt4sfAAlsoJEfbMySlHj&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
-    "alamat_lengkap": "Jl. Ring Road Bar. No.66, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291"
+    "alamat_lengkap": "Jl. Ring Road Bar. No.66, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291",
+    "susunlogo_id": "1bglMP3Tx7yEeyt4sfAAlsoJEfbMySlHj"
   },
   {
     "no": 11,
@@ -266,13 +276,14 @@
     "email": "salam@nurulhayat.org",
     "phone": "0815-8800-273",
     "pimpinan": "Kholaf Hibatullah (Direktur Eksekutif)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1KseKAPeTnX2xW6f5tRRgP0qVUjOnwoaX&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1KseKAPeTnX2xW6f5tRRgP0qVUjOnwoaX&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "Perum ikip Gunung Anyar B 48 Surabaya"
+    "alamat_lengkap": "Perum ikip Gunung Anyar B 48 Surabaya",
+    "susunlogo_id": "1KseKAPeTnX2xW6f5tRRgP0qVUjOnwoaX"
   },
   {
     "no": 12,
@@ -291,13 +302,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1zofulBPOhQx_poLsX9LCB_lmkEPinKgK&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1zofulBPOhQx_poLsX9LCB_lmkEPinKgK&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jambi",
     "lokasi_singkat": "Kota Jambi, Jambi",
-    "alamat_lengkap": "Jl. HOS. Cokroaminoto, Simpang III Sipin"
+    "alamat_lengkap": "Jl. HOS. Cokroaminoto, Simpang III Sipin",
+    "susunlogo_id": "1zofulBPOhQx_poLsX9LCB_lmkEPinKgK"
   },
   {
     "no": 13,
@@ -316,13 +328,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=19jopOCYXrkcNm7-AM2bM_fn-fsm460GT&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=19jopOCYXrkcNm7-AM2bM_fn-fsm460GT&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl Cibaduyut Lama, Komplek Sauyunan Raya 1 No 14"
+    "alamat_lengkap": "Jl Cibaduyut Lama, Komplek Sauyunan Raya 1 No 14",
+    "susunlogo_id": "19jopOCYXrkcNm7-AM2bM_fn-fsm460GT"
   },
   {
     "no": 14,
@@ -366,13 +379,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1Xbq02k39Df6S6gCHGw9Q5lt5oMZNQWEN&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1Xbq02k39Df6S6gCHGw9Q5lt5oMZNQWEN&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "Jalan Gayungsari Barat 1, No.40"
+    "alamat_lengkap": "Jalan Gayungsari Barat 1, No.40",
+    "susunlogo_id": "1Xbq02k39Df6S6gCHGw9Q5lt5oMZNQWEN"
   },
   {
     "no": 16,
@@ -391,13 +405,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1DLb_GSw-HvG9-vWSmikitpsBK8yZuls5&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1DLb_GSw-HvG9-vWSmikitpsBK8yZuls5&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Perintis Kemerdekaan No. 2"
+    "alamat_lengkap": "Jl. Perintis Kemerdekaan No. 2",
+    "susunlogo_id": "1DLb_GSw-HvG9-vWSmikitpsBK8yZuls5"
   },
   {
     "no": 17,
@@ -466,13 +481,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=17qVX_XfeZYLHI0JQiJkO0xuZTimgdboT&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=17qVX_XfeZYLHI0JQiJkO0xuZTimgdboT&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
-    "alamat_lengkap": "Jl. Rajawali Raya No.73, RT.009/RW.002, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144, Indonesia"
+    "alamat_lengkap": "Jl. Rajawali Raya No.73, RT.009/RW.002, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144, Indonesia",
+    "susunlogo_id": "17qVX_XfeZYLHI0JQiJkO0xuZTimgdboT"
   },
   {
     "no": 20,
@@ -491,13 +507,14 @@
     "email": "layanan@laziswahdah.org",
     "phone": "0812-4500-0134",
     "pimpinan": "Syahruddin C. Asho (Direktur)",
-    "logo_url": "https://drive.google.com/thumbnail?id=16qBO1h7M1NhXYmZq7ZdfQsLHMpU6DWFz&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=16qBO1h7M1NhXYmZq7ZdfQsLHMpU6DWFz&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Makassar",
     "lokasi_singkat": "Kota Makassar, Sulawesi Selatan",
-    "alamat_lengkap": "Jl. Urip Sumoharjo no.15"
+    "alamat_lengkap": "Jl. Urip Sumoharjo no.15",
+    "susunlogo_id": "16qBO1h7M1NhXYmZq7ZdfQsLHMpU6DWFz"
   },
   {
     "no": 21,
@@ -516,13 +533,14 @@
     "email": "humas@lazisjateng.or.id",
     "phone": "0813-9070-9792",
     "pimpinan": "Doso Sutrisno (Direktur Eksekutif)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1woU7bYzOp4nvWcrWq73GBRY4sUP45VeP&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1woU7bYzOp4nvWcrWq73GBRY4sUP45VeP&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
-    "alamat_lengkap": "Jl. Jati Raya Perumnas No.B6, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263"
+    "alamat_lengkap": "Jl. Jati Raya Perumnas No.B6, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263",
+    "susunlogo_id": "1woU7bYzOp4nvWcrWq73GBRY4sUP45VeP"
   },
   {
     "no": 22,
@@ -566,13 +584,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1dxsQRoOU2k5a4k0LFbamH-LATe38MCxh&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1dxsQRoOU2k5a4k0LFbamH-LATe38MCxh&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Ruko Mitra Matraman, Jl. Matraman Raya No.27 Blok A1 Rt.1 Rw.4 Kebon Manggis"
+    "alamat_lengkap": "Ruko Mitra Matraman, Jl. Matraman Raya No.27 Blok A1 Rt.1 Rw.4 Kebon Manggis",
+    "susunlogo_id": "1dxsQRoOU2k5a4k0LFbamH-LATe38MCxh"
   },
   {
     "no": 24,
@@ -591,13 +610,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1ea_E9jjc_pK0aAh7B-BC1zcCrBeyaYL1&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1ea_E9jjc_pK0aAh7B-BC1zcCrBeyaYL1&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Kubu Raya",
     "lokasi_singkat": "Kab. Kubu Raya, Kalimantan Barat",
-    "alamat_lengkap": "Jalan Sungai Raya Dalam Gg.Imaduddin"
+    "alamat_lengkap": "Jalan Sungai Raya Dalam Gg.Imaduddin",
+    "susunlogo_id": "1ea_E9jjc_pK0aAh7B-BC1zcCrBeyaYL1"
   },
   {
     "no": 25,
@@ -616,13 +636,14 @@
     "email": "kotaksurat@bsmu.or.id",
     "phone": "0821-2211-2125",
     "pimpinan": "Bambang Sutrisno (Direktur Eksekutif)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1dk-UNwyZUMwLdbvxVmcw_CBEQRv8kEix&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1dk-UNwyZUMwLdbvxVmcw_CBEQRv8kEix&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Jl Surabaya No 58"
+    "alamat_lengkap": "Jl Surabaya No 58",
+    "susunlogo_id": "1dk-UNwyZUMwLdbvxVmcw_CBEQRv8kEix"
   },
   {
     "no": 26,
@@ -666,13 +687,14 @@
     "email": "layandonatur@dompetdhuafa.org",
     "phone": "0811-8779-844",
     "pimpinan": "Ahmad Juwaini (Ketua Yayasan)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1VDpSmykUva8weqWMo0s3OCVEaKgtrSDX&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1VDpSmykUva8weqWMo0s3OCVEaKgtrSDX&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Philanthropy Building Jl. Warung Jati Barat No.14 Jakarta Selatan 12540, Indonesia"
+    "alamat_lengkap": "Philanthropy Building Jl. Warung Jati Barat No.14 Jakarta Selatan 12540, Indonesia",
+    "susunlogo_id": "1VDpSmykUva8weqWMo0s3OCVEaKgtrSDX"
   },
   {
     "no": 28,
@@ -691,13 +713,14 @@
     "email": "berbagi@dompetsosial.id",
     "phone": "0812-3902-1916",
     "pimpinan": "Andy Krisna (Direktur)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1njZdzFGVsSBp4TljoVb6bbv4JUz6ZHNk&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1njZdzFGVsSBp4TljoVb6bbv4JUz6ZHNk&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Denpasar",
     "lokasi_singkat": "Kota Denpasar, Bali",
-    "alamat_lengkap": "Jl Diponegoro No 222 Sanglah"
+    "alamat_lengkap": "Jl Diponegoro No 222 Sanglah",
+    "susunlogo_id": "1njZdzFGVsSBp4TljoVb6bbv4JUz6ZHNk"
   },
   {
     "no": 29,
@@ -716,13 +739,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1bWK-d-gogkR-FsWrbScd8_Z6xFKFUs8z&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1bWK-d-gogkR-FsWrbScd8_Z6xFKFUs8z&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
-    "alamat_lengkap": "Jl. Caman Raya No.65, RT.003/RW.003"
+    "alamat_lengkap": "Jl. Caman Raya No.65, RT.003/RW.003",
+    "susunlogo_id": "1bWK-d-gogkR-FsWrbScd8_Z6xFKFUs8z"
   },
   {
     "no": 30,
@@ -741,13 +765,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1_2JDiiJt2bClj1JUOUTWlmM5aOCjAX0z&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1_2JDiiJt2bClj1JUOUTWlmM5aOCjAX0z&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jalan Teluk Jakarta No.9 Komp. AL Rawa Bambu, Pasar Minggu, Jakarta Selatan 12520"
+    "alamat_lengkap": "Jalan Teluk Jakarta No.9 Komp. AL Rawa Bambu, Pasar Minggu, Jakarta Selatan 12520",
+    "susunlogo_id": "1_2JDiiJt2bClj1JUOUTWlmM5aOCjAX0z"
   },
   {
     "no": 31,
@@ -766,13 +791,14 @@
     "email": "info@lmizakat.org",
     "phone": "0822-2921-4005",
     "pimpinan": "Agung Wicaksono (Presiden Direktur)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1wTB-4orIRaEFz8mXZxOK2MHyNYUvfMG0&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1wTB-4orIRaEFz8mXZxOK2MHyNYUvfMG0&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "Jalan Baratajaya XXII no 20"
+    "alamat_lengkap": "Jalan Baratajaya XXII no 20",
+    "susunlogo_id": "1wTB-4orIRaEFz8mXZxOK2MHyNYUvfMG0"
   },
   {
     "no": 32,
@@ -791,13 +817,14 @@
     "email": "layanan@mandiriamalinsani.or.id",
     "phone": "0813-8031-0351",
     "pimpinan": "Erwin Setiawan (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1MwMjj7_pvxsGcOp3IOomj9FFnvKlsY8U&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1MwMjj7_pvxsGcOp3IOomj9FFnvKlsY8U&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jln. Mampang Prapatan Raya No.61"
+    "alamat_lengkap": "Jln. Mampang Prapatan Raya No.61",
+    "susunlogo_id": "1MwMjj7_pvxsGcOp3IOomj9FFnvKlsY8U"
   },
   {
     "no": 33,
@@ -816,13 +843,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1XpDef239W3o4EoW5jIS4J_vgMifu7vuI&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1XpDef239W3o4EoW5jIS4J_vgMifu7vuI&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Ruko Komplek Kurdi Regency No. 33A, Jl. Inhoftank"
+    "alamat_lengkap": "Ruko Komplek Kurdi Regency No. 33A, Jl. Inhoftank",
+    "susunlogo_id": "1XpDef239W3o4EoW5jIS4J_vgMifu7vuI"
   },
   {
     "no": 34,
@@ -866,13 +894,14 @@
     "email": "salam@rumahamal.org",
     "phone": "0822-1718-0688",
     "pimpinan": "Syachrial (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1aIIY2jBumjbBh2xWlWjzy-DApvSVv1SQ&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1aIIY2jBumjbBh2xWlWjzy-DApvSVv1SQ&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jalan Gelap Nyawang Nomor 4"
+    "alamat_lengkap": "Jalan Gelap Nyawang Nomor 4",
+    "susunlogo_id": "1aIIY2jBumjbBh2xWlWjzy-DApvSVv1SQ"
   },
   {
     "no": 36,
@@ -891,13 +920,14 @@
     "email": "welcome@rumahzakat.org",
     "phone": "0813-2289-1539",
     "pimpinan": "Irvan Nugraha (CEO)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1xAWZRIsg6U9YlTq04h6-lm6RGtuldcoN&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1xAWZRIsg6U9YlTq04h6-lm6RGtuldcoN&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jalan Turangga Nomor 33"
+    "alamat_lengkap": "Jalan Turangga Nomor 33",
+    "susunlogo_id": "1xAWZRIsg6U9YlTq04h6-lm6RGtuldcoN"
   },
   {
     "no": 37,
@@ -916,13 +946,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=13Ff61k3AUDDR5oJFtuySdIWLFhgCtYHl&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=13Ff61k3AUDDR5oJFtuySdIWLFhgCtYHl&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Sidomukti No. 99H"
+    "alamat_lengkap": "Jl. Sidomukti No. 99H",
+    "susunlogo_id": "13Ff61k3AUDDR5oJFtuySdIWLFhgCtYHl"
   },
   {
     "no": 38,
@@ -941,13 +972,14 @@
     "email": "yspuonline@gmail.com",
     "phone": "0813-2926-9139",
     "pimpinan": "Sidik Anshori (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1MOzSHeVQhAbeWMX0JHSnhw3-ELKVmCk3&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1MOzSHeVQhAbeWMX0JHSnhw3-ELKVmCk3&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Karanganyar",
     "lokasi_singkat": "Kab. Karanganyar, Jawa Tengah",
-    "alamat_lengkap": "Komplek Griya Smart, Jl. Tentara Pelajar, Jetak"
+    "alamat_lengkap": "Komplek Griya Smart, Jl. Tentara Pelajar, Jetak",
+    "susunlogo_id": "1MOzSHeVQhAbeWMX0JHSnhw3-ELKVmCk3"
   },
   {
     "no": 39,
@@ -966,13 +998,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1oFtI45rTZCP1cqdCxcJ1RxaXyMSfBpcN&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1oFtI45rTZCP1cqdCxcJ1RxaXyMSfBpcN&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
-    "alamat_lengkap": "Jl. Tusam Timur Raya No. 44, Pedalangan, Banyumanik, Semarang"
+    "alamat_lengkap": "Jl. Tusam Timur Raya No. 44, Pedalangan, Banyumanik, Semarang",
+    "susunlogo_id": "1oFtI45rTZCP1cqdCxcJ1RxaXyMSfBpcN"
   },
   {
     "no": 40,
@@ -991,13 +1024,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1JHKeGKj7S-HX-Z6reHc7FtjNMO9bDG-E&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1JHKeGKj7S-HX-Z6reHc7FtjNMO9bDG-E&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Ir. H. Juanda No. 285"
+    "alamat_lengkap": "Jl. Ir. H. Juanda No. 285",
+    "susunlogo_id": "1JHKeGKj7S-HX-Z6reHc7FtjNMO9bDG-E"
   },
   {
     "no": 41,
@@ -1016,13 +1050,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1Y0ZX-at2mU5s-F65ubuwcOD7i__EORpq&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1Y0ZX-at2mU5s-F65ubuwcOD7i__EORpq&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
-    "alamat_lengkap": "Gedung KH. Wahid Hasyim Lt. 1 Jl. Kaliurang KM. 14,5"
+    "alamat_lengkap": "Gedung KH. Wahid Hasyim Lt. 1 Jl. Kaliurang KM. 14,5",
+    "susunlogo_id": "1Y0ZX-at2mU5s-F65ubuwcOD7i__EORpq"
   },
   {
     "no": 42,
@@ -1066,13 +1101,14 @@
     "email": "info@lazisnu.com",
     "phone": "0812-9539-4134",
     "pimpinan": "H. Ali Hasan Al Bahar (Ketua Umum)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1G_OOdnCQZPrNkAYQ8CAPYFGgn0UnBFEG&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1G_OOdnCQZPrNkAYQ8CAPYFGgn0UnBFEG&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Jl. Kramat Raya No.164, RT.7/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110"
+    "alamat_lengkap": "Jl. Kramat Raya No.164, RT.7/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110",
+    "susunlogo_id": "1G_OOdnCQZPrNkAYQ8CAPYFGgn0UnBFEG"
   },
   {
     "no": 44,
@@ -1091,13 +1127,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1erObj38mRNdNhSm2NwIIvyn8S104Bnt8&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1erObj38mRNdNhSm2NwIIvyn8S104Bnt8&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Gedung Menara Dakwah, Jl. Kramat Raya No.45 Lantai 1, Kramat, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450"
+    "alamat_lengkap": "Gedung Menara Dakwah, Jl. Kramat Raya No.45 Lantai 1, Kramat, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450",
+    "susunlogo_id": "1erObj38mRNdNhSm2NwIIvyn8S104Bnt8"
   },
   {
     "no": 45,
@@ -1141,13 +1178,14 @@
     "email": "salam@izi.or.id",
     "phone": "0811-2265-918",
     "pimpinan": "Wildhan Dewayana (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1KgBkjrRNY9IeCtsqgeT-j8x1nPxBaOJQ&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1KgBkjrRNY9IeCtsqgeT-j8x1nPxBaOJQ&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jl. Raya Condet No. 27 G"
+    "alamat_lengkap": "Jl. Raya Condet No. 27 G",
+    "susunlogo_id": "1KgBkjrRNY9IeCtsqgeT-j8x1nPxBaOJQ"
   },
   {
     "no": 47,
@@ -1166,13 +1204,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=19gfDVK6LVa-oMOImorbUx3c8zrv85y3j&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=19gfDVK6LVa-oMOImorbUx3c8zrv85y3j&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Tangerang",
     "lokasi_singkat": "Kota Tangerang, Banten",
-    "alamat_lengkap": "Kawasan Bisnis CBD Cileduk, Jl. HOS Cokroaminoto No.21, RT.001/RW.001, Karang Tengah, Kec. Karang Tengah, Kota Tangerang, Banten 15157"
+    "alamat_lengkap": "Kawasan Bisnis CBD Cileduk, Jl. HOS Cokroaminoto No.21, RT.001/RW.001, Karang Tengah, Kec. Karang Tengah, Kota Tangerang, Banten 15157",
+    "susunlogo_id": "19gfDVK6LVa-oMOImorbUx3c8zrv85y3j"
   },
   {
     "no": 48,
@@ -1191,13 +1230,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1jSmHFBdP4IUN2Sn1MKxDAWtWFm0uI1HT&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1jSmHFBdP4IUN2Sn1MKxDAWtWFm0uI1HT&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. Kalibata Utara II No.84 10, RT.13/RW.2, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760"
+    "alamat_lengkap": "Jl. Kalibata Utara II No.84 10, RT.13/RW.2, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760",
+    "susunlogo_id": "1jSmHFBdP4IUN2Sn1MKxDAWtWFm0uI1HT"
   },
   {
     "no": 49,
@@ -1216,13 +1256,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=15lVQJptftRrxTUVDAU8-sX6Xlcz-uALu&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=15lVQJptftRrxTUVDAU8-sX6Xlcz-uALu&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "JL. KETINTANG TIMUR PTT VB SURABAYA"
+    "alamat_lengkap": "JL. KETINTANG TIMUR PTT VB SURABAYA",
+    "susunlogo_id": "15lVQJptftRrxTUVDAU8-sX6Xlcz-uALu"
   },
   {
     "no": 50,
@@ -1241,13 +1282,14 @@
     "email": "info@laznasaql.org",
     "phone": "0821-2467-1880",
     "pimpinan": "Samade Saputra (Direktur)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1q_BDrbGhZreV1BBoboqKRFGntMHwqF7u&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1q_BDrbGhZreV1BBoboqKRFGntMHwqF7u&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. Tebet Utara III No.21, RT.8/RW.2,"
+    "alamat_lengkap": "Jl. Tebet Utara III No.21, RT.8/RW.2,",
+    "susunlogo_id": "1q_BDrbGhZreV1BBoboqKRFGntMHwqF7u"
   },
   {
     "no": 51,
@@ -1266,13 +1308,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=11BD144eoNpPsvQVNFFMUKcBXLLgohK6O&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=11BD144eoNpPsvQVNFFMUKcBXLLgohK6O&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jambi",
     "lokasi_singkat": "Kota Jambi, Jambi",
-    "alamat_lengkap": "Jl. Otto iskandardinata No.15"
+    "alamat_lengkap": "Jl. Otto iskandardinata No.15",
+    "susunlogo_id": "11BD144eoNpPsvQVNFFMUKcBXLLgohK6O"
   },
   {
     "no": 52,
@@ -1291,13 +1334,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=10QYlWnvlQLFEIopIfjz-N876ANATGaPH&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=10QYlWnvlQLFEIopIfjz-N876ANATGaPH&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "WISMA BAKRIE 1 LANTAI 2 JALAN RASUNA SAID KAV B1, RT 05 RW 05"
+    "alamat_lengkap": "WISMA BAKRIE 1 LANTAI 2 JALAN RASUNA SAID KAV B1, RT 05 RW 05",
+    "susunlogo_id": "10QYlWnvlQLFEIopIfjz-N876ANATGaPH"
   },
   {
     "no": 53,
@@ -1316,13 +1360,14 @@
     "email": "marjaya@lazharfa.org",
     "phone": "0878-8866-6070",
     "pimpinan": "Abdul Rafur (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1DanaGk3f_C9X84hbyv3NYYrfum4BHC-q&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1DanaGk3f_C9X84hbyv3NYYrfum4BHC-q&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Serang",
     "lokasi_singkat": "Kota Serang, Banten",
-    "alamat_lengkap": "Jl. Ciwaru Raya Pondok Citra 1 No. 1B"
+    "alamat_lengkap": "Jl. Ciwaru Raya Pondok Citra 1 No. 1B",
+    "susunlogo_id": "1DanaGk3f_C9X84hbyv3NYYrfum4BHC-q"
   },
   {
     "no": 54,
@@ -1341,13 +1386,14 @@
     "email": "zakatsukses@gmail.com",
     "phone": "0819-0821-7968",
     "pimpinan": "Sunarto Zulkifli (Direktur)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1rgiKd-9sGUTsib4iJxm0NRBV_NXsixhz&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1rgiKd-9sGUTsib4iJxm0NRBV_NXsixhz&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
-    "alamat_lengkap": "Jl. K.H.M.Yusuf Raya No.95"
+    "alamat_lengkap": "Jl. K.H.M.Yusuf Raya No.95",
+    "susunlogo_id": "1rgiKd-9sGUTsib4iJxm0NRBV_NXsixhz"
   },
   {
     "no": 55,
@@ -1366,13 +1412,14 @@
     "email": "cs.jakarta@bmh.or.id",
     "phone": "0822-3235-1499",
     "pimpinan": "Supendi (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1-qt5SKhCgl7s4vHZ-AK9_x0xwPoFqvF6&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1-qt5SKhCgl7s4vHZ-AK9_x0xwPoFqvF6&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Kalibata Office Park, Jl. KH. Guru Amin, No.21 No. Blok H, Kode Pos 12780"
+    "alamat_lengkap": "Kalibata Office Park, Jl. KH. Guru Amin, No.21 No. Blok H, Kode Pos 12780",
+    "susunlogo_id": "1-qt5SKhCgl7s4vHZ-AK9_x0xwPoFqvF6"
   },
   {
     "no": 56,
@@ -1416,13 +1463,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1yyKnfpeRiDL-BwUM1-5f3ImsFde2wE6_&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1yyKnfpeRiDL-BwUM1-5f3ImsFde2wE6_&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. Ulujami Raya No.111, RT.2/RW.7, Ulujami, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12250"
+    "alamat_lengkap": "Jl. Ulujami Raya No.111, RT.2/RW.7, Ulujami, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12250",
+    "susunlogo_id": "1yyKnfpeRiDL-BwUM1-5f3ImsFde2wE6_"
   },
   {
     "no": 58,
@@ -1441,13 +1489,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1_zNCUIRLmGpGHjHEh0kzk7mvzdnJVTJS&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1_zNCUIRLmGpGHjHEh0kzk7mvzdnJVTJS&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Makassar",
     "lokasi_singkat": "Kota Makassar, Sulawesi Selatan",
-    "alamat_lengkap": "Wisma Kalla, Jl. DR. Ratulangi No. 8"
+    "alamat_lengkap": "Wisma Kalla, Jl. DR. Ratulangi No. 8",
+    "susunlogo_id": "1_zNCUIRLmGpGHjHEh0kzk7mvzdnJVTJS"
   },
   {
     "no": 59,
@@ -1466,13 +1515,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1qapLUosXOst5PWNxW9mKXSRAkO_AvyLi&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1qapLUosXOst5PWNxW9mKXSRAkO_AvyLi&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Mataram",
     "lokasi_singkat": "Kota Mataram, Nusa Tenggara Barat",
-    "alamat_lengkap": "Jl. Bung Karno No. 76B Pagesangan Timur Kec. Mataram Kota Mataram"
+    "alamat_lengkap": "Jl. Bung Karno No. 76B Pagesangan Timur Kec. Mataram Kota Mataram",
+    "susunlogo_id": "1qapLUosXOst5PWNxW9mKXSRAkO_AvyLi"
   },
   {
     "no": 60,
@@ -1491,13 +1541,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1A2inSgQLmhUMAv-zcO5t_hiBOT5E3SlC&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1A2inSgQLmhUMAv-zcO5t_hiBOT5E3SlC&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Tangerang Selatan",
     "lokasi_singkat": "Kota Tangerang Selatan, Banten",
-    "alamat_lengkap": "Jl Haji Cari No.58"
+    "alamat_lengkap": "Jl Haji Cari No.58",
+    "susunlogo_id": "1A2inSgQLmhUMAv-zcO5t_hiBOT5E3SlC"
   },
   {
     "no": 61,
@@ -1516,13 +1567,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1hg1e1mPlS-5Nhqwp5fCYhiBFCEJOV2b6&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1hg1e1mPlS-5Nhqwp5fCYhiBFCEJOV2b6&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surabaya",
     "lokasi_singkat": "Kota Surabaya, Jawa Timur",
-    "alamat_lengkap": "jl. Ketintang Madya 1 No 6C"
+    "alamat_lengkap": "jl. Ketintang Madya 1 No 6C",
+    "susunlogo_id": "1hg1e1mPlS-5Nhqwp5fCYhiBFCEJOV2b6"
   },
   {
     "no": 62,
@@ -1541,13 +1593,14 @@
     "email": "info@rumah-yatim.org",
     "phone": "0818-0938-6067",
     "pimpinan": "Nugroho Bejo Wismono (Direktur Utama)",
-    "logo_url": "https://drive.google.com/thumbnail?id=15OsLB3YIKzXzQ6VTtvuHLPEEYonFU0UL&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=15OsLB3YIKzXzQ6VTtvuHLPEEYonFU0UL&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jalan Buahbatu No. 296"
+    "alamat_lengkap": "Jalan Buahbatu No. 296",
+    "susunlogo_id": "15OsLB3YIKzXzQ6VTtvuHLPEEYonFU0UL"
   },
   {
     "no": 63,
@@ -1591,13 +1644,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1tdF6KukO961YfRjsrtvc_msHqWeo41hO&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1tdF6KukO961YfRjsrtvc_msHqWeo41hO&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Jombang",
     "lokasi_singkat": "Kab. Jombang, Jawa Timur",
-    "alamat_lengkap": "JL. Wr, Supratman No 38"
+    "alamat_lengkap": "JL. Wr, Supratman No 38",
+    "susunlogo_id": "1tdF6KukO961YfRjsrtvc_msHqWeo41hO"
   },
   {
     "no": 65,
@@ -1716,13 +1770,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1YqIBm4bXxOrsljpAl5whJRBJzVoUdupA&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1YqIBm4bXxOrsljpAl5whJRBJzVoUdupA&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
-    "alamat_lengkap": "jl i Dewa nyoman Oka 28"
+    "alamat_lengkap": "jl i Dewa nyoman Oka 28",
+    "susunlogo_id": "1YqIBm4bXxOrsljpAl5whJRBJzVoUdupA"
   },
   {
     "no": 70,
@@ -1741,13 +1796,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1sJcwjPtZk4MGN_3y3h1MN-ojnKDCeGy7&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1sJcwjPtZk4MGN_3y3h1MN-ojnKDCeGy7&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Subang",
     "lokasi_singkat": "Kab. Subang, Jawa Barat",
-    "alamat_lengkap": "Jl. Raya Subang - Bandung Km 12"
+    "alamat_lengkap": "Jl. Raya Subang - Bandung Km 12",
+    "susunlogo_id": "1sJcwjPtZk4MGN_3y3h1MN-ojnKDCeGy7"
   },
   {
     "no": 71,
@@ -1766,13 +1822,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1UbY8m9WLNQnD_MMiyutCruBgjIr-te3x&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1UbY8m9WLNQnD_MMiyutCruBgjIr-te3x&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
-    "alamat_lengkap": "Jl. Timoho II Gg. Delima No. 2"
+    "alamat_lengkap": "Jl. Timoho II Gg. Delima No. 2",
+    "susunlogo_id": "1UbY8m9WLNQnD_MMiyutCruBgjIr-te3x"
   },
   {
     "no": 72,
@@ -1791,13 +1848,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1Cxdh2Xrd1McwWb8Y3M-Z-4AmurQh4Eyi&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1Cxdh2Xrd1McwWb8Y3M-Z-4AmurQh4Eyi&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Batam",
     "lokasi_singkat": "Kota Batam, Kepulauan Riau",
-    "alamat_lengkap": "Jl. Ahmad Yani, Ruko Alexandria Blok B8 No. 61"
+    "alamat_lengkap": "Jl. Ahmad Yani, Ruko Alexandria Blok B8 No. 61",
+    "susunlogo_id": "1Cxdh2Xrd1McwWb8Y3M-Z-4AmurQh4Eyi"
   },
   {
     "no": 73,
@@ -1841,13 +1899,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1fO2IEnGHIOK5GfynuF2Po0e_nVTIF1YS&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1fO2IEnGHIOK5GfynuF2Po0e_nVTIF1YS&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Klaten",
     "lokasi_singkat": "Kab. Klaten, Jawa Tengah",
-    "alamat_lengkap": "Jl. Mayor Kusmanto Gg Ketapang Perak YKP RT.03/RW.04 Ngingas Baru"
+    "alamat_lengkap": "Jl. Mayor Kusmanto Gg Ketapang Perak YKP RT.03/RW.04 Ngingas Baru",
+    "susunlogo_id": "1fO2IEnGHIOK5GfynuF2Po0e_nVTIF1YS"
   },
   {
     "no": 75,
@@ -1866,13 +1925,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1y5p7T5eSrAQ8vrAo-y9iGr_az3aLMxwY&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1y5p7T5eSrAQ8vrAo-y9iGr_az3aLMxwY&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
-    "alamat_lengkap": "Jl. Sulawesi Perum Puri Tanjung Intan No.B2"
+    "alamat_lengkap": "Jl. Sulawesi Perum Puri Tanjung Intan No.B2",
+    "susunlogo_id": "1y5p7T5eSrAQ8vrAo-y9iGr_az3aLMxwY"
   },
   {
     "no": 76,
@@ -1916,13 +1976,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1Lcg_50MrdTzzmcElPlD2z82e08U-HOYt&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1Lcg_50MrdTzzmcElPlD2z82e08U-HOYt&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Malang",
     "lokasi_singkat": "Kota Malang, Jawa Timur",
-    "alamat_lengkap": "Jl. Danau Matana Blok F6B-7"
+    "alamat_lengkap": "Jl. Danau Matana Blok F6B-7",
+    "susunlogo_id": "1Lcg_50MrdTzzmcElPlD2z82e08U-HOYt"
   },
   {
     "no": 78,
@@ -1941,13 +2002,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1fnR7CUYKIDvuUpUNhIQ5cDXahxl_2fhl&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1fnR7CUYKIDvuUpUNhIQ5cDXahxl_2fhl&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
-    "alamat_lengkap": "Jalan Kranggan, Kranggan 1"
+    "alamat_lengkap": "Jalan Kranggan, Kranggan 1",
+    "susunlogo_id": "1fnR7CUYKIDvuUpUNhIQ5cDXahxl_2fhl"
   },
   {
     "no": 79,
@@ -1966,13 +2028,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1aNjIyPwvs6E1yt30Au3986_YyGw45ypi&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1aNjIyPwvs6E1yt30Au3986_YyGw45ypi&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Riung Hegar Raya No. 10 Rt. 007 Rw. 008"
+    "alamat_lengkap": "Jl. Riung Hegar Raya No. 10 Rt. 007 Rw. 008",
+    "susunlogo_id": "1aNjIyPwvs6E1yt30Au3986_YyGw45ypi"
   },
   {
     "no": 80,
@@ -2041,13 +2104,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1FNSyBsAFe47oW8q-KMS9gJcqvMBzz43D&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1FNSyBsAFe47oW8q-KMS9gJcqvMBzz43D&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Jember",
     "lokasi_singkat": "Kab. Jember, Jawa Timur",
-    "alamat_lengkap": "Jl. Letjen S. Parman No 10 Sumbersari"
+    "alamat_lengkap": "Jl. Letjen S. Parman No 10 Sumbersari",
+    "susunlogo_id": "1FNSyBsAFe47oW8q-KMS9gJcqvMBzz43D"
   },
   {
     "no": 83,
@@ -2066,13 +2130,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1zk7-xQWxpmVMbhqkpiMBHrihzm-cuhOc&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1zk7-xQWxpmVMbhqkpiMBHrihzm-cuhOc&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Tegal",
     "lokasi_singkat": "Kota Tegal, Jawa Tengah",
-    "alamat_lengkap": "Jln Surabayan, Rt004/Rw014, Panggung, Tegal Timur, Kota Tegal"
+    "alamat_lengkap": "Jln Surabayan, Rt004/Rw014, Panggung, Tegal Timur, Kota Tegal",
+    "susunlogo_id": "1zk7-xQWxpmVMbhqkpiMBHrihzm-cuhOc"
   },
   {
     "no": 84,
@@ -2091,13 +2156,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1MXbfoVI5j6gcxa6vjBmfVBs8lajrBQXS&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1MXbfoVI5j6gcxa6vjBmfVBs8lajrBQXS&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Lumajang",
     "lokasi_singkat": "Kab. Lumajang, Jawa Timur",
-    "alamat_lengkap": "JL. VETERAN NO 57 KEPUHARJO LUMAJANG"
+    "alamat_lengkap": "JL. VETERAN NO 57 KEPUHARJO LUMAJANG",
+    "susunlogo_id": "1MXbfoVI5j6gcxa6vjBmfVBs8lajrBQXS"
   },
   {
     "no": 85,
@@ -2116,13 +2182,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1uL_T9ZkN7RhLwA7slIZXRmbDhoXud2r3&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1uL_T9ZkN7RhLwA7slIZXRmbDhoXud2r3&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
-    "alamat_lengkap": "Jl. Sidanti No. 22 Sambisari Joho"
+    "alamat_lengkap": "Jl. Sidanti No. 22 Sambisari Joho",
+    "susunlogo_id": "1uL_T9ZkN7RhLwA7slIZXRmbDhoXud2r3"
   },
   {
     "no": 86,
@@ -2166,13 +2233,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1uEFM56gY58kJ5GD1cUnH3MwrOdMoq7G6&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1uEFM56gY58kJ5GD1cUnH3MwrOdMoq7G6&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Medan",
     "lokasi_singkat": "Kota Medan, Sumatera Utara",
-    "alamat_lengkap": "Jalan Brigjend. Katamso No.11"
+    "alamat_lengkap": "Jalan Brigjend. Katamso No.11",
+    "susunlogo_id": "1uEFM56gY58kJ5GD1cUnH3MwrOdMoq7G6"
   },
   {
     "no": 88,
@@ -2216,13 +2284,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=16lEwSz9U5nrGeVzH5lo0Q90k8npGAAuK&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=16lEwSz9U5nrGeVzH5lo0Q90k8npGAAuK&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Sukaraja Town Square kavling D dan E, Jl. Sukaraja II"
+    "alamat_lengkap": "Sukaraja Town Square kavling D dan E, Jl. Sukaraja II",
+    "susunlogo_id": "16lEwSz9U5nrGeVzH5lo0Q90k8npGAAuK"
   },
   {
     "no": 90,
@@ -2241,13 +2310,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1rdIVo3j3BZZH9hqHdhklILKcbFyJMHRS&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1rdIVo3j3BZZH9hqHdhklILKcbFyJMHRS&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandar Lampung",
     "lokasi_singkat": "Kota Bandar Lampung, Lampung",
-    "alamat_lengkap": "Komplek Pujangga Alam Garden Blok B2 No. 3"
+    "alamat_lengkap": "Komplek Pujangga Alam Garden Blok B2 No. 3",
+    "susunlogo_id": "1rdIVo3j3BZZH9hqHdhklILKcbFyJMHRS"
   },
   {
     "no": 91,
@@ -2266,13 +2336,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "",
+    "logo_url": "https://drive.google.com/thumbnail?id=1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Cibubur Country Boulevard RBOF No. 3"
+    "alamat_lengkap": "Cibubur Country Boulevard RBOF No. 3",
+    "susunlogo_id": "1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY"
   },
   {
     "no": 92,
@@ -2291,13 +2362,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1ZYqqaRRurwyvYMfMk2AHpmlcsep9zgcJ&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1ZYqqaRRurwyvYMfMk2AHpmlcsep9zgcJ&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Magelang",
     "lokasi_singkat": "Kota Magelang, Jawa Tengah",
-    "alamat_lengkap": "Jl. Serayu Timur No.2 Menowo Kedungsari"
+    "alamat_lengkap": "Jl. Serayu Timur No.2 Menowo Kedungsari",
+    "susunlogo_id": "1ZYqqaRRurwyvYMfMk2AHpmlcsep9zgcJ"
   },
   {
     "no": 93,
@@ -2341,13 +2413,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1rVJrVu_eWXtbpCyl24o3SaikLZQ-76a1&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1rVJrVu_eWXtbpCyl24o3SaikLZQ-76a1&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl. Raya Desa Putra No.12 RT.11 RW.5"
+    "alamat_lengkap": "Jl. Raya Desa Putra No.12 RT.11 RW.5",
+    "susunlogo_id": "1rVJrVu_eWXtbpCyl24o3SaikLZQ-76a1"
   },
   {
     "no": 95,
@@ -2366,13 +2439,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1rWv9Rxj638-MLBoxPNuDQbkjCT_1Z59d&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1rWv9Rxj638-MLBoxPNuDQbkjCT_1Z59d&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
-    "alamat_lengkap": "Jl. Sambiroto 1 Dalam No.313, RT.08/RW.02, Sambiroto, Kec. Tembalang, Kota Semarang, Jawa Tengah 50276"
+    "alamat_lengkap": "Jl. Sambiroto 1 Dalam No.313, RT.08/RW.02, Sambiroto, Kec. Tembalang, Kota Semarang, Jawa Tengah 50276",
+    "susunlogo_id": "1rWv9Rxj638-MLBoxPNuDQbkjCT_1Z59d"
   },
   {
     "no": 96,
@@ -2441,13 +2515,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1x0XQxsOz9ebERRVXJ_DHCTidQbRC1QpD&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1x0XQxsOz9ebERRVXJ_DHCTidQbRC1QpD&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
-    "alamat_lengkap": "Jl Veteran Gang Madukoro UH / 768 C"
+    "alamat_lengkap": "Jl Veteran Gang Madukoro UH / 768 C",
+    "susunlogo_id": "1x0XQxsOz9ebERRVXJ_DHCTidQbRC1QpD"
   },
   {
     "no": 99,
@@ -2466,13 +2541,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1-bU7GQG2fukoW9lWWIhVB9lP3bu3A6XO&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1-bU7GQG2fukoW9lWWIhVB9lP3bu3A6XO&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jalan Langga Raya No.2 Lenteng Agung, Jagakarsa Jakarta Selatan"
+    "alamat_lengkap": "Jalan Langga Raya No.2 Lenteng Agung, Jagakarsa Jakarta Selatan",
+    "susunlogo_id": "1-bU7GQG2fukoW9lWWIhVB9lP3bu3A6XO"
   },
   {
     "no": 100,
@@ -2491,13 +2567,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1SdD8QyBfDErNL383nF3NCz0QE3mri9Lx&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1SdD8QyBfDErNL383nF3NCz0QE3mri9Lx&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "DeepSpace Office Jl. Melawai X No.9"
+    "alamat_lengkap": "DeepSpace Office Jl. Melawai X No.9",
+    "susunlogo_id": "1SdD8QyBfDErNL383nF3NCz0QE3mri9Lx"
   },
   {
     "no": 101,
@@ -2566,13 +2643,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1vorcuUPm8Y5StRxuxMBqN61NfcQ7hhAs&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1vorcuUPm8Y5StRxuxMBqN61NfcQ7hhAs&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Garut",
     "lokasi_singkat": "Kab. Garut, Jawa Barat",
-    "alamat_lengkap": "Jl. KH. Hasan Arief Perum Banyuherang Blok A No 5"
+    "alamat_lengkap": "Jl. KH. Hasan Arief Perum Banyuherang Blok A No 5",
+    "susunlogo_id": "1vorcuUPm8Y5StRxuxMBqN61NfcQ7hhAs"
   },
   {
     "no": 104,
@@ -2616,13 +2694,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1_o0MiSPMRQhkcFMrDXyHOzN7Lbt4uabC&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1_o0MiSPMRQhkcFMrDXyHOzN7Lbt4uabC&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Cilacap",
     "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
-    "alamat_lengkap": "Jl. Rajiman No. 36"
+    "alamat_lengkap": "Jl. Rajiman No. 36",
+    "susunlogo_id": "1_o0MiSPMRQhkcFMrDXyHOzN7Lbt4uabC"
   },
   {
     "no": 106,
@@ -2641,13 +2720,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1hAaw7OfQ8aaCaPjzZcQauarYam7cRI0Z&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1hAaw7OfQ8aaCaPjzZcQauarYam7cRI0Z&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Karawang",
     "lokasi_singkat": "Kab. Karawang, Jawa Barat",
-    "alamat_lengkap": "Jl. Jend A. Yani (Seberang Superindo Mall Cikampek)"
+    "alamat_lengkap": "Jl. Jend A. Yani (Seberang Superindo Mall Cikampek)",
+    "susunlogo_id": "1hAaw7OfQ8aaCaPjzZcQauarYam7cRI0Z"
   },
   {
     "no": 107,
@@ -2666,13 +2746,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1SCdJ-0NcxQic4V0_ERlpfdaK_41FNYj4&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1SCdJ-0NcxQic4V0_ERlpfdaK_41FNYj4&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Malang",
     "lokasi_singkat": "Kota Malang, Jawa Timur",
-    "alamat_lengkap": "Jl Loncat Indah Hunian Islami De Prima Kav B 6"
+    "alamat_lengkap": "Jl Loncat Indah Hunian Islami De Prima Kav B 6",
+    "susunlogo_id": "1SCdJ-0NcxQic4V0_ERlpfdaK_41FNYj4"
   },
   {
     "no": 108,
@@ -2691,13 +2772,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=17-zN2PlhuYQW6kJ_9LnDL3cg0mfX21CX&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=17-zN2PlhuYQW6kJ_9LnDL3cg0mfX21CX&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "17-zN2PlhuYQW6kJ_9LnDL3cg0mfX21CX"
   },
   {
     "no": 109,
@@ -2716,13 +2798,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1AqwCOZWwwmRMDlatWpS9Z_DdLRVyEDQW&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1AqwCOZWwwmRMDlatWpS9Z_DdLRVyEDQW&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sleman",
     "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
-    "alamat_lengkap": "Jl. Jambu Sari 2 no 8, Perumahan Jambu Sari Indah, Jetis"
+    "alamat_lengkap": "Jl. Jambu Sari 2 no 8, Perumahan Jambu Sari Indah, Jetis",
+    "susunlogo_id": "1AqwCOZWwwmRMDlatWpS9Z_DdLRVyEDQW"
   },
   {
     "no": 110,
@@ -2741,13 +2824,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1_cNryTlt3XY_dGzOEZlwDk7iIIipoMLM&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1_cNryTlt3XY_dGzOEZlwDk7iIIipoMLM&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Pekanbaru",
     "lokasi_singkat": "Kota Pekanbaru, Riau",
-    "alamat_lengkap": "Jl. Wisma PGRI No. 31a"
+    "alamat_lengkap": "Jl. Wisma PGRI No. 31a",
+    "susunlogo_id": "1_cNryTlt3XY_dGzOEZlwDk7iIIipoMLM"
   },
   {
     "no": 111,
@@ -2766,13 +2850,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1DzM70ItI1tbTTmouZu0Ekd5f9dM8dCwf&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1DzM70ItI1tbTTmouZu0Ekd5f9dM8dCwf&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Mimika",
     "lokasi_singkat": "Kab. Mimika, Papua",
-    "alamat_lengkap": "Jl Poros SP 2 -SP 5"
+    "alamat_lengkap": "Jl Poros SP 2 -SP 5",
+    "susunlogo_id": "1DzM70ItI1tbTTmouZu0Ekd5f9dM8dCwf"
   },
   {
     "no": 112,
@@ -2791,13 +2876,14 @@
     "email": "nasrullah@asarhumanity.org",
     "phone": "0852-6791-8666",
     "pimpinan": "Noval Eriansyah (Ketua Pengurus)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1oy26ou-YdXOchjqOUAEgMVqwE9jiLiRh&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1oy26ou-YdXOchjqOUAEgMVqwE9jiLiRh&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
-    "alamat_lengkap": "Jl. Raya Tapos No.17 A, Tapos, Kota Depok, Jawa Barat 16517"
+    "alamat_lengkap": "Jl. Raya Tapos No.17 A, Tapos, Kota Depok, Jawa Barat 16517",
+    "susunlogo_id": "1oy26ou-YdXOchjqOUAEgMVqwE9jiLiRh"
   },
   {
     "no": 113,
@@ -2816,13 +2902,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "",
+    "logo_url": "https://drive.google.com/thumbnail?id=1w1vIcWvMSE2FHD4XW5nD2UCUc2O1VO6W&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surakarta",
     "lokasi_singkat": "Kota Surakarta, Jawa Tengah",
-    "alamat_lengkap": "Jl. Ahmad Yani No. 305"
+    "alamat_lengkap": "Jl. Ahmad Yani No. 305",
+    "susunlogo_id": "1w1vIcWvMSE2FHD4XW5nD2UCUc2O1VO6W"
   },
   {
     "no": 114,
@@ -2866,13 +2953,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1RoVBBgIIfi5JYQz3m9-kZdwsfmMtr95g&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1RoVBBgIIfi5JYQz3m9-kZdwsfmMtr95g&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "JL. ECENG NO. 6, LINGKAR SELATAN, KOTA BANDUNG"
+    "alamat_lengkap": "JL. ECENG NO. 6, LINGKAR SELATAN, KOTA BANDUNG",
+    "susunlogo_id": "1RoVBBgIIfi5JYQz3m9-kZdwsfmMtr95g"
   },
   {
     "no": 116,
@@ -2891,13 +2979,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1V-nRaEg8ur1SNyeFLq1mJ0hyJTWXSWyk&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1V-nRaEg8ur1SNyeFLq1mJ0hyJTWXSWyk&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Cirebon",
     "lokasi_singkat": "Kota Cirebon, Jawa Barat",
-    "alamat_lengkap": "Jl. Gelatik Raya No. 3"
+    "alamat_lengkap": "Jl. Gelatik Raya No. 3",
+    "susunlogo_id": "1V-nRaEg8ur1SNyeFLq1mJ0hyJTWXSWyk"
   },
   {
     "no": 117,
@@ -2916,13 +3005,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1GhYeBZ8s679tmVY-HdXU3E3Eo06uiDX4&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1GhYeBZ8s679tmVY-HdXU3E3Eo06uiDX4&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Surakarta",
     "lokasi_singkat": "Kota Surakarta, Jawa Tengah",
-    "alamat_lengkap": "Jl. Ahmad Yani No. 305"
+    "alamat_lengkap": "Jl. Ahmad Yani No. 305",
+    "susunlogo_id": "1GhYeBZ8s679tmVY-HdXU3E3Eo06uiDX4"
   },
   {
     "no": 118,
@@ -2941,13 +3031,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1KW-7GoVx9fJdp32gnP63T23-R5nhJ-HG&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1KW-7GoVx9fJdp32gnP63T23-R5nhJ-HG&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Jl. Batu Tulis XIV No. 1, Juanda III, Kel. Kebon Kelapa, Kec. Gambir, Kota Adm. Jakarta Pusat 10120,"
+    "alamat_lengkap": "Jl. Batu Tulis XIV No. 1, Juanda III, Kel. Kebon Kelapa, Kec. Gambir, Kota Adm. Jakarta Pusat 10120,",
+    "susunlogo_id": "1KW-7GoVx9fJdp32gnP63T23-R5nhJ-HG"
   },
   {
     "no": 119,
@@ -2966,13 +3057,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=15HUrF2zS8k00LlKviyN0fQmWICRhfUUG&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=15HUrF2zS8k00LlKviyN0fQmWICRhfUUG&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sragen",
     "lokasi_singkat": "Kab. Sragen, Jawa Tengah",
-    "alamat_lengkap": "JL Asahan No 4 A RT 5/IV Mageru"
+    "alamat_lengkap": "JL Asahan No 4 A RT 5/IV Mageru",
+    "susunlogo_id": "15HUrF2zS8k00LlKviyN0fQmWICRhfUUG"
   },
   {
     "no": 120,
@@ -2991,13 +3083,14 @@
     "email": "laz@mail.albahjah.or.id",
     "phone": "0852-6503-6244",
     "pimpinan": "Jefrizal Helmi (CEO LAZ Al-Bahjah)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1C70SFRUm65tQ57w6Pm3yi57O_hFsB_hZ&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1C70SFRUm65tQ57w6Pm3yi57O_hFsB_hZ&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Cirebon",
     "lokasi_singkat": "Kab. Cirebon, Jawa Barat",
-    "alamat_lengkap": "Jl. Pangeran Cakrabuana No.179, Blok Gudang Air,"
+    "alamat_lengkap": "Jl. Pangeran Cakrabuana No.179, Blok Gudang Air,",
+    "susunlogo_id": "1C70SFRUm65tQ57w6Pm3yi57O_hFsB_hZ"
   },
   {
     "no": 121,
@@ -3016,13 +3109,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1R2v-VBUkxSBw-Qe0B1HDO50D02MVOfhA&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1R2v-VBUkxSBw-Qe0B1HDO50D02MVOfhA&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Padang",
     "lokasi_singkat": "Kota Padang, Sumatera Barat",
-    "alamat_lengkap": "Jl Air Dingin"
+    "alamat_lengkap": "Jl Air Dingin",
+    "susunlogo_id": "1R2v-VBUkxSBw-Qe0B1HDO50D02MVOfhA"
   },
   {
     "no": 122,
@@ -3091,13 +3185,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1aS-Y96XVFae5NPEdb1qI1IpZ2kin887N&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1aS-Y96XVFae5NPEdb1qI1IpZ2kin887N&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1aS-Y96XVFae5NPEdb1qI1IpZ2kin887N"
   },
   {
     "no": 125,
@@ -3116,13 +3211,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1DMgbc1jbOLG8Lyq-aKGFthXG_qrnL4GL&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1DMgbc1jbOLG8Lyq-aKGFthXG_qrnL4GL&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. kalijati Indah 2 No.5"
+    "alamat_lengkap": "Jl. kalijati Indah 2 No.5",
+    "susunlogo_id": "1DMgbc1jbOLG8Lyq-aKGFthXG_qrnL4GL"
   },
   {
     "no": 126,
@@ -3191,13 +3287,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1NN1cGosFdJh4wSwJNk5YIwv4_p_0R70o&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1NN1cGosFdJh4wSwJNk5YIwv4_p_0R70o&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Kutai Timur",
     "lokasi_singkat": "Kab. Kutai Timur, Kalimantan Timur",
-    "alamat_lengkap": "Jl. Dayung, No. 8"
+    "alamat_lengkap": "Jl. Dayung, No. 8",
+    "susunlogo_id": "1NN1cGosFdJh4wSwJNk5YIwv4_p_0R70o"
   },
   {
     "no": 129,
@@ -3341,13 +3438,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1_PSvkSLsPEKqkzYfcFiKTjXeKiro3bwY&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1_PSvkSLsPEKqkzYfcFiKTjXeKiro3bwY&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Padasuka No 160"
+    "alamat_lengkap": "Jl. Padasuka No 160",
+    "susunlogo_id": "1_PSvkSLsPEKqkzYfcFiKTjXeKiro3bwY"
   },
   {
     "no": 135,
@@ -3366,13 +3464,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1M9_3a4eTg8hZPqVnodsiOcUeA3IjSWB-&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1M9_3a4eTg8hZPqVnodsiOcUeA3IjSWB-&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Masjid Nurul Taqwa Lt.Dasar Jl.Medan Merdeka Barat No.21 Jakarta 10110"
+    "alamat_lengkap": "Masjid Nurul Taqwa Lt.Dasar Jl.Medan Merdeka Barat No.21 Jakarta 10110",
+    "susunlogo_id": "1M9_3a4eTg8hZPqVnodsiOcUeA3IjSWB-"
   },
   {
     "no": 136,
@@ -3391,13 +3490,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1_UNnXQ-S-TRXrDx4TBHv5NszBGqtYmTW&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1_UNnXQ-S-TRXrDx4TBHv5NszBGqtYmTW&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Blitar",
     "lokasi_singkat": "Kab. Blitar, Jawa Timur",
-    "alamat_lengkap": "Dusun Jatinom"
+    "alamat_lengkap": "Dusun Jatinom",
+    "susunlogo_id": "1_UNnXQ-S-TRXrDx4TBHv5NszBGqtYmTW"
   },
   {
     "no": 137,
@@ -3416,13 +3516,14 @@
     "email": "info@ybmbri.org",
     "phone": "0812-8287-0780",
     "pimpinan": "Dwi Iqbal Noviawan (General Manager)",
-    "logo_url": "https://drive.google.com/thumbnail?id=1nQ3d55n2VRwkhd29RZPfGfvTrqHFcOWX&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1nQ3d55n2VRwkhd29RZPfGfvTrqHFcOWX&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Gedung Olahraga BRI Lantai 2, Jalan Jenderal Sudirman Kav. 44-46"
+    "alamat_lengkap": "Gedung Olahraga BRI Lantai 2, Jalan Jenderal Sudirman Kav. 44-46",
+    "susunlogo_id": "1nQ3d55n2VRwkhd29RZPfGfvTrqHFcOWX"
   },
   {
     "no": 138,
@@ -3441,13 +3542,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1L4wuCFFEGzIbJ8aWPGHiT5Ynq41jZeZA&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1L4wuCFFEGzIbJ8aWPGHiT5Ynq41jZeZA&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bengkalis",
     "lokasi_singkat": "Kab. Bengkalis, Riau",
-    "alamat_lengkap": "Jalan Mawar No. 5"
+    "alamat_lengkap": "Jalan Mawar No. 5",
+    "susunlogo_id": "1L4wuCFFEGzIbJ8aWPGHiT5Ynq41jZeZA"
   },
   {
     "no": 139,
@@ -3466,13 +3568,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1iUd9_NhCKYP9uI9R_tlEiEOOsaps_LI1&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1iUd9_NhCKYP9uI9R_tlEiEOOsaps_LI1&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bekasi",
     "lokasi_singkat": "Kota Bekasi, Jawa Barat",
-    "alamat_lengkap": "Rukan Emerald Blok UF 08 Sumarecon Bekasi"
+    "alamat_lengkap": "Rukan Emerald Blok UF 08 Sumarecon Bekasi",
+    "susunlogo_id": "1iUd9_NhCKYP9uI9R_tlEiEOOsaps_LI1"
   },
   {
     "no": 140,
@@ -3491,13 +3594,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1d61CRPeu6AvQhdlRfXsDkVrYtTLw4K6Z&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1d61CRPeu6AvQhdlRfXsDkVrYtTLw4K6Z&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Komp. Puri Asri No.4 RT.07/03 Duren Tiga Kec. Pancoran. Kota Jakarta Selatan. DKI Jakarta INDONESIA – 12760"
+    "alamat_lengkap": "Komp. Puri Asri No.4 RT.07/03 Duren Tiga Kec. Pancoran. Kota Jakarta Selatan. DKI Jakarta INDONESIA – 12760",
+    "susunlogo_id": "1d61CRPeu6AvQhdlRfXsDkVrYtTLw4K6Z"
   },
   {
     "no": 141,
@@ -3566,13 +3670,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1MOwlOr-J4GfQTrQjCOBIMaLnWDgv6yV8&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1MOwlOr-J4GfQTrQjCOBIMaLnWDgv6yV8&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Semarang",
     "lokasi_singkat": "Kota Semarang, Jawa Tengah",
-    "alamat_lengkap": "Jl. Raya Kaligawe KM.4 Semarang"
+    "alamat_lengkap": "Jl. Raya Kaligawe KM.4 Semarang",
+    "susunlogo_id": "1MOwlOr-J4GfQTrQjCOBIMaLnWDgv6yV8"
   },
   {
     "no": 144,
@@ -3591,13 +3696,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1R9RhK-FE5623vXq0ud1gjepRf3Dy0xS9&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1R9RhK-FE5623vXq0ud1gjepRf3Dy0xS9&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Melong Asih I No.03, Cijerah, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40213"
+    "alamat_lengkap": "Jl. Melong Asih I No.03, Cijerah, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40213",
+    "susunlogo_id": "1R9RhK-FE5623vXq0ud1gjepRf3Dy0xS9"
   },
   {
     "no": 145,
@@ -3616,13 +3722,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1whSnMnDYknD47uUACsXJYrgxSlQtmJjl&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1whSnMnDYknD47uUACsXJYrgxSlQtmJjl&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Ciamis",
     "lokasi_singkat": "Kab. Ciamis, Jawa Barat",
-    "alamat_lengkap": "Dusun Wetan"
+    "alamat_lengkap": "Dusun Wetan",
+    "susunlogo_id": "1whSnMnDYknD47uUACsXJYrgxSlQtmJjl"
   },
   {
     "no": 146,
@@ -3641,13 +3748,14 @@
     "email": "faisal.hanafi@amalsholeh.com",
     "phone": "0857-3218-6174",
     "pimpinan": "Riki Haryadi (Ketua Yayasan)",
-    "logo_url": "https://drive.google.com/thumbnail?id=12_pqF6LdRohZR0xih9kahFnjEgveV5Gk&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=12_pqF6LdRohZR0xih9kahFnjEgveV5Gk&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandung",
     "lokasi_singkat": "Kota Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Parakan Arum No.26"
+    "alamat_lengkap": "Jl. Parakan Arum No.26",
+    "susunlogo_id": "12_pqF6LdRohZR0xih9kahFnjEgveV5Gk"
   },
   {
     "no": 147,
@@ -3791,13 +3899,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1cwyiy-17zMKuZskzNs-f3w39T7qGAY9p&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1cwyiy-17zMKuZskzNs-f3w39T7qGAY9p&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sukoharjo",
     "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
-    "alamat_lengkap": "Jln. Tentara Pelajar, Gang Saturnus, Gabahan RT 5/RW 12"
+    "alamat_lengkap": "Jln. Tentara Pelajar, Gang Saturnus, Gabahan RT 5/RW 12",
+    "susunlogo_id": "1cwyiy-17zMKuZskzNs-f3w39T7qGAY9p"
   },
   {
     "no": 153,
@@ -3816,13 +3925,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1PQ_M1rtjNhPYSXZdwu9Qiur64jV2IvMk&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1PQ_M1rtjNhPYSXZdwu9Qiur64jV2IvMk&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sukoharjo",
     "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
-    "alamat_lengkap": "Mojotegalan Rt 02/01, Joho, Kec Sukoharjo, Kab Sukoharjo, Jawa Tengah 57513"
+    "alamat_lengkap": "Mojotegalan Rt 02/01, Joho, Kec Sukoharjo, Kab Sukoharjo, Jawa Tengah 57513",
+    "susunlogo_id": "1PQ_M1rtjNhPYSXZdwu9Qiur64jV2IvMk"
   },
   {
     "no": 154,
@@ -3891,13 +4001,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1qAIMCJNOcIrfRMCCVF2aXJ-DV1w3Ql4-&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1qAIMCJNOcIrfRMCCVF2aXJ-DV1w3Ql4-&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bukittinggi",
     "lokasi_singkat": "Kab. Bukittinggi, Sumatera Barat",
-    "alamat_lengkap": "Jalan Tabek tuhua RT 03 RW 02"
+    "alamat_lengkap": "Jalan Tabek tuhua RT 03 RW 02",
+    "susunlogo_id": "1qAIMCJNOcIrfRMCCVF2aXJ-DV1w3Ql4-"
   },
   {
     "no": 157,
@@ -3966,13 +4077,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1q193fWbM6tUCvQecPlQPv1YoKdN1EEw1&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1q193fWbM6tUCvQecPlQPv1YoKdN1EEw1&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1q193fWbM6tUCvQecPlQPv1YoKdN1EEw1"
   },
   {
     "no": 160,
@@ -4116,13 +4228,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1uncZNSR7d9SYqAV6lWQeI-EwiWiuV_Ew&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1uncZNSR7d9SYqAV6lWQeI-EwiWiuV_Ew&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandar Lampung",
     "lokasi_singkat": "Kota Bandar Lampung, Lampung",
-    "alamat_lengkap": "Jln. Kopi no 20, Rajabasa"
+    "alamat_lengkap": "Jln. Kopi no 20, Rajabasa",
+    "susunlogo_id": "1uncZNSR7d9SYqAV6lWQeI-EwiWiuV_Ew"
   },
   {
     "no": 166,
@@ -4166,13 +4279,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1al5kEhaafTP-HyPoAuAT43Tlz3mv-WRp&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1al5kEhaafTP-HyPoAuAT43Tlz3mv-WRp&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1al5kEhaafTP-HyPoAuAT43Tlz3mv-WRp"
   },
   {
     "no": 168,
@@ -4216,13 +4330,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1XRdMFX0b2YADnvtIYxrMIgdm97wGLUkz&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1XRdMFX0b2YADnvtIYxrMIgdm97wGLUkz&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Jember",
     "lokasi_singkat": "Kab. Jember, Jawa Timur",
-    "alamat_lengkap": "Jl. Wijaya Kusuma"
+    "alamat_lengkap": "Jl. Wijaya Kusuma",
+    "susunlogo_id": "1XRdMFX0b2YADnvtIYxrMIgdm97wGLUkz"
   },
   {
     "no": 170,
@@ -4266,13 +4381,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=10vZtjC8TWIGzp_VDwNhcFMKLeI9Z4lEg&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=10vZtjC8TWIGzp_VDwNhcFMKLeI9Z4lEg&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Samarinda",
     "lokasi_singkat": "Kota Samarinda, Kalimantan Timur",
-    "alamat_lengkap": "Jl. Siradj Salman Komplek Ruko Grand Mutiara Blok C, No. 3, Kel. Teluk Lerong Ilir, Kec. Samarinda Ulu, Samarinda"
+    "alamat_lengkap": "Jl. Siradj Salman Komplek Ruko Grand Mutiara Blok C, No. 3, Kel. Teluk Lerong Ilir, Kec. Samarinda Ulu, Samarinda",
+    "susunlogo_id": "10vZtjC8TWIGzp_VDwNhcFMKLeI9Z4lEg"
   },
   {
     "no": 172,
@@ -4316,13 +4432,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bengkulu",
     "lokasi_singkat": "Kota Bengkulu, Bengkulu",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1YHoM3Dc3mQ77f44ALlCGReSYde5AZgvY"
   },
   {
     "no": 174,
@@ -4341,13 +4458,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1N9UaP50ftGoOT6h0WWNTWnVBza8WTKvS&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1N9UaP50ftGoOT6h0WWNTWnVBza8WTKvS&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Pusat",
     "lokasi_singkat": "Kota Jakarta Pusat, DKI Jakarta",
-    "alamat_lengkap": "Jl. Jenderal Ahmad Yani No.41, RT.13/RW.2, Cemp. Putih Tim., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510"
+    "alamat_lengkap": "Jl. Jenderal Ahmad Yani No.41, RT.13/RW.2, Cemp. Putih Tim., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510",
+    "susunlogo_id": "1N9UaP50ftGoOT6h0WWNTWnVBza8WTKvS"
   },
   {
     "no": 175,
@@ -4391,13 +4509,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1nAhT5b6b39pZ7lcfya1b7zM7I13tce82&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1nAhT5b6b39pZ7lcfya1b7zM7I13tce82&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Pekanbaru",
     "lokasi_singkat": "Kota Pekanbaru, Riau",
-    "alamat_lengkap": "Jl. Paus No. 8C"
+    "alamat_lengkap": "Jl. Paus No. 8C",
+    "susunlogo_id": "1nAhT5b6b39pZ7lcfya1b7zM7I13tce82"
   },
   {
     "no": 177,
@@ -4441,13 +4560,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1FxpAdBXzJK4cjuiWLjUkqcOWhrdPVJrI&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1FxpAdBXzJK4cjuiWLjUkqcOWhrdPVJrI&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bontang",
     "lokasi_singkat": "Kab. Bontang, Kalimantan Timur",
-    "alamat_lengkap": "Jalan Brigjend Katamso KM 6 RT 6 No. 6"
+    "alamat_lengkap": "Jalan Brigjend Katamso KM 6 RT 6 No. 6",
+    "susunlogo_id": "1FxpAdBXzJK4cjuiWLjUkqcOWhrdPVJrI"
   },
   {
     "no": 179,
@@ -4466,13 +4586,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1OsQLeVVYe9mWDjy2uXb8kWCeuGKybeGs&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1OsQLeVVYe9mWDjy2uXb8kWCeuGKybeGs&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jalan Bina Marga No.25, C99 Business Park, Kaveling 9N"
+    "alamat_lengkap": "Jalan Bina Marga No.25, C99 Business Park, Kaveling 9N",
+    "susunlogo_id": "1OsQLeVVYe9mWDjy2uXb8kWCeuGKybeGs"
   },
   {
     "no": 180,
@@ -4516,13 +4637,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1YXsrwlFu12flTtLc-ELLqCgE33_Yv3S9&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1YXsrwlFu12flTtLc-ELLqCgE33_Yv3S9&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Yogyakarta",
     "lokasi_singkat": "Kota Yogyakarta, D.I. Yogyakarta",
-    "alamat_lengkap": "Jalan Tritunggal, No. 2"
+    "alamat_lengkap": "Jalan Tritunggal, No. 2",
+    "susunlogo_id": "1YXsrwlFu12flTtLc-ELLqCgE33_Yv3S9"
   },
   {
     "no": 182,
@@ -4541,13 +4663,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1QU_Lqb5861tFCC4kDfNstELo5lbcE-ci&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1QU_Lqb5861tFCC4kDfNstELo5lbcE-ci&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Malang",
     "lokasi_singkat": "Kota Malang, Jawa Timur",
-    "alamat_lengkap": "Jl. Piranha Atas, 161 A"
+    "alamat_lengkap": "Jl. Piranha Atas, 161 A",
+    "susunlogo_id": "1QU_Lqb5861tFCC4kDfNstELo5lbcE-ci"
   },
   {
     "no": 183,
@@ -4566,13 +4689,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=11wySH_3OAvDBRo1EVgxEp2CqNYAYL78e&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=11wySH_3OAvDBRo1EVgxEp2CqNYAYL78e&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "11wySH_3OAvDBRo1EVgxEp2CqNYAYL78e"
   },
   {
     "no": 184,
@@ -4591,13 +4715,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1zHrgaEJmDUOOCvrjaQDgTvkMvXVpxHmC&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1zHrgaEJmDUOOCvrjaQDgTvkMvXVpxHmC&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1zHrgaEJmDUOOCvrjaQDgTvkMvXVpxHmC"
   },
   {
     "no": 185,
@@ -4741,13 +4866,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1DdqcmIhDmMcbjtmviHWG4GtzEajL24ce&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1DdqcmIhDmMcbjtmviHWG4GtzEajL24ce&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Mataram",
     "lokasi_singkat": "Kota Mataram, Nusa Tenggara Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1DdqcmIhDmMcbjtmviHWG4GtzEajL24ce"
   },
   {
     "no": 191,
@@ -4816,13 +4942,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1dciO2LCyCt0MJ5IbVZm821tlcWUJp__Y&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1dciO2LCyCt0MJ5IbVZm821tlcWUJp__Y&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Bandar Lampung",
     "lokasi_singkat": "Kota Bandar Lampung, Lampung",
-    "alamat_lengkap": "Jl. Purnawirawan Raya No.114"
+    "alamat_lengkap": "Jl. Purnawirawan Raya No.114",
+    "susunlogo_id": "1dciO2LCyCt0MJ5IbVZm821tlcWUJp__Y"
   },
   {
     "no": 194,
@@ -4916,13 +5043,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=15-15tWZRWnNy8O5b97lyJ0EwIGSOevV3&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=15-15tWZRWnNy8O5b97lyJ0EwIGSOevV3&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Selatan",
     "lokasi_singkat": "Kota Jakarta Selatan, DKI Jakarta",
-    "alamat_lengkap": "Jl Tebet Barat Dalam VII No 3, Tebet, Jakarta Selatan"
+    "alamat_lengkap": "Jl Tebet Barat Dalam VII No 3, Tebet, Jakarta Selatan",
+    "susunlogo_id": "15-15tWZRWnNy8O5b97lyJ0EwIGSOevV3"
   },
   {
     "no": 198,
@@ -4941,13 +5069,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "",
+    "logo_url": "https://drive.google.com/thumbnail?id=1gmax8RxhRuTLoSFOk3_MzlzndL5Qlt0_&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jl. Bambu apus raya no 62"
+    "alamat_lengkap": "Jl. Bambu apus raya no 62",
+    "susunlogo_id": "1gmax8RxhRuTLoSFOk3_MzlzndL5Qlt0_"
   },
   {
     "no": 199,
@@ -4966,13 +5095,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1sa5gLlHw5tlc74lbfTxPJWqsE8pU3GWy&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1sa5gLlHw5tlc74lbfTxPJWqsE8pU3GWy&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Karanganyar",
     "lokasi_singkat": "Kab. Karanganyar, Jawa Tengah",
-    "alamat_lengkap": "Badran Mulyo"
+    "alamat_lengkap": "Badran Mulyo",
+    "susunlogo_id": "1sa5gLlHw5tlc74lbfTxPJWqsE8pU3GWy"
   },
   {
     "no": 200,
@@ -4991,13 +5121,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1tUwiWUEv9jKj6bv4Z2ct1BssjpORvmQN&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1tUwiWUEv9jKj6bv4Z2ct1BssjpORvmQN&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bogor",
     "lokasi_singkat": "Kab. Bogor, Jawa Barat",
-    "alamat_lengkap": "Perumahan Cibubur Mansion Blok A2 No.15, Jl Alternatif Cibubur"
+    "alamat_lengkap": "Perumahan Cibubur Mansion Blok A2 No.15, Jl Alternatif Cibubur",
+    "susunlogo_id": "1tUwiWUEv9jKj6bv4Z2ct1BssjpORvmQN"
   },
   {
     "no": 201,
@@ -5016,13 +5147,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1dB8L9GHkRhEp6HImrtn9B-XGc7V5gOOv&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1dB8L9GHkRhEp6HImrtn9B-XGc7V5gOOv&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Depok",
     "lokasi_singkat": "Kota Depok, Jawa Barat",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1dB8L9GHkRhEp6HImrtn9B-XGc7V5gOOv"
   },
   {
     "no": 202,
@@ -5066,13 +5198,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1CrFOiUlFAZOyx1aiQnd-cPPaBl6x5bQn&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1CrFOiUlFAZOyx1aiQnd-cPPaBl6x5bQn&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Raya Bojongsoang No.223, Lengkong, Kec. Bojongsoang, Kabupaten Bandung"
+    "alamat_lengkap": "Jl. Raya Bojongsoang No.223, Lengkong, Kec. Bojongsoang, Kabupaten Bandung",
+    "susunlogo_id": "1CrFOiUlFAZOyx1aiQnd-cPPaBl6x5bQn"
   },
   {
     "no": 204,
@@ -5091,13 +5224,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1IrrdoucoJmLo79RSSedTF3r_xxRfAS0V&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1IrrdoucoJmLo79RSSedTF3r_xxRfAS0V&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Jakarta Timur",
     "lokasi_singkat": "Kota Jakarta Timur, DKI Jakarta",
-    "alamat_lengkap": "Jl. Bambu apus raya no 62"
+    "alamat_lengkap": "Jl. Bambu apus raya no 62",
+    "susunlogo_id": "1IrrdoucoJmLo79RSSedTF3r_xxRfAS0V"
   },
   {
     "no": 205,
@@ -5116,13 +5250,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1qzR7G9YWCYolwCEIabfHGyyPLtOH0JAJ&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1qzR7G9YWCYolwCEIabfHGyyPLtOH0JAJ&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Bandung",
     "lokasi_singkat": "Kab. Bandung, Jawa Barat",
-    "alamat_lengkap": "Jl. Puspa Kencana No. 48, Cimekar Kec. Cileunyi kab. Bandung Jawa Barat 40623"
+    "alamat_lengkap": "Jl. Puspa Kencana No. 48, Cimekar Kec. Cileunyi kab. Bandung Jawa Barat 40623",
+    "susunlogo_id": "1qzR7G9YWCYolwCEIabfHGyyPLtOH0JAJ"
   },
   {
     "no": 206,
@@ -5316,13 +5451,14 @@
     "email": "",
     "phone": "",
     "pimpinan": "Pimpinan Lembaga",
-    "logo_url": "https://drive.google.com/thumbnail?id=1X-hMEg3IHJEeUCHmzsIPENsCsQuA-R-7&sz=w200",
+    "logo_url": "https://drive.google.com/thumbnail?id=1X-hMEg3IHJEeUCHmzsIPENsCsQuA-R-7&sz=w240",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
     "is_hidden": false,
     "kabupaten": "Kab. Sidoarjo",
     "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
-    "alamat_lengkap": "Data belum diisikan"
+    "alamat_lengkap": "Data belum diisikan",
+    "susunlogo_id": "1X-hMEg3IHJEeUCHmzsIPENsCsQuA-R-7"
   },
   {
     "no": 214,
