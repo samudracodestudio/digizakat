@@ -223,23 +223,25 @@ export default function HomePage() {
           
           {/* Logo Brand & Slogan */}
           <div className="flex items-center gap-3">
-            <div className="relative h-11 w-11 shrink-0">
-              <Image 
-                src="/digizakat_icon.png" 
-                alt="Digizakat Icon" 
-                fill 
-                className="object-contain"
-                priority
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight text-[#5a4ea4] leading-tight">
-                Digizakat
-              </span>
-              <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
-                Radar & Ensiklopedi
-              </span>
-            </div>
+            <Link href="/" className="flex items-center gap-3 group">
+              <div className="relative h-11 w-11 shrink-0">
+                <Image 
+                  src="/digizakat_icon.png" 
+                  alt="Digizakat Icon" 
+                  fill 
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-lg font-bold tracking-tight text-[#5a4ea4] group-hover:text-[#433880] transition leading-tight">
+                  Digizakat
+                </span>
+                <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
+                  Radar & Ensiklopedi
+                </span>
+              </div>
+            </Link>
             <div className="hidden lg:block pl-3 border-l border-slate-200 ml-1">
               <span className="text-xs font-semibold text-slate-600">
                 Gerakan Zakat Indonesia
