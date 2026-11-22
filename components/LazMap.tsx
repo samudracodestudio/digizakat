@@ -79,7 +79,9 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
   useEffect(() => {
     if (!mapContainerRef.current || mapRef.current) return;
 
-    const map = L.map(mapContainerRef.current, {
+    const containerEl = mapContainerRef.current;
+
+    const map = L.map(containerEl, {
       center: [-2.4, 118.0],
       zoom: 4.5,
       minZoom: 3.5,
@@ -87,11 +89,24 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       zoomSnap: 0.25,
       zoomDelta: 0.5,
       scrollWheelZoom: false,
+      touchZoom: true,
+      doubleClickZoom: true,
       zoomControl: true,
     });
-    if (mapContainerRef.current.clientWidth > 0 && mapContainerRef.current.clientHeight > 0) {
+    if (containerEl.clientWidth > 0 && containerEl.clientHeight > 0) {
       map.fitBounds(INDONESIA_BOUNDS, { padding: [16, 16] });
     }
+
+    // Dukung pinch-to-zoom trackpad (Mac/laptop mengirim pinch sebagai wheel + ctrlKey)
+    // tanpa mengganggu scroll halaman biasa
+    const handleTrackpadPinch = (e: WheelEvent) => {
+      if (!e.ctrlKey) return;
+      e.preventDefault();
+      const zoomChange = -e.deltaY * 0.01;
+      const nextZoom = Math.max(3.5, Math.min(18, map.getZoom() + zoomChange));
+      map.setZoom(nextZoom, { animate: false });
+    };
+    containerEl.addEventListener('wheel', handleTrackpadPinch, { passive: false });
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -176,6 +191,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     map.on('zoomend', syncZoomClass);
 
     return () => {
+      containerEl.removeEventListener('wheel', handleTrackpadPinch);
       map.off('zoomend', syncZoomClass);
       map.remove();
       mapRef.current = null;
