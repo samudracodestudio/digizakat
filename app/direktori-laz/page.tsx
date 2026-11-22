@@ -360,13 +360,29 @@ export default function DirektoriLazPage() {
                       </div>
                     </div>
 
-                    {/* LAZ Name */}
-                    <h3 
-                      onClick={() => setActiveLazDetail(laz)}
-                      className="text-base font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition cursor-pointer line-clamp-2 leading-snug"
-                    >
-                      {laz.name}
-                    </h3>
+                    {/* LAZ Name & Logo */}
+                    <div className="flex items-center gap-3">
+                      <div className="relative h-11 w-11 rounded-xl bg-slate-50 border border-slate-200 p-1 flex items-center justify-center shrink-0 overflow-hidden shadow-2xs group-hover:border-[#5a4ea4]/40 transition">
+                        {laz.logo_url ? (
+                          <img
+                            src={laz.logo_url}
+                            alt={laz.name}
+                            className="h-full w-full object-contain"
+                            loading="lazy"
+                            referrerPolicy="no-referrer"
+                          />
+                        ) : (
+                          <Building2 className="w-5 h-5 text-slate-400 group-hover:text-[#5a4ea4] transition" />
+                        )}
+                      </div>
+
+                      <h3 
+                        onClick={() => setActiveLazDetail(laz)}
+                        className="text-sm sm:text-base font-semibold text-slate-900 group-hover:text-[#5a4ea4] transition cursor-pointer line-clamp-2 leading-snug flex-1"
+                      >
+                        {laz.name}
+                      </h3>
+                    </div>
 
                     {/* Location Info (Kabupaten, Provinsi) */}
                     <div className="flex items-center gap-1.5 text-xs text-slate-500">
@@ -410,23 +426,37 @@ export default function DirektoriLazPage() {
           <div className="bg-white rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 animate-in zoom-in-95 duration-200">
             
             {/* Modal Header */}
-            <div className="p-5 bg-gradient-to-r from-[#1e1b4b] to-[#382f6e] text-white flex items-start justify-between">
-              <div>
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="bg-white/20 text-white text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">
-                    {activeLazDetail.skala}
-                  </span>
-                  <span className="bg-emerald-400/20 text-emerald-200 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
-                    <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Terdaftar Kemenag
-                  </span>
+            <div className="p-5 bg-gradient-to-r from-[#1e1b4b] to-[#382f6e] text-white flex items-start justify-between gap-3">
+              <div className="flex items-center gap-3 min-w-0">
+                <div className="relative h-12 w-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-sm overflow-hidden">
+                  {activeLazDetail.logo_url ? (
+                    <img
+                      src={activeLazDetail.logo_url}
+                      alt={activeLazDetail.name}
+                      className="h-full w-full object-contain"
+                      referrerPolicy="no-referrer"
+                    />
+                  ) : (
+                    <Building2 className="w-6 h-6 text-[#5a4ea4]" />
+                  )}
                 </div>
-                <h3 className="text-lg font-bold text-white leading-snug">
-                  {activeLazDetail.name}
-                </h3>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="bg-white/20 text-white text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">
+                      {activeLazDetail.skala}
+                    </span>
+                    <span className="bg-emerald-400/20 text-emerald-200 text-[10px] font-semibold px-2 py-0.5 rounded flex items-center gap-1">
+                      <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Terdaftar Kemenag
+                    </span>
+                  </div>
+                  <h3 className="text-base sm:text-lg font-bold text-white leading-snug line-clamp-2">
+                    {activeLazDetail.name}
+                  </h3>
+                </div>
               </div>
               <button 
                 onClick={() => setActiveLazDetail(null)}
-                className="text-white/70 hover:text-white p-1 hover:bg-white/10 rounded-lg transition"
+                className="text-white/70 hover:text-white p-1 hover:bg-white/10 rounded-lg transition shrink-0"
               >
                 ✕
               </button>
