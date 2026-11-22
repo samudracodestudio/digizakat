@@ -456,10 +456,6 @@ export default function DirektoriLazPage() {
                   <span className="font-semibold text-slate-500">Nomor Registrasi:</span>
                   <span className="font-bold text-[#5a4ea4]">LAZ #{activeLazDetail.no}</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold text-slate-500">Cakupan Wilayah:</span>
-                  <span className="font-medium text-slate-700">{activeLazDetail.provinsi}</span>
-                </div>
                 {activeLazDetail.sk_number && (
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-slate-500">Nomor SK Kemenag:</span>
