@@ -111,11 +111,8 @@ export default function DirektoriLazPage() {
       <div className="bg-[#1e1b4b] text-slate-200 text-xs border-b border-slate-800">
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] py-2 flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
-            <span className="bg-[#5a4ea4] text-white px-2 py-0.5 rounded text-[10px] font-semibold tracking-wider uppercase shrink-0">
-              DATABASE RESMI
-            </span>
             <span className="text-slate-300 truncate text-xs">
-              Sinkronisasi SIMZAT Kementerian Agama RI & Forum Zakat (FOZ)
+              Sinkronisasi SIMZAT Kementerian Agama RI
             </span>
           </div>
 
@@ -131,7 +128,7 @@ export default function DirektoriLazPage() {
             </a>
             <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>218 Terverifikasi</span>
+              <span>218 Terdata</span>
             </div>
           </div>
         </div>
