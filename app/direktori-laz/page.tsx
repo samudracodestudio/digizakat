@@ -242,7 +242,7 @@ export default function DirektoriLazPage() {
           </div>
 
           {/* Interactive Map of LAZ Locations — langsung tampil di desktop maupun mobile */}
-          <div className="mt-6 isolate">
+          <div className="mt-6">
             <LazMap
               items={filteredLaz}
               selectedProvinsi={selectedProvinsi}

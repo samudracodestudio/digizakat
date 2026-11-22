@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import 'leaflet.markercluster';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
+import { Maximize2, Minimize2 } from 'lucide-react';
 
 export interface BranchItem {
   wilayah: string;
@@ -50,10 +51,27 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
   const mapRef = useRef<L.Map | null>(null);
   const clusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
   const onSelectRef = useRef(onSelectLaz);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     onSelectRef.current = onSelectLaz;
   }, [onSelectLaz]);
+
+  // Recalculate Leaflet canvas size smoothly when toggling fullscreen on mobile
+  useEffect(() => {
+    if (isExpanded) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    const timer = setTimeout(() => {
+      mapRef.current?.invalidateSize();
+    }, 60);
+    return () => {
+      clearTimeout(timer);
+      document.body.style.overflow = '';
+    };
+  }, [isExpanded]);
 
   const isProvinceSelected = selectedProvinsi !== 'Semua';
 
@@ -280,6 +298,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       const btn = popupEl.querySelector('button[data-laz-open]');
       if (btn) {
         btn.addEventListener('click', () => {
+          setIsExpanded(false);
           onSelectRef.current(laz.no);
           map.closePopup();
         });
@@ -328,9 +347,15 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
   }, [items, selectedProvinsi, isProvinceSelected]);
 
   return (
-    <div className="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+    <div
+      className={
+        isExpanded
+          ? 'fixed inset-0 z-[55] bg-white flex flex-col'
+          : 'bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden isolate'
+      }
+    >
       {/* Map Top Bar & Legend */}
-      <div className="px-4 py-2.5 bg-slate-50/90 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs">
+      <div className="px-4 py-2.5 bg-slate-50/90 border-b border-slate-200 flex flex-wrap items-center justify-between gap-2 text-xs shrink-0">
         <div className="flex flex-wrap items-center gap-3">
           <span className="font-semibold text-slate-700">
             {isProvinceSelected ? `Peta Sebaran — ${selectedProvinsi}` : 'Peta Sebaran Lokasi LAZ'}
@@ -368,11 +393,21 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
         </div>
       </div>
 
-      {/* Interactive Leaflet Map Canvas */}
-      <div
-        ref={mapContainerRef}
-        className="w-full h-[300px] sm:h-[360px] z-10 relative"
-      />
+      {/* Interactive Leaflet Map Canvas + Mobile Fullscreen Toggle */}
+      <div className={`relative w-full ${isExpanded ? 'flex-1' : 'h-[300px] sm:h-[360px]'}`}>
+        <div ref={mapContainerRef} className="w-full h-full z-10 relative" />
+
+        {/* Mobile Expand / Minimize Icon di Pojok Kanan Atas Peta */}
+        <button
+          type="button"
+          onClick={() => setIsExpanded((prev) => !prev)}
+          aria-label={isExpanded ? 'Perkecil peta' : 'Perbesar peta'}
+          title={isExpanded ? 'Perkecil peta' : 'Perbesar peta'}
+          className="md:hidden absolute top-2.5 right-2.5 z-[450] w-8 h-8 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 shadow-md flex items-center justify-center cursor-pointer transition active:scale-95"
+        >
+          {isExpanded ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
+        </button>
+      </div>
     </div>
   );
 }
