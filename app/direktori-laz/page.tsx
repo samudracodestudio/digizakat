@@ -391,10 +391,10 @@ export default function DirektoriLazPage() {
                     </div>
 
                     {/* Legalitas status preview */}
-                    <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
-                      <span className="text-slate-400">SK Kemenag:</span>
-                      <span className="font-semibold text-emerald-600 flex items-center gap-1">
-                        <CheckCircle2 className="w-3 h-3 text-emerald-500" /> Resmi Berizin
+                    <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] gap-2">
+                      <span className="text-slate-400 shrink-0">SK Kemenag:</span>
+                      <span className="font-semibold text-slate-700 truncate text-right font-mono text-[10px]" title={laz.sk_number}>
+                        {laz.sk_number ? `No. ${laz.sk_number}` : 'Terdaftar'}
                       </span>
                     </div>
 
