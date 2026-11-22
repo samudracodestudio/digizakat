@@ -75,17 +75,7 @@ export default function DirektoriLazPage() {
   const [selectedProvinsi, setSelectedProvinsi] = useState('Semua');
   const [activeLazDetail, setActiveLazDetail] = useState<LAZItem | null>(null);
   const [previewLogo, setPreviewLogo] = useState<{ url: string; name: string } | null>(null);
-  const [showMobileMap, setShowMobileMap] = useState(false);
-  const [isDesktop, setIsDesktop] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const mq = window.matchMedia('(min-width: 768px)');
-    setIsDesktop(mq.matches);
-    const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
-  }, []);
 
   useEffect(() => {
     fetch(`/data/laz_verified.json?t=${Date.now()}`)
@@ -251,31 +241,16 @@ export default function DirektoriLazPage() {
             </p>
           </div>
 
-          {/* Interactive Map of LAZ Locations — Desktop langsung tampil, Mobile pakai tombol Lihat Peta Sebaran */}
-          <div className="mt-6">
-            {!isDesktop && (
-              <button
-                type="button"
-                onClick={() => setShowMobileMap((prev) => !prev)}
-                className="w-full py-2.5 px-4 rounded-xl bg-white hover:bg-[#f2f0fa] text-[#433880] border border-[#d6d0ee] shadow-xs text-xs font-semibold flex items-center justify-center gap-2 transition cursor-pointer"
-              >
-                <MapIcon className="w-4 h-4 text-[#5a4ea4]" />
-                <span>{showMobileMap ? 'Tutup Peta Sebaran' : 'Lihat Peta Sebaran'}</span>
-              </button>
-            )}
-
-            {(isDesktop || showMobileMap) && (
-              <div className={`${!isDesktop ? 'mt-3' : ''} isolate`}>
-                <LazMap
-                  items={filteredLaz}
-                  selectedProvinsi={selectedProvinsi}
-                  onSelectLaz={(no) => {
-                    const found = lazList.find((x) => x.no === no);
-                    if (found) setActiveLazDetail(found);
-                  }}
-                />
-              </div>
-            )}
+          {/* Interactive Map of LAZ Locations — langsung tampil di desktop maupun mobile */}
+          <div className="mt-6 isolate">
+            <LazMap
+              items={filteredLaz}
+              selectedProvinsi={selectedProvinsi}
+              onSelectLaz={(no) => {
+                const found = lazList.find((x) => x.no === no);
+                if (found) setActiveLazDetail(found);
+              }}
+            />
           </div>
 
           {/* Quick Stats Cards */}
