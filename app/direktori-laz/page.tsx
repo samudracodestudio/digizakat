@@ -597,17 +597,6 @@ export default function DirektoriLazPage() {
               </div>
               <span>© {new Date().getFullYear()} Digizakat.com — Ensiklopedi & Radar Gerakan Zakat Indonesia.</span>
             </div>
-            <div className="flex items-center gap-4">
-              <Link href="/" className="hover:text-[#5a4ea4] underline font-medium">Beranda Radar</Link>
-              <a 
-                href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:text-[#5a4ea4] underline font-medium"
-              >
-                SIMZAT Kemenag RI ↗
-              </a>
-            </div>
           </div>
 
         </div>
