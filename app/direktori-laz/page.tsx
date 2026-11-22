@@ -232,7 +232,7 @@ export default function DirektoriLazPage() {
           <div className="space-y-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-[#eaf9fa] text-[#1d8286] border border-[#cbfbf1]">
               <BadgeCheck className="w-4 h-4 text-[#31c0c6]" />
-              <span>Direktori Lembaga Amil Zakat Berizin Kemenag RI</span>
+              <span>Direktori Lembaga Amil Zakat Terdata Kemenag RI</span>
             </div>
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
               Pencarian LAZ Terdata
@@ -286,7 +286,7 @@ export default function DirektoriLazPage() {
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Total Lembaga</span>
               <span className="text-2xl font-bold text-[#5a4ea4]">218</span>
-              <span className="text-[10px] text-slate-500 block mt-0.5">Berizin Kemenag RI</span>
+              <span className="text-[10px] text-slate-500 block mt-0.5">Terdata Kemenag RI</span>
             </div>
             {/* Skala Nasional: Hijau */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
