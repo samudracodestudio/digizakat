@@ -151,6 +151,146 @@ FEEDS = [
         'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
         'default_category': 'Pendidikan',
         'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'WAHDAH INSPIRASI ZAKAT (WIZ)',
+        'opz_scale': 'Nasional',
+        'url': 'https://wiz.or.id/feed/',
+        'donation_url': 'https://wiz.or.id/',
+        'instagram_url': 'https://www.instagram.com/wahdahinspirasizakat/',
+        'fallback_image': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'BSI MASLAHAT',
+        'opz_scale': 'Nasional',
+        'url': 'https://www.bsimaslahat.org/feed/',
+        'donation_url': 'https://www.bsimaslahat.org/',
+        'instagram_url': 'https://www.instagram.com/bsimaslahat/',
+        'fallback_image': 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Ekonomi Mustahik',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'NUSANTARA PALESTINA CENTER (NPC)',
+        'opz_scale': 'Nasional',
+        'url': 'https://npc.id/feed/',
+        'donation_url': 'https://npc.id/',
+        'instagram_url': 'https://www.instagram.com/nusantarapalestinacenter/',
+        'fallback_image': 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Kebencanaan',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'SAHABAT YATIM INDONESIA',
+        'opz_scale': 'Nasional',
+        'url': 'https://www.sahabatyatim.com/feed/',
+        'donation_url': 'https://www.sahabatyatim.com/',
+        'instagram_url': 'https://www.instagram.com/sahabatyatim/',
+        'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Yatim & Dhuafa'
+    },
+    {
+        'opz_name': 'LAZ PERSADA JATIM',
+        'opz_scale': 'Provinsi',
+        'url': 'https://lazpersada.org/feed/',
+        'donation_url': 'https://lazpersada.org/',
+        'instagram_url': 'https://www.instagram.com/lazpersada/',
+        'fallback_image': 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Yatim & Dhuafa'
+    },
+    {
+        'opz_name': 'LAZIS AL HAROMAIN',
+        'opz_scale': 'Nasional',
+        'url': 'https://www.lazisalharomain.org/feed/',
+        'donation_url': 'https://www.lazisalharomain.org/',
+        'instagram_url': 'https://www.instagram.com/lazisalharomain/',
+        'fallback_image': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'LAZ ULIL ALBAB',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'https://www.ulilalbab.org/feed/',
+        'donation_url': 'https://www.ulilalbab.org/',
+        'instagram_url': 'https://www.instagram.com/lazulilalbab/',
+        'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'LAZ PUNDI SURGA JOGJA',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'https://www.pundisurga.org/feed/',
+        'donation_url': 'https://www.pundisurga.org/',
+        'instagram_url': 'https://www.instagram.com/pundisurga/',
+        'fallback_image': 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'LAZ NUR HIDAYAH SURAKARTA',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'https://laznh.id/feed/',
+        'donation_url': 'https://laznh.id/',
+        'instagram_url': 'https://www.instagram.com/laznurhidayah/',
+        'fallback_image': 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Kesehatan',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'LAZ AL KHAIRAAT (BERBAGI BERKAH)',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'https://berbagiberkah.org/feed/',
+        'donation_url': 'https://berbagiberkah.org/',
+        'instagram_url': 'https://www.instagram.com/berbagiberkah_id/',
+        'fallback_image': 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Kebencanaan',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'LAZ IBADURRAHMAN',
+        'opz_scale': 'Provinsi',
+        'url': 'https://lazibadurrahman.org/feed/',
+        'donation_url': 'https://lazibadurrahman.org/',
+        'instagram_url': 'https://www.instagram.com/lazibadurrahman/',
+        'fallback_image': 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Ekonomi Mustahik',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'LAZIS SABILILLAH',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'https://lazissabilillah.com/feed/',
+        'donation_url': 'https://lazissabilillah.com/',
+        'instagram_url': 'https://www.instagram.com/lazissabilillah/',
+        'fallback_image': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'LAZISQU (LAZIS QURAN)',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'https://lazisqu.or.id/feed/',
+        'donation_url': 'https://lazisqu.or.id/',
+        'instagram_url': 'https://www.instagram.com/lazisqu/',
+        'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'LAZ MKU',
+        'opz_scale': 'Nasional',
+        'url': 'https://lazmku.id/feed/',
+        'donation_url': 'https://lazmku.id/',
+        'instagram_url': 'https://www.instagram.com/lazmku/',
+        'fallback_image': 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Ekonomi Mustahik',
+        'default_asnaf': 'Fakir & Miskin'
     }
 ]
 
