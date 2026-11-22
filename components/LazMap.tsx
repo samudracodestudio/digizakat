@@ -89,7 +89,9 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       scrollWheelZoom: false,
       zoomControl: true,
     });
-    map.fitBounds(INDONESIA_BOUNDS, { padding: [16, 16] });
+    if (mapContainerRef.current.clientWidth > 0 && mapContainerRef.current.clientHeight > 0) {
+      map.fitBounds(INDONESIA_BOUNDS, { padding: [16, 16] });
+    }
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -293,6 +295,9 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     });
 
     clusterGroup.addLayers(markersToAdd);
+
+    const el = mapContainerRef.current;
+    if (!el || el.clientWidth === 0 || el.clientHeight === 0) return;
 
     if (validPoints.length > 0 && (isProvinceSelected || items.length < 180)) {
       if (validPoints.length === 1) {
