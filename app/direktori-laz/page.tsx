@@ -142,15 +142,7 @@ export default function DirektoriLazPage() {
         <div className="w-full mx-auto px-4 sm:px-6 md:px-[10%] h-20 flex items-center justify-between gap-6">
           
           <div className="flex items-center gap-4">
-            <Link 
-              href="/"
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-[#5a4ea4] hover:bg-slate-100 transition border border-slate-200"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              <span>Beranda Radar</span>
-            </Link>
-
-            <Link href="/" className="flex items-center gap-2.5">
+            <Link href="/" className="flex items-center gap-2.5 group">
               <div className="relative h-10 w-10 shrink-0">
                 <Image 
                   src="/digizakat_icon.png" 
@@ -161,7 +153,7 @@ export default function DirektoriLazPage() {
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold tracking-tight text-[#5a4ea4] leading-tight">
+                <span className="text-lg font-bold tracking-tight text-[#5a4ea4] group-hover:text-[#433880] transition leading-tight">
                   Digizakat
                 </span>
                 <span className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase">
