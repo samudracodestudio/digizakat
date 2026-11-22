@@ -128,7 +128,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     const clusterGroup = L.markerClusterGroup({
       showCoverageOnHover: false,
       spiderfyOnMaxZoom: true,
-      maxClusterRadius: (zoom) => (zoom <= 5.5 ? 115 : zoom <= 7.5 ? 58 : 42),
+      maxClusterRadius: (zoom) => (zoom <= 5.5 ? 78 : zoom <= 7.5 ? 56 : 42),
       disableClusteringAtZoom: 13,
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
@@ -162,7 +162,19 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
     mapRef.current = map;
     clusterGroupRef.current = clusterGroup;
 
+    const syncZoomClass = () => {
+      if (!mapContainerRef.current) return;
+      if (map.getZoom() <= 5.5) {
+        mapContainerRef.current.classList.add('map-zoomed-out');
+      } else {
+        mapContainerRef.current.classList.remove('map-zoomed-out');
+      }
+    };
+    syncZoomClass();
+    map.on('zoomend', syncZoomClass);
+
     return () => {
+      map.off('zoomend', syncZoomClass);
       map.remove();
       mapRef.current = null;
       clusterGroupRef.current = null;
@@ -195,7 +207,7 @@ export default function LazMap({ items, selectedProvinsi, onSelectLaz }: LazMapP
       const dotSize = isBranch ? 12 : laz.skala === 'Nasional' ? 14 : 13;
 
       const dotIcon = L.divIcon({
-        html: `<div style="width:${dotSize}px;height:${dotSize}px;border-radius:9999px;background:${style.fill};border:2px solid #ffffff;box-shadow:0 1px 4px rgba(15,23,42,0.35);"></div>`,
+        html: `<div class="pin-dot-inner" style="width:${dotSize}px;height:${dotSize}px;border-radius:9999px;background:${style.fill};border:2px solid #ffffff;box-shadow:0 1px 4px rgba(15,23,42,0.35);display:flex;align-items:center;justify-content:center;"><span class="pin-single-count">1</span></div>`,
         className: 'digizakat-pin-dot',
         iconSize: L.point(dotSize, dotSize),
         iconAnchor: L.point(dotSize / 2, dotSize / 2),
