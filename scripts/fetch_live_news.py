@@ -355,6 +355,19 @@ if os.path.exists(ARCHIVE_PATH):
     except Exception:
         existing_archive = []
 
+# Normalisasi nama lama yang duplikat
+for item in existing_live:
+    if item.get('opz_name') == 'BAITUL MAAL HIDAYATULLAH':
+        item['opz_name'] = 'BAITUL MAAL HIDAYATULLAH (BMH)'
+
+# Hitung jumlah berita saat ini per lembaga
+source_counts = {}
+for item in existing_live:
+    n = item.get('opz_name', '')
+    source_counts[n] = source_counts.get(n, 0) + 1
+
+TARGET_PER_SOURCE = 7
+
 # Kumpulkan semua URL yang sudah tercatat
 seen_urls = set()
 for item in existing_live:
@@ -364,18 +377,25 @@ for item in existing_archive:
 
 print(f"Database saat ini: {len(existing_live)} berita aktif, {len(existing_archive)} berita terarsip.")
 
-# 2. Crawl rilis baru dari 14 LAZ
+# 2. Crawl rilis baru dari seluruh sumber FOZ-SIMZAT (tarik hingga kuota seragam per lembaga)
 newly_fetched = []
 
 for source in FEEDS:
     try:
-        print(f"Crawling {source['opz_name']}...")
+        opz = source['opz_name']
+        current_cnt = source_counts.get(opz, 0)
+        needed = max(4, TARGET_PER_SOURCE - current_cnt)
+        print(f"Crawling {opz} (saat ini: {current_cnt}, cek hingga {needed} item)...")
         req = urllib.request.Request(source['url'], headers=HEADERS)
-        xml_content = urllib.request.urlopen(req, context=ctx, timeout=6).read().decode('utf-8', errors='ignore')
+        xml_content = urllib.request.urlopen(req, context=ctx, timeout=8).read().decode('utf-8', errors='ignore')
         soup = BeautifulSoup(xml_content, 'xml')
-        items = soup.find_all('item')[:4]
-        
+        items = soup.find_all('item')[:max(10, TARGET_PER_SOURCE)]
+
+        added_for_source = 0
         for it in items:
+            if current_cnt + added_for_source >= TARGET_PER_SOURCE and added_for_source >= 2:
+                break
+
             link = it.link.text if it.link else ''
             norm_link = normalize_url(link)
             
@@ -404,10 +424,10 @@ for source in FEEDS:
 
             post_obj = {
                 'id': f'post-{int(datetime.now().timestamp())}-{len(newly_fetched)}',
-                'opz_name': source['opz_name'],
+                'opz_name': opz,
                 'opz_scale': source['opz_scale'],
                 'title': title,
-                'summary': summary or f"Penyaluran program manfaat zakat dan infak oleh {source['opz_name']}.",
+                'summary': summary or f"Penyaluran program manfaat zakat dan infak oleh {opz}.",
                 'asnaf': asnaf,
                 'category': category,
                 'location': 'Indonesia',
@@ -420,14 +440,23 @@ for source in FEEDS:
 
             newly_fetched.append(post_obj)
             seen_urls.add(norm_link)
+            added_for_source += 1
             print(f"  ✨ Rilis Baru: {title[:50]}...")
     except Exception as e:
         print(f"  ❌ Gagal crawling {source['opz_name']}: {e}")
 
 print(f"\nBerhasil menarik {len(newly_fetched)} rilis baru!")
 
-# 3. Gabungkan: Berita baru ditaruh paling depan
+# 3. Gabungkan & urutkan berdasarkan tanggal terbit terbaru (descending)
+def parse_pub_date(item):
+    d = item.get('published_at', '')
+    try:
+        return datetime.strptime(d.strip(), '%d %b %Y')
+    except Exception:
+        return datetime(2020, 1, 1)
+
 combined_live = newly_fetched + existing_live
+combined_live.sort(key=parse_pub_date, reverse=True)
 
 # 4. Two-Tier Splitting:
 # 200 Teratas tetap mempertahankan gambar (live_news.json)
