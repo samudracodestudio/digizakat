@@ -58,7 +58,7 @@ interface LAZItem {
   pimpinan?: string;
   logo_url?: string;
   jumlah_perwakilan?: number;
-  perwakilan_daerah?: { wilayah: string; alamat: string }[];
+  perwakilan_daerah?: { wilayah: string; alamat: string; lat?: number; lng?: number }[];
   lat?: number;
   lng?: number;
   coord_exact?: boolean;
@@ -244,6 +244,7 @@ export default function DirektoriLazPage() {
           <div className="mt-6 isolate">
             <LazMap
               items={filteredLaz}
+              selectedProvinsi={selectedProvinsi}
               onSelectLaz={(no) => {
                 const found = lazList.find((x) => x.no === no);
                 if (found) setActiveLazDetail(found);
