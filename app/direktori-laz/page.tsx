@@ -594,7 +594,7 @@ export default function DirektoriLazPage() {
                 )}
                 {activeLazDetail.foz_member && (
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-slate-500">Keanggotaan Forum Zakat (FOZ):</span>
+                    <span className="font-semibold text-slate-500">Keanggotaan:</span>
                     <span className="inline-flex items-center gap-1 font-semibold text-emerald-700">
                       <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Anggota FOZ
                     </span>
