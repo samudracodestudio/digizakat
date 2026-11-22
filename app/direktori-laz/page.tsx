@@ -480,7 +480,7 @@ export default function DirektoriLazPage() {
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-slate-900 block">Lokasi:</span>
+                    <span className="font-semibold text-slate-900 block">Lokasi Kantor Pusat:</span>
                     <span className="font-medium text-slate-800">
                       {activeLazDetail.lokasi_singkat || `${activeLazDetail.provinsi}, Indonesia`}
                     </span>
