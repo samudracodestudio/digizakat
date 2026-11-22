@@ -75,26 +75,60 @@ export default function DirektoriLazPage() {
       });
   }, []);
 
-  // Filtered LAZ (Otomatis menyembunyikan yang is_hidden === true kecuali jika user mencari spesifik)
+  // Filtered LAZ (Otomatis menyembunyikan yang is_hidden === true, serta mengindeks cabang/perwakilan di pencarian & filter provinsi)
   const filteredLaz = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
     return lazList.filter((item) => {
       // Skenario HIDE: Jika disembunyikan/masa perpanjangan tanpa izin aktif, sembunyikan dari daftar default
       if (item.is_hidden) return false;
 
+      const matchBranchSearch =
+        q !== '' &&
+        Boolean(
+          item.perwakilan_daerah?.some(
+            (c) =>
+              c.wilayah.toLowerCase().includes(q) ||
+              c.alamat.toLowerCase().includes(q)
+          )
+        );
+
       const matchSearch =
-        item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.provinsi.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (item.alamat && item.alamat.toLowerCase().includes(searchQuery.toLowerCase()));
+        q === '' ||
+        item.name.toLowerCase().includes(q) ||
+        item.provinsi.toLowerCase().includes(q) ||
+        (item.kabupaten && item.kabupaten.toLowerCase().includes(q)) ||
+        (item.alamat && item.alamat.toLowerCase().includes(q)) ||
+        matchBranchSearch;
+
       const matchSkala = selectedSkala === 'Semua' || item.skala === selectedSkala;
-      const matchProvinsi = selectedProvinsi === 'Semua' || item.provinsi === selectedProvinsi;
+
+      const matchBranchProvinsi = Boolean(
+        item.perwakilan_daerah?.some((c) => {
+          const branchProv = c.wilayah.split(',')[0].trim();
+          return branchProv.toLowerCase() === selectedProvinsi.toLowerCase();
+        })
+      );
+
+      const matchProvinsi =
+        selectedProvinsi === 'Semua' ||
+        item.provinsi === selectedProvinsi ||
+        matchBranchProvinsi;
+
       return matchSearch && matchSkala && matchProvinsi;
     });
   }, [lazList, searchQuery, selectedSkala, selectedProvinsi]);
 
-  // Unique provinces list (hanya dari yang aktif tampil)
+  // Unique provinces list (mencakup kantor pusat DAN seluruh provinsi cabang/perwakilan)
   const provinces = useMemo(() => {
-    const activeItems = lazList.filter(item => !item.is_hidden);
-    const setP = new Set(activeItems.map((item) => item.provinsi).filter(Boolean));
+    const activeItems = lazList.filter((item) => !item.is_hidden);
+    const setP = new Set<string>();
+    activeItems.forEach((item) => {
+      if (item.provinsi) setP.add(item.provinsi.trim());
+      item.perwakilan_daerah?.forEach((c) => {
+        const branchProv = c.wilayah.split(',')[0].trim();
+        if (branchProv) setP.add(branchProv);
+      });
+    });
     return ['Semua', ...Array.from(setP).sort()];
   }, [lazList]);
 
@@ -402,18 +436,25 @@ export default function DirektoriLazPage() {
                     </div>
 
                     {/* Location Info (Kabupaten, Provinsi) & Info Cabang */}
-                    <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
-                      <div className="flex items-center gap-1.5 min-w-0">
-                        <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0" />
-                        <span className="truncate font-medium">
-                          {laz.lokasi_singkat || (laz.kabupaten ? `${laz.kabupaten}, ${laz.provinsi}` : `${laz.provinsi}, Indonesia`)}
-                        </span>
+                    <div className="space-y-1.5">
+                      <div className="flex items-center justify-between gap-2 text-xs text-slate-500">
+                        <div className="flex items-center gap-1.5 min-w-0">
+                          <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0" />
+                          <span className="truncate font-medium">
+                            {laz.lokasi_singkat || (laz.kabupaten ? `${laz.kabupaten}, ${laz.provinsi}` : `${laz.provinsi}, Indonesia`)}
+                          </span>
+                        </div>
+                        {laz.jumlah_perwakilan && laz.jumlah_perwakilan > 0 ? (
+                          <span className="text-[10px] font-semibold text-[#5a4ea4] bg-[#f2f0fa] px-2 py-0.5 rounded-full border border-[#d6d0ee] shrink-0">
+                            +{laz.jumlah_perwakilan} Cabang
+                          </span>
+                        ) : null}
                       </div>
-                      {laz.jumlah_perwakilan && laz.jumlah_perwakilan > 0 ? (
-                        <span className="text-[10px] font-semibold text-[#5a4ea4] bg-[#f2f0fa] px-2 py-0.5 rounded-full border border-[#d6d0ee] shrink-0">
-                          +{laz.jumlah_perwakilan} Cabang
-                        </span>
-                      ) : null}
+                      {selectedProvinsi !== 'Semua' && laz.provinsi !== selectedProvinsi && (
+                        <div className="inline-flex items-center gap-1 text-[10px] font-semibold text-teal-700 bg-teal-50 px-2 py-0.5 rounded-md border border-teal-200">
+                          <span>Memiliki Cabang di {selectedProvinsi}</span>
+                        </div>
+                      )}
                     </div>
 
                     {/* Legalitas status preview */}
@@ -457,7 +498,7 @@ export default function DirektoriLazPage() {
             
             {/* Modal Header */}
             <div className="p-5 bg-gradient-to-r from-[#1e1b4b] to-[#382f6e] text-white flex items-start justify-between gap-3 shrink-0">
-              <div className="flex items-center gap-3 min-w-0">
+              <div className="flex items-stretch gap-3.5 min-w-0">
                 <button
                   type="button"
                   onClick={() => {
@@ -470,8 +511,8 @@ export default function DirektoriLazPage() {
                   }}
                   disabled={!activeLazDetail.logo_url}
                   title={activeLazDetail.logo_url ? 'Klik untuk memperbesar logo' : undefined}
-                  className={`relative h-12 w-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-sm overflow-hidden transition ${
-                    activeLazDetail.logo_url ? 'cursor-zoom-in hover:scale-105 hover:ring-2 hover:ring-white/60' : 'cursor-default'
+                  className={`relative w-[72px] sm:w-[76px] self-stretch rounded-xl bg-white p-2 flex items-center justify-center shrink-0 shadow-sm overflow-hidden transition ${
+                    activeLazDetail.logo_url ? 'cursor-zoom-in hover:scale-[1.03] hover:ring-2 hover:ring-white/60' : 'cursor-default'
                   }`}
                 >
                   {activeLazDetail.logo_url ? (
@@ -482,11 +523,11 @@ export default function DirektoriLazPage() {
                       referrerPolicy="no-referrer"
                     />
                   ) : (
-                    <Building2 className="w-6 h-6 text-[#5a4ea4]" />
+                    <Building2 className="w-7 h-7 text-[#5a4ea4]" />
                   )}
                 </button>
-                <div className="min-w-0">
-                  <div className="flex items-center gap-2 mb-1">
+                <div className="min-w-0 flex flex-col justify-between py-0.5">
+                  <div className="flex items-center gap-2 mb-1.5">
                     <span className="bg-white/20 text-white text-[10px] font-semibold px-2 py-0.5 rounded uppercase tracking-wider">
                       {activeLazDetail.skala}
                     </span>
@@ -494,7 +535,7 @@ export default function DirektoriLazPage() {
                       <CheckCircle2 className="w-3 h-3 text-emerald-400" /> Terdaftar Kemenag
                     </span>
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-white leading-snug line-clamp-2">
+                  <h3 className="text-base sm:text-lg font-bold text-white leading-tight line-clamp-2">
                     {activeLazDetail.name}
                   </h3>
                 </div>
