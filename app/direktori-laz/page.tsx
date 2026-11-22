@@ -211,19 +211,22 @@ export default function DirektoriLazPage() {
               <span className="text-2xl font-bold text-[#5a4ea4]">218</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Berizin Kemenag RI</span>
             </div>
+            {/* Skala Nasional: Hijau */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Nasional</span>
-              <span className="text-2xl font-bold text-emerald-600">{skalaCounts['Nasional'] || 39}</span>
+              <span className="text-2xl font-bold text-emerald-600">{skalaCounts['Nasional'] || 62}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Cakupan Seluruh RI</span>
             </div>
+            {/* Skala Provinsi: Tosca */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Provinsi</span>
-              <span className="text-2xl font-bold text-blue-600">{skalaCounts['Provinsi'] || 35}</span>
+              <span className="text-2xl font-bold text-[#31c0c6]">{skalaCounts['Provinsi'] || 49}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Tingkat Wilayah</span>
             </div>
+            {/* Skala Kab/Kota: Biru */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Kab/Kota</span>
-              <span className="text-2xl font-bold text-teal-600">{skalaCounts['Kabupaten/Kota'] || 144}</span>
+              <span className="text-2xl font-bold text-blue-600">{skalaCounts['Kabupaten/Kota'] || 107}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Akar Rumput Daerah</span>
             </div>
           </div>
@@ -359,8 +362,8 @@ export default function DirektoriLazPage() {
                             isNasional
                               ? 'bg-emerald-50 text-emerald-700 border border-emerald-200'
                               : isProvinsi
-                              ? 'bg-blue-50 text-blue-700 border border-blue-200'
-                              : 'bg-teal-50 text-teal-700 border border-teal-200'
+                              ? 'bg-teal-50 text-[#1d8286] border border-[#cbfbf1]'
+                              : 'bg-blue-50 text-blue-700 border border-blue-200'
                           }`}
                         >
                           {laz.skala}
