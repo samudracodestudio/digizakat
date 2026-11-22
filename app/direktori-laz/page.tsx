@@ -55,7 +55,7 @@ export default function DirektoriLazPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/data/laz_verified.json')
+    fetch(`/data/laz_verified.json?t=${Date.now()}`)
       .then((res) => res.json())
       .then((data: LAZItem[]) => {
         if (data && data.length > 0) {
