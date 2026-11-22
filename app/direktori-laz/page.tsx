@@ -28,6 +28,9 @@ interface LAZItem {
   name: string;
   skala: string;
   provinsi: string;
+  kabupaten?: string;
+  lokasi_singkat?: string;
+  alamat_lengkap?: string;
   simzat_detail_url: string;
   foz_member?: boolean;
   donation_url?: string;
@@ -382,11 +385,11 @@ export default function DirektoriLazPage() {
                       {laz.name}
                     </h3>
 
-                    {/* Location Info */}
-                    <div className="flex items-start gap-2 text-xs text-slate-500">
-                      <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0 mt-0.5" />
-                      <span className="line-clamp-2">
-                        {laz.alamat || `${laz.provinsi}, Indonesia`}
+                    {/* Location Info (Kabupaten, Provinsi) */}
+                    <div className="flex items-center gap-1.5 text-xs text-slate-500">
+                      <MapPin className="w-3.5 h-3.5 text-[#5a4ea4] shrink-0" />
+                      <span className="truncate font-medium">
+                        {laz.lokasi_singkat || (laz.kabupaten ? `${laz.kabupaten}, ${laz.provinsi}` : `${laz.provinsi}, Indonesia`)}
                       </span>
                     </div>
 
@@ -488,8 +491,15 @@ export default function DirektoriLazPage() {
                 <div className="flex items-start gap-2">
                   <MapPin className="w-4 h-4 text-[#5a4ea4] shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-semibold text-slate-900 block">Kantor:</span>
-                    <span>{activeLazDetail.alamat || `${activeLazDetail.provinsi}, Indonesia`}</span>
+                    <span className="font-semibold text-slate-900 block">Lokasi:</span>
+                    <span className="font-medium text-slate-800">
+                      {activeLazDetail.lokasi_singkat || `${activeLazDetail.provinsi}, Indonesia`}
+                    </span>
+                    {activeLazDetail.alamat_lengkap && (
+                      <span className="text-[11px] text-slate-500 block mt-0.5">
+                        {activeLazDetail.alamat_lengkap}
+                      </span>
+                    )}
                   </div>
                 </div>
 

@@ -19,7 +19,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bogor",
+    "lokasi_singkat": "Bogor, Jawa Barat",
+    "alamat_lengkap": "Ruko Taman Yasmin Sektor VI , Jl. KH. R. Abdullah bin Nuh No. 212, RT.05 RW.09 Curug Mekar , Kec. Bogor Barat, Kota Bogor , Jawa Barat 16113"
   },
   {
     "no": 2,
@@ -41,7 +44,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Gegerkalong Hilir No.155A"
   },
   {
     "no": 3,
@@ -63,7 +69,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jln Sisingamangaraja, Kebayoran Baru, No.6"
   },
   {
     "no": 4,
@@ -85,7 +94,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "Jln. Gubeng Kertajaya VIIIC/No.17 Surabaya"
   },
   {
     "no": 5,
@@ -107,7 +119,10 @@
     "logo_url": "/logos/dt-peduli.png",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Gegerkalong Girang No.32"
   },
   {
     "no": 6,
@@ -129,7 +144,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sidoarjo",
+    "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
+    "alamat_lengkap": "Ruko Citra City Blok R-28 Sarirogo, Sidoarjo, Jawa Timur"
   },
   {
     "no": 7,
@@ -151,7 +169,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sidoarjo",
+    "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
+    "alamat_lengkap": "Jl Raya Buncitan No 1"
   },
   {
     "no": 8,
@@ -173,7 +194,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Tangerang Selatan",
+    "lokasi_singkat": "Tangerang Selatan, Banten",
+    "alamat_lengkap": "Jl.Rawabuntu Utara Blok Y No 3 Rawabuntu Serpong Tangerang Selatan"
   },
   {
     "no": 9,
@@ -195,7 +219,10 @@
     "logo_url": "/logos/lazismu.png",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Jl. Jambrut No.5, Kenari, Kec. Senen, Jakarta Pusat 10430"
   },
   {
     "no": 10,
@@ -217,7 +244,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sleman",
+    "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
+    "alamat_lengkap": "Jl. Ring Road Bar. No.66, Nusupan, Trihanggo, Kec. Gamping, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55291"
   },
   {
     "no": 11,
@@ -239,7 +269,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "Perum ikip Gunung Anyar B 48 Surabaya"
   },
   {
     "no": 12,
@@ -261,7 +294,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jambi",
+    "lokasi_singkat": "Jambi",
+    "alamat_lengkap": "Jl. HOS. Cokroaminoto, Simpang III Sipin"
   },
   {
     "no": 13,
@@ -283,7 +319,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl Cibaduyut Lama, Komplek Sauyunan Raya 1 No 14"
   },
   {
     "no": 14,
@@ -305,7 +344,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Makassar",
+    "lokasi_singkat": "Makassar, Sulawesi Selatan",
+    "alamat_lengkap": "Jl. Baji Rupa No. 8 (Gedung Serbaguna Lt.2)"
   },
   {
     "no": 15,
@@ -327,7 +369,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "Jalan Gayungsari Barat 1, No.40"
   },
   {
     "no": 16,
@@ -349,7 +394,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Perintis Kemerdekaan No. 2"
   },
   {
     "no": 17,
@@ -371,7 +419,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Karawang",
+    "lokasi_singkat": "Kab. Karawang, Jawa Barat",
+    "alamat_lengkap": "Jl. Singaperbangsa No. 09"
   },
   {
     "no": 18,
@@ -393,7 +444,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Pasuruan",
+    "lokasi_singkat": "Kab. Pasuruan, Jawa Timur",
+    "alamat_lengkap": "Jl Raya Sidogiri"
   },
   {
     "no": 19,
@@ -415,7 +469,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bekasi",
+    "lokasi_singkat": "Bekasi, Jawa Barat",
+    "alamat_lengkap": "Jl. Rajawali Raya No.73, RT.009/RW.002, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144, Indonesia"
   },
   {
     "no": 20,
@@ -437,7 +494,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Makassar",
+    "lokasi_singkat": "Makassar, Sulawesi Selatan",
+    "alamat_lengkap": "Jl. Urip Sumoharjo no.15"
   },
   {
     "no": 21,
@@ -459,7 +519,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Semarang",
+    "lokasi_singkat": "Semarang, Jawa Tengah",
+    "alamat_lengkap": "Jl. Jati Raya Perumnas No.B6, Srondol Wetan, Kec. Banyumanik, Kota Semarang, Jawa Tengah 50263"
   },
   {
     "no": 22,
@@ -481,7 +544,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Centennial Tower, Jl. Gatot Subroto No.24-25 Lantai 22, RT 02 RW 02"
   },
   {
     "no": 23,
@@ -503,7 +569,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Ruko Mitra Matraman, Jl. Matraman Raya No.27 Blok A1 Rt.1 Rw.4 Kebon Manggis"
   },
   {
     "no": 24,
@@ -525,7 +594,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Kubu Raya",
+    "lokasi_singkat": "Kab. Kubu Raya, Kalimantan Barat",
+    "alamat_lengkap": "Jalan Sungai Raya Dalam Gg.Imaduddin"
   },
   {
     "no": 25,
@@ -547,7 +619,10 @@
     "logo_url": "/logos/bsi-maslahat.png",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Jl Surabaya No 58"
   },
   {
     "no": 26,
@@ -569,7 +644,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Menara Bank Mega Syariah, Jl. H. R. Rasuna Said No.Kav. 19 A, RT.8/RW.4, Kuningan Tim.,"
   },
   {
     "no": 27,
@@ -591,7 +669,10 @@
     "logo_url": "/logos/dompet-dhuafa.png",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Philanthropy Building Jl. Warung Jati Barat No.14 Jakarta Selatan 12540, Indonesia"
   },
   {
     "no": 28,
@@ -613,7 +694,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Denpasar",
+    "lokasi_singkat": "Denpasar, Bali",
+    "alamat_lengkap": "Jl Diponegoro No 222 Sanglah"
   },
   {
     "no": 29,
@@ -635,7 +719,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bekasi",
+    "lokasi_singkat": "Bekasi, Jawa Barat",
+    "alamat_lengkap": "Jl. Caman Raya No.65, RT.003/RW.003"
   },
   {
     "no": 30,
@@ -657,7 +744,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jalan Teluk Jakarta No.9 Komp. AL Rawa Bambu, Pasar Minggu, Jakarta Selatan 12520"
   },
   {
     "no": 31,
@@ -679,7 +769,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "Jalan Baratajaya XXII no 20"
   },
   {
     "no": 32,
@@ -701,7 +794,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jln. Mampang Prapatan Raya No.61"
   },
   {
     "no": 33,
@@ -723,7 +819,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Ruko Komplek Kurdi Regency No. 33A, Jl. Inhoftank"
   },
   {
     "no": 34,
@@ -745,7 +844,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Tangerang",
+    "lokasi_singkat": "Kab. Tangerang, Banten",
+    "alamat_lengkap": "ICE Business Park G 16/17 Jl. BSD Grand Boulevard, BSD City Tangerang"
   },
   {
     "no": 35,
@@ -767,7 +869,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jalan Gelap Nyawang Nomor 4"
   },
   {
     "no": 36,
@@ -789,7 +894,10 @@
     "logo_url": "/logos/rumah-zakat.png",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jalan Turangga Nomor 33"
   },
   {
     "no": 37,
@@ -811,7 +919,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Sidomukti No. 99H"
   },
   {
     "no": 38,
@@ -833,7 +944,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Karanganyar",
+    "lokasi_singkat": "Kab. Karanganyar, Jawa Tengah",
+    "alamat_lengkap": "Komplek Griya Smart, Jl. Tentara Pelajar, Jetak"
   },
   {
     "no": 39,
@@ -855,7 +969,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Semarang",
+    "lokasi_singkat": "Semarang, Jawa Tengah",
+    "alamat_lengkap": "Jl. Tusam Timur Raya No. 44, Pedalangan, Banyumanik, Semarang"
   },
   {
     "no": 40,
@@ -877,7 +994,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Ir. H. Juanda No. 285"
   },
   {
     "no": 41,
@@ -899,7 +1019,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sleman",
+    "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
+    "alamat_lengkap": "Gedung KH. Wahid Hasyim Lt. 1 Jl. Kaliurang KM. 14,5"
   },
   {
     "no": 42,
@@ -921,7 +1044,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kendari",
+    "lokasi_singkat": "Kendari, Sulawesi Tenggara",
+    "alamat_lengkap": "Jl. Prof Abdurauf Tarimana"
   },
   {
     "no": 43,
@@ -943,7 +1069,10 @@
     "logo_url": "/logos/lazisnu.png",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Jl. Kramat Raya No.164, RT.7/RW.2, Kenari, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10110"
   },
   {
     "no": 44,
@@ -965,7 +1094,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Gedung Menara Dakwah, Jl. Kramat Raya No.45 Lantai 1, Kramat, Kec. Senen, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10450"
   },
   {
     "no": 45,
@@ -987,7 +1119,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Medan",
+    "lokasi_singkat": "Medan, Sumatera Utara",
+    "alamat_lengkap": "Jl. Setia Budi No. 123 C"
   },
   {
     "no": 46,
@@ -1009,7 +1144,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jl. Raya Condet No. 27 G"
   },
   {
     "no": 47,
@@ -1031,7 +1169,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Tangerang",
+    "lokasi_singkat": "Tangerang, Banten",
+    "alamat_lengkap": "Kawasan Bisnis CBD Cileduk, Jl. HOS Cokroaminoto No.21, RT.001/RW.001, Karang Tengah, Kec. Karang Tengah, Kota Tangerang, Banten 15157"
   },
   {
     "no": 48,
@@ -1053,7 +1194,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. Kalibata Utara II No.84 10, RT.13/RW.2, Kalibata, Kec. Pancoran, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12760"
   },
   {
     "no": 49,
@@ -1075,7 +1219,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "JL. KETINTANG TIMUR PTT VB SURABAYA"
   },
   {
     "no": 50,
@@ -1097,7 +1244,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. Tebet Utara III No.21, RT.8/RW.2,"
   },
   {
     "no": 51,
@@ -1119,7 +1269,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jambi",
+    "lokasi_singkat": "Jambi",
+    "alamat_lengkap": "Jl. Otto iskandardinata No.15"
   },
   {
     "no": 52,
@@ -1141,7 +1294,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "WISMA BAKRIE 1 LANTAI 2 JALAN RASUNA SAID KAV B1, RT 05 RW 05"
   },
   {
     "no": 53,
@@ -1163,7 +1319,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Serang",
+    "lokasi_singkat": "Serang, Banten",
+    "alamat_lengkap": "Jl. Ciwaru Raya Pondok Citra 1 No. 1B"
   },
   {
     "no": 54,
@@ -1185,7 +1344,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Depok",
+    "lokasi_singkat": "Depok, Jawa Barat",
+    "alamat_lengkap": "Jl. K.H.M.Yusuf Raya No.95"
   },
   {
     "no": 55,
@@ -1207,7 +1369,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Kalibata Office Park, Jl. KH. Guru Amin, No.21 No. Blok H, Kode Pos 12780"
   },
   {
     "no": 56,
@@ -1229,7 +1394,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung Barat",
+    "lokasi_singkat": "Kab. Bandung Barat, Jawa Barat",
+    "alamat_lengkap": "Jl. Gadobangkong No.19"
   },
   {
     "no": 57,
@@ -1251,7 +1419,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. Ulujami Raya No.111, RT.2/RW.7, Ulujami, Kec. Pesanggrahan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12250"
   },
   {
     "no": 58,
@@ -1273,7 +1444,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Makassar",
+    "lokasi_singkat": "Makassar, Sulawesi Selatan",
+    "alamat_lengkap": "Wisma Kalla, Jl. DR. Ratulangi No. 8"
   },
   {
     "no": 59,
@@ -1295,7 +1469,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Mataram",
+    "lokasi_singkat": "Mataram, Nusa Tenggara Barat",
+    "alamat_lengkap": "Jl. Bung Karno No. 76B Pagesangan Timur Kec. Mataram Kota Mataram"
   },
   {
     "no": 60,
@@ -1317,7 +1494,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Tangerang Selatan",
+    "lokasi_singkat": "Tangerang Selatan, Banten",
+    "alamat_lengkap": "Jl Haji Cari No.58"
   },
   {
     "no": 61,
@@ -1339,7 +1519,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "jl. Ketintang Madya 1 No 6C"
   },
   {
     "no": 62,
@@ -1361,7 +1544,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jalan Buahbatu No. 296"
   },
   {
     "no": 63,
@@ -1383,7 +1569,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. Sungai Sambas I No.10 Keramat Pela Kebayoran Baru Jakarta Selatan"
   },
   {
     "no": 64,
@@ -1405,13 +1594,16 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Jombang",
+    "lokasi_singkat": "Kab. Jombang, Jawa Timur",
+    "alamat_lengkap": "JL. Wr, Supratman No 38"
   },
   {
     "no": 65,
     "name": "LAZ  WAQAF INFAQ ZAKAT DAN SODAQOH PESANTREN",
     "skala": "Nasional",
-    "provinsi": "DKI Jakarta",
+    "provinsi": "Jawa Barat",
     "simzat_detail_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/26bc7b38e321b6b5bc3789167dff35a6c9f44544a8403428842bf86c8978a31ee0316ef802e4407089f9899cc62146ec4e797eac09eeb32df4a61e1f1c6f27bfeXn2LCWcC-17Dg28BPekb3MpHD9nNQt49OX2gEPSfXY~",
     "foz_member": false,
     "donation_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/b4b440bb09a2d489b625acfd33eb6893b1612562a6b2892c9fb8a1d8649fa81321cff51b9083877b121f444d025763f876ff8518c35d4f802de577a841cbbfd8EQhXQbafkFKAv4CqcuioylKwP2efnSLzpEPQX3LzuVQ~",
@@ -1427,7 +1619,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Cimahi",
+    "lokasi_singkat": "Cimahi, Jawa Barat",
+    "alamat_lengkap": "Komplek Padasuka Indah B11"
   },
   {
     "no": 66,
@@ -1449,7 +1644,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Kulon Progo",
+    "lokasi_singkat": "Kab. Kulon Progo, D.I. Yogyakarta",
+    "alamat_lengkap": "Jl. Kyai Ronggo, Dk VII Dalangan, Rt. 015, Rw. 007, Triharjo, Wates, Kulon Progo"
   },
   {
     "no": 67,
@@ -1471,7 +1669,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Pasuruan",
+    "lokasi_singkat": "Pasuruan, Jawa Timur",
+    "alamat_lengkap": "Jl. Raden Patah No. 45"
   },
   {
     "no": 68,
@@ -1493,7 +1694,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Cimahi",
+    "lokasi_singkat": "Cimahi, Jawa Barat",
+    "alamat_lengkap": "Komplek Padasuka Indah B11"
   },
   {
     "no": 69,
@@ -1515,7 +1719,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Yogyakarta",
+    "lokasi_singkat": "Yogyakarta, D.I. Yogyakarta",
+    "alamat_lengkap": "jl i Dewa nyoman Oka 28"
   },
   {
     "no": 70,
@@ -1537,7 +1744,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Subang",
+    "lokasi_singkat": "Kab. Subang, Jawa Barat",
+    "alamat_lengkap": "Jl. Raya Subang - Bandung Km 12"
   },
   {
     "no": 71,
@@ -1559,7 +1769,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Yogyakarta",
+    "lokasi_singkat": "Yogyakarta, D.I. Yogyakarta",
+    "alamat_lengkap": "Jl. Timoho II Gg. Delima No. 2"
   },
   {
     "no": 72,
@@ -1581,7 +1794,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Batam",
+    "lokasi_singkat": "Batam, Kepulauan Riau",
+    "alamat_lengkap": "Jl. Ahmad Yani, Ruko Alexandria Blok B8 No. 61"
   },
   {
     "no": 73,
@@ -1603,7 +1819,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Ambon",
+    "lokasi_singkat": "Ambon, Maluku",
+    "alamat_lengkap": "jln. Warasia Desa Batu Merah, Kec. Sirimau"
   },
   {
     "no": 74,
@@ -1625,7 +1844,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Klaten",
+    "lokasi_singkat": "Kab. Klaten, Jawa Tengah",
+    "alamat_lengkap": "Jl. Mayor Kusmanto Gg Ketapang Perak YKP RT.03/RW.04 Ngingas Baru"
   },
   {
     "no": 75,
@@ -1647,7 +1869,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cilacap",
+    "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
+    "alamat_lengkap": "Jl. Sulawesi Perum Puri Tanjung Intan No.B2"
   },
   {
     "no": 76,
@@ -1669,7 +1894,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Cijagra no 21"
   },
   {
     "no": 77,
@@ -1691,7 +1919,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Malang",
+    "lokasi_singkat": "Malang, Jawa Timur",
+    "alamat_lengkap": "Jl. Danau Matana Blok F6B-7"
   },
   {
     "no": 78,
@@ -1713,7 +1944,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sleman",
+    "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
+    "alamat_lengkap": "Jalan Kranggan, Kranggan 1"
   },
   {
     "no": 79,
@@ -1735,7 +1969,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Riung Hegar Raya No. 10 Rt. 007 Rw. 008"
   },
   {
     "no": 80,
@@ -1757,7 +1994,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jalan Cipaku 1 No. 16"
   },
   {
     "no": 81,
@@ -1779,7 +2019,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung",
+    "lokasi_singkat": "Kab. Bandung, Jawa Barat",
+    "alamat_lengkap": "Jalan Sungai Citarik, Desa Sukamanah,"
   },
   {
     "no": 82,
@@ -1801,7 +2044,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Jember",
+    "lokasi_singkat": "Kab. Jember, Jawa Timur",
+    "alamat_lengkap": "Jl. Letjen S. Parman No 10 Sumbersari"
   },
   {
     "no": 83,
@@ -1823,7 +2069,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Tegal",
+    "lokasi_singkat": "Tegal, Jawa Tengah",
+    "alamat_lengkap": "Jln Surabayan, Rt004/Rw014, Panggung, Tegal Timur, Kota Tegal"
   },
   {
     "no": 84,
@@ -1845,7 +2094,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Lumajang",
+    "lokasi_singkat": "Kab. Lumajang, Jawa Timur",
+    "alamat_lengkap": "JL. VETERAN NO 57 KEPUHARJO LUMAJANG"
   },
   {
     "no": 85,
@@ -1867,7 +2119,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sleman",
+    "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
+    "alamat_lengkap": "Jl. Sidanti No. 22 Sambisari Joho"
   },
   {
     "no": 86,
@@ -1889,7 +2144,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Pati",
+    "lokasi_singkat": "Kab. Pati, Jawa Tengah",
+    "alamat_lengkap": "Gedung Ikosindo, Jl. Penjawi Gg. 5 No.RT 12 Lantai 2 RT.12 RW.3 Randukuning"
   },
   {
     "no": 87,
@@ -1911,7 +2169,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Medan",
+    "lokasi_singkat": "Medan, Sumatera Utara",
+    "alamat_lengkap": "Jalan Brigjend. Katamso No.11"
   },
   {
     "no": 88,
@@ -1933,7 +2194,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Ponorogo",
+    "lokasi_singkat": "Kab. Ponorogo, Jawa Timur",
+    "alamat_lengkap": "Jl. Ahmad Yani no. 278, Purbosuman"
   },
   {
     "no": 89,
@@ -1955,7 +2219,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Sukaraja Town Square kavling D dan E, Jl. Sukaraja II"
   },
   {
     "no": 90,
@@ -1977,7 +2244,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandar Lampung",
+    "lokasi_singkat": "Bandar Lampung, Lampung",
+    "alamat_lengkap": "Komplek Pujangga Alam Garden Blok B2 No. 3"
   },
   {
     "no": 91,
@@ -1999,7 +2269,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Cibubur Country Boulevard RBOF No. 3"
   },
   {
     "no": 92,
@@ -2021,7 +2294,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Magelang",
+    "lokasi_singkat": "Magelang, Jawa Tengah",
+    "alamat_lengkap": "Jl. Serayu Timur No.2 Menowo Kedungsari"
   },
   {
     "no": 93,
@@ -2043,7 +2319,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Batam",
+    "lokasi_singkat": "Batam, Kepulauan Riau",
+    "alamat_lengkap": "Kantor Ruko Buana Impian Blok B1 No. 14"
   },
   {
     "no": 94,
@@ -2065,7 +2344,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. Raya Desa Putra No.12 RT.11 RW.5"
   },
   {
     "no": 95,
@@ -2087,7 +2369,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Semarang",
+    "lokasi_singkat": "Semarang, Jawa Tengah",
+    "alamat_lengkap": "Jl. Sambiroto 1 Dalam No.313, RT.08/RW.02, Sambiroto, Kec. Tembalang, Kota Semarang, Jawa Tengah 50276"
   },
   {
     "no": 96,
@@ -2109,7 +2394,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "Jl. Tanjung Sadari No. 42 Perak Barat, Krembangan, Surabaya"
   },
   {
     "no": 97,
@@ -2131,7 +2419,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bekasi",
+    "lokasi_singkat": "Kab. Bekasi, Jawa Barat",
+    "alamat_lengkap": "Jl. Perjuangan No. 44 RT.02 RW.02 Desa Tambun Kec. Tambun Selatan"
   },
   {
     "no": 98,
@@ -2153,7 +2444,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Yogyakarta",
+    "lokasi_singkat": "Yogyakarta, D.I. Yogyakarta",
+    "alamat_lengkap": "Jl Veteran Gang Madukoro UH / 768 C"
   },
   {
     "no": 99,
@@ -2175,7 +2469,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jalan Langga Raya No.2 Lenteng Agung, Jagakarsa Jakarta Selatan"
   },
   {
     "no": 100,
@@ -2197,7 +2494,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "DeepSpace Office Jl. Melawai X No.9"
   },
   {
     "no": 101,
@@ -2219,7 +2519,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cilacap",
+    "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
+    "alamat_lengkap": "JL CERME"
   },
   {
     "no": 102,
@@ -2241,7 +2544,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Samarinda",
+    "lokasi_singkat": "Samarinda, Kalimantan Timur",
+    "alamat_lengkap": "Jl Suryanata Gg Kopta RT 58 nomor 26"
   },
   {
     "no": 103,
@@ -2263,7 +2569,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Garut",
+    "lokasi_singkat": "Kab. Garut, Jawa Barat",
+    "alamat_lengkap": "Jl. KH. Hasan Arief Perum Banyuherang Blok A No 5"
   },
   {
     "no": 104,
@@ -2285,7 +2594,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Batang",
+    "lokasi_singkat": "Kab. Batang, Jawa Tengah",
+    "alamat_lengkap": "Pondok Modern Tazakka, Desa Sidayu Kec. Bandar Kab. Batang Jawa Tengah 51254"
   },
   {
     "no": 105,
@@ -2307,7 +2619,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cilacap",
+    "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
+    "alamat_lengkap": "Jl. Rajiman No. 36"
   },
   {
     "no": 106,
@@ -2329,7 +2644,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Karawang",
+    "lokasi_singkat": "Kab. Karawang, Jawa Barat",
+    "alamat_lengkap": "Jl. Jend A. Yani (Seberang Superindo Mall Cikampek)"
   },
   {
     "no": 107,
@@ -2351,7 +2669,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Malang",
+    "lokasi_singkat": "Malang, Jawa Timur",
+    "alamat_lengkap": "Jl Loncat Indah Hunian Islami De Prima Kav B 6"
   },
   {
     "no": 108,
@@ -2373,7 +2694,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung",
+    "lokasi_singkat": "Kab. Bandung, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 109,
@@ -2395,7 +2719,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sleman",
+    "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
+    "alamat_lengkap": "Jl. Jambu Sari 2 no 8, Perumahan Jambu Sari Indah, Jetis"
   },
   {
     "no": 110,
@@ -2417,7 +2744,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Pekanbaru",
+    "lokasi_singkat": "Pekanbaru, Riau",
+    "alamat_lengkap": "Jl. Wisma PGRI No. 31a"
   },
   {
     "no": 111,
@@ -2439,7 +2769,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Mimika",
+    "lokasi_singkat": "Kab. Mimika, Papua",
+    "alamat_lengkap": "Jl Poros SP 2 -SP 5"
   },
   {
     "no": 112,
@@ -2461,13 +2794,16 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Depok",
+    "lokasi_singkat": "Depok, Jawa Barat",
+    "alamat_lengkap": "Jl. Raya Tapos No.17 A, Tapos, Kota Depok, Jawa Barat 16517"
   },
   {
     "no": 113,
     "name": "LAZ  YAYASAN AS SALAAM JAYAPURA",
     "skala": "Provinsi",
-    "provinsi": "Papua",
+    "provinsi": "Jawa Tengah",
     "simzat_detail_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/6f19b6546d81c44335a63dd50d791c299004b63e2d04944fc72f9128eefa1f475319cd78812944aeaae1b419da2dd2ae7cb10b04448ae164d0cf52a52d013238wxx4vI_JdTBt4ogGOi5PgenDV-__mns4mefcJoJcrcI~",
     "foz_member": true,
     "donation_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/9ad2ecfbe670c2b83584d3947eb1b18cd65cd63f406208e6176242c449d41a5cbfadf0383e9a40be85b498a244624b8a0767d778d6ecdf6fc38dcfe9a6eaa854r5UKhqCcYrVvaMmPAzLLTX6KF32a8EqeoonBxV_XQ9A~",
@@ -2483,7 +2819,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surakarta",
+    "lokasi_singkat": "Surakarta, Jawa Tengah",
+    "alamat_lengkap": "Jl. Ahmad Yani No. 305"
   },
   {
     "no": 114,
@@ -2505,7 +2844,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Denpasar",
+    "lokasi_singkat": "Denpasar, Bali",
+    "alamat_lengkap": "Jalan Gunung Bromo nomor 53"
   },
   {
     "no": 115,
@@ -2527,7 +2869,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "JL. ECENG NO. 6, LINGKAR SELATAN, KOTA BANDUNG"
   },
   {
     "no": 116,
@@ -2549,7 +2894,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Cirebon",
+    "lokasi_singkat": "Cirebon, Jawa Barat",
+    "alamat_lengkap": "Jl. Gelatik Raya No. 3"
   },
   {
     "no": 117,
@@ -2571,7 +2919,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surakarta",
+    "lokasi_singkat": "Surakarta, Jawa Tengah",
+    "alamat_lengkap": "Jl. Ahmad Yani No. 305"
   },
   {
     "no": 118,
@@ -2593,7 +2944,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Jl. Batu Tulis XIV No. 1, Juanda III, Kel. Kebon Kelapa, Kec. Gambir, Kota Adm. Jakarta Pusat 10120,"
   },
   {
     "no": 119,
@@ -2615,7 +2969,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sragen",
+    "lokasi_singkat": "Kab. Sragen, Jawa Tengah",
+    "alamat_lengkap": "JL Asahan No 4 A RT 5/IV Mageru"
   },
   {
     "no": 120,
@@ -2637,7 +2994,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cirebon",
+    "lokasi_singkat": "Kab. Cirebon, Jawa Barat",
+    "alamat_lengkap": "Jl. Pangeran Cakrabuana No.179, Blok Gudang Air,"
   },
   {
     "no": 121,
@@ -2659,7 +3019,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Padang",
+    "lokasi_singkat": "Padang, Sumatera Barat",
+    "alamat_lengkap": "Jl Air Dingin"
   },
   {
     "no": 122,
@@ -2681,7 +3044,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Padang",
+    "lokasi_singkat": "Padang, Sumatera Barat",
+    "alamat_lengkap": "Jl. Dokter Wahidin II No. 23A, Ganting Parak Gadang, Kec. Padang Timur, Kota Padang"
   },
   {
     "no": 123,
@@ -2703,7 +3069,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jl. Cipinang Besar No. 2A"
   },
   {
     "no": 124,
@@ -2725,7 +3094,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 125,
@@ -2747,7 +3119,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. kalijati Indah 2 No.5"
   },
   {
     "no": 126,
@@ -2769,7 +3144,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Tangerang",
+    "lokasi_singkat": "Kab. Tangerang, Banten",
+    "alamat_lengkap": "Jl. Raya Mauk Km. 19"
   },
   {
     "no": 127,
@@ -2791,7 +3169,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung Barat",
+    "lokasi_singkat": "Kab. Bandung Barat, Jawa Barat",
+    "alamat_lengkap": "Jl H. Mukti II No. 38"
   },
   {
     "no": 128,
@@ -2813,7 +3194,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Kutai Timur",
+    "lokasi_singkat": "Kab. Kutai Timur, Kalimantan Timur",
+    "alamat_lengkap": "Jl. Dayung, No. 8"
   },
   {
     "no": 129,
@@ -2835,7 +3219,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Depok",
+    "lokasi_singkat": "Depok, Jawa Barat",
+    "alamat_lengkap": "JL. Raya Kalimulya, Cilodong, Kota Depok"
   },
   {
     "no": 130,
@@ -2857,7 +3244,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jalan Pemuda no 1G"
   },
   {
     "no": 131,
@@ -2879,7 +3269,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Pekanbaru",
+    "lokasi_singkat": "Pekanbaru, Riau",
+    "alamat_lengkap": "Jl. Tuanku Tambusai"
   },
   {
     "no": 132,
@@ -2901,7 +3294,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cilacap",
+    "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
+    "alamat_lengkap": "Jalan Cendrawasih No 21"
   },
   {
     "no": 133,
@@ -2923,7 +3319,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Blok Legok, Kp. Batong, Desa Tangkil,"
   },
   {
     "no": 134,
@@ -2945,7 +3344,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Padasuka No 160"
   },
   {
     "no": 135,
@@ -2967,7 +3369,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Masjid Nurul Taqwa Lt.Dasar Jl.Medan Merdeka Barat No.21 Jakarta 10110"
   },
   {
     "no": 136,
@@ -2989,7 +3394,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Blitar",
+    "lokasi_singkat": "Kab. Blitar, Jawa Timur",
+    "alamat_lengkap": "Dusun Jatinom"
   },
   {
     "no": 137,
@@ -3011,7 +3419,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Gedung Olahraga BRI Lantai 2, Jalan Jenderal Sudirman Kav. 44-46"
   },
   {
     "no": 138,
@@ -3033,7 +3444,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bengkalis",
+    "lokasi_singkat": "Kab. Bengkalis, Riau",
+    "alamat_lengkap": "Jalan Mawar No. 5"
   },
   {
     "no": 139,
@@ -3055,7 +3469,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bekasi",
+    "lokasi_singkat": "Bekasi, Jawa Barat",
+    "alamat_lengkap": "Rukan Emerald Blok UF 08 Sumarecon Bekasi"
   },
   {
     "no": 140,
@@ -3077,7 +3494,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Komp. Puri Asri No.4 RT.07/03 Duren Tiga Kec. Pancoran. Kota Jakarta Selatan. DKI Jakarta INDONESIA – 12760"
   },
   {
     "no": 141,
@@ -3099,7 +3519,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. TB Simatupang No. 18"
   },
   {
     "no": 142,
@@ -3121,7 +3544,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Barat",
+    "lokasi_singkat": "Jakarta Barat, DKI Jakarta",
+    "alamat_lengkap": "Jl. Kedoya Raya No.38 Kedoya Selatan Jakarta Barat"
   },
   {
     "no": 143,
@@ -3143,7 +3569,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Semarang",
+    "lokasi_singkat": "Semarang, Jawa Tengah",
+    "alamat_lengkap": "Jl. Raya Kaligawe KM.4 Semarang"
   },
   {
     "no": 144,
@@ -3165,7 +3594,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Melong Asih I No.03, Cijerah, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40213"
   },
   {
     "no": 145,
@@ -3187,7 +3619,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Ciamis",
+    "lokasi_singkat": "Kab. Ciamis, Jawa Barat",
+    "alamat_lengkap": "Dusun Wetan"
   },
   {
     "no": 146,
@@ -3209,7 +3644,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Parakan Arum No.26"
   },
   {
     "no": 147,
@@ -3231,7 +3669,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cilacap",
+    "lokasi_singkat": "Kab. Cilacap, Jawa Tengah",
+    "alamat_lengkap": "Jl dr Radjiman No. 44"
   },
   {
     "no": 148,
@@ -3253,7 +3694,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cirebon",
+    "lokasi_singkat": "Kab. Cirebon, Jawa Barat",
+    "alamat_lengkap": "Jl. Jati Raya no 1"
   },
   {
     "no": 149,
@@ -3275,7 +3719,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Yogyakarta",
+    "lokasi_singkat": "Yogyakarta, D.I. Yogyakarta",
+    "alamat_lengkap": "Gedung PDHI “Sasonoworo”. Jl. Alun-Alun Utara, Ngupasan, Kec. Gondomanan, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55122"
   },
   {
     "no": 150,
@@ -3297,7 +3744,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Makassar",
+    "lokasi_singkat": "Makassar, Sulawesi Selatan",
+    "alamat_lengkap": "Jalan Urip Sumoharjo Km 4 No 182"
   },
   {
     "no": 151,
@@ -3319,7 +3769,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Batang",
+    "lokasi_singkat": "Kab. Batang, Jawa Tengah",
+    "alamat_lengkap": "Jl. Kresna I Blok E-2"
   },
   {
     "no": 152,
@@ -3341,7 +3794,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sukoharjo",
+    "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
+    "alamat_lengkap": "Jln. Tentara Pelajar, Gang Saturnus, Gabahan RT 5/RW 12"
   },
   {
     "no": 153,
@@ -3363,7 +3819,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sukoharjo",
+    "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
+    "alamat_lengkap": "Mojotegalan Rt 02/01, Joho, Kec Sukoharjo, Kab Sukoharjo, Jawa Tengah 57513"
   },
   {
     "no": 154,
@@ -3385,7 +3844,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sukoharjo",
+    "lokasi_singkat": "Kab. Sukoharjo, Jawa Tengah",
+    "alamat_lengkap": "Jl. Mendungan, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57145"
   },
   {
     "no": 155,
@@ -3407,7 +3869,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bantul",
+    "lokasi_singkat": "Kab. Bantul, D.I. Yogyakarta",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 156,
@@ -3429,7 +3894,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bukittinggi",
+    "lokasi_singkat": "Bukittinggi, Sumatera Barat",
+    "alamat_lengkap": "Jalan Tabek tuhua RT 03 RW 02"
   },
   {
     "no": 157,
@@ -3451,13 +3919,16 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jl. Musholla Fathul Ulum"
   },
   {
     "no": 158,
     "name": "Lembaga Amil Zakat Masjid Pogung Dalangan Peduli (LAZ MPD Peduli)",
     "skala": "Kabupaten/Kota",
-    "provinsi": "D.I. Yogyakarta",
+    "provinsi": "Jawa Barat",
     "simzat_detail_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/d9e92ee2cf096dbdc7fc6cd54b6bcf95f5d240518ae48e1166a459ddc6628cd35c6d7e10eb56d1383d2906607a892a8e52ca55332f66b356f25e7a20f303a513w8iVvKMw6iqX9-DRcSQUXoLTNVWQCT1xySqdAWDplfw~",
     "foz_member": false,
     "donation_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/1b28f381bade79416de1114252d48fb9007e604029ea7bf2531d40918576aed67ceca0fdee62514b4c5ef618188f706e02f7834b2b3169b047f886d691025691dQwUFtxQAuTMmy-_TgsK6rnhuxvnkwAaXAhqiemcmB4~",
@@ -3473,7 +3944,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Jl. Jami RT. 3 RW. 4 Desa Sukaja"
   },
   {
     "no": 159,
@@ -3495,7 +3969,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung",
+    "lokasi_singkat": "Kab. Bandung, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 160,
@@ -3517,7 +3994,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Tangerang Selatan",
+    "lokasi_singkat": "Tangerang Selatan, Banten",
+    "alamat_lengkap": "Jl.Letnan Soetopo Ruko Golden Madrid X Blok B no 25,Kel.Rawa Mekar Jaya, Serpong, Kota Tangerang Selatan, Banten 15418"
   },
   {
     "no": 161,
@@ -3539,7 +4019,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Jl. Cempaka Putih Tengah XXX No.30/7"
   },
   {
     "no": 162,
@@ -3561,7 +4044,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Banda Aceh",
+    "lokasi_singkat": "Banda Aceh, Aceh",
+    "alamat_lengkap": "Jl.Syeh Abdul Rauf, Kopelma Darussalam"
   },
   {
     "no": 163,
@@ -3583,7 +4069,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Cianjur",
+    "lokasi_singkat": "Kab. Cianjur, Jawa Barat",
+    "alamat_lengkap": "jl aqso no 12 kp tegal lega"
   },
   {
     "no": 164,
@@ -3605,7 +4094,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Jl. Jami RT. 3 RW. 4 Desa Sukaja"
   },
   {
     "no": 165,
@@ -3627,7 +4119,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandar Lampung",
+    "lokasi_singkat": "Bandar Lampung, Lampung",
+    "alamat_lengkap": "Jln. Kopi no 20, Rajabasa"
   },
   {
     "no": 166,
@@ -3649,7 +4144,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Padang",
+    "lokasi_singkat": "Padang, Sumatera Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 167,
@@ -3671,7 +4169,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Yogyakarta",
+    "lokasi_singkat": "Yogyakarta, D.I. Yogyakarta",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 168,
@@ -3693,7 +4194,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bekasi",
+    "lokasi_singkat": "Kab. Bekasi, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 169,
@@ -3715,7 +4219,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Jember",
+    "lokasi_singkat": "Kab. Jember, Jawa Timur",
+    "alamat_lengkap": "Jl. Wijaya Kusuma"
   },
   {
     "no": 170,
@@ -3737,7 +4244,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sumenep",
+    "lokasi_singkat": "Kab. Sumenep, Jawa Timur",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 171,
@@ -3759,7 +4269,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Samarinda",
+    "lokasi_singkat": "Samarinda, Kalimantan Timur",
+    "alamat_lengkap": "Jl. Siradj Salman Komplek Ruko Grand Mutiara Blok C, No. 3, Kel. Teluk Lerong Ilir, Kec. Samarinda Ulu, Samarinda"
   },
   {
     "no": 172,
@@ -3781,7 +4294,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bekasi",
+    "lokasi_singkat": "Bekasi, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 173,
@@ -3803,7 +4319,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bengkulu",
+    "lokasi_singkat": "Bengkulu",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 174,
@@ -3825,7 +4344,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Jl. Jenderal Ahmad Yani No.41, RT.13/RW.2, Cemp. Putih Tim., Kec. Cemp. Putih, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10510"
   },
   {
     "no": 175,
@@ -3847,7 +4369,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl Ulujami raya no 86"
   },
   {
     "no": 176,
@@ -3869,7 +4394,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Pekanbaru",
+    "lokasi_singkat": "Pekanbaru, Riau",
+    "alamat_lengkap": "Jl. Paus No. 8C"
   },
   {
     "no": 177,
@@ -3891,7 +4419,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Jl. Sholeh Iskandar No. 1"
   },
   {
     "no": 178,
@@ -3913,7 +4444,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bontang",
+    "lokasi_singkat": "Bontang, Kalimantan Timur",
+    "alamat_lengkap": "Jalan Brigjend Katamso KM 6 RT 6 No. 6"
   },
   {
     "no": 179,
@@ -3935,7 +4469,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jalan Bina Marga No.25, C99 Business Park, Kaveling 9N"
   },
   {
     "no": 180,
@@ -3957,7 +4494,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Tangerang Selatan",
+    "lokasi_singkat": "Tangerang Selatan, Banten",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 181,
@@ -3979,7 +4519,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Yogyakarta",
+    "lokasi_singkat": "Yogyakarta, D.I. Yogyakarta",
+    "alamat_lengkap": "Jalan Tritunggal, No. 2"
   },
   {
     "no": 182,
@@ -4001,7 +4544,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Malang",
+    "lokasi_singkat": "Malang, Jawa Timur",
+    "alamat_lengkap": "Jl. Piranha Atas, 161 A"
   },
   {
     "no": 183,
@@ -4023,7 +4569,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 184,
@@ -4045,7 +4594,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Depok",
+    "lokasi_singkat": "Depok, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 185,
@@ -4067,7 +4619,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bantul",
+    "lokasi_singkat": "Kab. Bantul, D.I. Yogyakarta",
+    "alamat_lengkap": "Dagen RT 05, Gumuk, Ringinharjo, Kec. Bantul, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55712"
   },
   {
     "no": 186,
@@ -4089,7 +4644,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Majalengka",
+    "lokasi_singkat": "Kab. Majalengka, Jawa Barat",
+    "alamat_lengkap": "Jalan Blengur, Blok Saptu, Desa Kulur"
   },
   {
     "no": 187,
@@ -4111,7 +4669,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jambi",
+    "lokasi_singkat": "Jambi",
+    "alamat_lengkap": "Jl. Kapten A. Bakaruddin, Lorong Kasturi 1, STM Bawah, Kota Jambi"
   },
   {
     "no": 188,
@@ -4133,7 +4694,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Pusat",
+    "lokasi_singkat": "Jakarta Pusat, DKI Jakarta",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 189,
@@ -4155,7 +4719,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 190,
@@ -4177,7 +4744,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Mataram",
+    "lokasi_singkat": "Mataram, Nusa Tenggara Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 191,
@@ -4199,7 +4769,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bantul",
+    "lokasi_singkat": "Kab. Bantul, D.I. Yogyakarta",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 192,
@@ -4221,7 +4794,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sleman",
+    "lokasi_singkat": "Kab. Sleman, D.I. Yogyakarta",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 193,
@@ -4243,7 +4819,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandar Lampung",
+    "lokasi_singkat": "Bandar Lampung, Lampung",
+    "alamat_lengkap": "Jl. Purnawirawan Raya No.114"
   },
   {
     "no": 194,
@@ -4265,13 +4844,16 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Ambon",
+    "lokasi_singkat": "Ambon, Maluku",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 195,
     "name": "LAZ YAYASAN AS`ADIYAH PUSAT SENGKANG",
     "skala": "Kabupaten/Kota",
-    "provinsi": "Sulawesi Selatan",
+    "provinsi": "Jawa Barat",
     "simzat_detail_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/ff07d5c0b9a3bd7f1d57d36d3749b027211752414e086edaa53574b66c99808b9138cb2c24d5dc45bd0d8f47bc7ecc932d13da2963c1585f72a42d5f686bd070dEDbS6ndUvuqTmzMNtEF03xcH4iZbwGTu-Yb5babqCs~",
     "foz_member": true,
     "donation_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/242aafe5b571de70e0ecf800f9fffaf1e4e735e5ccdcadd3864cd8df755d144ac475b0ea078405c1a3a24ef00be8422991e1db63774fc84cf6692272c8ac09cadcJHanK3tdHfLwbW0UOVc5Xm28f9Mz1jxYyVQxCjjak~",
@@ -4287,7 +4869,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Depok",
+    "lokasi_singkat": "Depok, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 196,
@@ -4309,7 +4894,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Pati",
+    "lokasi_singkat": "Kab. Pati, Jawa Tengah",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 197,
@@ -4331,13 +4919,16 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl Tebet Barat Dalam VII No 3, Tebet, Jakarta Selatan"
   },
   {
     "no": 198,
     "name": "LAZ  AL AQSHA DE LATINOS",
     "skala": "Kabupaten/Kota",
-    "provinsi": "Banten",
+    "provinsi": "DKI Jakarta",
     "simzat_detail_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/e277f71005e69266596138e98d5027d0c925d17fdabb18ae4500e62eb1aab2ca7162366ef776e409ce507320a574ff81d16d283a782983b51fa3ee98b2080f23tZfmQugjNTZtfVggpGvsPEGgqo6zgl2M_bmWs2HdyJ4~",
     "foz_member": true,
     "donation_url": "https://simzat.kemenag.go.id/simzat/apps/web/halaman_detail_laz/9ff88c7e6aceb92c4629d396c01939987dbb18ea33904569f20c3d3c0122388953614690f983a0ed088e4ee835e0e15fd3e2f8e0951f1b147fd968101443ef3eGRZGN8FGiKLDLYtp0q30CL8a30d5JSFoU4TfF1Fut98~",
@@ -4353,7 +4944,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jl. Bambu apus raya no 62"
   },
   {
     "no": 199,
@@ -4375,7 +4969,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Karanganyar",
+    "lokasi_singkat": "Kab. Karanganyar, Jawa Tengah",
+    "alamat_lengkap": "Badran Mulyo"
   },
   {
     "no": 200,
@@ -4397,7 +4994,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bogor",
+    "lokasi_singkat": "Kab. Bogor, Jawa Barat",
+    "alamat_lengkap": "Perumahan Cibubur Mansion Blok A2 No.15, Jl Alternatif Cibubur"
   },
   {
     "no": 201,
@@ -4419,7 +5019,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Depok",
+    "lokasi_singkat": "Depok, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 202,
@@ -4441,7 +5044,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 203,
@@ -4463,7 +5069,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung",
+    "lokasi_singkat": "Kab. Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Raya Bojongsoang No.223, Lengkong, Kec. Bojongsoang, Kabupaten Bandung"
   },
   {
     "no": 204,
@@ -4485,7 +5094,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Timur",
+    "lokasi_singkat": "Jakarta Timur, DKI Jakarta",
+    "alamat_lengkap": "Jl. Bambu apus raya no 62"
   },
   {
     "no": 205,
@@ -4507,7 +5119,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Bandung",
+    "lokasi_singkat": "Kab. Bandung, Jawa Barat",
+    "alamat_lengkap": "Jl. Puspa Kencana No. 48, Cimekar Kec. Cileunyi kab. Bandung Jawa Barat 40623"
   },
   {
     "no": 206,
@@ -4529,7 +5144,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Ogan Komering Ulu Timur",
+    "lokasi_singkat": "Kab. Ogan Komering Ulu Timur, Sumatera Selatan",
+    "alamat_lengkap": "Jl. Tuanku Imam Bonjol, Desa Peracak, Kec. Bunga Mayang, Kab. OKU Timur"
   },
   {
     "no": 207,
@@ -4551,7 +5169,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sragen",
+    "lokasi_singkat": "Kab. Sragen, Jawa Tengah",
+    "alamat_lengkap": "Widoro"
   },
   {
     "no": 208,
@@ -4573,7 +5194,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Pekanbaru",
+    "lokasi_singkat": "Pekanbaru, Riau",
+    "alamat_lengkap": "Jl. SM. Amin No. 137 B"
   },
   {
     "no": 209,
@@ -4595,7 +5219,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Probolinggo",
+    "lokasi_singkat": "Kab. Probolinggo, Jawa Timur",
+    "alamat_lengkap": "Jalan Ir. H. Juanda Nomor 370 Patokan Krakaan"
   },
   {
     "no": 210,
@@ -4617,7 +5244,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Garut",
+    "lokasi_singkat": "Kab. Garut, Jawa Barat",
+    "alamat_lengkap": "Kp.Koropeak"
   },
   {
     "no": 211,
@@ -4639,7 +5269,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Jakarta Selatan",
+    "lokasi_singkat": "Jakarta Selatan, DKI Jakarta",
+    "alamat_lengkap": "Jl. Jaya Mandala IV No.31, RT.11/RW.1, Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12870"
   },
   {
     "no": 212,
@@ -4661,7 +5294,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Gresik",
+    "lokasi_singkat": "Kab. Gresik, Jawa Timur",
+    "alamat_lengkap": "Komplek PPM Sunanul Muhtadin, Kertosono,"
   },
   {
     "no": 213,
@@ -4683,7 +5319,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Sidoarjo",
+    "lokasi_singkat": "Kab. Sidoarjo, Jawa Timur",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 214,
@@ -4705,7 +5344,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Bandung",
+    "lokasi_singkat": "Bandung, Jawa Barat",
+    "alamat_lengkap": "jl. banteng dalam no. 19 kel. turangga kec. lengkong"
   },
   {
     "no": 215,
@@ -4727,7 +5369,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Surabaya",
+    "lokasi_singkat": "Surabaya, Jawa Timur",
+    "alamat_lengkap": "Jl. Gading No.02, Ketabang, Kec. Genteng, Surabaya, Jawa Timur 60272"
   },
   {
     "no": 216,
@@ -4749,7 +5394,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Polewali Mandar",
+    "lokasi_singkat": "Kab. Polewali Mandar, Sulawesi Barat",
+    "alamat_lengkap": "Data belum diisikan"
   },
   {
     "no": 217,
@@ -4771,7 +5419,10 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Ponorogo",
+    "lokasi_singkat": "Kab. Ponorogo, Jawa Timur",
+    "alamat_lengkap": "Jl. HOS Cokroaminoto No.66, Bangunsari, Kec. Ponorogo, Kabupaten Ponorogo, Jawa Timur 63411"
   },
   {
     "no": 218,
@@ -4793,6 +5444,9 @@
     "logo_url": "",
     "status": "aktif",
     "status_label": "Resmi Berizin Kemenag RI",
-    "is_hidden": false
+    "is_hidden": false,
+    "kabupaten": "Kab. Semarang",
+    "lokasi_singkat": "Kab. Semarang, Jawa Tengah",
+    "alamat_lengkap": "Dusun Ketapang, RT.001/RW.002, Kel. Ketapang, Kec. Susukan, Kab. Semarang,"
   }
 ]
