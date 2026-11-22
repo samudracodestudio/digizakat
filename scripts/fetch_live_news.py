@@ -291,6 +291,81 @@ FEEDS = [
         'fallback_image': 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80',
         'default_category': 'Ekonomi Mustahik',
         'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'PYI YATIM & ZAKAT',
+        'opz_scale': 'Nasional',
+        'type': 'wp-json',
+        'url': 'https://www.pantiyatim.or.id/wp-json/wp/v2/posts?per_page=7',
+        'donation_url': 'https://www.pantiyatim.or.id/',
+        'instagram_url': 'https://www.instagram.com/pantiyatimindonesia/',
+        'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Yatim & Dhuafa'
+    },
+    {
+        'opz_name': 'ISLAMIC RELIEF INDONESIA',
+        'opz_scale': 'Nasional',
+        'type': 'wp-json',
+        'url': 'https://islamic-relief.or.id/wp-json/wp/v2/posts?per_page=7',
+        'donation_url': 'https://islamic-relief.or.id/',
+        'instagram_url': 'https://www.instagram.com/islamicreliefid/',
+        'fallback_image': 'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Kebencanaan',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'LAZ YAYASAN HADJI KALLA',
+        'opz_scale': 'Nasional',
+        'type': 'wp-json',
+        'url': 'https://www.yayasanhadjikalla.or.id/wp-json/wp/v2/posts?per_page=7',
+        'donation_url': 'https://www.yayasanhadjikalla.or.id/',
+        'instagram_url': 'https://www.instagram.com/yayasanhadjikalla/',
+        'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'LAZNAS AL IRSYAD',
+        'opz_scale': 'Nasional',
+        'url': 'https://laznasalirsyad.org/index.php/feed/',
+        'donation_url': 'https://laznasalirsyad.org/',
+        'instagram_url': 'https://www.instagram.com/laznasalirsyad/',
+        'fallback_image': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fisabilillah'
+    },
+    {
+        'opz_name': 'LAZ BM AL ITQON',
+        'opz_scale': 'Kabupaten/Kota',
+        'url': 'http://www.yayasan-bmalitqon.net/rss.xml',
+        'donation_url': 'http://www.yayasan-bmalitqon.net/',
+        'instagram_url': '',
+        'fallback_image': 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Ekonomi Mustahik',
+        'default_asnaf': 'Fakir & Miskin'
+    },
+    {
+        'opz_name': 'HIDAYAH BERBAGI INDONESIA (HBI)',
+        'opz_scale': 'Kabupaten/Kota',
+        'type': 'wp-json',
+        'url': 'https://Hbi.or.id/wp-json/wp/v2/posts?per_page=7',
+        'donation_url': 'https://hbi.or.id/',
+        'instagram_url': 'https://www.instagram.com/hidayahberbagi.id/',
+        'fallback_image': 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Pendidikan',
+        'default_asnaf': 'Yatim & Dhuafa'
+    },
+    {
+        'opz_name': 'LAZNAS AQL',
+        'opz_scale': 'Nasional',
+        'type': 'wp-json',
+        'url': 'https://laznasaql.org/wp-json/wp/v2/posts?per_page=7',
+        'donation_url': 'https://laznasaql.org/',
+        'instagram_url': 'https://www.instagram.com/laznasaql/',
+        'fallback_image': 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80',
+        'default_category': 'Dakwah',
+        'default_asnaf': 'Fisabilillah'
     }
 ]
 
@@ -387,31 +462,44 @@ for source in FEEDS:
         needed = max(4, TARGET_PER_SOURCE - current_cnt)
         print(f"Crawling {opz} (saat ini: {current_cnt}, cek hingga {needed} item)...")
         req = urllib.request.Request(source['url'], headers=HEADERS)
-        xml_content = urllib.request.urlopen(req, context=ctx, timeout=8).read().decode('utf-8', errors='ignore')
-        soup = BeautifulSoup(xml_content, 'xml')
-        items = soup.find_all('item')[:max(10, TARGET_PER_SOURCE)]
+        raw_content = urllib.request.urlopen(req, context=ctx, timeout=10).read().decode('utf-8', errors='ignore')
+
+        parsed_entries = []
+        if source.get('type') == 'wp-json':
+            wp_posts = json.loads(raw_content)
+            for wp in wp_posts[:max(10, TARGET_PER_SOURCE)]:
+                link = wp.get('link', '')
+                title = clean_text(wp.get('title', {}).get('rendered', ''))
+                raw_dt = wp.get('date', '')[:10]
+                try:
+                    formatted_date = datetime.strptime(raw_dt, '%Y-%m-%d').strftime('%d %b %Y')
+                except Exception:
+                    formatted_date = 'Hari ini'
+                desc_raw = wp.get('excerpt', {}).get('rendered', '') or wp.get('content', {}).get('rendered', '')
+                parsed_entries.append((link, title, formatted_date, desc_raw))
+        else:
+            soup = BeautifulSoup(raw_content, 'xml')
+            for it in soup.find_all('item')[:max(10, TARGET_PER_SOURCE)]:
+                link = it.link.text if it.link else ''
+                title = clean_text(it.title.text if it.title else '')
+                pub_date = it.pubDate.text if it.pubDate else 'Terbaru'
+                try:
+                    dt = datetime.strptime(pub_date[:25].strip(), '%a, %d %b %Y %H:%M:%S')
+                    formatted_date = dt.strftime('%d %b %Y')
+                except Exception:
+                    formatted_date = 'Hari ini'
+                desc_raw = it.description.text if it.description else ''
+                parsed_entries.append((link, title, formatted_date, desc_raw))
 
         added_for_source = 0
-        for it in items:
+        for link, title, formatted_date, desc_raw in parsed_entries:
             if current_cnt + added_for_source >= TARGET_PER_SOURCE and added_for_source >= 2:
                 break
 
-            link = it.link.text if it.link else ''
             norm_link = normalize_url(link)
-            
-            if not norm_link or norm_link in seen_urls:
-                continue # Sudah ada di database, lewati
-            
-            title = clean_text(it.title.text if it.title else '')
-            pub_date = it.pubDate.text if it.pubDate else 'Terbaru'
-            
-            try:
-                dt = datetime.strptime(pub_date[:25].strip(), '%a, %d %b %Y %H:%M:%S')
-                formatted_date = dt.strftime('%d %b %Y')
-            except Exception:
-                formatted_date = 'Hari ini'
+            if not norm_link or norm_link in seen_urls or not title or title.lower() == 'hello world!':
+                continue # Sudah ada di database atau kosong, lewati
 
-            desc_raw = it.description.text if it.description else ''
             summary = clean_text(desc_raw)[:160]
             if len(summary) >= 160:
                 summary += '...'
