@@ -3,6 +3,18 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const LazMap = dynamic(() => import('../../components/LazMap'), {
+  ssr: false,
+  loading: () => (
+    <div className="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+      <div className="h-[340px] sm:h-[400px] bg-slate-100 animate-pulse flex items-center justify-center text-xs text-slate-400 font-medium">
+        Memuat peta sebaran lokasi LAZ...
+      </div>
+    </div>
+  ),
+});
 import {
   Search,
   Building2,
@@ -47,6 +59,9 @@ interface LAZItem {
   logo_url?: string;
   jumlah_perwakilan?: number;
   perwakilan_daerah?: { wilayah: string; alamat: string }[];
+  lat?: number;
+  lng?: number;
+  coord_exact?: boolean;
   status?: string;
   status_label?: string;
   is_hidden?: boolean;
@@ -225,8 +240,19 @@ export default function DirektoriLazPage() {
             </p>
           </div>
 
+          {/* Interactive Map of LAZ Locations */}
+          <div className="mt-6 isolate">
+            <LazMap
+              items={filteredLaz}
+              onSelectLaz={(no) => {
+                const found = lazList.find((x) => x.no === no);
+                if (found) setActiveLazDetail(found);
+              }}
+            />
+          </div>
+
           {/* Quick Stats Cards */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Total Lembaga</span>
               <span className="text-2xl font-bold text-[#5a4ea4]">218</span>

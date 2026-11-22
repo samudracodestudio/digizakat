@@ -134,6 +134,9 @@ def sync_simzat():
             "susunlogo_id": item.get('susunlogo_id', ''),
             "jumlah_perwakilan": item.get('jumlah_perwakilan', 0),
             "perwakilan_daerah": item.get('perwakilan_daerah', []),
+            "lat": item.get('lat'),
+            "lng": item.get('lng'),
+            "coord_exact": item.get('coord_exact', False),
             "status": status,
             "status_label": status_label,
             "is_hidden": is_hidden
