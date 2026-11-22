@@ -172,7 +172,7 @@ export default function DirektoriLazPage() {
           </div>
 
           {/* Quick Search */}
-          <div className="flex-1 max-w-md relative hidden sm:block">
+          <div className="flex-1 max-w-md relative hidden sm:block ml-auto">
             <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
               <Search className="h-4 w-4 text-slate-400" />
             </div>
@@ -184,16 +184,6 @@ export default function DirektoriLazPage() {
               className="w-full pl-10 pr-4 py-2 text-xs sm:text-sm bg-slate-50 hover:bg-slate-100/70 focus:bg-white border border-slate-200 focus:border-[#5a4ea4] rounded-full focus:outline-none transition-all"
             />
           </div>
-
-          <a
-            href="https://simzat.kemenag.go.id/simzat/apps/web/daftar_laz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs font-semibold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition shrink-0"
-          >
-            <span>Sumber Asli SIMZAT</span>
-            <ExternalLink className="w-3.5 h-3.5 text-[#5a4ea4]" />
-          </a>
 
         </div>
       </header>
