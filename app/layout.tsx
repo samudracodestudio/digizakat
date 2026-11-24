@@ -11,7 +11,7 @@ const rubik = Rubik({
 
 export const metadata: Metadata = {
   title: "Neo Digizakat - Ensiklopedi & Radar Gerakan Zakat Indonesia",
-  description: "Pusat khazanah gerakan zakat, radar rilis aksi 218 LAZ resmi Kemenag RI, dan gerbang donasi ke platform crowdfunding resmi anggota FOZ.",
+  description: "Pusat khazanah gerakan zakat, radar rilis aksi LAZ resmi Kemenag RI, dan gerbang donasi ke platform crowdfunding resmi anggota FOZ.",
   icons: {
     icon: [
       { url: '/favicon.ico' },

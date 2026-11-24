@@ -176,7 +176,7 @@ export default function DirektoriLazPage() {
           <div className="flex items-center gap-4 shrink-0 text-[11px] text-slate-300">
             <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
               <ShieldCheck className="w-3.5 h-3.5" />
-              <span>218 Terdata</span>
+              <span>{skalaCounts['Semua'] > 0 ? `${skalaCounts['Semua']} Terdata` : 'Terdata SIMZAT'}</span>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function DirektoriLazPage() {
             </Link>
             <div className="hidden lg:block pl-3 border-l border-slate-200 ml-1">
               <span className="text-xs font-semibold text-slate-600">
-                Direktori 218 LAZ
+                Direktori {skalaCounts['Semua'] > 0 ? `${skalaCounts['Semua']} ` : ''}LAZ
               </span>
             </div>
           </div>
@@ -254,25 +254,25 @@ export default function DirektoriLazPage() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Total Lembaga</span>
-              <span className="text-2xl font-bold text-[#5a4ea4]">218</span>
+              <span className="text-2xl font-bold text-[#5a4ea4]">{skalaCounts['Semua'] || '—'}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Terdata Kemenag RI</span>
             </div>
             {/* Skala Nasional: Hijau */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Nasional</span>
-              <span className="text-2xl font-bold text-emerald-600">{skalaCounts['Nasional'] || 62}</span>
+              <span className="text-2xl font-bold text-emerald-600">{skalaCounts['Nasional'] || '—'}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Cakupan Seluruh RI</span>
             </div>
             {/* Skala Provinsi: Tosca */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Provinsi</span>
-              <span className="text-2xl font-bold text-[#31c0c6]">{skalaCounts['Provinsi'] || 49}</span>
+              <span className="text-2xl font-bold text-[#31c0c6]">{skalaCounts['Provinsi'] || '—'}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Tingkat Wilayah</span>
             </div>
             {/* Skala Kab/Kota: Biru */}
             <div className="bg-white p-3.5 rounded-xl border border-slate-200 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 block uppercase">Skala Kab/Kota</span>
-              <span className="text-2xl font-bold text-blue-600">{skalaCounts['Kabupaten/Kota'] || 107}</span>
+              <span className="text-2xl font-bold text-blue-600">{skalaCounts['Kabupaten/Kota'] || '—'}</span>
               <span className="text-[10px] text-slate-500 block mt-0.5">Akar Rumput Daerah</span>
             </div>
           </div>
@@ -339,7 +339,7 @@ export default function DirektoriLazPage() {
           {/* Results Summary bar */}
           <div className="mt-3 flex items-center justify-between text-xs text-slate-500">
             <span>
-              Menampilkan <strong className="text-slate-900">{filteredLaz.length}</strong> dari 218 lembaga amil zakat
+              Menampilkan <strong className="text-slate-900">{filteredLaz.length}</strong> dari {skalaCounts['Semua']} lembaga amil zakat
             </span>
             {(searchQuery || selectedSkala !== 'Semua' || selectedProvinsi !== 'Semua') && (
               <button
@@ -364,7 +364,7 @@ export default function DirektoriLazPage() {
         {isLoading ? (
           <div className="text-center py-16 space-y-3">
             <div className="inline-block animate-spin rounded-full h-8 w-8 border-4 border-slate-200 border-t-[#5a4ea4]" />
-            <p className="text-xs text-slate-500 font-medium">Memuat data direktori 218 LAZ...</p>
+            <p className="text-xs text-slate-500 font-medium">Memuat data direktori LAZ...</p>
           </div>
         ) : filteredLaz.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-2xl border border-slate-200 p-8 space-y-3">
@@ -756,7 +756,7 @@ export default function DirektoriLazPage() {
                 <span className="bg-emerald-100 text-emerald-800 text-[10px] font-semibold px-2 py-0.5 rounded-full">Tersinkronisasi</span>
               </div>
               <p className="text-slate-500 text-xs leading-relaxed max-w-2xl">
-                Seluruh data direktori 218 Lembaga Amil Zakat di halaman ini bersumber langsung dari Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kementerian Agama Republik Indonesia.
+                Seluruh data direktori {skalaCounts['Semua'] > 0 ? `${skalaCounts['Semua']} ` : ''}Lembaga Amil Zakat di halaman ini bersumber langsung dari Sistem Informasi Manajemen Zakat (SIMZAT) Ditjen Bimas Islam Kementerian Agama Republik Indonesia.
               </p>
             </div>
             <a

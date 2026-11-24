@@ -106,9 +106,9 @@ export default function HomePage() {
   const wajibZakat = totalPendapatan >= nisabBulanan;
   const nilaiZakat = wajibZakat ? Math.round(totalPendapatan * 0.025) : 0;
 
-  // Fetch verified 218 LAZ data and live wire news
+  // Fetch verified LAZ data and live wire news
   useEffect(() => {
-    fetch('/data/laz_verified.json')
+    fetch(`/data/laz_verified.json?t=${Date.now()}`)
       .then((res) => res.json())
       .then((data: LAZItem[]) => {
         setLazList(data);
@@ -119,7 +119,7 @@ export default function HomePage() {
         setLoadingLaz(false);
       });
 
-    fetch('/data/live_news.json')
+    fetch(`/data/live_news.json?t=${Date.now()}`)
       .then((res) => res.json())
       .then((data: OPZPost[]) => {
         if (data && data.length > 0) {
@@ -133,9 +133,15 @@ export default function HomePage() {
 
   const [activeHeadlineIndex, setActiveHeadlineIndex] = useState(0);
 
+  // Total active (non-hidden) LAZ count
+  const activeLazCount = useMemo(() => {
+    return lazList.filter((item) => !item.is_hidden).length;
+  }, [lazList]);
+
   // Filtered LAZ
   const filteredLaz = useMemo(() => {
     return lazList.filter((item) => {
+      if (item.is_hidden) return false;
       const matchSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           item.provinsi.toLowerCase().includes(searchQuery.toLowerCase());
       const matchSkala = selectedSkala === 'Semua' || item.skala === selectedSkala;
@@ -195,7 +201,7 @@ export default function HomePage() {
               RADAR TERKINI
             </span>
             <span className="text-slate-300 truncate text-xs">
-              Memonitor 218 Lembaga Amil Zakat Resmi Kemenag RI & Anggota Forum Zakat (FOZ)
+              Memonitor {activeLazCount > 0 ? `${activeLazCount} ` : ''}Lembaga Amil Zakat Resmi Kemenag RI & Anggota Forum Zakat (FOZ)
             </span>
           </div>
 
@@ -262,7 +268,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold bg-[#f2f0fa] hover:bg-[#e4e0f5] text-[#382f6e] border border-[#d6d0ee] transition"
             >
               <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" />
-              <span>Direktori 218 LAZ</span>
+              <span>Direktori {activeLazCount > 0 ? `${activeLazCount} ` : ''}LAZ</span>
             </Link>
           </div>
 
@@ -625,11 +631,11 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* DIREKTORI 218 LAZ RESMI (KOMPAK & STICKY) */}
+            {/* DIREKTORI LAZ RESMI (KOMPAK & STICKY) */}
             <div id="direktori-laz" className="bg-slate-50/80 rounded-2xl border border-slate-200 p-4 sticky top-24 shadow-xs">
               <div className="flex items-center justify-between mb-3 border-b border-slate-200 pb-2.5">
                 <h3 className="text-xs font-semibold text-slate-950 uppercase tracking-tight flex items-center gap-1.5">
-                  <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" /> DIREKTORI 218 LAZ
+                  <Building2 className="w-3.5 h-3.5 text-[#5a4ea4]" /> DIREKTORI {activeLazCount > 0 ? `${activeLazCount} ` : ''}LAZ
                 </h3>
                 <span className="text-[10px] font-semibold bg-[#f2f0fa] text-[#433880] px-2.5 py-0.5 rounded-full border border-[#d6d0ee]">
                   {filteredLaz.length}
@@ -825,11 +831,11 @@ export default function HomePage() {
             </div>
           )}
 
-          {/* TAB 2: DIREKTORI 218 LAZ */}
+          {/* TAB 2: DIREKTORI LAZ */}
           {activeTab === 'laz' && (
             <div className="space-y-3">
               <div className="p-3 bg-slate-100 rounded-xl flex items-center justify-between text-xs">
-                <span className="font-semibold text-slate-800">218 Lembaga Resmi Kemenag RI</span>
+                <span className="font-semibold text-slate-800">{activeLazCount > 0 ? `${activeLazCount} ` : ''}Lembaga Resmi Kemenag RI</span>
                 <Link
                   href="/direktori-laz"
                   className="bg-[#5a4ea4] text-white px-2.5 py-1 rounded-lg font-semibold text-[11px] flex items-center gap-1 shadow-xs"
@@ -1154,7 +1160,7 @@ export default function HomePage() {
           }`}
         >
           <Building2 className="w-5 h-5" />
-          <span className="text-[10px]">218 LAZ</span>
+          <span className="text-[10px]">{activeLazCount > 0 ? `${activeLazCount} LAZ` : 'LAZ'}</span>
         </button>
 
         <button
@@ -1187,7 +1193,7 @@ export default function HomePage() {
                 <span className="text-lg font-bold text-white tracking-tight">Digizakat</span>
               </div>
               <p className="text-slate-400 text-xs leading-relaxed max-w-sm">
-                Ensiklopedi independen dan radar gerakan zakat di Indonesia. Tidak mengumpulkan maupun memotong donasi publik. Seluruh transaksi diarahkan langsung ke portal crowdfunding resmi 218 LAZ berizin Kementerian Agama RI.
+                Ensiklopedi independen dan radar gerakan zakat di Indonesia. Tidak mengumpulkan maupun memotong donasi publik. Seluruh transaksi diarahkan langsung ke portal crowdfunding resmi {activeLazCount > 0 ? `${activeLazCount} ` : ''}LAZ berizin Kementerian Agama RI.
               </p>
             </div>
 

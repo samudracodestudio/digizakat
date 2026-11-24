@@ -16,6 +16,7 @@ export interface LAZItem {
   phone?: string;
   pimpinan?: string;
   foz_member: boolean;
+  is_hidden?: boolean;
 }
 
 export interface OPZPost {

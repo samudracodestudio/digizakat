@@ -1,4 +1,5 @@
 import urllib.request, ssl, re, urllib.parse, json, os
+from bs4 import BeautifulSoup
 
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -10,6 +11,63 @@ HEADERS = {
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LAZ_FILE = os.path.join(BASE_DIR, 'public', 'data', 'laz_verified.json')
+
+def fetch_simzat_detail(detail_url):
+    """Ambil detail SK, alamat, kabupaten, dan koordinat dari halaman detail SIMZAT."""
+    if not detail_url:
+        return {}
+    try:
+        req = urllib.request.Request(detail_url, headers=HEADERS)
+        html = urllib.request.urlopen(req, context=ctx, timeout=25).read().decode('utf-8', errors='ignore')
+        soup = BeautifulSoup(html, 'html.parser')
+        lines = [line.strip() for line in soup.get_text('\n').splitlines() if line.strip()]
+        fields = {}
+        for i, line in enumerate(lines):
+            if line in ('No. SK', 'Berlaku Sampai', 'Alamat Kantor', 'Provinsi', 'Kabupatan/Kota', 'Kabupaten/Kota', 'Kecamatan', 'Kelurahan', 'Koordinat'):
+                if i + 1 < len(lines):
+                    val = lines[i + 1]
+                    if val == ':' and i + 2 < len(lines):
+                        val = lines[i + 2]
+                    elif val.startswith(':'):
+                        val = val[1:].strip()
+                    fields[line] = val.strip()
+
+        result = {}
+        if fields.get('No. SK'):
+            result['sk_number'] = fields['No. SK']
+        if fields.get('Berlaku Sampai'):
+            result['berlaku_sampai'] = fields['Berlaku Sampai']
+
+        kab = fields.get('Kabupatan/Kota') or fields.get('Kabupaten/Kota') or ''
+        prov = fields.get('Provinsi', '')
+        if kab:
+            result['kabupaten'] = kab
+            result['lokasi_singkat'] = f"{kab}, {prov}" if prov else kab
+
+        addr_parts = [p for p in [
+            fields.get('Alamat Kantor', ''),
+            f"Kel. {fields['Kelurahan']}" if fields.get('Kelurahan') else '',
+            f"Kec. {fields['Kecamatan']}" if fields.get('Kecamatan') else '',
+            kab,
+            prov
+        ] if p]
+        if addr_parts:
+            full_addr = ', '.join(addr_parts)
+            result['alamat_lengkap'] = full_addr
+            result['alamat'] = full_addr
+
+        coord = fields.get('Koordinat', '')
+        m = re.match(r'^(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)$', coord)
+        if m:
+            lat, lng = float(m.group(1)), float(m.group(2))
+            if -12.0 <= lat <= 7.0 and 94.0 <= lng <= 142.0:
+                result['lat'] = lat
+                result['lng'] = lng
+                result['coord_exact'] = True
+        return result
+    except Exception as e:
+        print(f"  ⚠️ Gagal ambil detail SIMZAT ({detail_url}): {e}")
+        return {}
 
 def sync_simzat():
     print("Memeriksa update data dari portal resmi SIMZAT Kemenag RI...")
@@ -93,7 +151,16 @@ def sync_simzat():
 
         key = name.upper()
         current_active_names.add(key)
-        item = existing_map.get(key, {})
+        item = dict(existing_map.get(key, {}))
+
+        # Jika LAZ baru atau belum punya SK / koordinat, tarik detail langsung dari SIMZAT
+        if (not item.get('sk_number') or item.get('lat') is None or item.get('lng') is None) and detail_url:
+            print(f"  🔎 Mengambil detail SIMZAT untuk LAZ baru/belum lengkap: {name}...")
+            detail_info = fetch_simzat_detail(detail_url)
+            for k, v in detail_info.items():
+                cur = item.get(k)
+                if not cur or k in ('lat', 'lng', 'coord_exact') or (k in ('lokasi_singkat', 'alamat') and str(cur).endswith(', Indonesia')):
+                    item[k] = v
 
         # Cek apakah di SIMZAT ada teks status khusus (misal "Proses Perpanjangan" / "Dicabut")
         cell_full_text = re.sub(r'<[^>]+>', ' ', link_html).lower()
