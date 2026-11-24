@@ -408,7 +408,8 @@ def normalize_url(url):
     # Remove tracking query params like ?utm_source=rss
     return url.split('?')[0].rstrip('/')
 
-DATA_DIR = '/Users/samudra/Downloads/Neo Digizakat/neo-digizakat-app/public/data'
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_DIR = os.path.join(BASE_DIR, 'public', 'data')
 LIVE_PATH = os.path.join(DATA_DIR, 'live_news.json')
 ARCHIVE_PATH = os.path.join(DATA_DIR, 'archive_news.json')
 
